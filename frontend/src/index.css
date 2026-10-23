@@ -52,7 +52,7 @@ button { cursor: pointer; }
 .hl.strong, .hl.weak { cursor: pointer; text-decoration-line: underline; text-decoration-thickness: 2px; text-underline-offset: 4px; text-decoration-skip-ink: none; }
 .hl.strong { text-decoration-color: var(--strong); }
 .hl.weak { text-decoration-color: var(--weak); text-decoration-style: dashed; }
-.hl.kept { text-decoration-color: color-mix(in srgb, var(--strong) 30%, transparent); text-decoration-style: solid; }
+.hl.kept { text-decoration-color: var(--strong); text-decoration-style: solid; }
 .hl.strong:hover, .hl.strong.on, .hl.kept.on { background: var(--strong-tint); }
 .hl.weak:hover, .hl.weak.on { background: var(--weak-tint); }
 
