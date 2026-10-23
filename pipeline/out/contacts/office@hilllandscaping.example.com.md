@@ -11,23 +11,23 @@
     "evidence": [
       {
         "message_id": "syn-vendor_service-007-m1",
-        "quote": "Hi Hill Landscaping"
+        "quote": "Hi Hill Landscaping,"
       },
       {
         "message_id": "syn-vendor_service-007-m2",
-        "quote": "Hi Hill Landscaping"
+        "quote": "Hi Hill Landscaping,"
       },
       {
         "message_id": "syn-vendor_service-008-m1",
-        "quote": "Hi Hill Landscaping"
+        "quote": "Hi Hill Landscaping,"
       },
       {
         "message_id": "syn-vendor_service-009-m1",
-        "quote": "Hi Hill Landscaping"
+        "quote": "Hi Hill Landscaping,"
       },
       {
         "message_id": "syn-vendor_service-009-m2",
-        "quote": "Hi Hill Landscaping"
+        "quote": "Hi Hill Landscaping,"
       }
     ]
   },
@@ -41,23 +41,23 @@
       "evidence": [
         {
           "message_id": "syn-vendor_service-007-m1",
-          "quote": "Hi Hill Landscaping"
+          "quote": "Hi Hill Landscaping,"
         },
         {
           "message_id": "syn-vendor_service-007-m2",
-          "quote": "Hi Hill Landscaping"
+          "quote": "Hi Hill Landscaping,"
         },
         {
           "message_id": "syn-vendor_service-008-m1",
-          "quote": "Hi Hill Landscaping"
+          "quote": "Hi Hill Landscaping,"
         },
         {
           "message_id": "syn-vendor_service-009-m1",
-          "quote": "Hi Hill Landscaping"
+          "quote": "Hi Hill Landscaping,"
         },
         {
           "message_id": "syn-vendor_service-009-m2",
-          "quote": "Hi Hill Landscaping"
+          "quote": "Hi Hill Landscaping,"
         }
       ]
     }
@@ -98,7 +98,7 @@
     "evidence": [
       {
         "message_id": "syn-vendor_service-007-m1",
-        "quote": "We're looking for a quote for a fall yard cleanup"
+        "quote": "We're looking for a quote"
       },
       {
         "message_id": "syn-vendor_service-007-m2",
@@ -106,11 +106,11 @@
       },
       {
         "message_id": "syn-vendor_service-007-m3",
-        "quote": "Thank you, that works for us."
+        "quote": "that works for us"
       },
       {
         "message_id": "syn-vendor_service-008-m1",
-        "quote": "Could you send a monthly price for this?"
+        "quote": "and have two questions"
       },
       {
         "message_id": "syn-vendor_service-008-m2",
@@ -122,14 +122,36 @@
       },
       {
         "message_id": "syn-vendor_service-009-m2",
-        "quote": "the backyard looks amazing"
+        "quote": "I've paid the invoice"
       }
     ]
   },
   "facts": [
     {
       "id": "f1",
-      "text": "The fall 2024 cleanup covered trimming the two front-yard olive trees, clearing leaves, cutting back the lavender and hauling away green waste.",
+      "text": "Hill Landscaping is the landscaping company Mia hires for her home in South Bay.",
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "syn-vendor_service-007-m1",
+          "quote": "fall yard cleanup at our home in South Bay"
+        }
+      ]
+    },
+    {
+      "id": "f2",
+      "text": "Victor lives in Mia's household and opens the side gate for the crew.",
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "syn-vendor_service-009-m1",
+          "quote": "Victor will be home to open the side gate."
+        }
+      ]
+    },
+    {
+      "id": "f3",
+      "text": "The 2024 fall cleanup covered trimming two olive trees in the front yard, removing leaves, cutting back the lavender and hauling away green waste.",
       "status": "learned",
       "evidence": [
         {
@@ -143,34 +165,19 @@
       ]
     },
     {
-      "id": "f2",
-      "text": "Mia booked the fall cleanup for Thursday, October 24, 2024 at 8:00 AM.",
-      "status": "learned",
-      "evidence": [
-        {
-          "message_id": "syn-vendor_service-007-m3",
-          "quote": "Please book Thursday, October 24 at 8:00 AM."
-        }
-      ]
-    },
-    {
-      "id": "f3",
-      "text": "For site access, the side gate is left unlocked and the green waste bins are on the left side of the driveway.",
-      "status": "learned",
-      "evidence": [
-        {
-          "message_id": "syn-vendor_service-007-m3",
-          "quote": "The side gate will be unlocked"
-        },
-        {
-          "message_id": "syn-vendor_service-007-m3",
-          "quote": "the green waste bins are on the left side of the driveway"
-        }
-      ]
-    },
-    {
       "id": "f4",
-      "text": "For visits, Mia is available on weekdays after 3:00 PM or on Saturday mornings.",
+      "text": "Mia asks for flat-price estimates and sends photos with her requests.",
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "syn-vendor_service-007-m1",
+          "quote": "Please let us know a flat-price estimate"
+        }
+      ]
+    },
+    {
+      "id": "f5",
+      "text": "In October 2024, Mia offered weekday afternoons after 3 PM or Saturday, October 19 for the estimate visit.",
       "status": "learned",
       "evidence": [
         {
@@ -180,14 +187,36 @@
       ]
     },
     {
-      "id": "f5",
-      "text": "Monthly maintenance started in April 2026 and covers mowing the front lawn, edging, weeding the planter beds and checking the sprinkler heads.",
+      "id": "f6",
+      "text": "The fall cleanup was booked for Thursday, October 24, 2024 at 8:00 AM.",
       "status": "learned",
       "evidence": [
         {
-          "message_id": "syn-vendor_service-008-m1",
-          "quote": "set up monthly maintenance starting in April"
+          "message_id": "syn-vendor_service-007-m3",
+          "quote": "Please book Thursday, October 24 at 8:00 AM."
+        }
+      ]
+    },
+    {
+      "id": "f7",
+      "text": "Access: the side gate is left unlocked, and the green waste bins are on the left side of the driveway.",
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "syn-vendor_service-007-m3",
+          "quote": "The side gate will be unlocked"
         },
+        {
+          "message_id": "syn-vendor_service-007-m3",
+          "quote": "green waste bins are on the left side of the driveway"
+        }
+      ]
+    },
+    {
+      "id": "f8",
+      "text": "In March 2026, Mia set up monthly maintenance starting in April. It covers mowing the front lawn, edging, weeding the planter beds and checking the sprinkler heads.",
+      "status": "learned",
+      "evidence": [
         {
           "message_id": "syn-vendor_service-008-m1",
           "quote": "Mowing the front lawn, edging, weeding the planter beds"
@@ -195,40 +224,43 @@
       ]
     },
     {
-      "id": "f6",
+      "id": "f9",
+      "text": "Mia confirmed the monthly maintenance agreement with a one-word reply.",
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "syn-vendor_service-008-m2",
+          "quote": "done"
+        }
+      ]
+    },
+    {
+      "id": "f10",
       "text": "Mia was happy with the fall cleanup.",
       "status": "learned",
       "evidence": [
         {
           "message_id": "syn-vendor_service-008-m1",
-          "quote": "Thank you again for the great work on our fall cleanup."
+          "quote": "Thank you again for the great work on our fall cleanup"
         }
       ]
     },
     {
-      "id": "f7",
-      "text": "The backyard project started Monday, August 17, 2026 at 8:00 AM, and Victor opened the side gate.",
+      "id": "f11",
+      "text": "The 2026 backyard project started on Monday, August 17 at 8:00 AM.",
       "status": "learned",
       "evidence": [
         {
           "message_id": "syn-vendor_service-009-m1",
           "quote": "Monday, August 17 at 8:00 AM works for us"
-        },
-        {
-          "message_id": "syn-vendor_service-009-m1",
-          "quote": "Victor will be home to open the side gate"
         }
       ]
     },
     {
-      "id": "f8",
-      "text": "Mia supplied the backyard materials herself: two 4 ft x 100 ft rolls of weed fabric and 3 cubic yards of dark gray 3/8-inch gravel, delivered to the driveway on Friday, August 14.",
+      "id": "f12",
+      "text": "Mia supplied the backyard materials herself: weed fabric and 3 cubic yards of dark gray 3/8-inch gravel, delivered to the driveway on Friday, August 14.",
       "status": "learned",
       "evidence": [
-        {
-          "message_id": "syn-vendor_service-009-m1",
-          "quote": "two 4 ft x 100 ft rolls"
-        },
         {
           "message_id": "syn-vendor_service-009-m1",
           "quote": "3 cubic yards of dark gray 3/8-inch gravel"
@@ -240,13 +272,13 @@
       ]
     },
     {
-      "id": "f9",
-      "text": "The backyard project included a patio and a gravel area. Mia sent photos of the finished work and paid the invoice through the online link.",
+      "id": "f13",
+      "text": "Mia was delighted with the finished backyard, sent photos of the patio and gravel area, and paid the invoice through the online link in August 2026.",
       "status": "learned",
       "evidence": [
         {
           "message_id": "syn-vendor_service-009-m2",
-          "quote": "Photos of the finished patio and gravel area are attached"
+          "quote": "the backyard looks amazing"
         },
         {
           "message_id": "syn-vendor_service-009-m2",
@@ -262,17 +294,17 @@
       "evidence": [
         {
           "message_id": "syn-vendor_service-009-m1",
-          "quote": "Victor will be home to open the side gate"
+          "quote": "Victor will be home to open the side gate."
         }
       ]
     }
   ],
   "core_connection": {
-    "text": "Hill Landscaping is the landscaping company for Mia's home in South Bay. They did a fall yard cleanup in 2024, handle monthly maintenance, and finished a backyard project in August 2026.",
+    "text": "Hill Landscaping is the landscaping company that looks after the yard at Mia's South Bay home. It started with a fall cleanup in 2024, moved to monthly maintenance in 2026, and later built a backyard gravel and patio area.",
     "evidence": [
       {
         "message_id": "syn-vendor_service-007-m1",
-        "quote": "our home in South Bay"
+        "quote": "fall yard cleanup at our home in South Bay"
       },
       {
         "message_id": "syn-vendor_service-008-m1",
@@ -290,17 +322,21 @@
 
 # Hill Landscaping
 
-Hill Landscaping is the landscaping company for Mia's home in South Bay. They did a fall yard cleanup in 2024, handle monthly maintenance, and finished a backyard project in August 2026.
+Hill Landscaping is the landscaping company that looks after the yard at Mia's South Bay home. It started with a fall cleanup in 2024, moved to monthly maintenance in 2026, and later built a backyard gravel and patio area.
 
 - Address (default): Hill Landscaping (5/7 emails)
-- The fall 2024 cleanup covered trimming the two front-yard olive trees, clearing leaves, cutting back the lavender and hauling away green waste.
-- Mia booked the fall cleanup for Thursday, October 24, 2024 at 8:00 AM.
-- For site access, the side gate is left unlocked and the green waste bins are on the left side of the driveway.
-- For visits, Mia is available on weekdays after 3:00 PM or on Saturday mornings.
-- Monthly maintenance started in April 2026 and covers mowing the front lawn, edging, weeding the planter beds and checking the sprinkler heads.
+- Hill Landscaping is the landscaping company Mia hires for her home in South Bay.
+- Victor lives in Mia's household and opens the side gate for the crew.
+- The 2024 fall cleanup covered trimming two olive trees in the front yard, removing leaves, cutting back the lavender and hauling away green waste.
+- Mia asks for flat-price estimates and sends photos with her requests.
+- In October 2024, Mia offered weekday afternoons after 3 PM or Saturday, October 19 for the estimate visit.
+- The fall cleanup was booked for Thursday, October 24, 2024 at 8:00 AM.
+- Access: the side gate is left unlocked, and the green waste bins are on the left side of the driveway.
+- In March 2026, Mia set up monthly maintenance starting in April. It covers mowing the front lawn, edging, weeding the planter beds and checking the sprinkler heads.
+- Mia confirmed the monthly maintenance agreement with a one-word reply.
 - Mia was happy with the fall cleanup.
-- The backyard project started Monday, August 17, 2026 at 8:00 AM, and Victor opened the side gate.
-- Mia supplied the backyard materials herself: two 4 ft x 100 ft rolls of weed fabric and 3 cubic yards of dark gray 3/8-inch gravel, delivered to the driveway on Friday, August 14.
-- The backyard project included a patio and a gravel area. Mia sent photos of the finished work and paid the invoice through the online link.
+- The 2026 backyard project started on Monday, August 17 at 8:00 AM.
+- Mia supplied the backyard materials herself: weed fabric and 3 cubic yards of dark gray 3/8-inch gravel, delivered to the driveway on Friday, August 14.
+- Mia was delighted with the finished backyard, sent photos of the patio and gravel area, and paid the invoice through the online link in August 2026.
 
 _Extracted offline by pipeline/extract.py; every entry is backed by verified quotes._

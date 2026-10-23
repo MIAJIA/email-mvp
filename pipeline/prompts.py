@@ -33,7 +33,10 @@ Rules:
   Most people have only "default".
 - honorific: "uses_nin" if Mia addresses them with 您, "no_nin" if Chinese without 您, "formal_only" if 您 only
   in formal mails, "n/a" for English-only. Quote the 您 sentence as evidence.
-- facts: up to 10, concrete and useful for writing future emails (dates, plans, shared history, preferences).
+- facts: up to 15, concrete and useful for writing future emails. Always include, as separate facts, who this
+  person is to Mia (their role, e.g. advisor, coach, organiser) and any people around them (spouse, students,
+  others they also work with). Then dates and plans, shared history, places you meet, preferences on both sides.
+  Cover the whole period, not only the most recent emails.
 - If something is unknown, use null for value and an empty evidence list. Do not invent.
 
 Recipient: {email}

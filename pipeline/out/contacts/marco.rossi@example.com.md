@@ -2,7 +2,7 @@
 {
   "email": "marco.rossi@example.com",
   "display_name": "Marco Rossi",
-  "relationship": "running friend",
+  "relationship": "friend",
   "address_as": {
     "value": "Marco",
     "count": 3,
@@ -66,7 +66,7 @@
       },
       {
         "message_id": "syn-friend_scheduling-010-m1",
-        "quote": "Thanks,"
+        "quote": "Mia"
       }
     ]
   },
@@ -78,7 +78,7 @@
     "evidence": [
       {
         "message_id": "syn-friend_scheduling-002-m1",
-        "quote": "I'm doing the shorter loop."
+        "quote": "I'm in！"
       },
       {
         "message_id": "syn-friend_scheduling-002-m2",
@@ -86,7 +86,7 @@
       },
       {
         "message_id": "syn-friend_scheduling-006-m1",
-        "quote": "Please don't wait for me to order."
+        "quote": "So sorry"
       },
       {
         "message_id": "syn-friend_scheduling-010-m1",
@@ -97,22 +97,7 @@
   "facts": [
     {
       "id": "f1",
-      "text": "Mia runs the shorter loop on the group long runs, so she sometimes gets to coffee about 10 minutes late.",
-      "status": "learned",
-      "evidence": [
-        {
-          "message_id": "syn-friend_scheduling-002-m1",
-          "quote": "I might be 10 min latter since"
-        },
-        {
-          "message_id": "syn-friend_scheduling-002-m1",
-          "quote": "I'm doing the shorter loop."
-        }
-      ]
-    },
-    {
-      "id": "f2",
-      "text": "In October 2024 Mia joined Marco's group for coffee after their Saturday long run.",
+      "text": "Marco is a friend Mia runs with. He organises coffee after the group runs.",
       "status": "learned",
       "evidence": [
         {
@@ -122,8 +107,45 @@
       ]
     },
     {
+      "id": "f2",
+      "text": "Marco runs with a group of other people, and the whole group goes for coffee together.",
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "syn-friend_scheduling-002-m1",
+          "quote": "Which coffee shop are you guys going to?"
+        }
+      ]
+    },
+    {
       "id": "f3",
-      "text": "In May 2025 Mia overslept and asked to move their post-run coffee from 8:00 to 8:30. She told Marco not to wait for her to order.",
+      "text": "Mia sometimes does the shorter loop, so she may arrive at coffee about 10 minutes after the others.",
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "syn-friend_scheduling-002-m1",
+          "quote": "I'm doing the shorter loop."
+        },
+        {
+          "message_id": "syn-friend_scheduling-002-m1",
+          "quote": "I might be 10 min latter since"
+        }
+      ]
+    },
+    {
+      "id": "f4",
+      "text": "In October 2024, Mia agreed to join Marco and the group for coffee after a Saturday long run.",
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "syn-friend_scheduling-002-m2",
+          "quote": "Perfect, see you there!"
+        }
+      ]
+    },
+    {
+      "id": "f5",
+      "text": "In May 2025, Mia overslept and asked to move their post-run coffee to 8:30. She told the others not to wait for her to order.",
       "status": "learned",
       "evidence": [
         {
@@ -133,12 +155,27 @@
         {
           "message_id": "syn-friend_scheduling-006-m1",
           "quote": "coffee to 8:30?"
+        },
+        {
+          "message_id": "syn-friend_scheduling-006-m1",
+          "quote": "Please don't wait for me to order."
         }
       ]
     },
     {
-      "id": "f4",
-      "text": "Mia would rather plan in person after the run than over a call.",
+      "id": "f6",
+      "text": "In January 2026, the group run moved to Sunday. Mia said Sunday worked for her.",
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "syn-friend_scheduling-010-m1",
+          "quote": "Sunday works!"
+        }
+      ]
+    },
+    {
+      "id": "f7",
+      "text": "Mia would rather plan things in person after the run than on a call.",
       "status": "learned",
       "evidence": [
         {
@@ -148,8 +185,8 @@
       ]
     },
     {
-      "id": "f5",
-      "text": "In January 2026 Mia suggested the Starbucks by the park, because the other coffee shop had been too crowded the week before.",
+      "id": "f8",
+      "text": "They meet at Starbucks. Mia suggested the one by the park because the other one had been too crowded.",
       "status": "learned",
       "evidence": [
         {
@@ -165,15 +202,11 @@
   ],
   "edges": [],
   "core_connection": {
-    "text": "Marco and Mia run in the same group, and they often get coffee after the long runs.",
+    "text": "Marco is a running buddy. Mia and Marco do group long runs together and usually get coffee afterwards.",
     "evidence": [
       {
         "message_id": "syn-friend_scheduling-002-m1",
         "quote": "Which coffee shop are you guys going to?"
-      },
-      {
-        "message_id": "syn-friend_scheduling-006-m1",
-        "quote": "Could we push"
       },
       {
         "message_id": "syn-friend_scheduling-010-m1",
@@ -187,13 +220,16 @@
 
 # Marco Rossi
 
-Marco and Mia run in the same group, and they often get coffee after the long runs.
+Marco is a running buddy. Mia and Marco do group long runs together and usually get coffee afterwards.
 
 - Address (default): Marco (3/4 emails)
-- Mia runs the shorter loop on the group long runs, so she sometimes gets to coffee about 10 minutes late.
-- In October 2024 Mia joined Marco's group for coffee after their Saturday long run.
-- In May 2025 Mia overslept and asked to move their post-run coffee from 8:00 to 8:30. She told Marco not to wait for her to order.
-- Mia would rather plan in person after the run than over a call.
-- In January 2026 Mia suggested the Starbucks by the park, because the other coffee shop had been too crowded the week before.
+- Marco is a friend Mia runs with. He organises coffee after the group runs.
+- Marco runs with a group of other people, and the whole group goes for coffee together.
+- Mia sometimes does the shorter loop, so she may arrive at coffee about 10 minutes after the others.
+- In October 2024, Mia agreed to join Marco and the group for coffee after a Saturday long run.
+- In May 2025, Mia overslept and asked to move their post-run coffee to 8:30. She told the others not to wait for her to order.
+- In January 2026, the group run moved to Sunday. Mia said Sunday worked for her.
+- Mia would rather plan things in person after the run than on a call.
+- They meet at Starbucks. Mia suggested the one by the park because the other one had been too crowded.
 
 _Extracted offline by pipeline/extract.py; every entry is backed by verified quotes._

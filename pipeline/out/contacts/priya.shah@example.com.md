@@ -93,13 +93,20 @@
   "facts": [
     {
       "id": "f1",
-      "text": "In September 2024 they met for coffee at Red Rock on Thursday at 10am. Mia had suggested Red Rock or a place near Priya's office.",
+      "text": "Priya is a personal friend of Mia's. They meet for coffee, lunch and video calls to catch up.",
       "status": "learned",
       "evidence": [
         {
-          "message_id": "syn-friend_scheduling-001-m2",
-          "quote": "See you Thursday 10am at Red Rock"
-        },
+          "message_id": "syn-friend_scheduling-001-m1",
+          "quote": "It's been way too long since we last caught up!"
+        }
+      ]
+    },
+    {
+      "id": "f2",
+      "text": "Priya works from an office, and Mia has suggested meeting somewhere near it.",
+      "status": "learned",
+      "evidence": [
         {
           "message_id": "syn-friend_scheduling-001-m1",
           "quote": "maybe Red Rock or somewhere near your office?"
@@ -107,8 +114,19 @@
       ]
     },
     {
-      "id": "f2",
-      "text": "Priya works in an office and lives in the Pacific time zone (PST).",
+      "id": "f3",
+      "text": "In September 2024 they met for coffee on a Thursday at 10am at Red Rock, which is a place they both know.",
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "syn-friend_scheduling-001-m2",
+          "quote": "See you Thursday 10am at Red Rock"
+        }
+      ]
+    },
+    {
+      "id": "f4",
+      "text": "Priya lives on Pacific time (PST).",
       "status": "learned",
       "evidence": [
         {
@@ -118,8 +136,8 @@
       ]
     },
     {
-      "id": "f3",
-      "text": "In March 2025 Mia was in Singapore for two more weeks, and they set up a video call at 9:00AM Singapore time.",
+      "id": "f5",
+      "text": "In March 2025 Mia was in Singapore for about two more weeks, and they had a video call at 9:00AM Singapore time, which was 5pm PST the day before for Priya.",
       "status": "learned",
       "evidence": [
         {
@@ -133,25 +151,29 @@
       ]
     },
     {
-      "id": "f4",
-      "text": "In August 2025 Priya called off a Thursday lunch. Mia asked to meet in person the next week instead of doing a call, and they met at the same place as before.",
+      "id": "f6",
+      "text": "In August 2025 Priya had to move their Thursday lunch. Mia was fine with it but asked to meet in person the next Tuesday or Wednesday instead of a call.",
       "status": "learned",
       "evidence": [
         {
           "message_id": "syn-friend_scheduling-008-m1",
-          "quote": "Totally fine! Can we meet in person next Tue or Wed?"
+          "quote": "Totally fine!"
         },
         {
-          "message_id": "syn-friend_scheduling-008-m2",
-          "quote": "Same place works for me!"
+          "message_id": "syn-friend_scheduling-008-m1",
+          "quote": "Can we meet in person next Tue or Wed?"
         }
       ]
     },
     {
-      "id": "f5",
-      "text": "Mia suggested a milk tea shop next to their usual lunch place as a new option.",
+      "id": "f7",
+      "text": "They have a usual lunch spot, and Mia agreed to go back there. She also suggested a milk tea shop right next to it that has good food.",
       "status": "learned",
       "evidence": [
+        {
+          "message_id": "syn-friend_scheduling-008-m2",
+          "quote": "Same place works for me!"
+        },
         {
           "message_id": "syn-friend_scheduling-008-m2",
           "quote": "there's a milk tea"
@@ -159,8 +181,8 @@
       ]
     },
     {
-      "id": "f6",
-      "text": "Mia writes to Priya in a casual, warm way, often using emoji.",
+      "id": "f8",
+      "text": "Mia's tone with Priya is casual and warm, and she uses emoji in short replies.",
       "status": "learned",
       "evidence": [
         {
@@ -176,7 +198,7 @@
   ],
   "edges": [],
   "core_connection": {
-    "text": "Priya is a friend of Mia's. They keep in touch through coffee, lunch and video calls. Mia prefers to meet in person.",
+    "text": "Priya is a friend of Mia's. They keep in touch through coffee, lunch and the occasional video call, and Mia likes to meet in person.",
     "evidence": [
       {
         "message_id": "syn-friend_scheduling-001-m1",
@@ -194,14 +216,16 @@
 
 # Priya Shah
 
-Priya is a friend of Mia's. They keep in touch through coffee, lunch and video calls. Mia prefers to meet in person.
+Priya is a friend of Mia's. They keep in touch through coffee, lunch and the occasional video call, and Mia likes to meet in person.
 
 - Address (default): Priya (3/6 emails)
-- In September 2024 they met for coffee at Red Rock on Thursday at 10am. Mia had suggested Red Rock or a place near Priya's office.
-- Priya works in an office and lives in the Pacific time zone (PST).
-- In March 2025 Mia was in Singapore for two more weeks, and they set up a video call at 9:00AM Singapore time.
-- In August 2025 Priya called off a Thursday lunch. Mia asked to meet in person the next week instead of doing a call, and they met at the same place as before.
-- Mia suggested a milk tea shop next to their usual lunch place as a new option.
-- Mia writes to Priya in a casual, warm way, often using emoji.
+- Priya is a personal friend of Mia's. They meet for coffee, lunch and video calls to catch up.
+- Priya works from an office, and Mia has suggested meeting somewhere near it.
+- In September 2024 they met for coffee on a Thursday at 10am at Red Rock, which is a place they both know.
+- Priya lives on Pacific time (PST).
+- In March 2025 Mia was in Singapore for about two more weeks, and they had a video call at 9:00AM Singapore time, which was 5pm PST the day before for Priya.
+- In August 2025 Priya had to move their Thursday lunch. Mia was fine with it but asked to meet in person the next Tuesday or Wednesday instead of a call.
+- They have a usual lunch spot, and Mia agreed to go back there. She also suggested a milk tea shop right next to it that has good food.
+- Mia's tone with Priya is casual and warm, and she uses emoji in short replies.
 
 _Extracted offline by pipeline/extract.py; every entry is backed by verified quotes._

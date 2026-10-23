@@ -78,7 +78,7 @@
     "evidence": [
       {
         "message_id": "syn-rel-zhao-001-m1",
-        "quote": "您好！春节将至"
+        "quote": "给您和家人拜个早年"
       },
       {
         "message_id": "syn-rel-zhao-002-m1",
@@ -90,7 +90,7 @@
       },
       {
         "message_id": "syn-rel-zhao-003-m1",
-        "quote": "您上次提到雨桐"
+        "quote": "您可以让她先看看"
       },
       {
         "message_id": "syn-rel-zhao-003-m2",
@@ -110,27 +110,27 @@
     "evidence": [
       {
         "message_id": "syn-rel-zhao-001-m1",
-        "quote": "阖家幸福！\n\nMia"
+        "quote": "Mia"
       },
       {
         "message_id": "syn-rel-zhao-002-m1",
-        "quote": "常去吃早茶。\n\nMia"
+        "quote": "Mia"
       },
       {
         "message_id": "syn-rel-zhao-002-m2",
-        "quote": "祝您回程顺利。\n\nMia"
+        "quote": "Mia"
       },
       {
         "message_id": "syn-rel-zhao-003-m1",
-        "quote": "您随时跟我说。\n\nMia"
+        "quote": "Mia"
       },
       {
         "message_id": "syn-rel-zhao-003-m2",
-        "quote": "Half Moon Bay 转转。\n\nMia"
+        "quote": "Mia"
       },
       {
         "message_id": "syn-rel-zhao-004-m1",
-        "quote": "您的助理。\n\nMia"
+        "quote": "Mia"
       }
     ]
   },
@@ -154,7 +154,7 @@
       },
       {
         "message_id": "syn-rel-zhao-003-m1",
-        "quote": "您可以让她先看看"
+        "quote": "您随时跟我说"
       },
       {
         "message_id": "syn-rel-zhao-003-m2",
@@ -169,29 +169,44 @@
   "facts": [
     {
       "id": "f1",
-      "text": "Mia 在赵总团队工作过三年，说那是她成长最快的一段时间。",
+      "text": "赵立群是Mia的前领导，Mia在他团队里工作过三年",
       "status": "learned",
       "evidence": [
         {
           "message_id": "syn-rel-zhao-001-m1",
-          "quote": "在您团队的那三年是我成长最快的一段时间"
+          "quote": "在您团队的那三年"
         }
       ]
     },
     {
       "id": "f2",
-      "text": "赵总带团队做了第一版推荐系统，他教的很多做事方法 Mia 现在还在用。",
+      "text": "他带团队做过第一版推荐系统，Mia现在还在用当时学到的做事方法",
       "status": "learned",
       "evidence": [
         {
           "message_id": "syn-rel-zhao-001-m1",
           "quote": "您带我们做第一版推荐系统的时候"
+        },
+        {
+          "message_id": "syn-rel-zhao-001-m1",
+          "quote": "很多做事方法我到现在都还在用"
         }
       ]
     },
     {
       "id": "f3",
-      "text": "赵总以前在上海常去吃早茶。他来湾区时，Mia 提议在 Palo Alto 请他吃粤菜。",
+      "text": "Mia会在春节前给他和家人拜年（2025年1月）",
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "syn-rel-zhao-001-m1",
+          "quote": "给您和家人拜个早年"
+        }
+      ]
+    },
+    {
+      "id": "f4",
+      "text": "他以前在上海时常去吃早茶，Mia因此推荐了Palo Alto的一家粤菜馆",
       "status": "learned",
       "evidence": [
         {
@@ -200,15 +215,19 @@
         },
         {
           "message_id": "syn-rel-zhao-002-m1",
-          "quote": "Palo Alto 有一家粤菜"
+          "quote": "Palo Alto 有一家粤菜您应该会喜欢"
         }
       ]
     },
     {
-      "id": "f4",
-      "text": "2025 年 9 月赵总来湾区开会，两人约在 9 月 12 日左右见了面。",
+      "id": "f5",
+      "text": "2025年9月他来湾区开会，两人在9月12日左右见了面，Mia提出请他吃饭",
       "status": "learned",
       "evidence": [
+        {
+          "message_id": "syn-rel-zhao-002-m1",
+          "quote": "我请您吃饭"
+        },
         {
           "message_id": "syn-rel-zhao-002-m2",
           "quote": "谢谢您昨天抽时间见面"
@@ -216,8 +235,8 @@
       ]
     },
     {
-      "id": "f5",
-      "text": "见面时赵总给了 Mia 一条建议：小团队先把一个场景做透。",
+      "id": "f6",
+      "text": "他给Mia的建议是“小团队先把一个场景做透”，Mia很重视这条建议",
       "status": "learned",
       "evidence": [
         {
@@ -227,19 +246,23 @@
       ]
     },
     {
-      "id": "f6",
-      "text": "雨桐 2026 年暑假来湾区参加夏令营，Mia 帮忙找了报名信息。",
+      "id": "f7",
+      "text": "雨桐是他的家人，2026年暑假来湾区参加夏令营；Mia帮忙找了报名信息（一般3月底截止）",
       "status": "learned",
       "evidence": [
         {
           "message_id": "syn-rel-zhao-003-m1",
-          "quote": "雨桐今年暑假想来湾区参加夏令营"
+          "quote": "您上次提到雨桐今年暑假想来湾区参加夏令营"
+        },
+        {
+          "message_id": "syn-rel-zhao-003-m1",
+          "quote": "报名一般 3 月底截止"
         }
       ]
     },
     {
-      "id": "f7",
-      "text": "2026 年 7 月雨桐到了旧金山，Victor 去机场接的她，Mia 家请她吃了饭，周末还带她去 Half Moon Bay 玩。",
+      "id": "f8",
+      "text": "2026年7月雨桐到了旧金山，Victor去机场接她，她住在Mia家",
       "status": "learned",
       "evidence": [
         {
@@ -248,13 +271,24 @@
         },
         {
           "message_id": "syn-rel-zhao-003-m2",
+          "quote": "现在在我们家吃完饭了"
+        }
+      ]
+    },
+    {
+      "id": "f9",
+      "text": "Mia和Victor周末带雨桐去了Half Moon Bay",
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "syn-rel-zhao-003-m2",
           "quote": "周末我们带她去 Half Moon Bay 转转"
         }
       ]
     },
     {
-      "id": "f8",
-      "text": "赵总邀请 Mia 在他公司的 AI 内部分享会上讲半小时，时间是 2026 年 10 月 30 日晚上，线上进行。",
+      "id": "f10",
+      "text": "他邀请Mia在公司内部做一次AI主题的线上分享，时间是2026年10月30日晚上，大约30分钟",
       "status": "learned",
       "evidence": [
         {
@@ -264,8 +298,8 @@
       ]
     },
     {
-      "id": "f9",
-      "text": "分享题目暂定为“怎么让 AI 写出像你自己写的邮件”。",
+      "id": "f11",
+      "text": "分享题目暂定为“怎么让 AI 写出像你自己写的邮件”",
       "status": "learned",
       "evidence": [
         {
@@ -275,8 +309,8 @@
       ]
     },
     {
-      "id": "f10",
-      "text": "Mia 答应在 10 月 25 日前把 PPT 发给赵总的助理。",
+      "id": "f12",
+      "text": "Mia会在2026年10月25日前把PPT发给他的助理",
       "status": "learned",
       "evidence": [
         {
@@ -288,6 +322,36 @@
   ],
   "edges": [
     {
+      "to": "雨桐",
+      "type": "family_member",
+      "evidence": [
+        {
+          "message_id": "syn-rel-zhao-003-m1",
+          "quote": "您上次提到雨桐今年暑假想来湾区参加夏令营"
+        }
+      ]
+    },
+    {
+      "to": "Victor",
+      "type": "hosted_his_family_member",
+      "evidence": [
+        {
+          "message_id": "syn-rel-zhao-003-m2",
+          "quote": "Victor 下午去机场接的她"
+        }
+      ]
+    },
+    {
+      "to": "his assistant",
+      "type": "assistant",
+      "evidence": [
+        {
+          "message_id": "syn-rel-zhao-004-m1",
+          "quote": "发给您的助理"
+        }
+      ]
+    },
+    {
       "to": "Mia",
       "type": "former_manager_of",
       "evidence": [
@@ -296,20 +360,10 @@
           "quote": "在您团队的那三年"
         }
       ]
-    },
-    {
-      "to": "雨桐",
-      "type": "family_or_close_relation",
-      "evidence": [
-        {
-          "message_id": "syn-rel-zhao-003-m1",
-          "quote": "您上次提到雨桐今年暑假想来湾区"
-        }
-      ]
     }
   ],
   "core_connection": {
-    "text": "赵总是 Mia 的前领导。Mia 在他团队工作了三年，跟着他做过第一版推荐系统，离开后一直保持联系，彼此照应。",
+    "text": "赵立群是Mia的前领导。Mia在他团队里工作过三年，跟他做过第一版推荐系统，认为那是自己成长最快的阶段。之后两人一直保持联系，Mia会在生活和工作上帮他的忙。",
     "evidence": [
       {
         "message_id": "syn-rel-zhao-001-m1",
@@ -334,18 +388,20 @@
 
 # 赵立群
 
-赵总是 Mia 的前领导。Mia 在他团队工作了三年，跟着他做过第一版推荐系统，离开后一直保持联系，彼此照应。
+赵立群是Mia的前领导。Mia在他团队里工作过三年，跟他做过第一版推荐系统，认为那是自己成长最快的阶段。之后两人一直保持联系，Mia会在生活和工作上帮他的忙。
 
 - Address (default): 赵总 (6/6 emails)
-- Mia 在赵总团队工作过三年，说那是她成长最快的一段时间。
-- 赵总带团队做了第一版推荐系统，他教的很多做事方法 Mia 现在还在用。
-- 赵总以前在上海常去吃早茶。他来湾区时，Mia 提议在 Palo Alto 请他吃粤菜。
-- 2025 年 9 月赵总来湾区开会，两人约在 9 月 12 日左右见了面。
-- 见面时赵总给了 Mia 一条建议：小团队先把一个场景做透。
-- 雨桐 2026 年暑假来湾区参加夏令营，Mia 帮忙找了报名信息。
-- 2026 年 7 月雨桐到了旧金山，Victor 去机场接的她，Mia 家请她吃了饭，周末还带她去 Half Moon Bay 玩。
-- 赵总邀请 Mia 在他公司的 AI 内部分享会上讲半小时，时间是 2026 年 10 月 30 日晚上，线上进行。
-- 分享题目暂定为“怎么让 AI 写出像你自己写的邮件”。
-- Mia 答应在 10 月 25 日前把 PPT 发给赵总的助理。
+- 赵立群是Mia的前领导，Mia在他团队里工作过三年
+- 他带团队做过第一版推荐系统，Mia现在还在用当时学到的做事方法
+- Mia会在春节前给他和家人拜年（2025年1月）
+- 他以前在上海时常去吃早茶，Mia因此推荐了Palo Alto的一家粤菜馆
+- 2025年9月他来湾区开会，两人在9月12日左右见了面，Mia提出请他吃饭
+- 他给Mia的建议是“小团队先把一个场景做透”，Mia很重视这条建议
+- 雨桐是他的家人，2026年暑假来湾区参加夏令营；Mia帮忙找了报名信息（一般3月底截止）
+- 2026年7月雨桐到了旧金山，Victor去机场接她，她住在Mia家
+- Mia和Victor周末带雨桐去了Half Moon Bay
+- 他邀请Mia在公司内部做一次AI主题的线上分享，时间是2026年10月30日晚上，大约30分钟
+- 分享题目暂定为“怎么让 AI 写出像你自己写的邮件”
+- Mia会在2026年10月25日前把PPT发给他的助理
 
 _Extracted offline by pipeline/extract.py; every entry is backed by verified quotes._

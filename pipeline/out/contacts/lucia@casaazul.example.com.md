@@ -23,7 +23,7 @@
       },
       {
         "message_id": "syn-vendor_service-006-m2",
-        "quote": "Dear Lucia, thank you so much!"
+        "quote": "Dear Lucia,"
       },
       {
         "message_id": "syn-vendor_service-020-m1",
@@ -31,7 +31,7 @@
       },
       {
         "message_id": "syn-vendor_service-020-m2",
-        "quote": "Dear Lucia, thank you so much!"
+        "quote": "Dear Lucia,"
       }
     ]
   },
@@ -57,7 +57,7 @@
         },
         {
           "message_id": "syn-vendor_service-006-m2",
-          "quote": "Dear Lucia, thank you so much!"
+          "quote": "Dear Lucia,"
         },
         {
           "message_id": "syn-vendor_service-020-m1",
@@ -65,7 +65,7 @@
         },
         {
           "message_id": "syn-vendor_service-020-m2",
-          "quote": "Dear Lucia, thank you so much!"
+          "quote": "Dear Lucia,"
         }
       ]
     }
@@ -78,15 +78,15 @@
     "evidence": [
       {
         "message_id": "syn-vendor_service-006-m1",
-        "quote": "Best,"
+        "quote": "Best,\nMia"
       },
       {
         "message_id": "syn-vendor_service-020-m1",
-        "quote": "Best,"
+        "quote": "Best,\nMia"
       },
       {
         "message_id": "syn-vendor_service-005-m2",
-        "quote": "Thank you,"
+        "quote": "Thank you,\nMia"
       }
     ]
   },
@@ -106,7 +106,7 @@
       },
       {
         "message_id": "syn-vendor_service-005-m3",
-        "quote": "heading to Door 4 now"
+        "quote": "hi we landed, heading to Door 4 now"
       },
       {
         "message_id": "syn-vendor_service-006-m1",
@@ -114,7 +114,7 @@
       },
       {
         "message_id": "syn-vendor_service-006-m2",
-        "quote": "I just accepted the special offer"
+        "quote": "Looking forward to being back."
       },
       {
         "message_id": "syn-vendor_service-020-m1",
@@ -126,25 +126,25 @@
       },
       {
         "message_id": "syn-vendor_service-020-m3",
-        "quote": "keys are on the kitchen table"
+        "quote": "done, keys are on the kitchen table"
       }
     ]
   },
   "facts": [
     {
       "id": "f1",
-      "text": "Mia books Casa Azul through Airbnb.",
+      "text": "Lucia is the host of Casa Azul, an apartment Mia books through Airbnb.",
       "status": "learned",
       "evidence": [
         {
           "message_id": "syn-vendor_service-006-m1",
-          "quote": "happy to book through Airbnb as before"
+          "quote": "book through Airbnb as before"
         }
       ]
     },
     {
       "id": "f2",
-      "text": "Mia travels with Victor (2 adults).",
+      "text": "Mia travels there with Victor, as 2 adults.",
       "status": "learned",
       "evidence": [
         {
@@ -155,27 +155,12 @@
     },
     {
       "id": "f3",
-      "text": "First stay was in December 2024; Mia's flight landed at MEX on Dec 12 at 11:20 AM on Aeromexico AM 647.",
+      "text": "Jorge, who is connected to Lucia, drives Mia and Victor from the airport (Terminal 1) and was booked on both trips.",
       "status": "learned",
       "evidence": [
         {
           "message_id": "syn-vendor_service-005-m2",
-          "quote": "Aeromexico AM 647"
-        },
-        {
-          "message_id": "syn-vendor_service-006-m1",
-          "quote": "in December 2024"
-        }
-      ]
-    },
-    {
-      "id": "f4",
-      "text": "Jorge picked them up at MEX Terminal 1 both times.",
-      "status": "learned",
-      "evidence": [
-        {
-          "message_id": "syn-vendor_service-005-m2",
-          "quote": "we would love for Jorge to pick us up"
+          "quote": "we would love for Jorge to pick us up on December 12"
         },
         {
           "message_id": "syn-vendor_service-020-m1",
@@ -184,8 +169,34 @@
       ]
     },
     {
+      "id": "f4",
+      "text": "First stay in December 2024: Mia landed at MEX on Dec 12 at 11:20 AM on Aeromexico AM 647 and asked to drop bags before the 3:00 PM check-in.",
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "syn-vendor_service-005-m2",
+          "quote": "Aeromexico AM 647"
+        },
+        {
+          "message_id": "syn-vendor_service-005-m1",
+          "quote": "drop off our bags before the 3:00 PM check-in"
+        }
+      ]
+    },
+    {
       "id": "f5",
-      "text": "Victor needed a desk and good Wi-Fi for video calls during the stay.",
+      "text": "On the first trip they had two carry-ons and one checked bag.",
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "syn-vendor_service-005-m2",
+          "quote": "two carry-ons and one checked bag"
+        }
+      ]
+    },
+    {
+      "id": "f6",
+      "text": "Victor joins video calls during the stay, so Mia asked about the desk in the second bedroom and the Wi-Fi speed.",
       "status": "learned",
       "evidence": [
         {
@@ -195,8 +206,8 @@
       ]
     },
     {
-      "id": "f6",
-      "text": "Return stay was February 20 to 27, 2026, booked through an Airbnb special offer.",
+      "id": "f7",
+      "text": "Return stay from February 20 to 27, 2026 (7 nights), booked by accepting an Airbnb special offer from Lucia.",
       "status": "learned",
       "evidence": [
         {
@@ -206,21 +217,25 @@
       ]
     },
     {
-      "id": "f7",
-      "text": "Lucia had told Mia about a cooking class in Coyoacan.",
+      "id": "f8",
+      "text": "For the return trip Mia landed at MEX on Feb 20 at 2:05 PM and expected to reach Casa Azul around 3:30 PM.",
       "status": "learned",
       "evidence": [
         {
           "message_id": "syn-vendor_service-020-m1",
-          "quote": "Last time you mentioned a cooking class in Coyoacan."
+          "quote": "We land at MEX on February 20 at 2:05 PM"
         }
       ]
     },
     {
-      "id": "f8",
-      "text": "Mia booked a cooking class for February 24, 2026 at 10:00 AM.",
+      "id": "f9",
+      "text": "Lucia had told Mia about a cooking class in Coyoacan, and Mia booked a class on February 24 at 10:00 AM.",
       "status": "learned",
       "evidence": [
+        {
+          "message_id": "syn-vendor_service-020-m1",
+          "quote": "you mentioned a cooking class in Coyoacan"
+        },
         {
           "message_id": "syn-vendor_service-020-m2",
           "quote": "I booked the class for February 24 at 10:00 AM."
@@ -228,13 +243,24 @@
       ]
     },
     {
-      "id": "f9",
-      "text": "At checkout, keys are left on the kitchen table.",
+      "id": "f10",
+      "text": "At checkout Mia leaves the keys on the kitchen table and lets Lucia know.",
       "status": "learned",
       "evidence": [
         {
           "message_id": "syn-vendor_service-020-m3",
           "quote": "keys are on the kitchen table"
+        }
+      ]
+    },
+    {
+      "id": "f11",
+      "text": "Mia writes polite, numbered emails when planning, and very short casual messages on travel days.",
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "syn-vendor_service-005-m3",
+          "quote": "hi we landed, heading to Door 4 now"
         }
       ]
     }
@@ -246,13 +272,13 @@
       "evidence": [
         {
           "message_id": "syn-vendor_service-005-m2",
-          "quote": "Jorge to pick us up on December 12"
+          "quote": "Jorge to pick us up"
         }
       ]
     },
     {
       "to": "Victor",
-      "type": "host_of",
+      "type": "guest (travels with Mia)",
       "evidence": [
         {
           "message_id": "syn-vendor_service-006-m1",
@@ -262,15 +288,15 @@
     }
   ],
   "core_connection": {
-    "text": "Lucia hosts the Casa Azul apartment in Mexico City. Mia and Victor stayed there in December 2024 and came back in February 2026.",
+    "text": "Lucia hosts the Casa Azul apartment near Mexico City (MEX), booked through Airbnb. Mia and Victor stayed there in December 2024 and came back in February 2026.",
     "evidence": [
       {
         "message_id": "syn-vendor_service-006-m1",
         "quote": "We loved staying at Casa Azul in December 2024"
       },
       {
-        "message_id": "syn-vendor_service-006-m2",
-        "quote": "Looking forward to being back."
+        "message_id": "syn-vendor_service-006-m1",
+        "quote": "book through Airbnb as before"
       }
     ]
   },
@@ -280,17 +306,19 @@
 
 # Lucia
 
-Lucia hosts the Casa Azul apartment in Mexico City. Mia and Victor stayed there in December 2024 and came back in February 2026.
+Lucia hosts the Casa Azul apartment near Mexico City (MEX), booked through Airbnb. Mia and Victor stayed there in December 2024 and came back in February 2026.
 
 - Address (default): Lucia (6/8 emails)
-- Mia books Casa Azul through Airbnb.
-- Mia travels with Victor (2 adults).
-- First stay was in December 2024; Mia's flight landed at MEX on Dec 12 at 11:20 AM on Aeromexico AM 647.
-- Jorge picked them up at MEX Terminal 1 both times.
-- Victor needed a desk and good Wi-Fi for video calls during the stay.
-- Return stay was February 20 to 27, 2026, booked through an Airbnb special offer.
-- Lucia had told Mia about a cooking class in Coyoacan.
-- Mia booked a cooking class for February 24, 2026 at 10:00 AM.
-- At checkout, keys are left on the kitchen table.
+- Lucia is the host of Casa Azul, an apartment Mia books through Airbnb.
+- Mia travels there with Victor, as 2 adults.
+- Jorge, who is connected to Lucia, drives Mia and Victor from the airport (Terminal 1) and was booked on both trips.
+- First stay in December 2024: Mia landed at MEX on Dec 12 at 11:20 AM on Aeromexico AM 647 and asked to drop bags before the 3:00 PM check-in.
+- On the first trip they had two carry-ons and one checked bag.
+- Victor joins video calls during the stay, so Mia asked about the desk in the second bedroom and the Wi-Fi speed.
+- Return stay from February 20 to 27, 2026 (7 nights), booked by accepting an Airbnb special offer from Lucia.
+- For the return trip Mia landed at MEX on Feb 20 at 2:05 PM and expected to reach Casa Azul around 3:30 PM.
+- Lucia had told Mia about a cooking class in Coyoacan, and Mia booked a class on February 24 at 10:00 AM.
+- At checkout Mia leaves the keys on the kitchen table and lets Lucia know.
+- Mia writes polite, numbered emails when planning, and very short casual messages on travel days.
 
 _Extracted offline by pipeline/extract.py; every entry is backed by verified quotes._

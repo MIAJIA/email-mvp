@@ -1,7 +1,7 @@
 ---
 {
   "email": "reservations@nopasf.example.com",
-  "display_name": "Nopa Reservations",
+  "display_name": "Nopa Team (Nopa Reservations)",
   "relationship": "restaurant",
   "address_as": {
     "value": "Nopa Team",
@@ -80,7 +80,7 @@
   ],
   "sign_off": {
     "value": "Best, Mia",
-    "count": 3,
+    "count": 2,
     "total": 8,
     "status": "learned",
     "evidence": [
@@ -91,10 +91,6 @@
       {
         "message_id": "syn-vendor_service-016-m3",
         "quote": "Best,"
-      },
-      {
-        "message_id": "syn-vendor_service-017-m1",
-        "quote": "Thank you,"
       }
     ]
   },
@@ -114,7 +110,7 @@
       },
       {
         "message_id": "syn-vendor_service-023-m3",
-        "quote": "We're confirmed for tomorrow"
+        "quote": "Following up on two things:"
       },
       {
         "message_id": "syn-vendor_service-016-m1",
@@ -141,13 +137,53 @@
   "facts": [
     {
       "id": "f1",
-      "text": "Holiday dinner on Friday, Dec 20, 2024: window table for 6 adults at 7:15 PM, with a card on file.",
+      "text": "This is the reservations team at Nopa, a restaurant where Mia books dinners for groups of friends.",
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "syn-vendor_service-023-m1",
+          "quote": "Hi Nopa Team,"
+        }
+      ]
+    },
+    {
+      "id": "f2",
+      "text": "Mia books under the name Mia Song.",
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "syn-vendor_service-017-m2",
+          "quote": "Full name: Mia Song"
+        }
+      ]
+    },
+    {
+      "id": "f3",
+      "text": "December 2024: Mia booked a holiday dinner for 6 for Friday, December 20. She asked for 7:00 PM and got the window table at 7:15 PM.",
       "status": "learned",
       "evidence": [
         {
           "message_id": "syn-vendor_service-023-m2",
           "quote": "7:15 PM on Friday, December 20 is perfect for 6 adults"
-        },
+        }
+      ]
+    },
+    {
+      "id": "f4",
+      "text": "Mia likes the long table near the window for larger groups.",
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "syn-vendor_service-023-m1",
+          "quote": "Is the long table near the window available?"
+        }
+      ]
+    },
+    {
+      "id": "f5",
+      "text": "Bookings for 6 needed a card on file, and Mia added one.",
+      "status": "learned",
+      "evidence": [
         {
           "message_id": "syn-vendor_service-023-m2",
           "quote": "I've added the card on file"
@@ -155,28 +191,35 @@
       ]
     },
     {
-      "id": "f2",
-      "text": "For the Dec 2024 dinner, Mia asked whether they could bring their own wine and what the corkage fee was, and whether the group could be seated before everyone arrived.",
+      "id": "f6",
+      "text": "For the December dinner, Mia asked whether she could bring her own bottle of wine and what the corkage fee was.",
       "status": "learned",
       "evidence": [
         {
           "message_id": "syn-vendor_service-023-m3",
-          "quote": "what is the corkage fee?"
-        },
-        {
-          "message_id": "syn-vendor_service-023-m3",
-          "quote": "Is it fine to be seated before everyone is there?"
+          "quote": "Could we bring one bottle of our own"
         }
       ]
     },
     {
-      "id": "f3",
-      "text": "Birthday dinner for a friend on Saturday, June 14, 2025. Mia asked for a table away from the bar and took the 6:45 PM back-room table with a card hold.",
+      "id": "f7",
+      "text": "For the December dinner, Mia asked whether the group could be seated before everyone arrived, because one friend would be late.",
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "syn-vendor_service-023-m3",
+          "quote": "One friend may arrive around 7:30 PM"
+        }
+      ]
+    },
+    {
+      "id": "f8",
+      "text": "June 2025: Mia booked a birthday dinner for a friend on Saturday, June 14. She asked for 7:30 PM and took the 6:45 PM table in the back room.",
       "status": "learned",
       "evidence": [
         {
           "message_id": "syn-vendor_service-016-m1",
-          "quote": "a table away from the bar would be ideal"
+          "quote": "small birthday dinner for a friend"
         },
         {
           "message_id": "syn-vendor_service-016-m2",
@@ -185,8 +228,19 @@
       ]
     },
     {
-      "id": "f4",
-      "text": "For the June 2025 birthday dinner, the party grew from 4 to 5 adults, and Mia asked for a candle on one dessert.",
+      "id": "f9",
+      "text": "Mia prefers a table away from the bar for intimate dinners.",
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "syn-vendor_service-016-m1",
+          "quote": "a table away from the bar would be ideal"
+        }
+      ]
+    },
+    {
+      "id": "f10",
+      "text": "The June 14 party grew from 4 to 5 adults, and Mia asked the kitchen to put a candle on one dessert.",
       "status": "learned",
       "evidence": [
         {
@@ -200,39 +254,57 @@
       ]
     },
     {
-      "id": "f5",
-      "text": "Group dinner booked for 8 adults on Friday, Sept 25 (2026) at 7:00 PM, with the family-style menu.",
+      "id": "f11",
+      "text": "Saturday bookings needed a card hold, and Mia added it through the link.",
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "syn-vendor_service-016-m2",
+          "quote": "I've added the card hold through the link"
+        }
+      ]
+    },
+    {
+      "id": "f12",
+      "text": "September 2026: Mia booked a group dinner for 8 adults on Friday, September 25 at 7:00 PM, with the family-style menu.",
       "status": "learned",
       "evidence": [
         {
           "message_id": "syn-vendor_service-017-m2",
           "quote": "Please go ahead and book the family-style menu."
-        },
-        {
-          "message_id": "syn-vendor_service-017-m2",
-          "quote": "Date and time: Friday, September 25 at 7:00 PM"
         }
       ]
     },
     {
-      "id": "f6",
-      "text": "The Sept 2026 reservation is under the name Mia Song, and Mia said they would pay the deposit through the link.",
+      "id": "f13",
+      "text": "Before confirming the group of 8, Mia asked about the set menu price, the deposit and the cancellation window. She said she would pay the deposit through the link that day.",
       "status": "learned",
       "evidence": [
         {
-          "message_id": "syn-vendor_service-017-m2",
-          "quote": "Full name: Mia Song"
+          "message_id": "syn-vendor_service-017-m1",
+          "quote": "what is the cancellation window?"
         },
         {
           "message_id": "syn-vendor_service-017-m2",
           "quote": "I'll complete the deposit through the link today."
         }
       ]
+    },
+    {
+      "id": "f14",
+      "text": "Mia's follow-up emails usually list numbered questions, such as wine, arrival, party size and dessert.",
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "syn-vendor_service-016-m3",
+          "quote": "1. Party size:"
+        }
+      ]
     }
   ],
   "edges": [],
   "core_connection": {
-    "text": "Nopa is a restaurant Mia books for group dinners with friends, such as a holiday dinner, a birthday dinner and an 8-person family-style dinner.",
+    "text": "Nopa is a restaurant Mia returns to for group dinners with friends. She emails its reservations team to book tables and make special requests.",
     "evidence": [
       {
         "message_id": "syn-vendor_service-023-m1",
@@ -240,7 +312,7 @@
       },
       {
         "message_id": "syn-vendor_service-016-m1",
-        "quote": "It's a small birthday dinner for a friend"
+        "quote": "small birthday dinner for a friend"
       },
       {
         "message_id": "syn-vendor_service-017-m1",
@@ -252,16 +324,24 @@
 }
 ---
 
-# Nopa Reservations
+# Nopa Team (Nopa Reservations)
 
-Nopa is a restaurant Mia books for group dinners with friends, such as a holiday dinner, a birthday dinner and an 8-person family-style dinner.
+Nopa is a restaurant Mia returns to for group dinners with friends. She emails its reservations team to book tables and make special requests.
 
 - Address (default): Nopa Team (7/8 emails)
-- Holiday dinner on Friday, Dec 20, 2024: window table for 6 adults at 7:15 PM, with a card on file.
-- For the Dec 2024 dinner, Mia asked whether they could bring their own wine and what the corkage fee was, and whether the group could be seated before everyone arrived.
-- Birthday dinner for a friend on Saturday, June 14, 2025. Mia asked for a table away from the bar and took the 6:45 PM back-room table with a card hold.
-- For the June 2025 birthday dinner, the party grew from 4 to 5 adults, and Mia asked for a candle on one dessert.
-- Group dinner booked for 8 adults on Friday, Sept 25 (2026) at 7:00 PM, with the family-style menu.
-- The Sept 2026 reservation is under the name Mia Song, and Mia said they would pay the deposit through the link.
+- This is the reservations team at Nopa, a restaurant where Mia books dinners for groups of friends.
+- Mia books under the name Mia Song.
+- December 2024: Mia booked a holiday dinner for 6 for Friday, December 20. She asked for 7:00 PM and got the window table at 7:15 PM.
+- Mia likes the long table near the window for larger groups.
+- Bookings for 6 needed a card on file, and Mia added one.
+- For the December dinner, Mia asked whether she could bring her own bottle of wine and what the corkage fee was.
+- For the December dinner, Mia asked whether the group could be seated before everyone arrived, because one friend would be late.
+- June 2025: Mia booked a birthday dinner for a friend on Saturday, June 14. She asked for 7:30 PM and took the 6:45 PM table in the back room.
+- Mia prefers a table away from the bar for intimate dinners.
+- The June 14 party grew from 4 to 5 adults, and Mia asked the kitchen to put a candle on one dessert.
+- Saturday bookings needed a card hold, and Mia added it through the link.
+- September 2026: Mia booked a group dinner for 8 adults on Friday, September 25 at 7:00 PM, with the family-style menu.
+- Before confirming the group of 8, Mia asked about the set menu price, the deposit and the cancellation window. She said she would pay the deposit through the link that day.
+- Mia's follow-up emails usually list numbered questions, such as wine, arrival, party size and dessert.
 
 _Extracted offline by pipeline/extract.py; every entry is backed by verified quotes._
