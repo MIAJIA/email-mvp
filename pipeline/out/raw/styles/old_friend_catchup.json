@@ -1,0 +1,335 @@
+{
+  "scenario": "old_friend_catchup",
+  "message_ids": [
+    "1978b9a014deb894",
+    "199649c298edd6b1",
+    "1996ed3c44a67da4",
+    "19970d5ea390b4b4",
+    "syn-old_friend_catchup-001-m1",
+    "syn-old_friend_catchup-001-m3",
+    "syn-old_friend_catchup-002-m2",
+    "syn-old_friend_catchup-002-m3",
+    "syn-old_friend_catchup-003-m2",
+    "syn-old_friend_catchup-003-m4",
+    "syn-old_friend_catchup-004-m2",
+    "syn-old_friend_catchup-005-m1",
+    "syn-old_friend_catchup-005-m3",
+    "syn-old_friend_catchup-005-m4",
+    "syn-old_friend_catchup-006-m2",
+    "syn-old_friend_catchup-007-m1",
+    "syn-old_friend_catchup-007-m3",
+    "syn-old_friend_catchup-008-m2",
+    "syn-old_friend_catchup-009-m1",
+    "syn-old_friend_catchup-009-m2",
+    "syn-old_friend_catchup-010-m2",
+    "syn-old_friend_catchup-011-m1",
+    "syn-old_friend_catchup-011-m3",
+    "syn-old_friend_catchup-012-m1",
+    "syn-old_friend_catchup-012-m3",
+    "syn-old_friend_catchup-013-m1",
+    "syn-old_friend_catchup-013-m3",
+    "syn-old_friend_catchup-014-m2",
+    "syn-old_friend_catchup-015-m1",
+    "syn-old_friend_catchup-015-m3"
+  ],
+  "extraction": {
+    "habits": [
+      {
+        "id": "casual_first_name_greeting",
+        "description": "Longer emails open with a casual 'Hi <Name>,' or 'Hey <Name>,' on its own line. Very short replies skip the greeting.",
+        "evidence": [
+          {
+            "message_id": "1978b9a014deb894",
+            "quote": "Hi Julien,"
+          },
+          {
+            "message_id": "199649c298edd6b1",
+            "quote": "Hey Julien,"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-001-m1",
+            "quote": "Hi Julien,"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-003-m2",
+            "quote": "Hi Hannah,"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-004-m2",
+            "quote": "Hey Diego,"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-005-m1",
+            "quote": "Hi Hannah,"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-006-m2",
+            "quote": "Hi Diego,"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-007-m1",
+            "quote": "Hey Hannah,"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-009-m1",
+            "quote": "Hey Diego,"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-012-m1",
+            "quote": "Hey Julien,"
+          }
+        ]
+      },
+      {
+        "id": "warm_check_in_then_question",
+        "description": "Opens with a warm check-in such as 'Hope you've been doing great!' or 'How have you been?', then asks a specific question about the friend's life.",
+        "evidence": [
+          {
+            "message_id": "1978b9a014deb894",
+            "quote": "Hope you’ve been doing great!"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-001-m1",
+            "quote": "Hope you’ve been doing great!"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-005-m1",
+            "quote": "Hope you’ve been doing well!"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-007-m1",
+            "quote": "how have you been?"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-011-m1",
+            "quote": "Hope you’ve been well!"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-012-m1",
+            "quote": "How have you been?"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-013-m1",
+            "quote": "Hope you’re celebrating properly"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-015-m1",
+            "quote": "How have you been?"
+          }
+        ]
+      },
+      {
+        "id": "big_update_on_my_end",
+        "description": "The second paragraph shares her own news and starts with the fixed phrase 'Big update on my end:'.",
+        "evidence": [
+          {
+            "message_id": "1978b9a014deb894",
+            "quote": "Big update on my end:"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-001-m1",
+            "quote": "Big update on my end:"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-005-m1",
+            "quote": "Big update on my end:"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-007-m1",
+            "quote": "Big update on my end:"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-009-m1",
+            "quote": "Big update on my end:"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-011-m1",
+            "quote": "Big update on my end:"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-013-m1",
+            "quote": "Big update on my end:"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-015-m1",
+            "quote": "Big update on my end:"
+          }
+        ]
+      },
+      {
+        "id": "in_the_most_kind_of_way",
+        "description": "The life update ends with a self-deprecating line in the pattern 'in the most <adj>, <adj>, <adj> kind of way 😅'.",
+        "evidence": [
+          {
+            "message_id": "1978b9a014deb894",
+            "quote": "the most amazing, exhausting"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-001-m1",
+            "quote": "in the most chaotic, sunburnt"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-005-m1",
+            "quote": "in the most wonderful, sleepless"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-007-m1",
+            "quote": "in the most sweaty, jet-lagged"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-009-m1",
+            "quote": "in the most jet-lagged,"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-011-m1",
+            "quote": "in the most over-planned"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-013-m1",
+            "quote": "proud of them — in the most"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-015-m1",
+            "quote": "in the most adorable,"
+          }
+        ]
+      },
+      {
+        "id": "closing_invite_to_connect",
+        "description": "Ends the main body with a soft invitation to call or meet, often 'I would love to connect ... if you're free' or 'Any chance you're free ...?'.",
+        "evidence": [
+          {
+            "message_id": "1978b9a014deb894",
+            "quote": "Would love to catch up sometime if you’re free"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-001-m1",
+            "quote": "I would love to connect over a call"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-005-m1",
+            "quote": "I would love to connect on a call sometime soon"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-007-m1",
+            "quote": "Any chance you’re free to meet offline"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-009-m1",
+            "quote": "Hope we can catch up in the new year!"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-011-m1",
+            "quote": "Would you be up to meet offline"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-012-m1",
+            "quote": "I would love to connect in person this"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-013-m1",
+            "quote": "I would love to connect on a call soon"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-015-m1",
+            "quote": "Would love to do a call sometime this month"
+          }
+        ]
+      },
+      {
+        "id": "two_time_options_with_timezones",
+        "description": "When scheduling, offers exactly two concrete time slots joined by 'or', and gives both time zones in parentheses (e.g. 'ET (PT)').",
+        "evidence": [
+          {
+            "message_id": "syn-old_friend_catchup-003-m2",
+            "quote": "Any chance you’re free Saturday Dec 14 morning"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-004-m2",
+            "quote": "Tuesday 7pm ET (4pm PT) or"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-006-m2",
+            "quote": "Saturday 10am ET (7am PT) or Sunday 11am ET"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-008-m2",
+            "quote": "Wednesday 9am KST (Tuesday 4pm PT)"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-009-m2",
+            "quote": "Sunday Jan 11 at 11am ET (8am PT)"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-014-m2",
+            "quote": "Wednesday 7:30pm ET (4:30 PT)"
+          }
+        ]
+      },
+      {
+        "id": "one_line_confirmations",
+        "description": "Confirmation replies are one casual line with no greeting, often lowercase, ending in ':)', '😁' or 'see you/talk to you <day>'.",
+        "evidence": [
+          {
+            "message_id": "1996ed3c44a67da4",
+            "quote": "Sounds great! See you then!"
+          },
+          {
+            "message_id": "19970d5ea390b4b4",
+            "quote": "SG！ Talk to you then:)"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-001-m3",
+            "quote": "Perfect! talk to you Saturday :)"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-005-m3",
+            "quote": "Talk to you Wednesday!"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-007-m3",
+            "quote": "next time is on us :)"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-010-m2",
+            "quote": "Perfect, March 14 it is！"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-011-m3",
+            "quote": "see you Saturday!"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-012-m3",
+            "quote": "Yay, see you on the 16th 😁"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-013-m3",
+            "quote": "SG！ see you Sunday morning"
+          }
+        ]
+      },
+      {
+        "id": "post_meetup_thanks",
+        "description": "After meeting or calling, sends a short note saying how good it was to see them, thanks them for a tip or their time, and suggests meeting again.",
+        "evidence": [
+          {
+            "message_id": "syn-old_friend_catchup-002-m3",
+            "quote": "It was so lovely to see you both!"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-003-m4",
+            "quote": "It was so so good to see you!"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-005-m4",
+            "quote": "Thank you so much for the recipe!"
+          },
+          {
+            "message_id": "1978b9a014deb894",
+            "quote": "Just wanted to say thank"
+          }
+        ]
+      }
+    ]
+  }
+}

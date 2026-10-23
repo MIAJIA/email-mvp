@@ -1,0 +1,282 @@
+{
+  "email": "hannah.kim@example.com",
+  "to_name": "Hannah Kim",
+  "message_ids": [
+    "syn-old_friend_catchup-003-m1",
+    "syn-old_friend_catchup-003-m2",
+    "syn-old_friend_catchup-003-m3",
+    "syn-old_friend_catchup-003-m4",
+    "syn-old_friend_catchup-005-m1",
+    "syn-old_friend_catchup-005-m2",
+    "syn-old_friend_catchup-005-m3",
+    "syn-old_friend_catchup-005-m4",
+    "syn-old_friend_catchup-007-m1",
+    "syn-old_friend_catchup-007-m2",
+    "syn-old_friend_catchup-007-m3",
+    "syn-old_friend_catchup-010-m1",
+    "syn-old_friend_catchup-010-m2",
+    "syn-old_friend_catchup-010-m3",
+    "syn-old_friend_catchup-013-m1",
+    "syn-old_friend_catchup-013-m2",
+    "syn-old_friend_catchup-013-m3"
+  ],
+  "extraction": {
+    "display_name": "Hannah Kim",
+    "relationship": "friend",
+    "core_connection": {
+      "text": "Hannah is an old friend who lives in Singapore. Mia keeps in touch with catch-up emails and calls, and they meet in person whenever one of them visits the other's city.",
+      "evidence": [
+        {
+          "message_id": "syn-old_friend_catchup-003-m1",
+          "quote": "It’s been way too long!"
+        },
+        {
+          "message_id": "syn-old_friend_catchup-013-m1",
+          "quote": "I miss you!"
+        }
+      ]
+    },
+    "address_as": [
+      {
+        "context": "default",
+        "value": "Hannah",
+        "evidence": [
+          {
+            "message_id": "syn-old_friend_catchup-003-m1",
+            "quote": "Hey Hannah,"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-003-m2",
+            "quote": "Hi Hannah,"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-003-m4",
+            "quote": "Hey Hannah"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-005-m1",
+            "quote": "Hi Hannah,"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-005-m2",
+            "quote": "Hey Hannah,"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-005-m4",
+            "quote": "Hi Hannah,"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-007-m1",
+            "quote": "Hey Hannah,"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-007-m2",
+            "quote": "Hi Hannah,"
+          }
+        ]
+      }
+    ],
+    "honorific": {
+      "value": "n/a",
+      "evidence": []
+    },
+    "sign_off": {
+      "value": "Mia",
+      "evidence": [
+        {
+          "message_id": "syn-old_friend_catchup-003-m1",
+          "quote": "Mia"
+        },
+        {
+          "message_id": "syn-old_friend_catchup-003-m2",
+          "quote": "Mia"
+        },
+        {
+          "message_id": "syn-old_friend_catchup-003-m4",
+          "quote": "Mia"
+        },
+        {
+          "message_id": "syn-old_friend_catchup-005-m1",
+          "quote": "Mia"
+        },
+        {
+          "message_id": "syn-old_friend_catchup-005-m2",
+          "quote": "Mia"
+        },
+        {
+          "message_id": "syn-old_friend_catchup-005-m4",
+          "quote": "Mia"
+        },
+        {
+          "message_id": "syn-old_friend_catchup-007-m1",
+          "quote": "Mia"
+        },
+        {
+          "message_id": "syn-old_friend_catchup-007-m2",
+          "quote": "Mia"
+        }
+      ]
+    },
+    "language": {
+      "value": "en",
+      "evidence": [
+        {
+          "message_id": "syn-old_friend_catchup-003-m1",
+          "quote": "Coffee, kaya toast, a"
+        },
+        {
+          "message_id": "syn-old_friend_catchup-003-m2",
+          "quote": "staying near Tiong Bahru"
+        },
+        {
+          "message_id": "syn-old_friend_catchup-005-m1",
+          "quote": "we had a baby boy in March"
+        },
+        {
+          "message_id": "syn-old_friend_catchup-005-m3",
+          "quote": "Talk to you Wednesday!"
+        },
+        {
+          "message_id": "syn-old_friend_catchup-007-m3",
+          "quote": "next time is on us"
+        },
+        {
+          "message_id": "syn-old_friend_catchup-010-m1",
+          "quote": "Yes yes yes!!"
+        },
+        {
+          "message_id": "syn-old_friend_catchup-013-m1",
+          "quote": "Happy birthday!!"
+        },
+        {
+          "message_id": "syn-old_friend_catchup-013-m3",
+          "quote": "see you Sunday morning"
+        }
+      ]
+    },
+    "facts": [
+      {
+        "text": "Hannah lives in Singapore and has gone for early-morning swims at East Coast Park.",
+        "evidence": [
+          {
+            "message_id": "syn-old_friend_catchup-003-m1",
+            "quote": "swims at East Coast Park"
+          }
+        ]
+      },
+      {
+        "text": "They met for breakfast at a kopitiam at Tiong Bahru Market on Saturday, Dec 14, 2024 at 9:30.",
+        "evidence": [
+          {
+            "message_id": "syn-old_friend_catchup-003-m3",
+            "quote": "Saturday 9:30 works for me"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-005-m1",
+            "quote": "our kopitiam breakfast"
+          }
+        ]
+      },
+      {
+        "text": "Hannah recommended Haji Lane, and Mia and Victor loved it.",
+        "evidence": [
+          {
+            "message_id": "syn-old_friend_catchup-003-m4",
+            "quote": "Thanks again for the tip on Haji Lane"
+          }
+        ]
+      },
+      {
+        "text": "Hannah sent Mia a sambal recipe after their call in May 2025.",
+        "evidence": [
+          {
+            "message_id": "syn-old_friend_catchup-005-m4",
+            "quote": "Thank you so much for the recipe!"
+          }
+        ]
+      },
+      {
+        "text": "Mia told Hannah about her baby boy, born in March 2025.",
+        "evidence": [
+          {
+            "message_id": "syn-old_friend_catchup-005-m1",
+            "quote": "we had a baby boy in March"
+          }
+        ]
+      },
+      {
+        "text": "Hannah and Ben moved to a new place in Bukit Timah around 2025.",
+        "evidence": [
+          {
+            "message_id": "syn-old_friend_catchup-007-m1",
+            "quote": "new place in Bukit Timah"
+          }
+        ]
+      },
+      {
+        "text": "They had Sunday brunch in Singapore in September 2025, and Mia said the next one is on her and Victor.",
+        "evidence": [
+          {
+            "message_id": "syn-old_friend_catchup-007-m2",
+            "quote": "This Sunday brunch would be perfect!"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-007-m3",
+            "quote": "next time is on us"
+          }
+        ]
+      },
+      {
+        "text": "Hannah and Ben visited the Bay Area in March 2026. They had lunch with Mia on March 14 and saw her pottery studio. Ben wants a mug.",
+        "evidence": [
+          {
+            "message_id": "syn-old_friend_catchup-010-m2",
+            "quote": "Perfect, March 14 it is"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-010-m3",
+            "quote": "a mug for Ben is already on my list!"
+          }
+        ]
+      },
+      {
+        "text": "Hannah's birthday is around June 27, and Ben takes her to an omakase place to celebrate. Mia is saving her best bowl as a gift for Hannah.",
+        "evidence": [
+          {
+            "message_id": "syn-old_friend_catchup-013-m1",
+            "quote": "that omakase place again this year"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-013-m1",
+            "quote": "I’m saving the best one for you"
+          }
+        ]
+      },
+      {
+        "text": "They usually catch up by video call across time zones, set in SGT and PT. The most recent was a Sunday 9am SGT call in early July 2026.",
+        "evidence": [
+          {
+            "message_id": "syn-old_friend_catchup-013-m2",
+            "quote": "Would 9am SGT on Sunday"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-013-m3",
+            "quote": "see you Sunday morning"
+          }
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "to": "Ben",
+        "type": "partner",
+        "evidence": [
+          {
+            "message_id": "syn-old_friend_catchup-007-m1",
+            "quote": "Did you and Ben finally settle into the"
+          }
+        ]
+      }
+    ]
+  }
+}

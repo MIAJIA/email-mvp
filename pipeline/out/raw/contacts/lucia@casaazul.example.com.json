@@ -1,0 +1,234 @@
+{
+  "email": "lucia@casaazul.example.com",
+  "to_name": "Lucia (Casa Azul)",
+  "message_ids": [
+    "syn-vendor_service-005-m1",
+    "syn-vendor_service-005-m2",
+    "syn-vendor_service-005-m3",
+    "syn-vendor_service-006-m1",
+    "syn-vendor_service-006-m2",
+    "syn-vendor_service-020-m1",
+    "syn-vendor_service-020-m2",
+    "syn-vendor_service-020-m3"
+  ],
+  "extraction": {
+    "display_name": "Lucia",
+    "relationship": "host",
+    "core_connection": {
+      "text": "Lucia hosts the Casa Azul apartment in Mexico City. Mia and Victor stayed there in December 2024 and came back in February 2026.",
+      "evidence": [
+        {
+          "message_id": "syn-vendor_service-006-m1",
+          "quote": "We loved staying at Casa Azul in December 2024"
+        },
+        {
+          "message_id": "syn-vendor_service-006-m2",
+          "quote": "Looking forward to being back."
+        }
+      ]
+    },
+    "address_as": [
+      {
+        "context": "default",
+        "value": "Lucia",
+        "evidence": [
+          {
+            "message_id": "syn-vendor_service-005-m1",
+            "quote": "Dear Lucia,"
+          },
+          {
+            "message_id": "syn-vendor_service-005-m2",
+            "quote": "Dear Lucia,"
+          },
+          {
+            "message_id": "syn-vendor_service-006-m1",
+            "quote": "Dear Lucia,"
+          },
+          {
+            "message_id": "syn-vendor_service-006-m2",
+            "quote": "Dear Lucia, thank you so much!"
+          },
+          {
+            "message_id": "syn-vendor_service-020-m1",
+            "quote": "Dear Lucia,"
+          },
+          {
+            "message_id": "syn-vendor_service-020-m2",
+            "quote": "Dear Lucia, thank you so much!"
+          }
+        ]
+      }
+    ],
+    "honorific": {
+      "value": "n/a",
+      "evidence": []
+    },
+    "sign_off": {
+      "value": "Best, Mia",
+      "evidence": [
+        {
+          "message_id": "syn-vendor_service-006-m1",
+          "quote": "Best,"
+        },
+        {
+          "message_id": "syn-vendor_service-020-m1",
+          "quote": "Best,"
+        },
+        {
+          "message_id": "syn-vendor_service-005-m2",
+          "quote": "Thank you,"
+        }
+      ]
+    },
+    "language": {
+      "value": "en",
+      "evidence": [
+        {
+          "message_id": "syn-vendor_service-005-m1",
+          "quote": "Thank you so much for checking in!"
+        },
+        {
+          "message_id": "syn-vendor_service-005-m2",
+          "quote": "following up on two more things"
+        },
+        {
+          "message_id": "syn-vendor_service-005-m3",
+          "quote": "heading to Door 4 now"
+        },
+        {
+          "message_id": "syn-vendor_service-006-m1",
+          "quote": "are hoping to come back"
+        },
+        {
+          "message_id": "syn-vendor_service-006-m2",
+          "quote": "I just accepted the special offer"
+        },
+        {
+          "message_id": "syn-vendor_service-020-m1",
+          "quote": "We're excited to be back."
+        },
+        {
+          "message_id": "syn-vendor_service-020-m2",
+          "quote": "See you on the 20th."
+        },
+        {
+          "message_id": "syn-vendor_service-020-m3",
+          "quote": "keys are on the kitchen table"
+        }
+      ]
+    },
+    "facts": [
+      {
+        "text": "Mia books Casa Azul through Airbnb.",
+        "evidence": [
+          {
+            "message_id": "syn-vendor_service-006-m1",
+            "quote": "happy to book through Airbnb as before"
+          }
+        ]
+      },
+      {
+        "text": "Mia travels with Victor (2 adults).",
+        "evidence": [
+          {
+            "message_id": "syn-vendor_service-005-m1",
+            "quote": "2 adults: Mia & Victor"
+          }
+        ]
+      },
+      {
+        "text": "First stay was in December 2024; Mia's flight landed at MEX on Dec 12 at 11:20 AM on Aeromexico AM 647.",
+        "evidence": [
+          {
+            "message_id": "syn-vendor_service-005-m2",
+            "quote": "Aeromexico AM 647"
+          },
+          {
+            "message_id": "syn-vendor_service-006-m1",
+            "quote": "in December 2024"
+          }
+        ]
+      },
+      {
+        "text": "Jorge picked them up at MEX Terminal 1 both times.",
+        "evidence": [
+          {
+            "message_id": "syn-vendor_service-005-m2",
+            "quote": "we would love for Jorge to pick us up"
+          },
+          {
+            "message_id": "syn-vendor_service-020-m1",
+            "quote": "Could Jorge pick us up again at Terminal 1?"
+          }
+        ]
+      },
+      {
+        "text": "Victor needed a desk and good Wi-Fi for video calls during the stay.",
+        "evidence": [
+          {
+            "message_id": "syn-vendor_service-005-m2",
+            "quote": "Victor will need to join a few video calls"
+          }
+        ]
+      },
+      {
+        "text": "Return stay was February 20 to 27, 2026, booked through an Airbnb special offer.",
+        "evidence": [
+          {
+            "message_id": "syn-vendor_service-006-m2",
+            "quote": "I just accepted the special offer for February 20 to 27."
+          }
+        ]
+      },
+      {
+        "text": "Lucia had told Mia about a cooking class in Coyoacan.",
+        "evidence": [
+          {
+            "message_id": "syn-vendor_service-020-m1",
+            "quote": "Last time you mentioned a cooking class in Coyoacan."
+          }
+        ]
+      },
+      {
+        "text": "Mia booked a cooking class for February 24, 2026 at 10:00 AM.",
+        "evidence": [
+          {
+            "message_id": "syn-vendor_service-020-m2",
+            "quote": "I booked the class for February 24 at 10:00 AM."
+          }
+        ]
+      },
+      {
+        "text": "At checkout, keys are left on the kitchen table.",
+        "evidence": [
+          {
+            "message_id": "syn-vendor_service-020-m3",
+            "quote": "keys are on the kitchen table"
+          }
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "to": "Jorge",
+        "type": "relative (airport driver)",
+        "evidence": [
+          {
+            "message_id": "syn-vendor_service-005-m2",
+            "quote": "Jorge to pick us up on December 12"
+          }
+        ]
+      },
+      {
+        "to": "Victor",
+        "type": "host_of",
+        "evidence": [
+          {
+            "message_id": "syn-vendor_service-006-m1",
+            "quote": "2 adults: Mia & Victor"
+          }
+        ]
+      }
+    ]
+  }
+}
