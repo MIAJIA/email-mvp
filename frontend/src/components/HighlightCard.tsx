@@ -1,4 +1,4 @@
-import { useLayoutEffect, useRef, useState } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { errorText, getEmail } from "../api";
 import type { Email, Evidence, Highlight } from "../types";
 import type { Mark } from "./DraftBody";
@@ -34,10 +34,11 @@ export function Quote({ ev }: { ev: Evidence }) {
   const [email, setEmail] = useState<Email | null>(null);
   const [err, setErr] = useState<string | null>(null);
   const [shown, setShown] = useState(false);
-  const toggle = () => {
-    setShown((s) => !s);
-    if (!email && ev.message_id) getEmail(ev.message_id).then(setEmail, (e) => setErr(errorText(e)));
-  };
+  // Prefetch when the quote is shown, so "Show email" opens without a visible wait.
+  useEffect(() => {
+    if (ev.message_id) getEmail(ev.message_id).then(setEmail, (e) => setErr(errorText(e)));
+  }, [ev.message_id]);
+  const toggle = () => setShown((s) => !s);
   const body = email?.body ?? "";
   const i = body.indexOf(ev.quote);
   return (
@@ -49,7 +50,7 @@ export function Quote({ ev }: { ev: Evidence }) {
       )}
       {shown && (
         <div className="full">
-          {err ? `Could not load the email: ${err}` : !email ? "Loading…" : i < 0 ? body : (
+          {err ? `Could not load the email: ${err}` : !email ? "Loading the email…" : i < 0 ? body : (
             <>{body.slice(0, i)}<mark>{ev.quote}</mark>{body.slice(i + ev.quote.length)}</>
           )}
         </div>
@@ -72,10 +73,12 @@ export default function HighlightCard(p: Props) {
       const w = Math.min(p.open ? 360 : 280, window.innerWidth - 24);
       const left = Math.min(Math.max(12, r.left - 14), window.innerWidth - w - 12);
       const h = p.open ? (ref.current?.scrollHeight ?? 260) + 160 : 90;
-      const below = r.bottom + 10 + h < window.innerHeight || r.top < h + 20;
+      const spaceBelow = window.innerHeight - r.bottom, spaceAbove = r.top;
+      // Open on the side with room: below if it fits, otherwise whichever side has more space.
+      const below = r.bottom + 10 + h < window.innerHeight || spaceBelow >= spaceAbove;
       setPos(below
-        ? { left, top: r.bottom + 10, transformOrigin: `${Math.max(16, r.left - left + 16)}px top` }
-        : { left, bottom: window.innerHeight - r.top + 10, transformOrigin: `${Math.max(16, r.left - left + 16)}px bottom` });
+        ? { left, top: r.bottom + 10, maxHeight: window.innerHeight - r.bottom - 22, transformOrigin: `${Math.max(16, r.left - left + 16)}px top` }
+        : { left, bottom: window.innerHeight - r.top + 10, maxHeight: r.top - 22, transformOrigin: `${Math.max(16, r.left - left + 16)}px bottom` });
     };
     place();
     const id = requestAnimationFrame(() => setShown(true));
