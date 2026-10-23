@@ -50,15 +50,14 @@ main_checkout() {
 
 __glossary() {
   # Every name in the "Deprecated" column of GLOSSARY.md (backticked, comma-separated) must not appear in any
-  # tracked file. The glossary lives only in the main checkout ($MAIN/GLOSSARY.md, untracked); a fresh clone
-  # falls back to the committed snapshot in docs/coordination/.
+  # tracked file. The glossary lives only in the main checkout ($MAIN/GLOSSARY.md, untracked). Coordination
+  # records are never committed in this project, so a fresh clone has no glossary and skips this check.
   local main glossary terms hits=""
   main=$(main_checkout)
   glossary="$main/GLOSSARY.md"
-  [[ -f "$glossary" ]] || glossary="$ROOT/docs/coordination/GLOSSARY.md"
   if [[ ! -f "$glossary" ]]; then
-    echo "glossary: no GLOSSARY.md in $main or docs/coordination/ — create it at CP0"
-    return 1
+    echo "glossary: no GLOSSARY.md in $main (fresh clone) — skipped"
+    return 0
   fi
   terms=$(python3 -I - "$glossary" <<'PY'
 import re, sys
@@ -81,7 +80,7 @@ PY
   while IFS= read -r t; do
     [[ -z "$t" ]] && continue
     local found
-    found=$(git grep -n -w -F -e "$t" -- . ':!docs/coordination' ':!GLOSSARY.md' || true)
+    found=$(git grep -n -w -F -e "$t" -- . ':!GLOSSARY.md' || true)
     [[ -n "$found" ]] && hits+="deprecated name '$t':"$'\n'"$found"$'\n'
   done <<< "$terms"
   if [[ -n "$hits" ]]; then

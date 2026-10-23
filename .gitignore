@@ -3,12 +3,13 @@
 # Coordination files: one physical copy in the main checkout, never on a branch.
 # Worktrees get only tracked files, so these files physically do not exist in any worktree;
 # every session reads and appends them in $MAIN by absolute path.
-# The Lead exports snapshots to docs/coordination/ at each checkpoint for the history.
+# Snapshots for the history go to $NOTES/snapshots/, outside the repository; coordination records are never pushed.
 /COORDINATION.md
 /DECISIONS.md
 /STATUS.md
 /GLOSSARY.md
 /CONTRACT.md
+/docs/coordination/
 
 # Worktrees, if they are placed inside the repository.
 /.worktrees/
