@@ -335,6 +335,12 @@
       "date": "2026-10-18"
     },
     {
+      "id": "ext-ethan-3",
+      "text": "Ethan 分享了刚出生的女儿 Lily 的第一张照片，写着“睡不够但超级幸福”，说接下来几周的 coaching 时间会更灵活。",
+      "source_label": "Ethan 的 Instagram（mock）",
+      "date": "2026-10-19"
+    },
+    {
       "id": "ext-ethan-2",
       "text": "Ethan 分享了一篇文章：远程工作的父母如何安排每周一次的线下复盘。",
       "source_label": "Ethan 的 LinkedIn 动态（mock）",
