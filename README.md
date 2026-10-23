@@ -1,7 +1,11 @@
 # email-mvp
 
-可解释的个性化邮件生成：按"你和这个收件人的关系"写邮件，每处用到的称呼、事实、风格都有高亮，能追溯到旧邮件原文。
+Explainable personalized email drafting. Drafts are written for the relationship you have with each recipient
+(how you address them, whether you use honorifics, what you both know), with your general style for the
+scenario as a fallback. Every phrase that draws on a contact note, a scenario style or external context is
+highlighted; hovering shows why, and opening it shows the original sentence from your past emails.
 
-协作方式见 swarm-control：共享文件（DECISIONS、STATUS、GLOSSARY、CONTRACT、COORDINATION）只在主检出目录，不进 git；快照在 `docs/coordination/`。
+Coordination follows the swarm-control process: the shared files (DECISIONS, STATUS, GLOSSARY, CONTRACT,
+COORDINATION) live only in the main checkout and are not tracked; snapshots are in `docs/coordination/`.
 
-"Run it" 一节在 CP4 前由 Lead 补上。
+The "Run it" section will be added before CP4.
