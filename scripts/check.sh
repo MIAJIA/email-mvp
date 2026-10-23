@@ -28,6 +28,10 @@ ONLY="${2:-}"
 # name|command  — one per line. Edit these for the project.
 CHECKS=(
   "glossary|scripts/check.sh __glossary"
+  "data-validate|python3 -I data/validate.py"
+  "backend-tests|cd backend && .venv/bin/python -m pytest -q"
+  "frontend-build|cd frontend && npx tsc -b && npx vite build"
+  "fixtures-and-evidence|cd backend && .venv/bin/python -m app.pipeline.make_fixtures --check"
   # Examples from a Python + Vite project, kept commented out until the user approves the skeleton line's
   # proposed list. Replace the commands with the project's own.
   # "backend-tests|.venv/bin/python -m pytest -q"
