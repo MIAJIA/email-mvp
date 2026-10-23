@@ -2,7 +2,7 @@
   "case_key": "233388e74a",
   "endpoint": "POST /draft",
   "contract_revision": "0.3",
-  "recorded_at": "2026-10-23T21:49:35+00:00",
+  "recorded_at": "2026-10-23T21:52:33+00:00",
   "request": {
     "mode": "compose",
     "to": "reservations@hoshinoya-kyoto.example.com",
@@ -10,45 +10,45 @@
     "inject": null
   },
   "response": {
-    "draft_id": "c7d4471d2dbb",
+    "draft_id": "a70c67755592",
     "to": "reservations@hoshinoya-kyoto.example.com",
     "scenario": "vendor_service",
-    "subject": "Return stay November 20–22 (2 adults): evening boat, tea gathering, and dinner note",
+    "subject": "Return stay November 20–22, autumn boat and tea gathering",
     "segments": [
       {
         "text": "Dear Kenji,",
         "highlight_id": "h1"
       },
       {
-        "text": "\n\nMia and Victor would love to stay at HOSHINOYA Kyoto again this autumn. ",
+        "text": "\n\nWe loved our time at HOSHINOYA Kyoto and would like to come back. Could you please check availability for the following?\n\n1. Stay: ",
         "highlight_id": null
       },
       {
-        "text": "We are hoping to come Friday, November 20 to Sunday, November 22 (2 adults: Mia & Victor).",
+        "text": "Friday, November 20 to Sunday, November 22 (2 nights, 2 adults: Mia & Victor)",
         "highlight_id": "h2"
       },
       {
-        "text": "\n\nWe're following up on three things:\n\n1. Evening boat: ",
+        "text": ".\n2. Evening boat: ",
         "highlight_id": null
       },
       {
-        "text": "We saw that a special 6:30 PM autumn leaves evening boat runs every night from November 10 to December 5. Could we reserve it for one of the evenings during our stay?",
+        "text": "We saw that there is an extra 6:30 PM autumn leaves evening boat during the momiji season, and we would love to reserve it for two",
         "highlight_id": "h3"
       },
       {
-        "text": "\n2. Tea gathering: ",
+        "text": ", preferably on Friday, November 20, or on Saturday, November 21 if Friday is full.\n3. Tea gathering: ",
         "highlight_id": null
       },
       {
-        "text": "We'd also love to join the autumn leaves tea gathering in the Shoin on Saturday, November 21 at 3:00 PM, if there is still space for two of the 8 guests.",
+        "text": "We would also like to join the autumn leaves tea gathering at 3:00 PM on Saturday, November 21, if there are still two of the eight guest places available.",
         "highlight_id": "h4"
       },
       {
-        "text": "\n3. Dinner: ",
+        "text": "\n4. Dinner: ",
         "highlight_id": null
       },
       {
-        "text": "As before, Victor prefers not to have raw shellfish, so please keep that in mind for our dinners.",
+        "text": "As before, please note that Victor prefers not to have raw shellfish.",
         "highlight_id": "h5"
       },
       {
@@ -56,7 +56,7 @@
         "highlight_id": null
       },
       {
-        "text": "Could you let us know room availability and rates for those dates, and whether the boat and tea gathering can be booked now?",
+        "text": "Could you let us know the room rate, whether the boat and tea gathering can be confirmed, and the next step to complete the booking?",
         "highlight_id": "h6"
       },
       {
@@ -136,7 +136,7 @@
           "kind": "external",
           "id": "ext-hoshinoya-1"
         },
-        "strength": "strong",
+        "strength": "weak",
         "label": "Recent context: Hoshinoya Kyoto 官网活动页（mock）",
         "rationale": "Mock Hoshinoya Kyoto 官网活动页（mock） item from 2026-10-01, not from your emails.",
         "count": null,
@@ -156,7 +156,7 @@
           "kind": "external",
           "id": "ext-hoshinoya-2"
         },
-        "strength": "strong",
+        "strength": "weak",
         "label": "Recent context: Hoshinoya Kyoto 官网活动页（mock）",
         "rationale": "Mock Hoshinoya Kyoto 官网活动页（mock） item from 2026-10-05, not from your emails.",
         "count": null,
@@ -180,7 +180,7 @@
         "label": "What you know: Dietary note: Victor prefers not to have raw shellfish.",
         "rationale": "From 1 of your emails with HOSHINOYA Kyoto (Kenji, Guest Relations).",
         "count": 1,
-        "total": null,
+        "total": 8,
         "evidence": [
           {
             "message_id": "syn-vendor_service-003-m2",

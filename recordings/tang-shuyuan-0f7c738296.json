@@ -2,7 +2,7 @@
   "case_key": "0f7c738296",
   "endpoint": "POST /draft",
   "contract_revision": "0.3",
-  "recorded_at": "2026-10-23T21:45:28+00:00",
+  "recorded_at": "2026-10-23T21:52:19+00:00",
   "request": {
     "mode": "compose",
     "to": "tang.shuyuan@example.com",
@@ -10,7 +10,7 @@
     "inject": null
   },
   "response": {
-    "draft_id": "83ff49b027bc",
+    "draft_id": "6583bf56611d",
     "to": "tang.shuyuan@example.com",
     "scenario": "zh_en_casual",
     "subject": "诚邀您在 12 月 6 日校友年会上致辞",
@@ -20,7 +20,7 @@
         "highlight_id": "h1"
       },
       {
-        "text": "：\n\n您好！谨代表校友会组委会，诚挚邀请",
+        "text": "：\n\n您好！\n\n我代表校友会组委会，正式邀请",
         "highlight_id": null
       },
       {
@@ -28,23 +28,23 @@
         "highlight_id": "h2"
       },
       {
-        "text": "在 12 月 6 日的校友年会上做一段约 10 分钟的致辞。\n\n",
+        "text": "在 12 月 6 日的校友年会上做一个约 10 分钟的致辞。\n\n",
         "highlight_id": null
       },
       {
-        "text": "今年 9 月 26 日的华人文化节，您作为组委会成员付出了很多心力",
+        "text": "您在 9 月 26 日华人文化节的组委会工作中付出了很多，活动办得非常成功",
         "highlight_id": "h3"
       },
       {
-        "text": "，",
+        "text": "，大家都很希望在年会上听您分享。",
         "highlight_id": null
       },
       {
-        "text": "您之后在朋友圈里感谢志愿者，还提到明年想加一个儿童书法角",
+        "text": "也看到您提到明年想加一个儿童书法角",
         "highlight_id": "h4"
       },
       {
-        "text": "，大家都很受鼓舞。组委会一致希望由",
+        "text": "，如果方便，致辞时也可以和校友们聊聊这些想法。\n\n麻烦",
         "highlight_id": null
       },
       {
@@ -52,28 +52,12 @@
         "highlight_id": "h5"
       },
       {
-        "text": "来和校友们分享一些想法，内容和主题都可以由",
+        "text": "在下周五前回复是否方便。如需了解具体流程和时间安排，我随时可以补充。\n\n",
         "highlight_id": null
       },
       {
-        "text": "您",
+        "text": "此致\n敬礼\nMia Song",
         "highlight_id": "h6"
-      },
-      {
-        "text": "来定。\n\n麻烦",
-        "highlight_id": null
-      },
-      {
-        "text": "您",
-        "highlight_id": "h7"
-      },
-      {
-        "text": "在下周五（10 月 30 日）前回复是否方便。如有需要，我们可以提前沟通流程和时间安排。\n\n",
-        "highlight_id": null
-      },
-      {
-        "text": "此致\n敬礼\n\nMia Song",
-        "highlight_id": "h8"
       }
     ],
     "highlights": [
@@ -138,7 +122,7 @@
         "label": "What you know: 唐书远 was on the organizing committee for the 华人文化节 held on September 26, 2026. Mia ran the check-in desk from 9:00 to 12:00, and Victor handled stage sound all day.",
         "rationale": "From 1 of your emails with 唐书远.",
         "count": 1,
-        "total": null,
+        "total": 7,
         "evidence": [
           {
             "message_id": "syn-rel-tang-004-m1",
@@ -164,7 +148,7 @@
           "kind": "external",
           "id": "ext-tang-1"
         },
-        "strength": "strong",
+        "strength": "weak",
         "label": "Recent context: 唐书远的朋友圈（mock）",
         "rationale": "Mock 唐书远的朋友圈（mock） item from 2026-09-27, not from your emails.",
         "count": null,
@@ -204,56 +188,6 @@
       },
       {
         "id": "h6",
-        "layer": "person",
-        "ref": {
-          "kind": "honorific",
-          "id": "honorific"
-        },
-        "strength": "weak",
-        "label": "Formal \"您 (formal only)\"",
-        "rationale": "You used \"您 (formal only)\" with 唐书远 in 2 of 7 emails.",
-        "count": 2,
-        "total": 7,
-        "evidence": [
-          {
-            "message_id": "syn-rel-tang-004-m1",
-            "external_id": null,
-            "quote": "感谢您和组委会的信任"
-          },
-          {
-            "message_id": "syn-rel-tang-005-m1",
-            "external_id": null,
-            "quote": "请您审阅"
-          }
-        ]
-      },
-      {
-        "id": "h7",
-        "layer": "person",
-        "ref": {
-          "kind": "honorific",
-          "id": "honorific"
-        },
-        "strength": "weak",
-        "label": "Formal \"您 (formal only)\"",
-        "rationale": "You used \"您 (formal only)\" with 唐书远 in 2 of 7 emails.",
-        "count": 2,
-        "total": 7,
-        "evidence": [
-          {
-            "message_id": "syn-rel-tang-004-m1",
-            "external_id": null,
-            "quote": "感谢您和组委会的信任"
-          },
-          {
-            "message_id": "syn-rel-tang-005-m1",
-            "external_id": null,
-            "quote": "请您审阅"
-          }
-        ]
-      },
-      {
-        "id": "h8",
         "layer": "person",
         "ref": {
           "kind": "sign_off",

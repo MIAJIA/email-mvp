@@ -1,39 +1,39 @@
 {
-  "draft_id": "893ae1a88160",
+  "draft_id": "e3d15bb7f134",
   "to": "ethan.park@example.com",
   "scenario": "friend_scheduling",
-  "subject": "Coffee Friday afternoon?",
+  "subject": "Coffee Friday afternoon? (and congrats!)",
   "segments": [
     {
-      "text": "Hi",
+      "text": "Hi Ethan,",
       "highlight_id": "h1"
+    },
+    {
+      "text": "\n\n",
+      "highlight_id": null
+    },
+    {
+      "text": "Congratulations on the arrival of Lily! I saw her first photo and she's adorable. I hope you're getting at least a little sleep",
+      "highlight_id": "h2"
+    },
+    {
+      "text": ":)",
+      "highlight_id": "h3"
+    },
+    {
+      "text": "\n\n",
+      "highlight_id": null
+    },
+    {
+      "text": "Would you be up for meeting in person for coffee this Friday afternoon? Red Rock works for me if that's easy for you.",
+      "highlight_id": "h4"
     },
     {
       "text": " ",
       "highlight_id": null
     },
     {
-      "text": "Ethan",
-      "highlight_id": "h2"
-    },
-    {
-      "text": ",\n\n",
-      "highlight_id": null
-    },
-    {
-      "text": "Congratulations on baby Lily! The first photo is so sweet. I hope you're getting at least a little sleep",
-      "highlight_id": "h3"
-    },
-    {
-      "text": ":)",
-      "highlight_id": "h4"
-    },
-    {
-      "text": "\n\nWould you be up for coffee this Friday afternoon? ",
-      "highlight_id": null
-    },
-    {
-      "text": "Could we meet in person instead of on Zoom? Red Rock works great for me.",
+      "text": "I'm free any time after 2pm.",
       "highlight_id": "h5"
     },
     {
@@ -41,24 +41,16 @@
       "highlight_id": null
     },
     {
-      "text": "I'm free any time after 2pm on Friday.",
+      "text": "Totally understand if things are too hectic with the baby right now, and we can always find another time.",
       "highlight_id": "h6"
     },
     {
-      "text": " ",
+      "text": "\n\n",
       "highlight_id": null
     },
     {
-      "text": "No worries at all if this week is too much with the new baby. We can always find another time.",
+      "text": "Also, I saw you're starting a Saturday morning walking group at Las Palmas Park in November. Are you still taking people? I'd love to join if there's room.",
       "highlight_id": "h7"
-    },
-    {
-      "text": "\n\nAlso, ",
-      "highlight_id": null
-    },
-    {
-      "text": "I saw you're starting a Saturday morning walking group at Las Palmas Park. Are you still taking people? I'd love to join.",
-      "highlight_id": "h8"
     },
     {
       "text": "\n\n",
@@ -66,7 +58,7 @@
     },
     {
       "text": "Let me know what works for you!",
-      "highlight_id": "h9"
+      "highlight_id": "h8"
     },
     {
       "text": "\n\n",
@@ -74,7 +66,7 @@
     },
     {
       "text": "Best,\nMia",
-      "highlight_id": "h10"
+      "highlight_id": "h9"
     }
   ],
   "highlights": [
@@ -110,42 +102,12 @@
     },
     {
       "id": "h2",
-      "layer": "person",
-      "ref": {
-        "kind": "address_as",
-        "id": "address_as"
-      },
-      "strength": "weak",
-      "label": "Greeting: \"Ethan\"",
-      "rationale": "You addressed Ethan Park as \"Ethan\" in 8 of 40 emails.",
-      "count": 8,
-      "total": 40,
-      "evidence": [
-        {
-          "message_id": "198af30eb0ec850f",
-          "external_id": null,
-          "quote": "Hi Ethan,"
-        },
-        {
-          "message_id": "1993c3d03213c65c",
-          "external_id": null,
-          "quote": "Hi Ethan,"
-        },
-        {
-          "message_id": "syn-friend_scheduling-009-m1",
-          "external_id": null,
-          "quote": "Hey Ethan,"
-        }
-      ]
-    },
-    {
-      "id": "h3",
       "layer": "external",
       "ref": {
         "kind": "external",
         "id": "ext-ethan-3"
       },
-      "strength": "strong",
+      "strength": "weak",
       "label": "Recent context: Ethan 的 Instagram（mock）",
       "rationale": "Mock Ethan 的 Instagram（mock） item from 2026-10-19, not from your emails.",
       "count": null,
@@ -159,7 +121,7 @@
       ]
     },
     {
-      "id": "h4",
+      "id": "h3",
       "layer": "scenario",
       "ref": {
         "kind": "habit",
@@ -189,7 +151,7 @@
       ]
     },
     {
-      "id": "h5",
+      "id": "h4",
       "layer": "scenario",
       "ref": {
         "kind": "habit",
@@ -219,7 +181,7 @@
       ]
     },
     {
-      "id": "h6",
+      "id": "h5",
       "layer": "scenario",
       "ref": {
         "kind": "habit",
@@ -249,7 +211,7 @@
       ]
     },
     {
-      "id": "h7",
+      "id": "h6",
       "layer": "scenario",
       "ref": {
         "kind": "habit",
@@ -279,13 +241,13 @@
       ]
     },
     {
-      "id": "h8",
+      "id": "h7",
       "layer": "external",
       "ref": {
         "kind": "external",
         "id": "ext-ethan-1"
       },
-      "strength": "strong",
+      "strength": "weak",
       "label": "Recent context: Ethan 的 X 动态（mock）",
       "rationale": "Mock Ethan 的 X 动态（mock） item from 2026-10-18, not from your emails.",
       "count": null,
@@ -299,7 +261,7 @@
       ]
     },
     {
-      "id": "h9",
+      "id": "h8",
       "layer": "scenario",
       "ref": {
         "kind": "habit",
@@ -329,7 +291,7 @@
       ]
     },
     {
-      "id": "h10",
+      "id": "h9",
       "layer": "person",
       "ref": {
         "kind": "sign_off",
