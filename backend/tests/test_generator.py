@@ -17,6 +17,8 @@ def test_strength_rule():
     assert strength_of(3, 20, "learned") == "weak"
     assert strength_of(1, 10, "confirmed") == "strong"
     assert strength_of(None, None, "learned") == "weak"  # external context has no count
+    assert strength_of(2, None, "learned") == "weak"     # fact (no total) with 2 emails
+    assert strength_of(3, None, "learned") == "strong"   # fact (no total) with 3 emails
 
 
 def test_parse_builds_highlights_from_note_not_model():
@@ -88,8 +90,8 @@ def test_fact_with_two_emails_and_external_context_are_weak():
     n.facts = [Fact(id="red_rock", text="usual cafe", evidence=[Evidence(message_id="a", quote="x"), Evidence(message_id="b", quote="y")]),
                Fact(id="three", text="t", evidence=[Evidence(message_id=m, quote="q") for m in "cde"])]
     ext = [ExternalItem(id="ext-1", text="new baby", source_label="Instagram (mock)", date="2026-10-19")]
-    cat = build_catalog(n, None, ext, n_emails=6)
+    cat = build_catalog(n, None, ext)
     assert cat["fact:red_rock"].highlight("h1").strength == "weak"
-    assert cat["fact:three"].highlight("h2").strength == "strong"   # 3 of 6 emails
+    assert cat["fact:three"].highlight("h2").strength == "strong"   # 3 emails, no total
     h = cat["external:ext-1"].highlight("h3")
     assert h.strength == "weak" and h.layer == "external"

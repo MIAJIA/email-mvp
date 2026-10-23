@@ -1,15 +1,15 @@
 {
-  "draft_id": "a70c67755592",
+  "draft_id": "98a7b3f251fb",
   "to": "reservations@hoshinoya-kyoto.example.com",
   "scenario": "vendor_service",
-  "subject": "Return stay November 20–22, autumn boat and tea gathering",
+  "subject": "Booking request: November 20–22 (2 adults)",
   "segments": [
     {
       "text": "Dear Kenji,",
       "highlight_id": "h1"
     },
     {
-      "text": "\n\nWe loved our time at HOSHINOYA Kyoto and would like to come back. Could you please check availability for the following?\n\n1. Stay: ",
+      "text": "\n\nWe loved our stays with you and would like to come back to HOSHINOYA Kyoto again. Could you please check availability for the following:\n\n1. Stay: ",
       "highlight_id": null
     },
     {
@@ -21,15 +21,15 @@
       "highlight_id": null
     },
     {
-      "text": "We saw that there is an extra 6:30 PM autumn leaves evening boat during the momiji season, and we would love to reserve it for two",
+      "text": "We saw that there is an extra autumn leaves evening boat at 6:30 PM during the season. Could we reserve two seats, ideally on Friday, November 20?",
       "highlight_id": "h3"
     },
     {
-      "text": ", preferably on Friday, November 20, or on Saturday, November 21 if Friday is full.\n3. Tea gathering: ",
+      "text": "\n3. Tea gathering: ",
       "highlight_id": null
     },
     {
-      "text": "We would also like to join the autumn leaves tea gathering at 3:00 PM on Saturday, November 21, if there are still two of the eight guest places available.",
+      "text": "We would also love to join the autumn leaves tea gathering in the Shoin on Saturday, November 21 at 3:00 PM, if there are still two spots left.",
       "highlight_id": "h4"
     },
     {
@@ -37,7 +37,7 @@
       "highlight_id": null
     },
     {
-      "text": "As before, please note that Victor prefers not to have raw shellfish.",
+      "text": "As before, Victor prefers not to have raw shellfish, so please kindly note this for our dinners.",
       "highlight_id": "h5"
     },
     {
@@ -45,7 +45,7 @@
       "highlight_id": null
     },
     {
-      "text": "Could you let us know the room rate, whether the boat and tea gathering can be confirmed, and the next step to complete the booking?",
+      "text": "Please let us know the availability and the price for the room and both activities, and the next step to confirm the booking.",
       "highlight_id": "h6"
     },
     {
@@ -169,7 +169,7 @@
       "label": "What you know: Dietary note: Victor prefers not to have raw shellfish.",
       "rationale": "From 1 of your emails with HOSHINOYA Kyoto (Kenji, Guest Relations).",
       "count": 1,
-      "total": 8,
+      "total": null,
       "evidence": [
         {
           "message_id": "syn-vendor_service-003-m2",

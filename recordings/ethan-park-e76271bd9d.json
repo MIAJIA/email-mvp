@@ -2,7 +2,7 @@
   "case_key": "e76271bd9d",
   "endpoint": "POST /draft",
   "contract_revision": "0.3",
-  "recorded_at": "2026-10-23T21:52:43+00:00",
+  "recorded_at": "2026-10-23T21:55:18+00:00",
   "request": {
     "mode": "compose",
     "to": "ethan.park@example.com",
@@ -10,10 +10,10 @@
     "inject": null
   },
   "response": {
-    "draft_id": "e3d15bb7f134",
+    "draft_id": "d187e6d98e38",
     "to": "ethan.park@example.com",
     "scenario": "friend_scheduling",
-    "subject": "Coffee Friday afternoon? (and congrats!)",
+    "subject": "Coffee Friday afternoon? + congrats on Lily!",
     "segments": [
       {
         "text": "Hi Ethan,",
@@ -24,20 +24,16 @@
         "highlight_id": null
       },
       {
-        "text": "Congratulations on the arrival of Lily! I saw her first photo and she's adorable. I hope you're getting at least a little sleep",
+        "text": "Congratulations on baby Lily! I saw her first photo and she's adorable. I hope you're getting at least a little sleep",
         "highlight_id": "h2"
       },
       {
-        "text": ":)",
-        "highlight_id": "h3"
-      },
-      {
-        "text": "\n\n",
+        "text": " :)\n\nWould you be up for a coffee this Friday afternoon? ",
         "highlight_id": null
       },
       {
-        "text": "Would you be up for meeting in person for coffee this Friday afternoon? Red Rock works for me if that's easy for you.",
-        "highlight_id": "h4"
+        "text": "I'd love to meet in person if you can. Red Rock works for me, how about there?",
+        "highlight_id": "h3"
       },
       {
         "text": " ",
@@ -45,22 +41,30 @@
       },
       {
         "text": "I'm free any time after 2pm.",
-        "highlight_id": "h5"
+        "highlight_id": "h4"
       },
       {
         "text": " ",
         "highlight_id": null
       },
       {
-        "text": "Totally understand if things are too hectic with the baby right now, and we can always find another time.",
-        "highlight_id": "h6"
+        "text": "Totally fine if this week is too much with the new baby, we can always do another day.",
+        "highlight_id": "h5"
       },
       {
-        "text": "\n\n",
+        "text": "\n\nAlso, ",
         "highlight_id": null
       },
       {
-        "text": "Also, I saw you're starting a Saturday morning walking group at Las Palmas Park in November. Are you still taking people? I'd love to join if there's room.",
+        "text": "I saw you're starting a Saturday morning walking group at Las Palmas Park. Are you still taking new people? I'd love to join",
+        "highlight_id": "h6"
+      },
+      {
+        "text": ":)\n\n",
+        "highlight_id": null
+      },
+      {
+        "text": "Let me know what works for you!",
         "highlight_id": "h7"
       },
       {
@@ -68,16 +72,8 @@
         "highlight_id": null
       },
       {
-        "text": "Let me know what works for you!",
-        "highlight_id": "h8"
-      },
-      {
-        "text": "\n\n",
-        "highlight_id": null
-      },
-      {
         "text": "Best,\nMia",
-        "highlight_id": "h9"
+        "highlight_id": "h8"
       }
     ],
     "highlights": [
@@ -136,36 +132,6 @@
         "layer": "scenario",
         "ref": {
           "kind": "habit",
-          "id": "emoji_and_smileys"
-        },
-        "strength": "weak",
-        "label": "Adds a warm emoji or ':)' at the end of a sentence, often with no space before it.",
-        "rationale": "In your friend_scheduling emails, 8 of 30 do this.",
-        "count": 8,
-        "total": 30,
-        "evidence": [
-          {
-            "message_id": "19a37bff562f1c50",
-            "external_id": null,
-            "quote": "🥹🥹"
-          },
-          {
-            "message_id": "19a3b184cc717026",
-            "external_id": null,
-            "quote": "by EOD 😁"
-          },
-          {
-            "message_id": "19a46d93cabaa53e",
-            "external_id": null,
-            "quote": "💛"
-          }
-        ]
-      },
-      {
-        "id": "h4",
-        "layer": "scenario",
-        "ref": {
-          "kind": "habit",
           "id": "prefers_in_person_suggests_place"
         },
         "strength": "weak",
@@ -192,7 +158,7 @@
         ]
       },
       {
-        "id": "h5",
+        "id": "h4",
         "layer": "scenario",
         "ref": {
           "kind": "habit",
@@ -222,7 +188,7 @@
         ]
       },
       {
-        "id": "h6",
+        "id": "h5",
         "layer": "scenario",
         "ref": {
           "kind": "habit",
@@ -252,7 +218,7 @@
         ]
       },
       {
-        "id": "h7",
+        "id": "h6",
         "layer": "external",
         "ref": {
           "kind": "external",
@@ -272,7 +238,7 @@
         ]
       },
       {
-        "id": "h8",
+        "id": "h7",
         "layer": "scenario",
         "ref": {
           "kind": "habit",
@@ -302,7 +268,7 @@
         ]
       },
       {
-        "id": "h9",
+        "id": "h8",
         "layer": "person",
         "ref": {
           "kind": "sign_off",

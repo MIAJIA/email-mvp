@@ -2,7 +2,7 @@
   "case_key": "1a5bafc33e",
   "endpoint": "POST /draft",
   "contract_revision": "0.3",
-  "recorded_at": "2026-10-23T21:52:50+00:00",
+  "recorded_at": "2026-10-23T21:55:06+00:00",
   "request": {
     "mode": "compose",
     "to": "amy.wang@example.com",
@@ -10,7 +10,7 @@
     "inject": "unknown_ref"
   },
   "response": {
-    "draft_id": "84c6d4c92dbd",
+    "draft_id": "2116b17322f0",
     "to": "amy.wang@example.com",
     "scenario": "zh_en_casual",
     "subject": "Re: coffee",
@@ -20,35 +20,35 @@
         "highlight_id": "h1"
       },
       {
-        "text": "\n\n",
+        "text": "\n",
         "highlight_id": null
       },
       {
-        "text": "好呀",
+        "text": "好呀！",
         "highlight_id": null
       },
       {
-        "text": " Friday afternoon 可以的\n",
+        "text": " ",
         "highlight_id": null
       },
       {
-        "text": "你",
+        "text": "Friday afternoon 可以的 我们去 Red Rock 见面喝 coffee 嘛",
         "highlight_id": "h2"
       },
       {
-        "text": "方便的话我们去 Red Rock 见面喝 coffee 嘛 ",
+        "text": "\n",
         "highlight_id": null
       },
       {
-        "text": "当面聊更开心啦",
+        "text": "好奇你",
         "highlight_id": "h3"
       },
       {
-        "text": " 哈哈\n\n",
+        "text": "几点方便呀 ",
         "highlight_id": null
       },
       {
-        "text": "Mia",
+        "text": "哈哈",
         "highlight_id": "h4"
       }
     ],
@@ -75,31 +75,31 @@
       },
       {
         "id": "h2",
-        "layer": "person",
+        "layer": "scenario",
         "ref": {
-          "kind": "honorific",
-          "id": "honorific"
+          "kind": "habit",
+          "id": "spaces_instead_of_commas"
         },
         "strength": "weak",
-        "label": "Formal \"你\"",
-        "rationale": "You used \"你\" with Amy in 3 of 11 emails.",
-        "count": 3,
-        "total": 11,
+        "label": "Separates clauses with spaces instead of Chinese commas or periods, like quick chat messages.",
+        "rationale": "In your zh_en_casual emails, 8 of 30 do this.",
+        "count": 8,
+        "total": 30,
         "evidence": [
           {
-            "message_id": "syn-zh_en_casual-003-m2",
+            "message_id": "syn-zh_en_casual-007-m2",
             "external_id": null,
-            "quote": "你离得近"
+            "quote": "我们住的四条 吃饭方便很多"
           },
           {
-            "message_id": "syn-zh_en_casual-008-m2",
+            "message_id": "syn-zh_en_casual-011-m2",
             "external_id": null,
-            "quote": "你不喜欢就拿来给我呀"
+            "quote": "不会每行看 我看 diff 和测试"
           },
           {
-            "message_id": "syn-zh_en_casual-015-m2",
+            "message_id": "syn-zh_en_casual-014-m2",
             "external_id": null,
-            "quote": "你们哪天出发?"
+            "quote": "美心的 红色盒子那个"
           }
         ]
       },
@@ -108,28 +108,28 @@
         "layer": "scenario",
         "ref": {
           "kind": "habit",
-          "id": "soft_sentence_particles"
+          "id": "ends_with_curious_question"
         },
         "strength": "strong",
-        "label": "Ends sentences with soft particles such as 啦, 嘛 and 呀 to keep the tone light and friendly.",
+        "label": "Often ends with a follow-up question about the other person, frequently starting with 好奇你.",
         "rationale": "In your zh_en_casual emails, 10 of 30 do this.",
         "count": 10,
         "total": 30,
         "evidence": [
           {
-            "message_id": "syn-zh_en_casual-004-m2",
+            "message_id": "19cfa2a364325cd7",
             "external_id": null,
-            "quote": "这次慢慢走啦"
+            "quote": "好奇你的填表格用的是什么MCP呀？"
           },
           {
-            "message_id": "syn-zh_en_casual-006-m3",
+            "message_id": "syn-zh_en_casual-001-m3",
             "external_id": null,
-            "quote": "你直接拿去改嘛"
+            "quote": "好奇你平时是用 Unity 吗?"
           },
           {
-            "message_id": "syn-zh_en_casual-011-m2",
+            "message_id": "syn-zh_en_casual-009-m1",
             "external_id": null,
-            "quote": "不然一天啥也干不了啦"
+            "quote": "好奇你这个 local MCP 是自己写的还是用现成的？"
           }
         ]
       },
@@ -138,28 +138,28 @@
         "layer": "scenario",
         "ref": {
           "kind": "habit",
-          "id": "short_reply_no_framing"
+          "id": "haha_and_laughing_emoji"
         },
-        "strength": "weak",
-        "label": "Writes very short replies of one to three lines. There is usually no greeting or sign-off. When there is one, it is just the recipient's name alone on the first line or 'Mia' alone on the last line.",
-        "rationale": "In your zh_en_casual emails, 4 of 30 do this.",
-        "count": 4,
+        "strength": "strong",
+        "label": "Adds 哈哈 or the 😂 emoji at the end of a line to sound playful or poke fun at herself.",
+        "rationale": "In your zh_en_casual emails, 10 of 30 do this.",
+        "count": 10,
         "total": 30,
         "evidence": [
           {
-            "message_id": "syn-zh_en_casual-012-m1",
+            "message_id": "syn-zh_en_casual-001-m1",
             "external_id": null,
-            "quote": "Amy"
+            "quote": "我在做一个海盗小游戏练手哈哈"
           },
           {
-            "message_id": "syn-rel-tang-003-m1",
+            "message_id": "syn-zh_en_casual-008-m1",
             "external_id": null,
-            "quote": "书远，"
+            "quote": "大家都推荐不是没道理的哈哈"
           },
           {
             "message_id": "syn-zh_en_casual-006-m1",
             "external_id": null,
-            "quote": "Mia"
+            "quote": "再大就开始卡了😂"
           }
         ]
       }
