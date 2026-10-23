@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { createDraft, errorText, getContacts, sendFeedback } from "./api";
 import DraftBody, { type Mark } from "./components/DraftBody";
 import HighlightCard from "./components/HighlightCard";
-import { DEMO_ORDER, EXAMPLE_BRIEFS } from "./examples";
+import { DEMO_CONTACTS, DEMO_INJECT, DEMO_ORDER, EXAMPLE_BRIEFS, INJECT_BRIEFS } from "./examples";
 import type { ContactSummary, Draft } from "./types";
 
 interface Active { id: string; el: HTMLElement; open: boolean }
@@ -27,7 +27,7 @@ export default function App() {
   useEffect(() => {
     getContacts().then((cs) => {
       const rank = (e: string) => (DEMO_ORDER.indexOf(e) + 1 || 99);
-      const sorted = [...cs].sort((a, b) => rank(a.email) - rank(b.email));
+      const sorted = [...(cs.length ? cs : DEMO_CONTACTS)].sort((a, b) => rank(a.email) - rank(b.email));
       setContacts(sorted);
       if (sorted.length) pick(sorted[0].email);
     }, (e) => setError(`Could not load contacts: ${errorText(e)}`));
@@ -35,7 +35,7 @@ export default function App() {
 
   function pick(email: string) {
     setTo(email);
-    setBrief(EXAMPLE_BRIEFS[email] ?? "");
+    setBrief((DEMO_INJECT && INJECT_BRIEFS[email]) || EXAMPLE_BRIEFS[email] || "");
     setDraft(null);
     setActive(null);
   }
@@ -81,7 +81,7 @@ export default function App() {
     setEdits({});
     setActive(null);
     try {
-      const d = await createDraft({ mode: "compose", to, brief });
+      const d = await createDraft({ mode: "compose", to, brief, ...(DEMO_INJECT ? { inject: DEMO_INJECT } : {}) });
       setDraft(d);
       setSubject(d.subject);
     } catch (e) {
@@ -166,7 +166,7 @@ export default function App() {
               </span>
               <span>Edit the email directly</span>
             </div>
-            {draft.warnings.map((w, i) => <p key={i} className="warn">{w}</p>)}
+            {draft.warnings.map((w, i) => <p key={i} className="warn"><span className="dot weak" />{w}</p>)}
             <DraftBody
               draft={draft}
               marks={marks}

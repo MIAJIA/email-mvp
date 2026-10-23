@@ -1,3 +1,5 @@
+import type { ContactSummary } from "./types";
+
 // Example briefs, one per demo contact. They match the briefs in recordings/ word for word,
 // so the replay service (8042) can answer them without calling the model.
 export const EXAMPLE_BRIEFS: Record<string, string> = {
@@ -13,4 +15,21 @@ export const DEMO_ORDER = [
   "wang.laoshi@example.com",
   "ethan.park@example.com",
   "reservations@hoshinoya-kyoto.example.com",
+];
+
+// Demo-only trigger for the unknown-ref fallback: open the page with ?inject=unknown_ref.
+export const DEMO_INJECT =
+  new URLSearchParams(window.location.search).get("inject") === "unknown_ref" ? ("unknown_ref" as const) : null;
+
+// The recorded failure case (recordings/ethan-park-7669d1a6fc.json) used this brief.
+export const INJECT_BRIEFS: Record<string, string> = {
+  "ethan.park@example.com": "Say yes to coffee, Friday afternoon works. Ask if we can meet in person at Red Rock.",
+};
+
+// Fallback when GET /contacts returns nothing (e.g. the replay service started without notes),
+// so the three demo cases can still be generated from recordings.
+export const DEMO_CONTACTS: ContactSummary[] = [
+  { email: "wang.laoshi@example.com", display_name: "王老师", relationship: null },
+  { email: "ethan.park@example.com", display_name: "Ethan Park", relationship: null },
+  { email: "reservations@hoshinoya-kyoto.example.com", display_name: "Kenji (HOSHINOYA Kyoto)", relationship: null },
 ];
