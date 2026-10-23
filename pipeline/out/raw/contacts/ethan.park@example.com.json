@@ -2,6 +2,12 @@
   "email": "ethan.park@example.com",
   "to_name": "Ethan Park",
   "message_ids": [
+    "syn-friend_scheduling-004-m1",
+    "syn-friend_scheduling-004-m2",
+    "syn-friend_scheduling-004-m3",
+    "198767ddad0b2351",
+    "19877bc1b9e23b00",
+    "198783a1f53b6708",
     "198a61993322d234",
     "198ab7139243711d",
     "198af30eb0ec850f",
@@ -47,19 +53,19 @@
     "display_name": "Ethan Park",
     "relationship": "coach",
     "core_connection": {
-      "text": "Ethan is Mia's personal coach. They have regular coaching sessions, sometimes on Zoom and often in person at Red Rock or a Starbucks in the Bay Area, and their relationship is warm and friendly.",
+      "text": "Ethan is Mia's coach. Since August 2025 they have met regularly for coaching sessions, usually in person at Red Rock coffee or a Starbucks, and over Zoom when that is easier.",
       "evidence": [
         {
           "message_id": "19ad08024b9953ee",
-          "quote": "check-in / coaching session?"
+          "quote": "check-in / coaching session"
+        },
+        {
+          "message_id": "198783a1f53b6708",
+          "quote": "Sounds great! See you then!"
         },
         {
           "message_id": "198ab7139243711d",
           "quote": "see you tomorrow at Red Rock!"
-        },
-        {
-          "message_id": "19a46d93cabaa53e",
-          "quote": "I’m really looking forward to seeing you soon"
         }
       ]
     },
@@ -69,7 +75,15 @@
         "value": "Ethan",
         "evidence": [
           {
-            "message_id": "198af30eb0ec850f",
+            "message_id": "syn-friend_scheduling-004-m1",
+            "quote": "Hi Ethan,"
+          },
+          {
+            "message_id": "syn-friend_scheduling-004-m2",
+            "quote": "Hey Ethan,"
+          },
+          {
+            "message_id": "19877bc1b9e23b00",
             "quote": "Hi Ethan,"
           },
           {
@@ -77,27 +91,19 @@
             "quote": "Hi Ethan,"
           },
           {
-            "message_id": "syn-friend_scheduling-009-m1",
-            "quote": "Hey Ethan,"
-          },
-          {
             "message_id": "199e0f4032bd1990",
             "quote": "Hey Ethan,"
           },
           {
-            "message_id": "19a3b00c1249fcc3",
-            "quote": "Hey Ethan"
-          },
-          {
-            "message_id": "19a41f22e2249244",
-            "quote": "Hey Ethan"
+            "message_id": "19a7f7dcc18e3131",
+            "quote": "Hey Ethan,"
           },
           {
             "message_id": "19ba40a051210f63",
             "quote": "Hey Ethan"
           },
           {
-            "message_id": "19ddf5cc113d2012",
+            "message_id": "19beba779a9ba256",
             "quote": "Hi Ethan,"
           }
         ]
@@ -111,11 +117,15 @@
       "value": "Best, Mia",
       "evidence": [
         {
-          "message_id": "199e0f4032bd1990",
+          "message_id": "syn-friend_scheduling-004-m1",
           "quote": "Best,"
         },
         {
-          "message_id": "199e38acd7fedecd",
+          "message_id": "19877bc1b9e23b00",
+          "quote": "Best,"
+        },
+        {
+          "message_id": "199e0f4032bd1990",
           "quote": "Best,"
         },
         {
@@ -124,10 +134,6 @@
         },
         {
           "message_id": "19ad08024b9953ee",
-          "quote": "Best,"
-        },
-        {
-          "message_id": "19bae0bbfeb40186",
           "quote": "Best,"
         },
         {
@@ -148,46 +154,117 @@
       "value": "en",
       "evidence": [
         {
-          "message_id": "198a61993322d234",
-          "quote": "Thanks, booked!"
+          "message_id": "syn-friend_scheduling-004-m1",
+          "quote": "I would love to connect."
         },
         {
-          "message_id": "1993e33e3d00e94f",
-          "quote": "Saturday 5pm or after works for me."
+          "message_id": "19877bc1b9e23b00",
+          "quote": "Thanks for the note!"
         },
         {
-          "message_id": "syn-friend_scheduling-009-m2",
-          "quote": "see you Saturday at 10!"
+          "message_id": "1993c3d03213c65c",
+          "quote": "Thanks for the Zoom link"
         },
         {
-          "message_id": "19a3b184cc717026",
-          "quote": "Sunday sounds great!"
+          "message_id": "199e0f4032bd1990",
+          "quote": "Looking forward to catching up with you."
         },
         {
-          "message_id": "19a7f9b541476f30",
-          "quote": "Sounds good, see you there soon!"
+          "message_id": "19a468aadf88db07",
+          "quote": "I’m flexible either"
         },
         {
-          "message_id": "19ad36893b253add",
-          "quote": "I'm free after 3pm tomorrow"
+          "message_id": "19ad08024b9953ee",
+          "quote": "Happy Thanksgiving!"
         },
         {
-          "message_id": "19bae374223b0950",
-          "quote": "Sounds good, let me know."
+          "message_id": "19ba40a051210f63",
+          "quote": "Happy New Year to you too!"
         },
         {
-          "message_id": "19e04c387de092e7",
-          "quote": "Does Saturday afternoon work for you"
+          "message_id": "19ddf5cc113d2012",
+          "quote": "Do you have time on Friday?"
         }
       ]
     },
     "facts": [
       {
-        "text": "They often meet in person at Red Rock (a coffee shop) or at a Starbucks. Mia often asks to meet offline instead of on Zoom.",
+        "text": "Ethan is Mia's coach; she books coaching sessions with him, and they speak in person or over Zoom.",
         "evidence": [
           {
-            "message_id": "19a7f7dcc18e3131",
-            "quote": "Red Rock or other Starbuck both works great"
+            "message_id": "19ad08024b9953ee",
+            "quote": "check-in / coaching session"
+          }
+        ]
+      },
+      {
+        "text": "Victor also has sessions with Ethan, and Mia sometimes schedules hers right before or after Victor's so they can go together.",
+        "evidence": [
+          {
+            "message_id": "198af30eb0ec850f",
+            "quote": "your meeting with Victor wraps up around 2pm"
+          },
+          {
+            "message_id": "199e38acd7fedecd",
+            "quote": "before or after Victor's session today"
+          }
+        ]
+      },
+      {
+        "text": "In January 2025 they met for coffee on a Friday at 2pm at Red Rock, before the coaching began.",
+        "evidence": [
+          {
+            "message_id": "syn-friend_scheduling-004-m2",
+            "quote": "Friday 2pm is perfect"
+          }
+        ]
+      },
+      {
+        "text": "Coaching started in August 2025. Mia asked for the first meeting to be in person at Red Rock instead of Zoom.",
+        "evidence": [
+          {
+            "message_id": "19877bc1b9e23b00",
+            "quote": "meeting in person at Red Rock"
+          }
+        ]
+      },
+      {
+        "text": "Red Rock coffee is their usual meeting place.",
+        "evidence": [
+          {
+            "message_id": "198d32d707abfa41",
+            "quote": "will red rock work for you"
+          },
+          {
+            "message_id": "198ab7139243711d",
+            "quote": "see you tomorrow at Red Rock!"
+          }
+        ]
+      },
+      {
+        "text": "Their other meeting spot is the Starbucks at Maple Village, near Mia's home.",
+        "evidence": [
+          {
+            "message_id": "19a46d93cabaa53e",
+            "quote": "one at Maple Village"
+          }
+        ]
+      },
+      {
+        "text": "Mia has invited Ethan to meet at her house.",
+        "evidence": [
+          {
+            "message_id": "19aa88c72929755b",
+            "quote": "welcome to visit our house"
+          }
+        ]
+      },
+      {
+        "text": "Mia would rather meet in person than online.",
+        "evidence": [
+          {
+            "message_id": "19de5186aaeb9ed5",
+            "quote": "Are you available to meet offline?"
           },
           {
             "message_id": "syn-friend_scheduling-009-m1",
@@ -196,39 +273,12 @@
         ]
       },
       {
-        "text": "Mia suggested the Starbucks at Maple Village because it is convenient for her. It is close to her house.",
-        "evidence": [
-          {
-            "message_id": "19a46d93cabaa53e",
-            "quote": "one at Maple Village"
-          },
-          {
-            "message_id": "19aa39943f651cad",
-            "quote": "house(close to the Starbucks)"
-          }
-        ]
-      },
-      {
-        "text": "Mia invited Ethan to visit her house for a session in November 2025.",
-        "evidence": [
-          {
-            "message_id": "19aa88c72929755b",
-            "quote": "welcome to visit our house at"
-          }
-        ]
-      },
-      {
-        "text": "In September 2025 Mia was in Singapore and asked for sessions later in the day because of the time difference.",
+        "text": "In September 2025 Mia was in Singapore and asked for later meeting times because of the time difference. She returned to the Bay Area in October 2025.",
         "evidence": [
           {
             "message_id": "1993c3d03213c65c",
-            "quote": "due to the time difference with Singapore"
-          }
-        ]
-      },
-      {
-        "text": "Mia returned from Asia to the Bay Area in October 2025.",
-        "evidence": [
+            "quote": "time difference with Singapore"
+          },
           {
             "message_id": "199e0f4032bd1990",
             "quote": "traveled back from Asia to the Bay Area"
@@ -236,7 +286,7 @@
         ]
       },
       {
-        "text": "Mia started a new job around November 2025 and said her schedule would become more stable.",
+        "text": "Mia started a new job in late 2025, and her schedule was unsettled while she made the switch.",
         "evidence": [
           {
             "message_id": "19aa89e66b41aba1",
@@ -245,43 +295,52 @@
         ]
       },
       {
-        "text": "Ethan's dog was in the hospital in early November 2025, and Mia wished the dog well.",
+        "text": "Ethan has a dog, which was in the hospital in early November 2025.",
         "evidence": [
           {
             "message_id": "19a46d93cabaa53e",
-            "quote": "I hope your dog feels"
+            "quote": "hope your dog feels"
           }
         ]
       },
       {
-        "text": "Mia invited Ethan to the Chinese Culture Community Event at Lakeside College, which her community team organized (November 2025).",
+        "text": "In November 2025 Mia invited Ethan to a Chinese Culture Community Event her community team organised at Lakeside College.",
         "evidence": [
           {
             "message_id": "19a468aadf88db07",
-            "quote": "Chinese Culture Community Event"
+            "quote": "happening at Lakeside College"
           }
         ]
       },
       {
-        "text": "Mia has rescheduled or missed sessions at the last minute several times (a work meeting, oversleeping) and apologized warmly each time.",
+        "text": "Mia sometimes runs late or reschedules at the last minute and apologises warmly, for example when she was stuck in traffic or overslept.",
         "evidence": [
+          {
+            "message_id": "syn-friend_scheduling-004-m3",
+            "quote": "stuck in traffic on 101"
+          },
           {
             "message_id": "19bae0bbfeb40186",
             "quote": "I just realized I overslept"
-          },
-          {
-            "message_id": "19aec3b81d52fc54",
-            "quote": "Sorry for the last-minute note"
           }
         ]
       },
       {
-        "text": "Mia likes meeting at a coffee or milk tea shop. In May 2026 she postponed a session to take the grandparents out for Mother's Day.",
+        "text": "Mia usually asks for afternoon or later time slots.",
         "evidence": [
           {
-            "message_id": "19de5186aaeb9ed5",
-            "quote": "coffee or milk tea shop"
+            "message_id": "1993e33e3d00e94f",
+            "quote": "Saturday 5pm or after works for me"
           },
+          {
+            "message_id": "19a41f22e2249244",
+            "quote": "are you avaible any time after 4 pm"
+          }
+        ]
+      },
+      {
+        "text": "In May 2026 Mia moved a session because she was taking the grandparents out for Mother's Day.",
+        "evidence": [
           {
             "message_id": "19e1780b8fc298d6",
             "quote": "taking the grandparents out to celebrate Mother's Day"
@@ -292,15 +351,11 @@
     "edges": [
       {
         "to": "Victor",
-        "type": "also_coached_by",
+        "type": "client",
         "evidence": [
           {
             "message_id": "198af30eb0ec850f",
             "quote": "your meeting with Victor wraps up around 2pm"
-          },
-          {
-            "message_id": "199e38acd7fedecd",
-            "quote": "before or after Victor's session today"
           }
         ]
       }

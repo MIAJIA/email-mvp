@@ -23,19 +23,19 @@
     "display_name": "小雨",
     "relationship": "friend",
     "core_connection": {
-      "text": "小雨是 Mia 的朋友，两人都有孩子。小雨常问 Mia 遛娃去处和旅行攻略，Mia 根据自己去过的地方给她具体建议。",
+      "text": "小雨和 Mia 是关系随意的朋友，两家都有小孩。小雨常向 Mia 请教带娃去处、旅行攻略和 podcast 推荐，Mia 会分享自己的亲身经历和具体建议。",
       "evidence": [
         {
           "message_id": "syn-zh_en_casual-002-m1",
           "quote": "我们上个月去玩了一上午 出来就睡着了哈哈"
         },
         {
-          "message_id": "syn-zh_en_casual-017-m1",
-          "quote": "两个都去过 第一次去的话 Maui 吧"
+          "message_id": "syn-zh_en_casual-007-m1",
+          "quote": "我当时存了一个 Google Maps 的 list 等下发你"
         },
         {
-          "message_id": "syn-zh_en_casual-019-m1",
-          "quote": "住的 Roma Norte"
+          "message_id": "syn-zh_en_casual-022-m1",
+          "quote": "英文的推荐 Latent Space 很技术但是很实在"
         }
       ]
     },
@@ -55,24 +55,12 @@
       "value": "no_nin",
       "evidence": [
         {
-          "message_id": "syn-zh_en_casual-002-m2",
-          "quote": "你们打算上午去吗?"
-        },
-        {
           "message_id": "syn-zh_en_casual-007-m3",
           "quote": "你们哪天去?"
         },
         {
-          "message_id": "syn-zh_en_casual-016-m2",
-          "quote": "你可以先用中文写"
-        },
-        {
           "message_id": "syn-zh_en_casual-017-m2",
           "quote": "你们租好车了吗?"
-        },
-        {
-          "message_id": "syn-zh_en_casual-019-m1",
-          "quote": "你们几月去?"
         },
         {
           "message_id": "syn-zh_en_casual-022-m2",
@@ -102,15 +90,11 @@
       "evidence": [
         {
           "message_id": "syn-zh_en_casual-002-m1",
-          "quote": "check 一下开放时间"
+          "quote": "去之前 check 一下开放时间"
         },
         {
           "message_id": "syn-zh_en_casual-002-m2",
           "quote": "我们是在 app 上买的"
-        },
-        {
-          "message_id": "syn-zh_en_casual-007-m1",
-          "quote": "Google Maps 的 list 等下发你"
         },
         {
           "message_id": "syn-zh_en_casual-007-m3",
@@ -118,11 +102,11 @@
         },
         {
           "message_id": "syn-zh_en_casual-016-m1",
-          "quote": "绘本的 tool 感觉姐姐会喜欢"
+          "quote": "变成绘本的 tool"
         },
         {
-          "message_id": "syn-zh_en_casual-017-m1",
-          "quote": "audio tour 的 app"
+          "message_id": "syn-zh_en_casual-017-m3",
+          "quote": "要提前在网上 book"
         },
         {
           "message_id": "syn-zh_en_casual-019-m2",
@@ -130,13 +114,22 @@
         },
         {
           "message_id": "syn-zh_en_casual-022-m1",
-          "quote": "英文的推荐 Latent Space"
+          "quote": "讲 agent 的那几期都不错"
         }
       ]
     },
     "facts": [
       {
-        "text": "小雨有个孩子叫“姐姐”，喜欢画画。Mia 发过一个把孩子的画变成绘本的 AI 工具给她。",
+        "text": "小雨是 Mia 的朋友，两人用中英混杂的随意语气聊带娃、旅行和生活。",
+        "evidence": [
+          {
+            "message_id": "syn-zh_en_casual-017-m1",
+            "quote": "小雨"
+          }
+        ]
+      },
+      {
+        "text": "小雨有一个孩子，Mia 称她为“姐姐”。Mia 觉得姐姐会喜欢一个把小朋友的画变成绘本的 AI 工具。",
         "evidence": [
           {
             "message_id": "syn-zh_en_casual-016-m1",
@@ -145,55 +138,81 @@
         ]
       },
       {
-        "text": "两人可能都住在湾区南边。Mia 推荐过 Rancho San Antonio 和 Children's Discovery Museum 带娃去玩。",
+        "text": "Mia 也有小孩，曾带孩子去 Children's Discovery Museum 玩，并推荐小雨去，也推荐了 Rancho San Antonio（两地都在湾区）。",
         "evidence": [
-          {
-            "message_id": "syn-zh_en_casual-002-m1",
-            "quote": "雨停了可以去 Rancho San Antonio"
-          },
           {
             "message_id": "syn-zh_en_casual-002-m1",
             "quote": "Children's Discovery Museum 也不错"
-          }
-        ]
-      },
-      {
-        "text": "小雨计划去京都。Mia 推荐住四条，并说过要把自己存的 Google Maps 清单发给她。",
-        "evidence": [
-          {
-            "message_id": "syn-zh_en_casual-007-m2",
-            "quote": "我们住的四条 吃饭方便很多"
           },
           {
-            "message_id": "syn-zh_en_casual-007-m1",
-            "quote": "我当时存了一个 Google Maps 的 list 等下发你"
+            "message_id": "syn-zh_en_casual-002-m1",
+            "quote": "雨停了可以去 Rancho San Antonio"
           }
         ]
       },
       {
-        "text": "Mia 说过要把岚山小火车订座的链接发给小雨。",
+        "text": "2024 年 10 月，Mia 建议小雨在 app 上提前买 Discovery Museum 的票，周六十点一开门就去。",
         "evidence": [
           {
-            "message_id": "syn-zh_en_casual-007-m3",
-            "quote": "小火车要提前网上订座 我把 link 发你"
+            "message_id": "syn-zh_en_casual-002-m2",
+            "quote": "周六十点一开门就去"
           }
         ]
       },
       {
-        "text": "小雨打算过年去夏威夷。Mia 两个岛都去过，推荐第一次去选 Maui，还建议去 Haleakala 看日出。",
+        "text": "Mia 红叶季去过京都，住在四条。2025 年 3 月她给小雨推荐了东福寺、永观堂夜枫和岚山。",
+        "evidence": [
+          {
+            "message_id": "syn-zh_en_casual-007-m1",
+            "quote": "我们去的就是红叶季"
+          },
+          {
+            "message_id": "syn-zh_en_casual-007-m2",
+            "quote": "我们住的四条"
+          },
+          {
+            "message_id": "syn-zh_en_casual-007-m3",
+            "quote": "竹林要早上七点前去"
+          }
+        ]
+      },
+      {
+        "text": "Mia 答应把京都的 Google Maps 收藏列表和岚山小火车的订座 link 发给小雨。",
+        "evidence": [
+          {
+            "message_id": "syn-zh_en_casual-007-m1",
+            "quote": "等下发你"
+          },
+          {
+            "message_id": "syn-zh_en_casual-007-m3",
+            "quote": "小火车要提前网上订座"
+          }
+        ]
+      },
+      {
+        "text": "2026 年 1 月，小雨问过年去夏威夷哪个岛。Mia 两个岛都去过，第一次去推荐 Maui，并提醒 Road to Hana 早点出发。",
         "evidence": [
           {
             "message_id": "syn-zh_en_casual-017-m1",
-            "quote": "第一次去的话 Maui 吧"
+            "quote": "两个都去过 第一次去的话 Maui 吧"
           },
           {
-            "message_id": "syn-zh_en_casual-017-m3",
-            "quote": "Haleakala 看日出！要提前在网上 book"
+            "message_id": "syn-zh_en_casual-017-m1",
+            "quote": "Road to Hana 一定要开"
           }
         ]
       },
       {
-        "text": "小雨想去墨西哥城。Mia 去过，住在 Roma Norte，推荐了 Contramar。",
+        "text": "Mia 推荐去 Haleakala 看日出，提醒山顶很冷要带羽绒服。她自己当时穿短袖上去冻坏了。",
+        "evidence": [
+          {
+            "message_id": "syn-zh_en_casual-017-m3",
+            "quote": "一定带羽绒服"
+          }
+        ]
+      },
+      {
+        "text": "Mia 去过墨西哥城，住在 Roma Norte。2026 年 3 月，小雨打算春假去，Mia 推荐了 Contramar 的金枪鱼 tostada 和街边的 tacos al pastor。",
         "evidence": [
           {
             "message_id": "syn-zh_en_casual-019-m1",
@@ -206,11 +225,29 @@
         ]
       },
       {
-        "text": "小雨不写代码，所以 Mia 给她推荐了比较轻松的 Hard Fork 播客，并请她听完分享哪期好听。",
+        "text": "Mia 去金字塔没报团，直接坐 Uber 去的，大约一小时。她建议早点到，记得带帽子防晒。",
+        "evidence": [
+          {
+            "message_id": "syn-zh_en_casual-019-m3",
+            "quote": "直接 Uber 过去的 大概一个小时"
+          }
+        ]
+      },
+      {
+        "text": "小雨不写代码，所以 Mia 推荐她通勤时先听比较轻松的 Hard Fork，再听 Latent Space。",
         "evidence": [
           {
             "message_id": "syn-zh_en_casual-022-m2",
             "quote": "那你可以先听 Hard Fork 那个 podcast 轻松很多"
+          }
+        ]
+      },
+      {
+        "text": "Mia 常在做饭时听 AI/agent 相关的 podcast，并让小雨听完告诉她哪期好听。",
+        "evidence": [
+          {
+            "message_id": "syn-zh_en_casual-022-m3",
+            "quote": "我最近都是做饭的时候听"
           },
           {
             "message_id": "syn-zh_en_casual-022-m3",
@@ -219,20 +256,11 @@
         ]
       },
       {
-        "text": "Mia 平时做饭时听播客。",
-        "evidence": [
-          {
-            "message_id": "syn-zh_en_casual-022-m3",
-            "quote": "一边切菜一边听 agent 哈哈"
-          }
-        ]
-      },
-      {
-        "text": "Mia 建议小雨用 AI 工具时先用中文写 prompt，再让 ChatGPT 翻成英文。",
+        "text": "Mia 建议小雨写绘本 prompt 时先用中文写，再让 ChatGPT 翻成英文，因为英文出来的画风更稳定。",
         "evidence": [
           {
             "message_id": "syn-zh_en_casual-016-m2",
-            "quote": "再让 ChatGPT 帮你翻一下嘛"
+            "quote": "英文出来的画风稳定一点"
           }
         ]
       }
@@ -240,7 +268,7 @@
     "edges": [
       {
         "to": "姐姐",
-        "type": "parent_of",
+        "type": "child",
         "evidence": [
           {
             "message_id": "syn-zh_en_casual-016-m1",
