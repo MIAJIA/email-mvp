@@ -1,0 +1,271 @@
+{
+  "_note": "Demo scenarios; not training data. Each lists the expected highlights: layer (person / scenario / external / inferred), ref (an entry in ground_truth/people.json, external.json, or a scenario habit id from style_spec.md) and strength. Strength: strong if backed by at least 2 emails, otherwise weak; external context has a single source and is always weak. inferred means no evidence in history and ref is null. text_hint is the rough text expected in the draft, for rehearsal; it need not match verbatim. brief and text_hint are product data and stay in the user's language.",
+  "scenarios": [
+    {
+      "id": "D1_reply_coach_ethan",
+      "kind": "acquaintance",
+      "mode": "reply",
+      "to": "ethan.park@example.com",
+      "to_name": "Ethan Park",
+      "category_expected": "friend_scheduling",
+      "thread": [
+        {
+          "from": "ethan.park@example.com",
+          "from_name": "Ethan Park",
+          "date": "2026-10-21T17:05:00Z",
+          "subject": "coffee this week?",
+          "body": "Hey Mia!\n\nIt's been a few weeks — want to grab coffee this week? I'm around Thursday or Friday afternoon.\n\nEthan"
+        }
+      ],
+      "brief": "答应，周五下午可以，问他能不能线下见，Red Rock 就行；顺便问一下他周六早上的散步小组还收人吗",
+      "expected_highlights": [
+        {
+          "layer": "person",
+          "ref": {
+            "kind": "address_as",
+            "id": "default"
+          },
+          "strength": "strong",
+          "text_hint": "Hey Ethan,",
+          "why": "Always opens with Hey/Hi Ethan"
+        },
+        {
+          "layer": "person",
+          "ref": {
+            "kind": "fact",
+            "id": "ethan.f3"
+          },
+          "strength": "strong",
+          "text_hint": "at Red Rock",
+          "why": "They usually meet at Red Rock Coffee"
+        },
+        {
+          "layer": "person",
+          "ref": {
+            "kind": "fact",
+            "id": "ethan.f5"
+          },
+          "strength": "weak",
+          "text_hint": "meet offline",
+          "why": "Mia prefers meeting offline"
+        },
+        {
+          "layer": "external",
+          "ref": {
+            "kind": "external",
+            "id": "ext-ethan-1"
+          },
+          "strength": "weak",
+          "text_hint": "your Saturday morning walking group",
+          "why": "Ethan recently announced a Saturday walking coaching group on X (mock)"
+        },
+        {
+          "layer": "scenario",
+          "ref": {
+            "kind": "habit",
+            "id": "two_windows"
+          },
+          "strength": "strong",
+          "text_hint": "Friday after 2pm or ...",
+          "why": "Offers two or three time windows when scheduling"
+        },
+        {
+          "layer": "scenario",
+          "ref": {
+            "kind": "habit",
+            "id": "sign_bare_mia"
+          },
+          "strength": "strong",
+          "text_hint": "Mia",
+          "why": "Signs friend emails with just Mia"
+        }
+      ]
+    },
+    {
+      "id": "D2_compose_teacher_wang",
+      "kind": "honorific_recipient",
+      "mode": "compose",
+      "to": "wang.jianhua@example.com",
+      "to_name": "王建华",
+      "category_expected": "zh_formal",
+      "brief": "跟王老师确认下个月去家里看他的时间，问他需不需要我们带什么；看到他的书法入选展览了，想顺便去看看",
+      "expected_highlights": [
+        {
+          "layer": "person",
+          "ref": {
+            "kind": "address_as",
+            "id": "default"
+          },
+          "strength": "strong",
+          "text_hint": "王老师：",
+          "why": "Every email opens with 王老师 and a full-width colon"
+        },
+        {
+          "layer": "person",
+          "ref": {
+            "kind": "honorific",
+            "id": "wang_jianhua"
+          },
+          "strength": "strong",
+          "text_hint": "您",
+          "why": "Always uses 您 with 王老师"
+        },
+        {
+          "layer": "person",
+          "ref": {
+            "kind": "fact",
+            "id": "wang.f10"
+          },
+          "strength": "weak",
+          "text_hint": "11 月 18 号下午三点",
+          "why": "The time agreed last time"
+        },
+        {
+          "layer": "person",
+          "ref": {
+            "kind": "fact",
+            "id": "wang.f9"
+          },
+          "strength": "weak",
+          "text_hint": "周航师兄也一起",
+          "why": "周航 said he would come too (edge: fellow student)"
+        },
+        {
+          "layer": "person",
+          "ref": {
+            "kind": "fact",
+            "id": "wang.f2"
+          },
+          "strength": "weak",
+          "text_hint": "带上您喜欢的普洱",
+          "why": "王老师 likes pu'er; Mia has sent him some"
+        },
+        {
+          "layer": "external",
+          "ref": {
+            "kind": "external",
+            "id": "ext-wang-1"
+          },
+          "strength": "weak",
+          "text_hint": "您的书法作品入选社区老年书画展",
+          "why": "Recent post on the community account (mock)"
+        },
+        {
+          "layer": "person",
+          "ref": {
+            "kind": "sign_off",
+            "id": "wang_jianhua"
+          },
+          "strength": "strong",
+          "text_hint": "学生 Mia 敬上",
+          "why": "Sign-off used with 王老师"
+        },
+        {
+          "layer": "inferred",
+          "ref": null,
+          "strength": "weak",
+          "text_hint": "为入选展览道贺的措辞",
+          "why": "No congratulation email to 王老师 in history; tone is inferred by the model"
+        }
+      ]
+    },
+    {
+      "id": "D3_compose_hoshinoya_autumn",
+      "kind": "vendor_with_external_context",
+      "mode": "compose",
+      "to": "reservations@hoshinoya-kyoto.example.com",
+      "to_name": "Hoshinoya Kyoto",
+      "category_expected": "vendor_service",
+      "brief": "11 月 20 号到 22 号想再住一次，两个大人；问能不能约红叶夜游船和周六下午的红叶茶会；晚餐还是提醒 Victor 不吃生贝类",
+      "expected_highlights": [
+        {
+          "layer": "person",
+          "ref": {
+            "kind": "address_as",
+            "id": "default"
+          },
+          "strength": "strong",
+          "text_hint": "Dear Kenji,",
+          "why": "The hotel contact has always been Kenji"
+        },
+        {
+          "layer": "person",
+          "ref": {
+            "kind": "fact",
+            "id": "hoshinoya.f3"
+          },
+          "strength": "weak",
+          "text_hint": "lovely to stay with you again",
+          "why": "Already returned once in April 2026"
+        },
+        {
+          "layer": "person",
+          "ref": {
+            "kind": "fact",
+            "id": "hoshinoya.f5"
+          },
+          "strength": "weak",
+          "text_hint": "Victor prefers not to have raw shellfish",
+          "why": "Mentioned when booking dinner last time"
+        },
+        {
+          "layer": "external",
+          "ref": {
+            "kind": "external",
+            "id": "ext-hoshinoya-1"
+          },
+          "strength": "weak",
+          "text_hint": "the 6:30 PM autumn-leaves evening boat",
+          "why": "Hotel autumn-leaves event page (mock)"
+        },
+        {
+          "layer": "external",
+          "ref": {
+            "kind": "external",
+            "id": "ext-hoshinoya-2"
+          },
+          "strength": "weak",
+          "text_hint": "the Saturday 3 PM autumn tea gathering",
+          "why": "Hotel November tea gathering (mock)"
+        },
+        {
+          "layer": "scenario",
+          "ref": {
+            "kind": "habit",
+            "id": "thank_first"
+          },
+          "strength": "strong",
+          "text_hint": "Thank you so much",
+          "why": "Thanks the vendor in the first sentence"
+        },
+        {
+          "layer": "scenario",
+          "ref": {
+            "kind": "habit",
+            "id": "numbered_followups"
+          },
+          "strength": "strong",
+          "text_hint": "1. Boat: ... 2. Tea: ...",
+          "why": "Numbers multiple requests"
+        },
+        {
+          "layer": "scenario",
+          "ref": {
+            "kind": "habit",
+            "id": "precise_logistics"
+          },
+          "strength": "strong",
+          "text_hint": "November 20 to 22 (2 adults: Mia & Victor)",
+          "why": "States dates and party size precisely"
+        },
+        {
+          "layer": "inferred",
+          "ref": null,
+          "strength": "weak",
+          "text_hint": "问红叶季是否有加价或最少入住晚数",
+          "why": "Never asked about seasonal pricing before"
+        }
+      ]
+    }
+  ]
+}
