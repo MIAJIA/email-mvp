@@ -1,7 +1,7 @@
 ---
 {
   "email": "help@oura.example.com",
-  "display_name": "Oura Team (Oura Member Services)",
+  "display_name": "Oura Member Services",
   "relationship": "vendor support",
   "address_as": {
     "value": "Oura Team",
@@ -11,31 +11,31 @@
     "evidence": [
       {
         "message_id": "syn-vendor_service-014-m1",
-        "quote": "Hi Oura Team"
+        "quote": "Hi Oura Team,"
       },
       {
         "message_id": "syn-vendor_service-014-m2",
-        "quote": "Hi Oura Team"
+        "quote": "Hi Oura Team,"
       },
       {
         "message_id": "syn-vendor_service-014-m3",
-        "quote": "Hi Oura Team"
+        "quote": "Hi Oura Team,"
       },
       {
         "message_id": "syn-vendor_service-015-m1",
-        "quote": "Hi Oura Team"
+        "quote": "Hi Oura Team,"
       },
       {
         "message_id": "syn-vendor_service-015-m2",
-        "quote": "Hi Oura Team"
+        "quote": "Hi Oura Team,"
       },
       {
         "message_id": "syn-vendor_service-022-m1",
-        "quote": "Hi Oura Team"
+        "quote": "Hi Oura Team,"
       },
       {
         "message_id": "syn-vendor_service-022-m2",
-        "quote": "Hi Oura Team"
+        "quote": "Hi Oura Team,"
       }
     ]
   },
@@ -49,56 +49,60 @@
       "evidence": [
         {
           "message_id": "syn-vendor_service-014-m1",
-          "quote": "Hi Oura Team"
+          "quote": "Hi Oura Team,"
         },
         {
           "message_id": "syn-vendor_service-014-m2",
-          "quote": "Hi Oura Team"
+          "quote": "Hi Oura Team,"
         },
         {
           "message_id": "syn-vendor_service-014-m3",
-          "quote": "Hi Oura Team"
+          "quote": "Hi Oura Team,"
         },
         {
           "message_id": "syn-vendor_service-015-m1",
-          "quote": "Hi Oura Team"
+          "quote": "Hi Oura Team,"
         },
         {
           "message_id": "syn-vendor_service-015-m2",
-          "quote": "Hi Oura Team"
+          "quote": "Hi Oura Team,"
         },
         {
           "message_id": "syn-vendor_service-022-m1",
-          "quote": "Hi Oura Team"
+          "quote": "Hi Oura Team,"
         },
         {
           "message_id": "syn-vendor_service-022-m2",
-          "quote": "Hi Oura Team"
+          "quote": "Hi Oura Team,"
         }
       ]
     }
   ],
   "sign_off": {
-    "value": "Best, Mia / Thank you, Mia",
-    "count": 4,
+    "value": "Thank you, Mia / Best, Mia",
+    "count": 5,
     "total": 7,
     "status": "learned",
     "evidence": [
-      {
-        "message_id": "syn-vendor_service-014-m2",
-        "quote": "Best,"
-      },
-      {
-        "message_id": "syn-vendor_service-022-m2",
-        "quote": "Best,"
-      },
       {
         "message_id": "syn-vendor_service-014-m1",
         "quote": "Thank you,"
       },
       {
+        "message_id": "syn-vendor_service-014-m2",
+        "quote": "Best,"
+      },
+      {
         "message_id": "syn-vendor_service-015-m2",
         "quote": "Thank you,"
+      },
+      {
+        "message_id": "syn-vendor_service-022-m1",
+        "quote": "Thank you,"
+      },
+      {
+        "message_id": "syn-vendor_service-022-m2",
+        "quote": "Best,"
       }
     ]
   },
@@ -114,11 +118,11 @@
       },
       {
         "message_id": "syn-vendor_service-014-m2",
-        "quote": "Thank you so much for the quick and clear answers."
+        "quote": "Could you please send two sizing kits"
       },
       {
         "message_id": "syn-vendor_service-014-m3",
-        "quote": "We wore the sizing rings for 24 hours as suggested."
+        "quote": "We wore the sizing rings for 24 hours"
       },
       {
         "message_id": "syn-vendor_service-015-m1",
@@ -126,7 +130,7 @@
       },
       {
         "message_id": "syn-vendor_service-015-m2",
-        "quote": "Thank you so much for approving the replacement."
+        "quote": "Here is the information requested"
       },
       {
         "message_id": "syn-vendor_service-022-m1",
@@ -134,51 +138,81 @@
       },
       {
         "message_id": "syn-vendor_service-022-m2",
-        "quote": "Here is the information requested for the sizing kit"
+        "quote": "Thank you so much!"
       }
     ]
   },
   "facts": [
     {
       "id": "f1",
-      "text": "Mia and her husband have used Oura since Gen 1 and wore Gen 3 rings before upgrading to Ring 4 in October 2024.",
+      "text": "This is Oura's customer support / member services team. Mia is a long-time Oura customer.",
       "status": "learned",
       "evidence": [
         {
           "message_id": "syn-vendor_service-014-m1",
-          "quote": "My husband and I have both used Oura since Gen 1"
+          "quote": "Hi Oura Team,"
         }
       ]
     },
     {
       "id": "f2",
-      "text": "Mia asked for two sizing kits for the Ring 4 upgrade. Her full name on the account is Mia Song.",
+      "text": "Mia and her husband have both used Oura since Gen 1. They were wearing Gen 3 rings in October 2024.",
       "status": "learned",
       "evidence": [
         {
-          "message_id": "syn-vendor_service-014-m2",
-          "quote": "Could you please send two sizing kits"
+          "message_id": "syn-vendor_service-014-m1",
+          "quote": "My husband and I have both used Oura since Gen 1"
         },
         {
-          "message_id": "syn-vendor_service-014-m2",
-          "quote": "Full name: Mia Song"
+          "message_id": "syn-vendor_service-014-m1",
+          "quote": "we are now wearing Gen 3 rings"
         }
       ]
     },
     {
       "id": "f3",
-      "text": "Ring sizes: Mia wears size 6 and Victor wears size 10, both in Silver.",
+      "text": "Mia's husband is Victor Zhou. He also has an Oura ring, and Mia handles support requests for both of them.",
       "status": "learned",
       "evidence": [
         {
+          "message_id": "syn-vendor_service-015-m2",
+          "quote": "Full name: Victor Zhou"
+        },
+        {
           "message_id": "syn-vendor_service-014-m3",
-          "quote": "Our sizes are 6 for me and 10 for Victor, both in Silver."
+          "quote": "10 for Victor"
         }
       ]
     },
     {
       "id": "f4",
-      "text": "Mia ordered the Ring 4s through the upgrade offer in the app, not through a trade-in.",
+      "text": "In October 2024 Mia asked to upgrade both rings from Gen 3 to Ring 4. She asked about sizing, trade-in discounts and whether memberships carry over, and requested two sizing kits.",
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "syn-vendor_service-014-m1",
+          "quote": "upgrade to Oura Ring 4"
+        },
+        {
+          "message_id": "syn-vendor_service-014-m2",
+          "quote": "send two sizing kits"
+        }
+      ]
+    },
+    {
+      "id": "f5",
+      "text": "Ring sizes: Mia wears a 6 and Victor a 10, both in Silver. They wore the sizing rings for 24 hours before choosing.",
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "syn-vendor_service-014-m3",
+          "quote": "Our sizes are 6 for me and 10 for Victor, both in Silver"
+        }
+      ]
+    },
+    {
+      "id": "f6",
+      "text": "Mia placed the two Ring 4 orders using the upgrade offer in the app (October 2024).",
       "status": "learned",
       "evidence": [
         {
@@ -188,8 +222,8 @@
       ]
     },
     {
-      "id": "f5",
-      "text": "Victor's Ring 4 (bought October 2024) stopped charging on August 9, 2025. They tried two chargers and cleaned the contacts before asking for a warranty replacement.",
+      "id": "f7",
+      "text": "Victor's Ring 4 (size 10, Silver, bought October 2024) stopped charging on August 9, 2025. They tried two chargers and cleaned the contacts before asking for a warranty replacement.",
       "status": "learned",
       "evidence": [
         {
@@ -198,28 +232,28 @@
         },
         {
           "message_id": "syn-vendor_service-015-m1",
-          "quote": "We have tried two different chargers"
+          "quote": "tried two different chargers"
         }
       ]
     },
     {
-      "id": "f6",
-      "text": "The warranty replacement was shipped in Victor Zhou's name, and the original ring was to be returned with a prepaid label by August 18, 2025.",
+      "id": "f8",
+      "text": "The warranty replacement was approved. Mia planned to drop off the original ring with the prepaid label by August 18, 2025.",
       "status": "learned",
       "evidence": [
         {
           "message_id": "syn-vendor_service-015-m2",
-          "quote": "Full name: Victor Zhou"
+          "quote": "approving the replacement"
         },
         {
           "message_id": "syn-vendor_service-015-m2",
-          "quote": "drop off the original ring with the prepaid label by August 18"
+          "quote": "by August 18"
         }
       ]
     },
     {
-      "id": "f7",
-      "text": "In December 2025 Mia ordered a Ring 4 as a holiday gift for her friend Sophie Lin, with the sizing kit shipped straight to Sophie.",
+      "id": "f9",
+      "text": "In December 2025 Mia ordered an Oura Ring 4 as a holiday gift for her friend Sophie Lin, with the sizing kit sent straight to Sophie.",
       "status": "learned",
       "evidence": [
         {
@@ -233,13 +267,28 @@
       ]
     },
     {
-      "id": "f8",
-      "text": "The gift needed to arrive in San Francisco before December 20.",
+      "id": "f10",
+      "text": "For the gift, Mia wanted to order by December 5 and have the ring arrive in San Francisco before December 20.",
       "status": "learned",
       "evidence": [
         {
           "message_id": "syn-vendor_service-022-m1",
-          "quote": "arrive in San Francisco before December 20"
+          "quote": "If I order by December 5"
+        },
+        {
+          "message_id": "syn-vendor_service-022-m1",
+          "quote": "in San Francisco before December 20"
+        }
+      ]
+    },
+    {
+      "id": "f11",
+      "text": "Mia's emails are short and polite, often use numbered questions, and thank them for quick answers.",
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "syn-vendor_service-014-m2",
+          "quote": "Thank you so much for the quick and clear answers"
         }
       ]
     }
@@ -250,18 +299,18 @@
       "type": "customer (Mia's husband)",
       "evidence": [
         {
-          "message_id": "syn-vendor_service-015-m1",
-          "quote": "My husband's Ring 4"
-        },
-        {
           "message_id": "syn-vendor_service-015-m2",
           "quote": "Full name: Victor Zhou"
+        },
+        {
+          "message_id": "syn-vendor_service-015-m1",
+          "quote": "My husband's Ring 4"
         }
       ]
     },
     {
       "to": "Sophie Lin",
-      "type": "gift_recipient (Mia's friend)",
+      "type": "gift recipient (Mia's friend)",
       "evidence": [
         {
           "message_id": "syn-vendor_service-022-m2",
@@ -271,15 +320,15 @@
     }
   ],
   "core_connection": {
-    "text": "Oura's customer support team. Mia and her husband have been Oura members for a long time, and she writes to support about ring upgrades, warranty replacements and gift orders.",
+    "text": "Oura's customer support team. Mia and her husband have worn Oura rings for years, and she writes to them about upgrades, warranty replacements and gift orders.",
     "evidence": [
       {
         "message_id": "syn-vendor_service-014-m1",
-        "quote": "My husband and I have both used Oura since Gen 1"
+        "quote": "both used Oura since Gen 1"
       },
       {
         "message_id": "syn-vendor_service-015-m1",
-        "quote": "next step for a warranty replacement"
+        "quote": "warranty replacement"
       },
       {
         "message_id": "syn-vendor_service-022-m1",
@@ -291,18 +340,21 @@
 }
 ---
 
-# Oura Team (Oura Member Services)
+# Oura Member Services
 
-Oura's customer support team. Mia and her husband have been Oura members for a long time, and she writes to support about ring upgrades, warranty replacements and gift orders.
+Oura's customer support team. Mia and her husband have worn Oura rings for years, and she writes to them about upgrades, warranty replacements and gift orders.
 
 - Address (default): Oura Team (7/7 emails)
-- Mia and her husband have used Oura since Gen 1 and wore Gen 3 rings before upgrading to Ring 4 in October 2024.
-- Mia asked for two sizing kits for the Ring 4 upgrade. Her full name on the account is Mia Song.
-- Ring sizes: Mia wears size 6 and Victor wears size 10, both in Silver.
-- Mia ordered the Ring 4s through the upgrade offer in the app, not through a trade-in.
-- Victor's Ring 4 (bought October 2024) stopped charging on August 9, 2025. They tried two chargers and cleaned the contacts before asking for a warranty replacement.
-- The warranty replacement was shipped in Victor Zhou's name, and the original ring was to be returned with a prepaid label by August 18, 2025.
-- In December 2025 Mia ordered a Ring 4 as a holiday gift for her friend Sophie Lin, with the sizing kit shipped straight to Sophie.
-- The gift needed to arrive in San Francisco before December 20.
+- This is Oura's customer support / member services team. Mia is a long-time Oura customer.
+- Mia and her husband have both used Oura since Gen 1. They were wearing Gen 3 rings in October 2024.
+- Mia's husband is Victor Zhou. He also has an Oura ring, and Mia handles support requests for both of them.
+- In October 2024 Mia asked to upgrade both rings from Gen 3 to Ring 4. She asked about sizing, trade-in discounts and whether memberships carry over, and requested two sizing kits.
+- Ring sizes: Mia wears a 6 and Victor a 10, both in Silver. They wore the sizing rings for 24 hours before choosing.
+- Mia placed the two Ring 4 orders using the upgrade offer in the app (October 2024).
+- Victor's Ring 4 (size 10, Silver, bought October 2024) stopped charging on August 9, 2025. They tried two chargers and cleaned the contacts before asking for a warranty replacement.
+- The warranty replacement was approved. Mia planned to drop off the original ring with the prepaid label by August 18, 2025.
+- In December 2025 Mia ordered an Oura Ring 4 as a holiday gift for her friend Sophie Lin, with the sizing kit sent straight to Sophie.
+- For the gift, Mia wanted to order by December 5 and have the ring arrive in San Francisco before December 20.
+- Mia's emails are short and polite, often use numbered questions, and thank them for quick answers.
 
 _Extracted offline by pipeline/extract.py; every entry is backed by verified quotes._

@@ -10,9 +10,9 @@
   ],
   "extraction": {
     "display_name": "Adobe Support",
-    "relationship": "customer support",
+    "relationship": "vendor support",
     "core_connection": {
-      "text": "Mia is an Adobe customer. She writes to Adobe Support to cancel subscriptions she no longer uses and to get the charges refunded and the fees waived.",
+      "text": "Adobe's customer support team, which Mia contacts to cancel unwanted Adobe subscriptions and get refunds for automatic renewals and trial conversions.",
       "evidence": [
         {
           "message_id": "syn-refund_complaint-004-m1",
@@ -36,20 +36,6 @@
           {
             "message_id": "syn-refund_complaint-015-m1",
             "quote": "Hello Adobe Support,"
-          }
-        ]
-      },
-      {
-        "context": "default",
-        "value": "Adobe Customer Care",
-        "evidence": [
-          {
-            "message_id": "syn-refund_complaint-004-m3",
-            "quote": "Hello Adobe Customer Care,"
-          },
-          {
-            "message_id": "syn-refund_complaint-015-m2",
-            "quote": "Hello Adobe Customer Care,"
           }
         ]
       }
@@ -88,7 +74,7 @@
       "evidence": [
         {
           "message_id": "syn-refund_complaint-004-m1",
-          "quote": "Please confirm the cancellation"
+          "quote": "Please cancel my Creative Cloud Photography plan"
         },
         {
           "message_id": "syn-refund_complaint-004-m2",
@@ -100,7 +86,7 @@
         },
         {
           "message_id": "syn-refund_complaint-015-m1",
-          "quote": "I was charged $29.99"
+          "quote": "My Adobe Stock free trial converted"
         },
         {
           "message_id": "syn-refund_complaint-015-m2",
@@ -110,11 +96,33 @@
     },
     "facts": [
       {
-        "text": "Mia's Creative Cloud Photography plan renewed automatically on December 20, 2024 for $119.88.",
+        "text": "This is Adobe's customer support team. Mia is a customer writing to cancel subscriptions and ask for refunds.",
         "evidence": [
           {
             "message_id": "syn-refund_complaint-004-m1",
-            "quote": "renewed automatically on December 20, 2024"
+            "quote": "Hello Adobe Support,"
+          }
+        ]
+      },
+      {
+        "text": "In replies to the support agents, Mia addresses them as 'Adobe Customer Care'.",
+        "evidence": [
+          {
+            "message_id": "syn-refund_complaint-004-m3",
+            "quote": "Hello Adobe Customer Care,"
+          },
+          {
+            "message_id": "syn-refund_complaint-015-m2",
+            "quote": "Hello Adobe Customer Care,"
+          }
+        ]
+      },
+      {
+        "text": "Mia signed up for the Creative Cloud Photography plan in January 2024 for a single project.",
+        "evidence": [
+          {
+            "message_id": "syn-refund_complaint-004-m1",
+            "quote": "I signed up for this plan in January 2024"
           }
         ]
       },
@@ -128,16 +136,33 @@
         ]
       },
       {
-        "text": "Mia did not get a reminder before the Photography plan renewed.",
+        "text": "The Photography plan renewed automatically on December 20, 2024 for $119.88, and Mia did not get a reminder before it renewed.",
         "evidence": [
           {
             "message_id": "syn-refund_complaint-004-m1",
-            "quote": "I did not receive a reminder that the term would renew."
+            "quote": "renewed automatically on December 20, 2024"
+          },
+          {
+            "message_id": "syn-refund_complaint-004-m1",
+            "quote": "I did not receive a reminder"
           }
         ]
       },
       {
-        "text": "Adobe refunded the Photography plan in two parts, $60.00 and then $59.88, for a total of $119.88.",
+        "text": "In January 2025 support cancelled the Photography plan and first refunded only $60.00. Mia asked for the remaining $59.88 and for escalation to the billing team.",
+        "evidence": [
+          {
+            "message_id": "syn-refund_complaint-004-m2",
+            "quote": "Thanks for cancelling the plan and refunding $60.00."
+          },
+          {
+            "message_id": "syn-refund_complaint-004-m2",
+            "quote": "please escalate the request to the billing team"
+          }
+        ]
+      },
+      {
+        "text": "The full $119.88 was eventually approved ($60.00 + $59.88), and Mia asked for written confirmation that the plan was fully closed.",
         "evidence": [
           {
             "message_id": "syn-refund_complaint-004-m3",
@@ -146,55 +171,55 @@
         ]
       },
       {
-        "text": "Mia's Adobe Stock free trial turned into a paid plan on December 6, 2025, and she was charged $29.99.",
+        "text": "Mia's Adobe Stock free trial converted to a paid plan on December 6, 2025, and she was charged $29.99.",
         "evidence": [
           {
             "message_id": "syn-refund_complaint-015-m1",
-            "quote": "I was charged $29.99"
+            "quote": "converted to a paid plan on December 6, 2025"
           }
         ]
       },
       {
-        "text": "Mia used none of the 10 Adobe Stock assets in the paid month.",
+        "text": "Mia signed up for the Adobe Stock trial only to download two images, and none of the paid plan's assets were used.",
         "evidence": [
           {
             "message_id": "syn-refund_complaint-015-m1",
-            "quote": "The 10 assets included in this month's plan are all unused."
+            "quote": "I signed up for the trial to download two images"
           }
         ]
       },
       {
-        "text": "Mia says the Stock trial page did not mention that it would become an annual commitment, and she asked Adobe to waive the rest of the cancellation fee.",
+        "text": "Support charged a cancellation fee on the Stock plan and waived half of it. Mia asked them to waive the rest and refund the $29.99 charge, pointing out that the trial page did not mention an annual commitment.",
         "evidence": [
           {
             "message_id": "syn-refund_complaint-015-m2",
-            "quote": "did not say that it would convert to an annual commitment"
+            "quote": "I'm asking for the remaining cancellation fee to be waived as well"
           },
           {
             "message_id": "syn-refund_complaint-015-m2",
-            "quote": "remaining cancellation fee to be waived as well"
+            "quote": "the trial page did not say that it would convert to an annual commitment"
           }
         ]
       },
       {
-        "text": "When first-level support refuses, Mia asks for escalation to the billing team or a supervisor.",
+        "text": "Mia's usual approach: ask for a one-time exception, and escalate (to the billing team or a supervisor) if the first support level cannot approve it.",
         "evidence": [
           {
-            "message_id": "syn-refund_complaint-004-m2",
-            "quote": "please escalate the request to the billing team"
+            "message_id": "syn-refund_complaint-004-m1",
+            "quote": "as a one-time exception"
           },
           {
             "message_id": "syn-refund_complaint-015-m2",
-            "quote": "escalate the request to a supervisor"
+            "quote": "please escalate the request to a supervisor"
           }
         ]
       },
       {
-        "text": "Mia always asks Adobe to confirm in writing that the plan is cancelled, that no more charges will be made, and the exact amount refunded.",
+        "text": "Mia always asks support to confirm the cancellation, that there will be no further charges, and the total amount refunded.",
         "evidence": [
           {
-            "message_id": "syn-refund_complaint-004-m3",
-            "quote": "please confirm that the plan is fully cancelled"
+            "message_id": "syn-refund_complaint-004-m1",
+            "quote": "Please confirm the cancellation"
           },
           {
             "message_id": "syn-refund_complaint-015-m1",

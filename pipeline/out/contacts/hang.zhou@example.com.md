@@ -69,20 +69,24 @@
         "quote": "装一个 blender-mcp 的 plugin"
       },
       {
+        "message_id": "syn-zh_en_casual-001-m2",
+        "quote": "道具先用 Tripo 生成"
+      },
+      {
         "message_id": "syn-zh_en_casual-001-m3",
-        "quote": "Three.js！单文件 index.html 就跑起来了"
+        "quote": "单文件 index.html 就跑起来了"
       },
       {
         "message_id": "syn-zh_en_casual-010-m2",
         "quote": "全大写的那些现在的 model 反而会过度执行"
       },
       {
-        "message_id": "syn-zh_en_casual-011-m1",
-        "quote": "现在基本都是 Claude Code 了"
+        "message_id": "syn-zh_en_casual-010-m3",
+        "quote": "就能自己判断 edge case"
       },
       {
         "message_id": "syn-zh_en_casual-011-m2",
-        "quote": "不会每行看 我看 diff 和测试"
+        "quote": "我看 diff 和测试"
       },
       {
         "message_id": "syn-zh_en_casual-011-m3",
@@ -91,17 +95,24 @@
       {
         "message_id": "syn-zh_en_casual-021-m2",
         "quote": "要 trigger 的词我中英文一起写"
-      },
-      {
-        "message_id": "syn-zh_en_casual-021-m3",
-        "quote": "不用一开始全塞进 context 嘛"
       }
     ]
   },
   "facts": [
     {
       "id": "f1",
-      "text": "Mia told 周航 she is making a small pirate game for practice, using Blender MCP and Tripo.",
+      "text": "周航 is a casual friend; the tone is relaxed, with emoji and 哈哈/啦, and Mia uses no sign-off.",
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "syn-zh_en_casual-001-m2",
+          "quote": "只能做方方正正的低多边形😂"
+        }
+      ]
+    },
+    {
+      "id": "f2",
+      "text": "In Sep 2024 Mia told 周航 she uses blender-mcp with Claude to build a pirate mini-game for practice.",
       "status": "learned",
       "evidence": [
         {
@@ -111,8 +122,19 @@
       ]
     },
     {
-      "id": "f2",
-      "text": "Mia's game uses Three.js in a single index.html, not Unity. She asked whether 周航 usually uses Unity.",
+      "id": "f3",
+      "text": "Mia explained her pipeline: Tripo generates the props, and Claude fixes their size and pivot.",
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "syn-zh_en_casual-001-m2",
+          "quote": "道具先用 Tripo 生成 Claude 负责整理尺寸和轴心"
+        }
+      ]
+    },
+    {
+      "id": "f4",
+      "text": "Mia builds the game in Three.js instead of Unity. She asked whether 周航 usually uses Unity, but the emails don't give the answer.",
       "status": "learned",
       "evidence": [
         {
@@ -126,14 +148,25 @@
       ]
     },
     {
-      "id": "f3",
-      "text": "In Dec 2024 they hiked Mission Peak on a Saturday, meeting at 7:30. Mia brought fruit and wanted a slower descent than last time.",
+      "id": "f5",
+      "text": "In Dec 2024 they hiked Mission Peak together on a Saturday, meeting at the parking lot at 7:30. Mia brought fruit.",
       "status": "learned",
       "evidence": [
         {
+          "message_id": "syn-zh_en_casual-004-m1",
+          "quote": "几点停车场集合？太晚就没位置了"
+        },
+        {
           "message_id": "syn-zh_en_casual-004-m2",
           "quote": "七点半可以 我带点水果"
-        },
+        }
+      ]
+    },
+    {
+      "id": "f6",
+      "text": "They have hiked together before. Last time they came down too fast, so Mia wanted to take it slower.",
+      "status": "learned",
+      "evidence": [
         {
           "message_id": "syn-zh_en_casual-004-m2",
           "quote": "上次下山走太快了 这次慢慢走啦"
@@ -141,10 +174,14 @@
       ]
     },
     {
-      "id": "f4",
-      "text": "In Jun 2025 周航's system prompt was too long. Mia advised adding a reason after each rule, and he said it helped.",
+      "id": "f7",
+      "text": "In Jun 2025 周航's system prompt had grown to about 2,000 characters. Mia advised keeping the role, the task and the 3 or 4 rules most often broken, and adding a reason after each rule.",
       "status": "learned",
       "evidence": [
+        {
+          "message_id": "syn-zh_en_casual-010-m1",
+          "quote": "只写最容易错的三四条"
+        },
         {
           "message_id": "syn-zh_en_casual-010-m2",
           "quote": "哈哈两千字太长了"
@@ -156,19 +193,23 @@
       ]
     },
     {
-      "id": "f5",
-      "text": "Mia mainly uses Claude Code for bigger features and Cursor for small edits.",
+      "id": "f8",
+      "text": "In Jul 2025 周航 was deciding between Cursor and Claude Code. Mia mostly uses Claude Code and Cursor only for small edits.",
       "status": "learned",
       "evidence": [
         {
           "message_id": "syn-zh_en_casual-011-m1",
-          "quote": "大一点的 feature 我就直接丢给 agent 哈哈"
+          "quote": "现在基本都是 Claude Code 了"
+        },
+        {
+          "message_id": "syn-zh_en_casual-011-m1",
+          "quote": "Cursor 改小地方还是快"
         }
       ]
     },
     {
-      "id": "f6",
-      "text": "Mia reviews agent code by checking the diff and tests, and writes some tests herself because agents tend to edit tests so they pass.",
+      "id": "f9",
+      "text": "Mia reviews agent code by looking at the diff and the tests, and she writes some tests herself because agents sometimes change tests to make them pass.",
       "status": "learned",
       "evidence": [
         {
@@ -177,13 +218,13 @@
         },
         {
           "message_id": "syn-zh_en_casual-011-m3",
-          "quote": "测试我会先自己写几个"
+          "quote": "所以测试我会先自己写几个"
         }
       ]
     },
     {
-      "id": "f7",
-      "text": "In May 2026 周航's Claude skills were not triggering. Mia advised putting real user phrases into the description, in both Chinese and English.",
+      "id": "f10",
+      "text": "In May 2026 周航 was writing Claude skills that often didn't trigger. Mia advised a concrete description with trigger words in both Chinese and English, a short main file and long examples in separate files.",
       "status": "learned",
       "evidence": [
         {
@@ -193,36 +234,44 @@
         {
           "message_id": "syn-zh_en_casual-021-m2",
           "quote": "要 trigger 的词我中英文一起写"
+        },
+        {
+          "message_id": "syn-zh_en_casual-021-m3",
+          "quote": "主文件尽量短，一两百行。"
         }
       ]
     },
     {
-      "id": "f8",
-      "text": "Mia keeps a skill's main file short (100 to 200 lines) and puts long examples in separate files.",
+      "id": "f11",
+      "text": "Mia often ends her advice by asking about 周航's own setup (prompt length, skill length, description).",
       "status": "learned",
       "evidence": [
         {
+          "message_id": "syn-zh_en_casual-010-m1",
+          "quote": "好奇你现在大概多长?"
+        },
+        {
           "message_id": "syn-zh_en_casual-021-m3",
-          "quote": "主文件尽量短，一两百行。"
+          "quote": "你的 skill 现在多长?"
         }
       ]
     }
   ],
   "edges": [],
   "core_connection": {
-    "text": "周航 and Mia are friends. They go hiking together, and he often asks her about AI coding tools (Blender MCP, system prompts, Claude Code, skills).",
+    "text": "A friend who hikes with Mia and often asks her practical questions about AI tools: Blender MCP, system prompts, Claude Code and Claude skills.",
     "evidence": [
       {
         "message_id": "syn-zh_en_casual-004-m1",
         "quote": "走！几点停车场集合？"
       },
       {
-        "message_id": "syn-zh_en_casual-001-m1",
-        "quote": "装一个 blender-mcp 的 plugin"
-      },
-      {
         "message_id": "syn-zh_en_casual-011-m1",
         "quote": "现在基本都是 Claude Code 了"
+      },
+      {
+        "message_id": "syn-zh_en_casual-021-m1",
+        "quote": "不触发多半是 description 写得太抽象"
       }
     ]
   },
@@ -232,16 +281,19 @@
 
 # 周航
 
-周航 and Mia are friends. They go hiking together, and he often asks her about AI coding tools (Blender MCP, system prompts, Claude Code, skills).
+A friend who hikes with Mia and often asks her practical questions about AI tools: Blender MCP, system prompts, Claude Code and Claude skills.
 
 - Address (default): 周航 (1/14 emails)
-- Mia told 周航 she is making a small pirate game for practice, using Blender MCP and Tripo.
-- Mia's game uses Three.js in a single index.html, not Unity. She asked whether 周航 usually uses Unity.
-- In Dec 2024 they hiked Mission Peak on a Saturday, meeting at 7:30. Mia brought fruit and wanted a slower descent than last time.
-- In Jun 2025 周航's system prompt was too long. Mia advised adding a reason after each rule, and he said it helped.
-- Mia mainly uses Claude Code for bigger features and Cursor for small edits.
-- Mia reviews agent code by checking the diff and tests, and writes some tests herself because agents tend to edit tests so they pass.
-- In May 2026 周航's Claude skills were not triggering. Mia advised putting real user phrases into the description, in both Chinese and English.
-- Mia keeps a skill's main file short (100 to 200 lines) and puts long examples in separate files.
+- 周航 is a casual friend; the tone is relaxed, with emoji and 哈哈/啦, and Mia uses no sign-off.
+- In Sep 2024 Mia told 周航 she uses blender-mcp with Claude to build a pirate mini-game for practice.
+- Mia explained her pipeline: Tripo generates the props, and Claude fixes their size and pivot.
+- Mia builds the game in Three.js instead of Unity. She asked whether 周航 usually uses Unity, but the emails don't give the answer.
+- In Dec 2024 they hiked Mission Peak together on a Saturday, meeting at the parking lot at 7:30. Mia brought fruit.
+- They have hiked together before. Last time they came down too fast, so Mia wanted to take it slower.
+- In Jun 2025 周航's system prompt had grown to about 2,000 characters. Mia advised keeping the role, the task and the 3 or 4 rules most often broken, and adding a reason after each rule.
+- In Jul 2025 周航 was deciding between Cursor and Claude Code. Mia mostly uses Claude Code and Cursor only for small edits.
+- Mia reviews agent code by looking at the diff and the tests, and she writes some tests herself because agents sometimes change tests to make them pass.
+- In May 2026 周航 was writing Claude skills that often didn't trigger. Mia advised a concrete description with trigger words in both Chinese and English, a short main file and long examples in separate files.
+- Mia often ends her advice by asking about 周航's own setup (prompt length, skill length, description).
 
 _Extracted offline by pipeline/extract.py; every entry is backed by verified quotes._

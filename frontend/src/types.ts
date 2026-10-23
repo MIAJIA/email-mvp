@@ -85,3 +85,53 @@ export interface FeedbackResponse {
   ref: Ref;
   status: EntryStatus;
 }
+
+// GET /contacts/{email} (backend/app/schema.py ContactNote).
+export interface NoteField {
+  value: string | null;
+  count: number;
+  total: number;
+  status: EntryStatus;
+  evidence: Evidence[];
+}
+
+export interface Fact {
+  id: string;
+  text: string;
+  status: EntryStatus;
+  evidence: Evidence[];
+}
+
+export interface Edge {
+  to: string;
+  type: string;
+  evidence: Evidence[];
+}
+
+export interface ExternalItem {
+  id: string;
+  text: string;
+  source_label: string;
+  date: string;
+}
+
+// Contract 0.3: optional, one entry per context (private / default / formal).
+export interface ContextAddress extends NoteField {
+  context: "private" | "default" | "formal";
+}
+
+export interface ContactNote {
+  email: string;
+  display_name: string;
+  relationship: string | null;
+  scenario: string | null;
+  address_as: NoteField;
+  honorific: NoteField;
+  sign_off: NoteField;
+  language: NoteField;
+  facts: Fact[];
+  edges: Edge[];
+  external: ExternalItem[];
+  address_as_by_context?: ContextAddress[] | null;
+  body: string;
+}

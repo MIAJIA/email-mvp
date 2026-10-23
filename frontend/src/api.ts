@@ -1,4 +1,4 @@
-import type { ContactSummary, Draft, DraftRequest, Email, FeedbackRequest, FeedbackResponse } from "./types";
+import type { ContactNote, ContactSummary, Draft, DraftRequest, Email, FeedbackRequest, FeedbackResponse } from "./types";
 
 const BASE: string = import.meta.env.VITE_API_BASE ?? "http://localhost:8041";
 
@@ -15,6 +15,9 @@ async function request<T>(path: string, init?: RequestInit): Promise<T> {
 }
 
 export const getContacts = () => request<ContactSummary[]>("/contacts");
+
+export const getContact = (email: string) =>
+  request<ContactNote>(`/contacts/${encodeURIComponent(email)}`);
 
 export const createDraft = (body: DraftRequest) =>
   request<Draft>("/draft", { method: "POST", body: JSON.stringify(body) });

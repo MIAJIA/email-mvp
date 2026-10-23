@@ -23,7 +23,7 @@ from prompts import CONTACT_PROMPT, SCENARIO_PROMPT, format_email  # noqa: E402
 import verify  # noqa: E402
 
 MIN_EMAILS = 3          # contacts with fewer emails fall back to the scenario style
-MAX_CONTACT_EMAILS = 40  # most recent ones; `total` is the number shown to the model
+MAX_CONTACT_EMAILS = 60  # most recent ones; `total` is the number shown to the model
 MAX_SCENARIO_EMAILS = 30
 
 

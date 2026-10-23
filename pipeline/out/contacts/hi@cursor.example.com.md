@@ -2,7 +2,7 @@
 {
   "email": "hi@cursor.example.com",
   "display_name": "Cursor Support",
-  "relationship": "vendor support",
+  "relationship": "customer support",
   "address_as": {
     "value": "Cursor Support",
     "count": 3,
@@ -54,19 +54,19 @@
     "evidence": [
       {
         "message_id": "syn-refund_complaint-001-m1",
-        "quote": "Thank you,"
+        "quote": "Thank you,\nMia"
       },
       {
         "message_id": "syn-refund_complaint-012-m1",
-        "quote": "Thank you,"
+        "quote": "Thank you,\nMia"
       },
       {
         "message_id": "syn-refund_complaint-012-m2",
-        "quote": "Thank you,"
+        "quote": "Thank you,\nMia"
       },
       {
         "message_id": "syn-refund_complaint-012-m3",
-        "quote": "Thank you,"
+        "quote": "Thank you,\nMia"
       }
     ]
   },
@@ -86,7 +86,7 @@
       },
       {
         "message_id": "syn-refund_complaint-012-m1",
-        "quote": "Thank you,"
+        "quote": "Please refund the $40.00 Business charge"
       },
       {
         "message_id": "syn-refund_complaint-012-m2",
@@ -94,14 +94,51 @@
       },
       {
         "message_id": "syn-refund_complaint-012-m3",
-        "quote": "Thank you for passing this to the billing team."
+        "quote": "It has been six days"
       }
     ]
   },
   "facts": [
     {
       "id": "f1",
-      "text": "In 2024, Mia's Cursor Pro plan renewed every month without use. Her last session was on April 3, 2024, and the unused renewals cost $100 (5 × $20, from May 3 to Sep 3, 2024).",
+      "text": "This is Cursor's customer support address. Mia writes to it as a paying Cursor customer.",
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "syn-refund_complaint-001-m1",
+          "quote": "Hello Cursor Support,"
+        }
+      ]
+    },
+    {
+      "id": "f2",
+      "text": "Support passes refund requests it cannot approve to a separate billing team, and Mia has asked for escalation there.",
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "syn-refund_complaint-001-m1",
+          "quote": "escalate the request to the billing team"
+        },
+        {
+          "message_id": "syn-refund_complaint-012-m3",
+          "quote": "passing this to the billing team"
+        }
+      ]
+    },
+    {
+      "id": "f3",
+      "text": "In 2024, Mia's Cursor Pro subscription kept renewing every month from April 2024 after she stopped using it.",
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "syn-refund_complaint-001-m1",
+          "quote": "renewed every month since April 2024"
+        }
+      ]
+    },
+    {
+      "id": "f4",
+      "text": "Her last activity on the account was April 3, 2024.",
       "status": "learned",
       "evidence": [
         {
@@ -109,46 +146,71 @@
           "quote": "from April 3, 2024"
         },
         {
+          "message_id": "syn-refund_complaint-001-m2",
+          "quote": "My last activity on the account was April 3, 2024"
+        }
+      ]
+    },
+    {
+      "id": "f5",
+      "text": "The unused renewals came to $100.00, which was five monthly charges of $20.00.",
+      "status": "learned",
+      "evidence": [
+        {
           "message_id": "syn-refund_complaint-001-m1",
           "quote": "The charges total $100.00"
         }
       ]
     },
     {
-      "id": "f2",
-      "text": "Mia wants refunds to go to her original payment method, not to account credits.",
+      "id": "f6",
+      "text": "Mia asks for refunds to go back to her original payment method, not as account credits.",
       "status": "learned",
       "evidence": [
         {
           "message_id": "syn-refund_complaint-001-m1",
-          "quote": "rather than account credits"
+          "quote": "to the original payment method"
         }
       ]
     },
     {
-      "id": "f3",
-      "text": "Support refunded only the most recent $20. Mia asked for the remaining $80 (May 3 to Aug 3, 2024) to be escalated to billing or a supervisor.",
+      "id": "f7",
+      "text": "Support refunded only the most recent $20.00 of the 2024 charges.",
       "status": "learned",
       "evidence": [
         {
           "message_id": "syn-refund_complaint-001-m2",
-          "quote": "Thanks for refunding the most recent $20.00 charge."
-        },
-        {
-          "message_id": "syn-refund_complaint-001-m2",
-          "quote": "escalate this to the billing team"
+          "quote": "refunding the most recent $20.00 charge"
         }
       ]
     },
     {
-      "id": "f4",
-      "text": "On September 2, 2025, Mia switched from a Business seat to an individual Pro plan. On September 3 she was charged for both: $40 for Business and $20 for Pro.",
+      "id": "f8",
+      "text": "Mia then asked for a review of the other four charges (May 3 to August 3, 2024), $80.00 in total.",
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "syn-refund_complaint-001-m2",
+          "quote": "total $80.00"
+        }
+      ]
+    },
+    {
+      "id": "f9",
+      "text": "On September 2, 2025, Mia switched from a Business seat to an individual Pro plan.",
       "status": "learned",
       "evidence": [
         {
           "message_id": "syn-refund_complaint-012-m1",
-          "quote": "on September 2, 2025"
-        },
+          "quote": "individual Pro plan on September 2, 2025"
+        }
+      ]
+    },
+    {
+      "id": "f10",
+      "text": "On September 3, 2025, she was charged for both plans: $40.00 for the Business seat and $20.00 for Pro.",
+      "status": "learned",
+      "evidence": [
         {
           "message_id": "syn-refund_complaint-012-m1",
           "quote": "$40.00 for the Business seat"
@@ -156,14 +218,32 @@
       ]
     },
     {
-      "id": "f5",
-      "text": "Support refunded $20 of the $40 Business charge. Mia is asking for the remaining $20 because the seat was removed the day before the charge, and she has the removal confirmation email.",
+      "id": "f11",
+      "text": "She removed the team workspace on the same day she switched plans, and asked support to confirm that no active seats remain.",
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "syn-refund_complaint-012-m1",
+          "quote": "removed the team workspace the same day"
+        }
+      ]
+    },
+    {
+      "id": "f12",
+      "text": "Support refunded $20.00 of the $40.00 Business charge. Mia is still asking for the remaining $20.00.",
       "status": "learned",
       "evidence": [
         {
           "message_id": "syn-refund_complaint-012-m2",
-          "quote": "Thanks for refunding $20.00 of the Business charge."
-        },
+          "quote": "refunding $20.00 of the Business charge"
+        }
+      ]
+    },
+    {
+      "id": "f13",
+      "text": "Mia has the email confirming the Business seat was removed and offered it as proof.",
+      "status": "learned",
+      "evidence": [
         {
           "message_id": "syn-refund_complaint-012-m2",
           "quote": "I have the removal confirmation email"
@@ -171,32 +251,13 @@
       ]
     },
     {
-      "id": "f6",
-      "text": "As of September 18, 2025, the billing team had not replied six days after the escalation. $20 is still open, and Mia wants confirmation that the team workspace has no active seats.",
+      "id": "f14",
+      "text": "As of September 18, 2025, the billing team had not replied for six days.",
       "status": "learned",
       "evidence": [
         {
           "message_id": "syn-refund_complaint-012-m3",
-          "quote": "It has been six days and I have not heard back yet."
-        },
-        {
-          "message_id": "syn-refund_complaint-012-m3",
-          "quote": "no active seats left on the team workspace"
-        }
-      ]
-    },
-    {
-      "id": "f7",
-      "text": "Mia's style with support: she states exact dates and amounts, asks for a one-time exception, and asks them to escalate if first-level support can't approve it.",
-      "status": "learned",
-      "evidence": [
-        {
-          "message_id": "syn-refund_complaint-001-m1",
-          "quote": "please escalate the request to the billing team"
-        },
-        {
-          "message_id": "syn-refund_complaint-001-m2",
-          "quote": "as a one-time exception"
+          "quote": "It has been six days"
         }
       ]
     }
@@ -208,13 +269,13 @@
       "evidence": [
         {
           "message_id": "syn-refund_complaint-012-m3",
-          "quote": "Thank you for passing this to the billing team."
+          "quote": "passing this to the billing team"
         }
       ]
     }
   ],
   "core_connection": {
-    "text": "Mia, as a paying user, contacts Cursor's support desk about refunds and billing errors on her Cursor subscriptions.",
+    "text": "Mia is a Cursor customer. All her emails to this support address are billing disputes asking for refunds, once in 2024 and again in 2025.",
     "evidence": [
       {
         "message_id": "syn-refund_complaint-001-m1",
@@ -232,15 +293,22 @@
 
 # Cursor Support
 
-Mia, as a paying user, contacts Cursor's support desk about refunds and billing errors on her Cursor subscriptions.
+Mia is a Cursor customer. All her emails to this support address are billing disputes asking for refunds, once in 2024 and again in 2025.
 
 - Address (default): Cursor Support (3/5 emails)
-- In 2024, Mia's Cursor Pro plan renewed every month without use. Her last session was on April 3, 2024, and the unused renewals cost $100 (5 × $20, from May 3 to Sep 3, 2024).
-- Mia wants refunds to go to her original payment method, not to account credits.
-- Support refunded only the most recent $20. Mia asked for the remaining $80 (May 3 to Aug 3, 2024) to be escalated to billing or a supervisor.
-- On September 2, 2025, Mia switched from a Business seat to an individual Pro plan. On September 3 she was charged for both: $40 for Business and $20 for Pro.
-- Support refunded $20 of the $40 Business charge. Mia is asking for the remaining $20 because the seat was removed the day before the charge, and she has the removal confirmation email.
-- As of September 18, 2025, the billing team had not replied six days after the escalation. $20 is still open, and Mia wants confirmation that the team workspace has no active seats.
-- Mia's style with support: she states exact dates and amounts, asks for a one-time exception, and asks them to escalate if first-level support can't approve it.
+- This is Cursor's customer support address. Mia writes to it as a paying Cursor customer.
+- Support passes refund requests it cannot approve to a separate billing team, and Mia has asked for escalation there.
+- In 2024, Mia's Cursor Pro subscription kept renewing every month from April 2024 after she stopped using it.
+- Her last activity on the account was April 3, 2024.
+- The unused renewals came to $100.00, which was five monthly charges of $20.00.
+- Mia asks for refunds to go back to her original payment method, not as account credits.
+- Support refunded only the most recent $20.00 of the 2024 charges.
+- Mia then asked for a review of the other four charges (May 3 to August 3, 2024), $80.00 in total.
+- On September 2, 2025, Mia switched from a Business seat to an individual Pro plan.
+- On September 3, 2025, she was charged for both plans: $40.00 for the Business seat and $20.00 for Pro.
+- She removed the team workspace on the same day she switched plans, and asked support to confirm that no active seats remain.
+- Support refunded $20.00 of the $40.00 Business charge. Mia is still asking for the remaining $20.00.
+- Mia has the email confirming the Business seat was removed and offered it as proof.
+- As of September 18, 2025, the billing team had not replied for six days.
 
 _Extracted offline by pipeline/extract.py; every entry is backed by verified quotes._

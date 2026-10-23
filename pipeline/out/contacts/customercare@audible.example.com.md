@@ -66,53 +66,68 @@
     "evidence": [
       {
         "message_id": "syn-refund_complaint-006-m1",
-        "quote": "I would like to cancel my Audible"
+        "quote": "request a refund for the months I did not use"
       },
       {
         "message_id": "syn-refund_complaint-006-m2",
-        "quote": "Thank you for refunding the March charge"
+        "quote": "I'm asking for a review"
       },
       {
         "message_id": "syn-refund_complaint-017-m1",
-        "quote": "I have not used the new credit"
+        "quote": "Please confirm the cancellation"
       },
       {
         "message_id": "syn-refund_complaint-017-m2",
-        "quote": "Yes, please go ahead with the refund."
+        "quote": "please go ahead with the refund"
       }
     ]
   },
   "facts": [
     {
       "id": "f1",
-      "text": "Mia's plan was Audible Premium Plus. It renewed every month at $14.95 starting in November 2024.",
+      "text": "This is Audible's customer service desk. Mia writes to it as a subscriber about billing, cancelling and refunds.",
       "status": "learned",
       "evidence": [
         {
           "message_id": "syn-refund_complaint-006-m1",
-          "quote": "renewed at $14.95 per month since November 2024"
+          "quote": "Hello Audible Customer Service,"
         }
       ]
     },
     {
       "id": "f2",
-      "text": "Mia had not downloaded or listened to any title since October 2024. In March 2025 she asked to cancel and get back five unused charges totaling $74.75.",
+      "text": "Mia had an Audible Premium Plus membership that cost $14.95 a month.",
       "status": "learned",
       "evidence": [
         {
           "message_id": "syn-refund_complaint-006-m1",
-          "quote": "The five charges total $74.75."
+          "quote": "renewed at $14.95 per month"
         }
       ]
     },
     {
       "id": "f3",
-      "text": "Audible refunded only the March 2025 charge of $14.95. Mia then asked for the other four charges, $59.80 for November 2024 through February 2025, to be reviewed.",
+      "text": "In March 2025, Mia asked to cancel and get a refund for five unused months (November 2024 to March 2025), $74.75 in total. She had not listened to anything since October 2024.",
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "syn-refund_complaint-006-m1",
+          "quote": "The five charges total $74.75."
+        },
+        {
+          "message_id": "syn-refund_complaint-006-m1",
+          "quote": "not downloaded or listened to any title"
+        }
+      ]
+    },
+    {
+      "id": "f4",
+      "text": "Audible refunded only the March 2025 charge of $14.95. Mia then asked for the other four charges, $59.80 for November 2024 to February 2025, to be refunded as well.",
       "status": "learned",
       "evidence": [
         {
           "message_id": "syn-refund_complaint-006-m2",
-          "quote": "Thank you for refunding the March charge of $14.95."
+          "quote": "refunding the March charge of $14.95"
         },
         {
           "message_id": "syn-refund_complaint-006-m2",
@@ -121,13 +136,13 @@
       ]
     },
     {
-      "id": "f4",
-      "text": "Mia wants refunds to go back to the original payment method, not to stay as account credits. She also wants unused credits removed.",
+      "id": "f5",
+      "text": "Mia wants refunds paid back to her original payment method, not kept as account credits, and she asked for the unused credits to be removed.",
       "status": "learned",
       "evidence": [
         {
           "message_id": "syn-refund_complaint-006-m2",
-          "quote": "to the original payment method rather than account credits"
+          "quote": "rather than account credits"
         },
         {
           "message_id": "syn-refund_complaint-006-m2",
@@ -136,46 +151,39 @@
       ]
     },
     {
-      "id": "f5",
-      "text": "On November 8, 2025, Mia paused her membership and set it to cancel when the pause ended on February 8, 2026.",
-      "status": "learned",
-      "evidence": [
-        {
-          "message_id": "syn-refund_complaint-017-m1",
-          "quote": "When I paused my membership on November 8, 2025"
-        }
-      ]
-    },
-    {
       "id": "f6",
-      "text": "The membership renewed anyway on February 8, 2026, and Mia was charged $14.95. She asked Audible to cancel and refund it.",
+      "text": "In March 2025, Mia said she did not plan to use the service again.",
       "status": "learned",
       "evidence": [
         {
-          "message_id": "syn-refund_complaint-017-m1",
-          "quote": "it was renewed on February 8, 2026 and I was charged $14.95"
+          "message_id": "syn-refund_complaint-006-m2",
+          "quote": "plan to use the service again"
         }
       ]
     },
     {
       "id": "f7",
-      "text": "On February 12, 2026, Mia confirmed that Audible should go ahead with the $14.95 refund.",
+      "text": "On November 8, 2025, Mia paused her membership and set it to cancel when the pause ended on February 8, 2026.",
       "status": "learned",
       "evidence": [
         {
-          "message_id": "syn-refund_complaint-017-m2",
-          "quote": "Yes, please go ahead with the refund."
+          "message_id": "syn-refund_complaint-017-m1",
+          "quote": "paused my membership on November 8, 2025"
+        },
+        {
+          "message_id": "syn-refund_complaint-017-m1",
+          "quote": "end of the pause on February 8, 2026"
         }
       ]
     },
     {
       "id": "f8",
-      "text": "Mia usually asks Audible to confirm the cancellation, the refund amount, and that no further charges will be made.",
+      "text": "The membership renewed anyway on February 8, 2026, and Mia was charged $14.95. She asked Audible to cancel it, refund the charge and confirm there would be no more charges.",
       "status": "learned",
       "evidence": [
         {
-          "message_id": "syn-refund_complaint-006-m1",
-          "quote": "Please confirm the cancellation"
+          "message_id": "syn-refund_complaint-017-m1",
+          "quote": "it was renewed on February 8, 2026"
         },
         {
           "message_id": "syn-refund_complaint-017-m1",
@@ -185,23 +193,34 @@
     },
     {
       "id": "f9",
-      "text": "Mia adds her account email at the end of her follow-up emails.",
+      "text": "On February 12, 2026, Mia confirmed that Audible should go ahead with the $14.95 refund.",
       "status": "learned",
       "evidence": [
         {
-          "message_id": "syn-refund_complaint-006-m2",
-          "quote": "account email: [EMAIL]"
+          "message_id": "syn-refund_complaint-017-m2",
+          "quote": "please go ahead with the refund"
+        }
+      ]
+    },
+    {
+      "id": "f10",
+      "text": "Mia's emails to Audible are short and polite. They state exact amounts and dates and end by asking Audible to confirm the cancellation and the refund.",
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "syn-refund_complaint-006-m1",
+          "quote": "Please confirm the cancellation"
         },
         {
           "message_id": "syn-refund_complaint-017-m1",
-          "quote": "account email: [EMAIL]"
+          "quote": "Please confirm the cancellation"
         }
       ]
     }
   ],
   "edges": [],
   "core_connection": {
-    "text": "Audible is a subscription service Mia has used. She writes to its customer service to cancel her Premium Plus membership and get refunds for charges she did not use.",
+    "text": "Audible's customer service team, which Mia contacts to cancel her Audible Premium Plus membership and get refunds for charges she did not use.",
     "evidence": [
       {
         "message_id": "syn-refund_complaint-006-m1",
@@ -219,17 +238,18 @@
 
 # Audible Customer Service
 
-Audible is a subscription service Mia has used. She writes to its customer service to cancel her Premium Plus membership and get refunds for charges she did not use.
+Audible's customer service team, which Mia contacts to cancel her Audible Premium Plus membership and get refunds for charges she did not use.
 
 - Address (default): Audible Customer Service (2/4 emails)
-- Mia's plan was Audible Premium Plus. It renewed every month at $14.95 starting in November 2024.
-- Mia had not downloaded or listened to any title since October 2024. In March 2025 she asked to cancel and get back five unused charges totaling $74.75.
-- Audible refunded only the March 2025 charge of $14.95. Mia then asked for the other four charges, $59.80 for November 2024 through February 2025, to be reviewed.
-- Mia wants refunds to go back to the original payment method, not to stay as account credits. She also wants unused credits removed.
+- This is Audible's customer service desk. Mia writes to it as a subscriber about billing, cancelling and refunds.
+- Mia had an Audible Premium Plus membership that cost $14.95 a month.
+- In March 2025, Mia asked to cancel and get a refund for five unused months (November 2024 to March 2025), $74.75 in total. She had not listened to anything since October 2024.
+- Audible refunded only the March 2025 charge of $14.95. Mia then asked for the other four charges, $59.80 for November 2024 to February 2025, to be refunded as well.
+- Mia wants refunds paid back to her original payment method, not kept as account credits, and she asked for the unused credits to be removed.
+- In March 2025, Mia said she did not plan to use the service again.
 - On November 8, 2025, Mia paused her membership and set it to cancel when the pause ended on February 8, 2026.
-- The membership renewed anyway on February 8, 2026, and Mia was charged $14.95. She asked Audible to cancel and refund it.
+- The membership renewed anyway on February 8, 2026, and Mia was charged $14.95. She asked Audible to cancel it, refund the charge and confirm there would be no more charges.
 - On February 12, 2026, Mia confirmed that Audible should go ahead with the $14.95 refund.
-- Mia usually asks Audible to confirm the cancellation, the refund amount, and that no further charges will be made.
-- Mia adds her account email at the end of her follow-up emails.
+- Mia's emails to Audible are short and polite. They state exact amounts and dates and end by asking Audible to confirm the cancellation and the refund.
 
 _Extracted offline by pipeline/extract.py; every entry is backed by verified quotes._

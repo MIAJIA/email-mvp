@@ -1,7 +1,7 @@
 ---
 {
   "email": "amy.wang@example.com",
-  "display_name": "Amy",
+  "display_name": "Amy Wang",
   "relationship": "friend",
   "address_as": {
     "value": "Amy",
@@ -32,53 +32,29 @@
   ],
   "honorific": {
     "value": "你",
-    "count": 3,
-    "total": 11,
-    "status": "learned",
-    "evidence": [
-      {
-        "message_id": "syn-zh_en_casual-003-m2",
-        "quote": "你离得近"
-      },
-      {
-        "message_id": "syn-zh_en_casual-008-m2",
-        "quote": "你不喜欢就拿来给我呀"
-      },
-      {
-        "message_id": "syn-zh_en_casual-015-m2",
-        "quote": "你们哪天出发?"
-      }
-    ]
-  },
-  "language": {
-    "value": "mixed",
     "count": 8,
     "total": 11,
     "status": "learned",
     "evidence": [
       {
         "message_id": "syn-zh_en_casual-003-m1",
-        "quote": "Cupertino 那家小龙坎还不错"
+        "quote": "你们能吃多辣?"
       },
       {
         "message_id": "syn-zh_en_casual-003-m2",
-        "quote": "先在 Yelp 上帮我们排个号嘛"
+        "quote": "你离得近"
       },
       {
         "message_id": "syn-zh_en_casual-005-m1",
-        "quote": "哈哈是的"
+        "quote": "你们有这套吗?"
       },
       {
-        "message_id": "syn-zh_en_casual-008-m1",
-        "quote": "everything bagel 调料"
-      },
-      {
-        "message_id": "syn-zh_en_casual-012-m1",
-        "quote": "前几天送进去会哭"
+        "message_id": "syn-zh_en_casual-008-m2",
+        "quote": "你不喜欢就拿来给我呀"
       },
       {
         "message_id": "syn-zh_en_casual-012-m2",
-        "quote": "一般 daycare 会给清单"
+        "quote": "你们那家有发清单吗?"
       },
       {
         "message_id": "syn-zh_en_casual-015-m1",
@@ -86,14 +62,80 @@
       },
       {
         "message_id": "syn-zh_en_casual-015-m2",
-        "quote": "Caltrans 的 app"
+        "quote": "你们哪天出发?"
+      },
+      {
+        "message_id": "syn-zh_en_casual-015-m3",
+        "quote": "拍了雪景记得发我看看哈哈"
+      }
+    ]
+  },
+  "language": {
+    "value": "zh",
+    "count": 8,
+    "total": 11,
+    "status": "learned",
+    "evidence": [
+      {
+        "message_id": "syn-zh_en_casual-003-m1",
+        "quote": "辣是真辣"
+      },
+      {
+        "message_id": "syn-zh_en_casual-003-m2",
+        "quote": "好呀 周四可以 我七点左右到"
+      },
+      {
+        "message_id": "syn-zh_en_casual-005-m2",
+        "quote": "还有一本恐龙的立体书 一翻就弹出来"
+      },
+      {
+        "message_id": "syn-zh_en_casual-008-m1",
+        "quote": "那款 everything bagel 调料撒什么都好吃"
+      },
+      {
+        "message_id": "syn-zh_en_casual-008-m2",
+        "quote": "撒在煎蛋上超香"
+      },
+      {
+        "message_id": "syn-zh_en_casual-012-m1",
+        "quote": "别太担心呀哈哈"
+      },
+      {
+        "message_id": "syn-zh_en_casual-012-m2",
+        "quote": "衣服都贴上名字贴"
+      },
+      {
+        "message_id": "syn-zh_en_casual-015-m1",
+        "quote": "我们住的 South Lake 吃饭方便一点"
       }
     ]
   },
   "facts": [
     {
       "id": "f1",
-      "text": "Mia recommended the Xiaolongkan (小龙坎) hotpot in Cupertino to Amy and said weekday evenings are better because of weekend queues.",
+      "text": "Amy is Mia's friend. Both have young children, and they swap parenting tips.",
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "syn-zh_en_casual-012-m1",
+          "quote": "别太担心呀哈哈"
+        }
+      ]
+    },
+    {
+      "id": "f2",
+      "text": "Amy has a family. Mia uses 你们 when she asks about their plans.",
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "syn-zh_en_casual-015-m2",
+          "quote": "你们哪天出发?"
+        }
+      ]
+    },
+    {
+      "id": "f3",
+      "text": "Mia recommended the Xiaolongkan (小龙坎) hot pot in Cupertino. It is very spicy, has long waits on weekends, and is better on weekday evenings.",
       "status": "learned",
       "evidence": [
         {
@@ -107,8 +149,8 @@
       ]
     },
     {
-      "id": "f2",
-      "text": "They agreed to have hotpot together on a Thursday (November 2024), with Mia arriving around 7 pm. Amy lives closer to the restaurant.",
+      "id": "f4",
+      "text": "In November 2024 they planned hot pot together on a Thursday. Mia would arrive around 7pm and asked Amy, who lives closer, to get them in line on Yelp.",
       "status": "learned",
       "evidence": [
         {
@@ -122,29 +164,21 @@
       ]
     },
     {
-      "id": "f3",
-      "text": "Both families' kids love dinosaurs. Mia's child has heard Tatsuya Miyanishi's 《你看起来好像很好吃》 more than ten times and can recite it.",
+      "id": "f5",
+      "text": "Mia's child loves dinosaurs and has heard Tatsuya Miyanishi's 'You Look Yummy!' (《你看起来好像很好吃》) more than ten times.",
       "status": "learned",
       "evidence": [
         {
           "message_id": "syn-zh_en_casual-005-m1",
           "quote": "宫西达也那套《你看起来好像很好吃》"
-        },
-        {
-          "message_id": "syn-zh_en_casual-005-m1",
-          "quote": "还会自己背了"
         }
       ]
     },
     {
-      "id": "f4",
-      "text": "Mia's family also has a pop-up dinosaur book that they have had to glue back together twice.",
+      "id": "f6",
+      "text": "Mia's family has a dinosaur pop-up book that has torn easily and been glued back twice.",
       "status": "learned",
       "evidence": [
-        {
-          "message_id": "syn-zh_en_casual-005-m2",
-          "quote": "还有一本恐龙的立体书"
-        },
         {
           "message_id": "syn-zh_en_casual-005-m2",
           "quote": "我们已经补过两次胶啦"
@@ -152,13 +186,13 @@
       ]
     },
     {
-      "id": "f5",
-      "text": "Mia loves Trader Joe's everything bagel seasoning (she is on her third jar and puts it on fried eggs) and recommends the frozen mandarin chicken.",
+      "id": "f7",
+      "text": "Mia likes Trader Joe's everything bagel seasoning, is on her third bottle and puts it on fried eggs. She also recommends the frozen mandarin chicken.",
       "status": "learned",
       "evidence": [
         {
           "message_id": "syn-zh_en_casual-008-m2",
-          "quote": "我已经买第三瓶了，撒在煎蛋上超香"
+          "quote": "我已经买第三瓶了"
         },
         {
           "message_id": "syn-zh_en_casual-008-m1",
@@ -167,8 +201,8 @@
       ]
     },
     {
-      "id": "f6",
-      "text": "Amy's child started daycare around August 2025. Mia's child took about two weeks to adjust.",
+      "id": "f8",
+      "text": "In August 2025, as Amy's child was starting daycare, Mia shared that her own child took about two weeks to adjust.",
       "status": "learned",
       "evidence": [
         {
@@ -178,45 +212,49 @@
       ]
     },
     {
-      "id": "f7",
-      "text": "Mia's daycare tip: put name labels on all clothes so they don't get mixed up.",
+      "id": "f9",
+      "text": "Mia's daycare tips: bring a change of clothes, a small blanket and a water cup, and put name labels on clothing.",
       "status": "learned",
       "evidence": [
         {
           "message_id": "syn-zh_en_casual-012-m2",
-          "quote": "衣服都贴上名字贴"
-        }
-      ]
-    },
-    {
-      "id": "f8",
-      "text": "Amy planned a Christmas 2025 trip to Tahoe. Mia's family had stayed at South Lake, which she said is more convenient for food.",
-      "status": "learned",
-      "evidence": [
-        {
-          "message_id": "syn-zh_en_casual-015-m1",
-          "quote": "我们住的 South Lake 吃饭方便一点"
-        }
-      ]
-    },
-    {
-      "id": "f9",
-      "text": "Amy's car is four-wheel drive. Mia still advised keeping a set of snow chains in the car and checking road conditions in the Caltrans app.",
-      "status": "learned",
-      "evidence": [
-        {
-          "message_id": "syn-zh_en_casual-015-m2",
-          "quote": "四驱一般没问题"
-        },
-        {
-          "message_id": "syn-zh_en_casual-015-m2",
-          "quote": "车里还是放一副"
+          "quote": "换洗衣服、小被子、水杯这些"
         }
       ]
     },
     {
       "id": "f10",
-      "text": "Mia asked Amy to send her photos of the snow from the Tahoe trip.",
+      "text": "Amy planned a Christmas 2025 trip to Tahoe. Mia's family had stayed in South Lake, which is easier for food. North Lake is quieter with better views.",
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "syn-zh_en_casual-015-m1",
+          "quote": "我们住的 South Lake 吃饭方便一点"
+        },
+        {
+          "message_id": "syn-zh_en_casual-015-m1",
+          "quote": "North 那边安静 风景更好"
+        }
+      ]
+    },
+    {
+      "id": "f11",
+      "text": "Mia advised keeping snow chains in the car even with 4WD and checking road conditions in the Caltrans app before leaving.",
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "syn-zh_en_casual-015-m2",
+          "quote": "车里还是放一副"
+        },
+        {
+          "message_id": "syn-zh_en_casual-015-m2",
+          "quote": "Caltrans 的 app"
+        }
+      ]
+    },
+    {
+      "id": "f12",
+      "text": "Mia asked Amy to send her photos of the snow from Tahoe.",
       "status": "learned",
       "evidence": [
         {
@@ -224,16 +262,27 @@
           "quote": "拍了雪景记得发我看看哈哈"
         }
       ]
+    },
+    {
+      "id": "f13",
+      "text": "Mia's tone with Amy is casual and playful. She often uses 哈哈, 😂 and particles like 呀 and 嘛.",
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "syn-zh_en_casual-005-m2",
+          "quote": "补过两次胶啦😂"
+        },
+        {
+          "message_id": "syn-zh_en_casual-008-m1",
+          "quote": "不是没道理的哈哈"
+        }
+      ]
     }
   ],
   "edges": [],
   "core_connection": {
-    "text": "Amy and Mia are friends who both live in the South Bay and both have small children. They swap local tips (food, groceries, trips) and parenting advice.",
+    "text": "Amy and Mia are friends and fellow parents in the South Bay. They chat casually about food, their kids and family trips.",
     "evidence": [
-      {
-        "message_id": "syn-zh_en_casual-003-m2",
-        "quote": "你离得近"
-      },
       {
         "message_id": "syn-zh_en_casual-012-m1",
         "quote": "我们大概两周"
@@ -248,20 +297,23 @@
 }
 ---
 
-# Amy
+# Amy Wang
 
-Amy and Mia are friends who both live in the South Bay and both have small children. They swap local tips (food, groceries, trips) and parenting advice.
+Amy and Mia are friends and fellow parents in the South Bay. They chat casually about food, their kids and family trips.
 
 - Address (default): Amy (1/11 emails)
-- Mia recommended the Xiaolongkan (小龙坎) hotpot in Cupertino to Amy and said weekday evenings are better because of weekend queues.
-- They agreed to have hotpot together on a Thursday (November 2024), with Mia arriving around 7 pm. Amy lives closer to the restaurant.
-- Both families' kids love dinosaurs. Mia's child has heard Tatsuya Miyanishi's 《你看起来好像很好吃》 more than ten times and can recite it.
-- Mia's family also has a pop-up dinosaur book that they have had to glue back together twice.
-- Mia loves Trader Joe's everything bagel seasoning (she is on her third jar and puts it on fried eggs) and recommends the frozen mandarin chicken.
-- Amy's child started daycare around August 2025. Mia's child took about two weeks to adjust.
-- Mia's daycare tip: put name labels on all clothes so they don't get mixed up.
-- Amy planned a Christmas 2025 trip to Tahoe. Mia's family had stayed at South Lake, which she said is more convenient for food.
-- Amy's car is four-wheel drive. Mia still advised keeping a set of snow chains in the car and checking road conditions in the Caltrans app.
-- Mia asked Amy to send her photos of the snow from the Tahoe trip.
+- Amy is Mia's friend. Both have young children, and they swap parenting tips.
+- Amy has a family. Mia uses 你们 when she asks about their plans.
+- Mia recommended the Xiaolongkan (小龙坎) hot pot in Cupertino. It is very spicy, has long waits on weekends, and is better on weekday evenings.
+- In November 2024 they planned hot pot together on a Thursday. Mia would arrive around 7pm and asked Amy, who lives closer, to get them in line on Yelp.
+- Mia's child loves dinosaurs and has heard Tatsuya Miyanishi's 'You Look Yummy!' (《你看起来好像很好吃》) more than ten times.
+- Mia's family has a dinosaur pop-up book that has torn easily and been glued back twice.
+- Mia likes Trader Joe's everything bagel seasoning, is on her third bottle and puts it on fried eggs. She also recommends the frozen mandarin chicken.
+- In August 2025, as Amy's child was starting daycare, Mia shared that her own child took about two weeks to adjust.
+- Mia's daycare tips: bring a change of clothes, a small blanket and a water cup, and put name labels on clothing.
+- Amy planned a Christmas 2025 trip to Tahoe. Mia's family had stayed in South Lake, which is easier for food. North Lake is quieter with better views.
+- Mia advised keeping snow chains in the car even with 4WD and checking road conditions in the Caltrans app before leaving.
+- Mia asked Amy to send her photos of the snow from Tahoe.
+- Mia's tone with Amy is casual and playful. She often uses 哈哈, 😂 and particles like 呀 and 嘛.
 
 _Extracted offline by pipeline/extract.py; every entry is backed by verified quotes._
