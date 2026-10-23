@@ -1,29 +1,29 @@
 {
-  "case_key": "782e71270f",
+  "case_key": "046959ef36",
   "endpoint": "POST /draft",
   "contract_revision": "0.2",
-  "recorded_at": "2026-10-23T21:25:29+00:00",
+  "recorded_at": "2026-10-23T21:28:05+00:00",
   "request": {
     "mode": "compose",
     "to": "reservations@hoshinoya-kyoto.example.com",
-    "brief": "We arrive Nov 14 around 9pm, ask if late check-in is ok; need a car from Kyoto Station for 2 adults and 1 baby; ask if the room can fit a baby crib."
+    "brief": "We arrive Nov 14 around 9pm, ask if late check-in is ok; need a car from Kyoto Station for 2 adults and 1 baby; ask if the room can fit a baby crib. Also ask about anything special happening at the hotel during our stay."
   },
   "response": {
-    "draft_id": "14e40c1cd1a2",
+    "draft_id": "23a5597c37eb",
     "to": "reservations@hoshinoya-kyoto.example.com",
     "scenario": "vendor_service",
-    "subject": "Late arrival on Nov 14, car from Kyoto Station, and a baby crib",
+    "subject": "Late arrival on November 14 and a few requests",
     "segments": [
       {
-        "text": "Dear Kenji",
+        "text": "Dear Kenji,",
         "highlight_id": "h1"
       },
       {
-        "text": ",\n\n",
+        "text": "\n\n",
         "highlight_id": null
       },
       {
-        "text": "Thank you",
+        "text": "Thank you as always for taking such good care of us.",
         "highlight_id": "h2"
       },
       {
@@ -31,11 +31,11 @@
         "highlight_id": null
       },
       {
-        "text": "for looking after us so well during our stays in March 2025 and this past April",
+        "text": "We have loved our earlier stays at HOSHINOYA Kyoto",
         "highlight_id": "h3"
       },
       {
-        "text": ". We are looking forward to coming back.\n\nThis time, ",
+        "text": ", and we are excited to come back. ",
         "highlight_id": null
       },
       {
@@ -43,20 +43,28 @@
         "highlight_id": "h4"
       },
       {
-        "text": " will be traveling with our baby. Could you help with a few things?\n\n",
+        "text": " will be traveling with our baby this time, so I have a few questions before we arrive:\n\n",
         "highlight_id": null
       },
       {
-        "text": "1. We expect to arrive on November 14 around 9:00 PM. Is a late check-in okay?\n2. Could you arrange a car to pick us up at Kyoto Station? We will be 2 adults and 1 baby.\n3. Is there enough room in our room for a baby crib?",
+        "text": "1. We expect to arrive on November 14 around 9:00 PM. Is a late check-in okay?\n2. Could you arrange a car from Kyoto Station for 2 adults and 1 baby?\n3. Is there room in our room for a baby crib, and could you provide one?\n4. Is anything special happening at the hotel during our stay?",
         "highlight_id": "h5"
       },
       {
-        "text": "\n\nPlease let me know if you need any other details from me.\n\n",
+        "text": " ",
+        "highlight_id": null
+      },
+      {
+        "text": "I saw that the autumn foliage night boat cruises on the Oi River run nightly from November 10 to November 30. We would love to hear whether these would work for us with a baby, and how to reserve.",
+        "highlight_id": "h6"
+      },
+      {
+        "text": "\n\nI look forward to hearing from you.\n\n",
         "highlight_id": null
       },
       {
         "text": "Thank you,",
-        "highlight_id": "h6"
+        "highlight_id": "h7"
       },
       {
         "text": "\nMia",
@@ -201,6 +209,26 @@
       },
       {
         "id": "h6",
+        "layer": "external",
+        "ref": {
+          "kind": "external",
+          "id": "ext-hoshinoya-001"
+        },
+        "strength": "strong",
+        "label": "Recent context: Hotel news (mock)",
+        "rationale": "Mock Hotel news (mock) item from 2026-10-15, not from your emails.",
+        "count": null,
+        "total": null,
+        "evidence": [
+          {
+            "message_id": null,
+            "external_id": "ext-hoshinoya-001",
+            "quote": "Autumn foliage night boat cruises on the Oi River run nightly from November 10 to November 30."
+          }
+        ]
+      },
+      {
+        "id": "h7",
         "layer": "person",
         "ref": {
           "kind": "sign_off",
