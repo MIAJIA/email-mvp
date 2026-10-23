@@ -12,6 +12,7 @@ from typing import Callable, Optional
 from .schema import ContactNote, Draft, DraftRequest, Evidence, ExternalItem, Highlight, Layer, Ref, ScenarioStyle, Segment
 
 DEFAULT_SCENARIO = "vendor_service"
+LANGUAGE_NAMES = {"zh": "Chinese", "en": "English", "ja": "Japanese", "mixed": "Chinese mixed with English"}
 HL_RE = re.compile(r'<hl ref="([^"]*)">(.*?)</hl>', re.S)
 
 
@@ -62,7 +63,8 @@ def build_catalog(note: Optional[ContactNote], style: Optional[ScenarioStyle], e
             f = getattr(note, k)
             if f.value is None or f.status == "rejected":
                 continue  # falls back to the scenario style
-            fmt = dict(v=f.value, n=name, c=f.count, t=f.total)
+            v = LANGUAGE_NAMES.get(f.value.lower(), f.value) if k == "language" else f.value
+            fmt = dict(v=v, n=name, c=f.count, t=f.total)
             cat[k] = Entry(k, Ref(kind=k, id=k), "person", ins.format(**fmt), lab.format(**fmt), rat.format(**fmt),
                            f.count, f.total, f.status, f.evidence)
         for a in note.address_as_by_context:
@@ -101,8 +103,10 @@ def build_catalog(note: Optional[ContactNote], style: Optional[ScenarioStyle], e
 def build_prompt(req: DraftRequest, note: Optional[ContactNote], scenario: str, cat: dict[str, Entry]) -> str:
     who = f"{note.display_name} <{note.email}>" if note else req.to
     lines = "\n".join(f'- ref="{e.key}": {e.instruction}' for e in cat.values()) or "- (no notes)"
+    lang = note.language.value if note and note.language.value and note.language.status != "rejected" else None
+    lang_line = f"Email language: {LANGUAGE_NAMES.get(lang.lower(), lang)} (from the notes).\n" if lang else ""
     return f"""You write one email for Mia (the sender) to {who}. Scenario: {scenario}.
-What Mia wants to say: {req.brief}
+{lang_line}What Mia wants to say (her request may be in a different language from the email): {req.brief}
 
 Notes about Mia's relationship with this person and her style. Person notes override scenario habits.
 If several greetings are listed for different settings, pick the one that fits what Mia wants to say.
@@ -111,6 +115,7 @@ If several greetings are listed for different settings, pick the one that fits w
 Rules:
 - Wherever your wording applies one of the notes above, wrap exactly those words in <hl ref="KEY">...</hl> using a KEY from the list. Wrap the greeting, honorific word, sign-off, and any sentence that uses a fact or recent context.
 - Use only KEYs from the list. Do not invent keys. Do not nest tags.
+- Write the email in the recipient's language from the notes, regardless of the language of Mia's request. Keep honorifics the notes call for (for example 您).
 - Plain text only: no Markdown (no **bold**, no headings).
 - Output format, nothing else: first line `Subject: ...`, then a blank line, then the email body.
 """

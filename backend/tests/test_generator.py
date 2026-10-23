@@ -95,3 +95,15 @@ def test_fact_with_two_emails_and_external_context_are_weak():
     assert cat["fact:three"].highlight("h2").strength == "strong"   # 3 emails, no total
     h = cat["external:ext-1"].highlight("h3")
     assert h.strength == "weak" and h.layer == "external"
+
+
+def test_email_language_comes_from_note_not_from_brief():
+    from app.generator import build_prompt
+    n = note()
+    n.language = NoteField(value="zh", count=3, total=3, evidence=[Evidence(message_id="m1", quote="您")])
+    req = DraftRequest(to="w@example.com", brief="Confirm next month's visit and ask what we should bring")
+    cat = build_catalog(n, None, [])
+    p = build_prompt(req, n, "zh_formal", cat)
+    assert "Email language: Chinese (from the notes)." in p
+    assert "regardless of the language of Mia's request" in p
+    assert cat["language"].label == "Language: Chinese"
