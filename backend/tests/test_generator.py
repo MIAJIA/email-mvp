@@ -59,3 +59,23 @@ def test_inject_unknown_ref_degrades_second_tag():
     assert [h.ref.kind for h in d.highlights] == ["address_as"]
     assert any("fact:injected_unknown" in w for w in d.warnings)
     assert "".join(s.text for s in d.segments) == "王老师您好，谢谢您"
+
+
+def test_address_by_context_entries_and_status_overlay(tmp_path):
+    from app.schema import ContextAddress
+    from app.stores import MarkdownContactStore
+    n = note()
+    n.address_as_by_context = [ContextAddress(context="formal", value="唐书远老师", count=2, total=7,
+                                              evidence=[Evidence(message_id="m4", quote="唐书远老师")])]
+    cat = build_catalog(n, None, [])
+    assert cat["address_as:formal"].ref.id == "formal"
+    d = tmp_path / "contacts"
+    d.mkdir()
+    (d / "w@example.com.md").write_text("---\n" + n.model_dump_json(exclude={"body"}) + "\n---\nbody\n")
+    store = MarkdownContactStore(d, tmp_path / "status.json")
+    store.set_status("w@example.com", "address_as:formal", "rejected")
+    store.set_status("w@example.com", "fact:rec_letter", "confirmed")
+    got = store.get("w@example.com")
+    assert got.address_as_by_context[0].status == "rejected"
+    assert got.facts[0].status == "confirmed"
+    assert "address_as:formal" not in build_catalog(got, None, [])

@@ -63,6 +63,15 @@ def build_catalog(note: Optional[ContactNote], style: Optional[ScenarioStyle], e
             fmt = dict(v=f.value, n=name, c=f.count, t=f.total)
             cat[k] = Entry(k, Ref(kind=k, id=k), "person", ins.format(**fmt), lab.format(**fmt), rat.format(**fmt),
                            f.count, f.total, f.status, f.evidence)
+        for a in note.address_as_by_context:
+            if a.status == "rejected":
+                continue
+            cat[f"address_as:{a.context}"] = Entry(
+                f"address_as:{a.context}", Ref(kind="address_as", id=a.context), "person",
+                f"In a {a.context} setting, address them as \"{a.value}\"",
+                f"Greeting ({a.context}): \"{a.value}\"",
+                f"In {a.context} emails you called {name} \"{a.value}\" ({a.count} of {a.total} emails).",
+                a.count, a.total, a.status, a.evidence)
         for fact in note.facts:
             if fact.status == "rejected":
                 continue
@@ -94,6 +103,7 @@ def build_prompt(req: DraftRequest, note: Optional[ContactNote], scenario: str, 
 What Mia wants to say: {req.brief}
 
 Notes about Mia's relationship with this person and her style. Person notes override scenario habits.
+If several greetings are listed for different settings, pick the one that fits what Mia wants to say.
 {lines}
 
 Rules:

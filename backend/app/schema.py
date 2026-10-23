@@ -1,11 +1,11 @@
-"""Contract code layer (CONTRACT.md revision 0.2). frontend/src/types.ts mirrors this file."""
+"""Contract code layer (CONTRACT.md revision 0.3). frontend/src/types.ts mirrors this file."""
 from __future__ import annotations
 
 from typing import Literal, Optional
 
 from pydantic import BaseModel, Field
 
-CONTRACT_REVISION = "0.2"
+CONTRACT_REVISION = "0.3"
 
 EntryStatus = Literal["learned", "confirmed", "rejected"]
 Layer = Literal["person", "scenario", "external", "inferred"]
@@ -42,6 +42,16 @@ class NoteField(BaseModel):
     evidence: list[Evidence] = Field(default_factory=list)
 
 
+class ContextAddress(BaseModel):
+    """How you address this person in one kind of setting (contract 0.3)."""
+    context: Literal["private", "default", "formal"]
+    value: str
+    count: int = 0
+    total: int = 0
+    status: EntryStatus = "learned"
+    evidence: list[Evidence] = Field(default_factory=list)
+
+
 class Fact(BaseModel):
     id: str
     text: str
@@ -68,6 +78,7 @@ class ContactNote(BaseModel):
     relationship: Optional[str] = None
     scenario: Optional[str] = None
     address_as: NoteField = Field(default_factory=NoteField)
+    address_as_by_context: list[ContextAddress] = Field(default_factory=list)
     honorific: NoteField = Field(default_factory=NoteField)
     sign_off: NoteField = Field(default_factory=NoteField)
     language: NoteField = Field(default_factory=NoteField)
