@@ -4,7 +4,7 @@ Checks:
   1. message_id is globally unique across data/emails/*.jsonl
   2. every planted fact quote / planted address is a substring of the body; planted_honorific matches "您"
   3. every evidence in ground_truth/people.json points to an existing email and its quote is a substring
-  4. every external id referenced exists in ground_truth/external.json and is marked mock
+  4. every external id referenced exists in data/external.json under the same recipient email and is marked mock
   5. no forbidden topic appears in synthetic_relationship.jsonl
   6. every expected highlight in demo_scenarios.json resolves to a ground-truth entry
 Prints a summary table per person at the end. Exit code 1 on any failure.
@@ -56,8 +56,14 @@ for path in sorted(EMAILS.glob("*.jsonl")):
             dup_ids.append((path.name, r["message_id"]))
         emails[r["message_id"]] = r
 people = json.loads((GT / "people.json").read_text(encoding="utf-8"))["people"]
-external = json.loads((GT / "external.json").read_text(encoding="utf-8"))
-ext_by_id = {x["id"]: x for x in external["items"]}
+# data/external.json is input (mock recent context), grouped by recipient email: {"<email>": [item, ...]}
+external = json.loads((DATA / "external.json").read_text(encoding="utf-8"))
+ext_by_id = {}
+for owner, items in external.items():
+    if owner.startswith("_"):
+        continue
+    for x in items:
+        ext_by_id[x["id"]] = {**x, "owner": owner}
 rel = by_file.get("synthetic_relationship.jsonl", [])
 
 
@@ -132,7 +138,7 @@ def c_people():
 def c_external():
     if external.get("_mock") is not True:
         fail("external.json is not marked _mock: true")
-    for x in external["items"]:
+    for x in ext_by_id.values():
         for k in ("id", "text", "source_label", "date"):
             if not x.get(k):
                 fail(f"external {x.get('id')}: missing {k}")
@@ -140,16 +146,16 @@ def c_external():
             fail(f"external {x['id']}: not marked mock")
         if "mock" not in x["source_label"]:
             fail(f"external {x['id']}: source_label does not say mock")
-    pids = {p["id"] for p in people}
     for p in people:
         for xid in p.get("external", []):
             if xid not in ext_by_id:
                 fail(f"{p['id']}: external {xid} not found")
-            elif ext_by_id[xid]["person_id"] != p["id"]:
-                fail(f"{p['id']}: external {xid} belongs to {ext_by_id[xid]['person_id']}")
-    for x in external["items"]:
-        if x["person_id"] not in pids:
-            fail(f"external {x['id']}: unknown person_id {x['person_id']}")
+            elif ext_by_id[xid]["owner"] != p["email"]:
+                fail(f"{p['id']}: external {xid} is filed under {ext_by_id[xid]['owner']}")
+    emails_known = {p["email"] for p in people}
+    for x in ext_by_id.values():
+        if x["owner"] not in emails_known:
+            fail(f"external {x['id']}: unknown recipient {x['owner']}")
 
 
 def c_forbidden():

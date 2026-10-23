@@ -1,4 +1,4 @@
-"""Generate data/ground_truth/people.json and external.json. Every quote is checked by data/validate.py."""
+"""Generate data/ground_truth/people.json (answer key) and data/external.json (input). Every quote is checked by data/validate.py."""
 import json, sys, os
 
 GT = sys.argv[1]
@@ -319,6 +319,13 @@ EXTERNAL = {
 
 with open(os.path.join(GT, "people.json"), "w", encoding="utf-8") as f:
     json.dump({"_note": "Ground truth for generating sample emails and for evaluation only. The offline pipeline must not read data/ground_truth/.", "people": P}, f, ensure_ascii=False, indent=2)
-with open(os.path.join(GT, "external.json"), "w", encoding="utf-8") as f:
-    json.dump(EXTERNAL, f, ensure_ascii=False, indent=2)
+# external.json is input the app and pipeline may read, so it lives outside ground_truth/, grouped by recipient email.
+emails_by_pid = {p["id"]: p["email"] for p in P}
+grouped = {"_mock": EXTERNAL["_mock"], "_note": EXTERNAL["_note"]}
+for x in EXTERNAL["items"]:
+    item = {k: v for k, v in x.items() if k != "person_id"}
+    grouped.setdefault(emails_by_pid[x["person_id"]], []).append(item)
+with open(os.path.join(GT, "..", "external.json"), "w", encoding="utf-8") as f:
+    json.dump(grouped, f, ensure_ascii=False, indent=2)
+    f.write("\n")
 print(f"people={len(P)} external={len(EXTERNAL['items'])}")
