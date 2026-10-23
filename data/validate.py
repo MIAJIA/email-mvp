@@ -18,14 +18,14 @@ DATA = pathlib.Path(__file__).resolve().parent
 EMAILS = DATA / "emails"
 GT = DATA / "ground_truth"
 
-# style_spec.md "禁止覆盖的话题": left uncovered so the demo can show `inferred` highlights.
+# style_spec.md forbidden topics: left uncovered so the demo can show `inferred` highlights.
 FORBIDDEN_TOPICS = {
-    "带婴儿出行": ["婴儿床", "婴儿推车", "安全座椅", "crib", "stroller", "car seat"],
-    "婉拒邀请": ["婉拒", "去不了", "不能参加", "没法参加", "decline", "can't make it to the party"],
-    "祝贺升职换工作": ["恭喜", "祝贺", "升职", "congrat", "promotion", "new job"],
-    "求职招聘": ["求职", "面试", "招聘", "简历", "内推", "interview", "resume", "hiring", "job offer"],
-    "医疗心理怀孕": ["医院", "看病", "心理", "怀孕", "hospital", "pregnan", "therapy"],
-    "财务税务": ["税务", "报税", "征信", "贷款", "tax return", "credit score"],
+    "travel_with_baby": ["婴儿床", "婴儿推车", "安全座椅", "crib", "stroller", "car seat"],
+    "declining_invitation": ["婉拒", "去不了", "不能参加", "没法参加", "decline", "can't make it to the party"],
+    "congratulating_job_change": ["恭喜", "祝贺", "升职", "congrat", "promotion", "new job"],
+    "job_search": ["求职", "面试", "招聘", "简历", "内推", "interview", "resume", "hiring", "job offer"],
+    "medical_pregnancy": ["医院", "看病", "心理", "怀孕", "hospital", "pregnan", "therapy"],
+    "finance_tax": ["税务", "报税", "征信", "贷款", "tax return", "credit score"],
 }
 LAYERS = {"person", "scenario", "external", "inferred"}
 STRENGTHS = {"strong", "weak"}
@@ -213,11 +213,11 @@ check("demo scenario highlights resolve", c_demo)
 counts = Counter(r["to"] for r in emails.values())
 print()
 print(f"emails: {len(emails)} ({', '.join(f'{k}={len(v)}' for k, v in by_file.items())}); people: {len(people)}; external: {len(ext_by_id)}")
-print("| 人 | 称呼 | 敬语\"您\" | 事实 | 往来邮件 | 外部上下文 |")
+print("| person | address_as | uses 您 | facts | emails | external |")
 print("|---|---|---|---|---|---|")
 for p in people:
     address = " / ".join(f"{a['context']}: {a['value']}" for a in p["address_as"])
-    nin = {True: "是", False: "否", "formal_only": "仅正式场合"}[p["honorific"]["uses_nin"]]
+    nin = {True: "yes", False: "no", "formal_only": "formal only"}[p["honorific"]["uses_nin"]]
     print(f"| {p['display_name']} | {address} | {nin} | {len(p['facts'])} | {counts[p['email']]} | {len(p.get('external', []))} |")
 
 print()

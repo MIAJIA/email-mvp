@@ -34,7 +34,7 @@ with open(os.path.join(GT, "..", "emails", "synthetic_relationship.jsonl"), enco
 
 P = []
 
-# ---------------- 新增：需要敬语或特殊称呼的中文收件人 ----------------
+# ---------------- New: Chinese recipients who need 您 or context-dependent address ----------------
 P.append({
     "id": "wang_jianhua", "email": "wang.jianhua@example.com", "display_name": "王建华",
     "relationship": "读研时的导师（已退休）", "language": "zh",
@@ -122,7 +122,7 @@ P.append({
     "external": ["ext-zhao-1"],
 })
 
-# ---------------- 现有人物（事实全部来自 emails.jsonl） ----------------
+# ---------------- Existing people (all facts come from emails.jsonl) ----------------
 P.append({
     "id": "ethan_park", "email": "ethan.park@example.com", "display_name": "Ethan Park",
     "relationship": "Mia 和 Victor 的教练（coaching sessions）", "language": "en",
@@ -282,7 +282,7 @@ P.append({
 
 EXTERNAL = {
     "_mock": True,
-    "_note": "全部是 mock 数据，由上下文数据线编写，不来自任何真实网站或社交媒体。人物和商家都是虚构的。",
+    "_note": "All items are mock data written by the context-data line. Nothing was fetched from any real website or social network. All people and businesses are fictional.",
     "items": [
         {"id": "ext-ethan-1", "person_id": "ethan_park", "mock": True, "date": "2026-10-18",
          "source_label": "Ethan 的 X 动态（mock）",
@@ -318,7 +318,7 @@ EXTERNAL = {
 }
 
 with open(os.path.join(GT, "people.json"), "w", encoding="utf-8") as f:
-    json.dump({"_note": "标准答案，只供生成样例邮件和评估用。离线管线不能读 data/ground_truth/。", "people": P}, f, ensure_ascii=False, indent=2)
+    json.dump({"_note": "Ground truth for generating sample emails and for evaluation only. The offline pipeline must not read data/ground_truth/.", "people": P}, f, ensure_ascii=False, indent=2)
 with open(os.path.join(GT, "external.json"), "w", encoding="utf-8") as f:
     json.dump(EXTERNAL, f, ensure_ascii=False, indent=2)
 print(f"people={len(P)} external={len(EXTERNAL['items'])}")

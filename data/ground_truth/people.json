@@ -1,5 +1,5 @@
 {
-  "_note": "标准答案，只供生成样例邮件和评估用。离线管线不能读 data/ground_truth/。",
+  "_note": "Ground truth for generating sample emails and for evaluation only. The offline pipeline must not read data/ground_truth/.",
   "people": [
     {
       "id": "wang_jianhua",

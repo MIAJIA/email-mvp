@@ -1,6 +1,6 @@
 {
   "_mock": true,
-  "_note": "全部是 mock 数据，由上下文数据线编写，不来自任何真实网站或社交媒体。人物和商家都是虚构的。",
+  "_note": "All items are mock data written by the context-data line. Nothing was fetched from any real website or social network. All people and businesses are fictional.",
   "items": [
     {
       "id": "ext-ethan-1",

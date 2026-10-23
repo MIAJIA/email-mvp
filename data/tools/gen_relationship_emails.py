@@ -29,7 +29,7 @@ def add(thread, n, date, who, subject, body, category, address, honorific, facts
     })
 
 
-# ---- 王建华老师：读研时的导师，用"王老师"和"您" ----
+# ---- Wang Jianhua: former graduate advisor; addressed as 王老师 with 您 ----
 add("wang-001", 1, "2025-01-20T02:10:00Z", WANG, "新年问候",
     "王老师：\n\n您好！新年快要到了，提前给您和李阿姨拜个早年。\n\n毕业这么多年，一直很感谢您当年在实验室对我的指导。我现在在湾区做 AI 相关的产品，经常会想起您说的“先把问题定义清楚，再动手”。\n\n给您寄了一饼云南的老普洱，记得您以前在实验室最爱喝这个，应该下周能到。\n\n祝您身体健康，新春愉快！\n\n学生 Mia 敬上",
     "zh_formal", "王老师", True,
@@ -62,7 +62,7 @@ add("wang-004", 2, "2026-10-12T02:15:00Z", WANG, "Re: 十一月回北京",
     [("wang.f10", "那我们就定 11 月 18 号下午三点左右过来")],
     prev="Mia：\n\n18 号下午我和你李阿姨都在家，你们来吧。\n\n王建华")
 
-# ---- 唐书远：Victor 的大学室友。私下"老唐"，平时"书远"，组委会邮件里"唐书远老师"+"您" ----
+# ---- Tang Shuyuan: Victor's college roommate; 老唐 in private, 书远 by default, 唐书远老师 + 您 in committee emails ----
 add("tang-001", 1, "2024-11-02T18:40:00Z", TANG, "Re: 周末烧烤",
     "老唐\n\n周六可以！Victor 说要把他新买的 smoker 搬过来 哈哈\n我们带腌好的鸡翅和饮料 苏晴姐说不用带甜点 那我就不带啦",
     "zh_en_casual", "老唐", False,
@@ -98,7 +98,7 @@ add("tang-007", 1, "2026-09-28T03:15:00Z", TANG, "辛苦啦",
     "zh_en_casual", "老唐", False,
     [("tang.f10", "苏晴姐的桂花糕被抢光了")])
 
-# ---- 赵立群：前老板，用"赵总"和"您" ----
+# ---- Zhao Liqun: former boss; addressed as 赵总 with 您 ----
 add("zhao-001", 1, "2025-01-27T01:00:00Z", ZHAO, "新春问候",
     "赵总：\n\n您好！春节将至，给您和家人拜个早年。\n\n在您团队的那三年是我成长最快的一段时间，尤其是您带我们做第一版推荐系统的时候，很多做事方法我到现在都还在用。\n\n祝您新春快乐，阖家幸福！\n\nMia",
     "zh_formal", "赵总", True,
