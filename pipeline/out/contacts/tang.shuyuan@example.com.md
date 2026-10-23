@@ -4,28 +4,24 @@
   "display_name": "唐书远",
   "relationship": "friend",
   "address_as": {
-    "value": "老唐",
-    "count": 3,
+    "value": "书远",
+    "count": 2,
     "total": 7,
     "status": "learned",
     "evidence": [
       {
-        "message_id": "syn-rel-tang-001-m1",
-        "quote": "老唐"
+        "message_id": "syn-rel-tang-003-m1",
+        "quote": "书远，"
       },
       {
-        "message_id": "syn-rel-tang-002-m1",
-        "quote": "老唐"
-      },
-      {
-        "message_id": "syn-rel-tang-007-m1",
-        "quote": "老唐"
+        "message_id": "syn-rel-tang-006-m1",
+        "quote": "书远，"
       }
     ]
   },
   "address_as_by_context": [
     {
-      "context": "default",
+      "context": "private",
       "value": "老唐",
       "count": 3,
       "total": 7,
@@ -88,7 +84,7 @@
     "evidence": [
       {
         "message_id": "syn-rel-tang-004-m1",
-        "quote": "感谢您和组委会的信任"
+        "quote": "如有调整，请您随时告知。"
       },
       {
         "message_id": "syn-rel-tang-005-m1",
@@ -97,7 +93,7 @@
     ]
   },
   "sign_off": {
-    "value": "Mia (casual) / 此致 敬礼 Mia Song (formal)",
+    "value": "Mia",
     "count": 4,
     "total": 7,
     "status": "learned",
@@ -140,7 +136,7 @@
       },
       {
         "message_id": "syn-rel-tang-004-m1",
-        "quote": "我这边确认如下"
+        "quote": "我负责签到台"
       },
       {
         "message_id": "syn-rel-tang-005-m1",
@@ -159,73 +155,57 @@
   "facts": [
     {
       "id": "f1",
-      "text": "唐书远 and Victor were bunkmates in college. Mia found an old photo of them and suggested showing it as a slideshow at a weekend party.",
+      "text": "唐书远和 Victor 是大学室友，当时睡上下铺；Mia 找到了那时的照片，提议在聚会上放 slideshow。",
       "status": "learned",
       "evidence": [
         {
           "message_id": "syn-rel-tang-002-m1",
-          "quote": "你和 Victor 大学睡上下铺的照片"
-        },
-        {
-          "message_id": "syn-rel-tang-002-m1",
-          "quote": "周末聚会的时候放 slideshow 怎么样"
+          "quote": "你和 Victor 大学睡上下铺的照片我找到了"
         }
       ]
     },
     {
       "id": "f2",
-      "text": "Mia calls 唐书远's partner 苏晴 '苏晴姐'. 苏晴 makes desserts, and her 桂花糕 sold out at the 2026 cultural festival.",
+      "text": "唐书远想给孩子朵朵找一所中文学校；Mia 通过林小雨推荐了 Cupertino 的一家。",
       "status": "learned",
       "evidence": [
         {
-          "message_id": "syn-rel-tang-001-m1",
-          "quote": "苏晴姐说不用带甜点"
+          "message_id": "syn-rel-tang-003-m1",
+          "quote": "想给朵朵找中文学校"
         },
         {
-          "message_id": "syn-rel-tang-007-m1",
-          "quote": "苏晴姐的桂花糕被抢光了"
+          "message_id": "syn-rel-tang-003-m1",
+          "quote": "在 Cupertino 那家上了两年"
         }
       ]
     },
     {
       "id": "f3",
-      "text": "In November 2024, 唐书远 hosted a Saturday BBQ. Mia brought marinated chicken wings and drinks, and Victor brought his new smoker.",
+      "text": "2024 年 11 月，Mia 和 Victor 去唐家参加周六烧烤，带了腌好的鸡翅和饮料。",
       "status": "learned",
       "evidence": [
         {
           "message_id": "syn-rel-tang-001-m1",
           "quote": "我们带腌好的鸡翅和饮料"
-        },
-        {
-          "message_id": "syn-rel-tang-001-m1",
-          "quote": "Victor 说要把他新买的 smoker 搬过来"
         }
       ]
     },
     {
       "id": "f4",
-      "text": "唐书远 was looking for a Chinese school for 朵朵. Mia asked 林小雨, whose older daughter spent two years at a school in Cupertino, and passed on 林小雨's contact details.",
-      "status": "learned",
-      "evidence": [
-        {
-          "message_id": "syn-rel-tang-003-m1",
-          "quote": "上次你说想给朵朵找中文学校"
-        },
-        {
-          "message_id": "syn-rel-tang-003-m1",
-          "quote": "她家姐姐在 Cupertino 那家上了两年"
-        }
-      ]
-    },
-    {
-      "id": "f5",
-      "text": "唐书远 was on the organizing committee for the 华人文化节 held on September 26, 2026. Mia ran the check-in desk from 9:00 to 12:00, and Victor handled stage sound all day.",
+      "text": "唐书远在华人文化节组委会工作；文化节于 9 月 26 日举办。",
       "status": "learned",
       "evidence": [
         {
           "message_id": "syn-rel-tang-004-m1",
           "quote": "9 月 26 日华人文化节"
-        },
+        }
+      ]
+    },
+    {
+      "id": "f5",
+      "text": "文化节上 Mia 负责签到台（上午 9:00 到 12:00），Victor 负责全天的舞台音响。",
+      "status": "learned",
+      "evidence": [
         {
           "message_id": "syn-rel-tang-004-m1",
           "quote": "我负责签到台，上午 9:00 到 12:00"
@@ -238,7 +218,7 @@
     },
     {
       "id": "f6",
-      "text": "Mia designed the festival poster in Chinese and English versions, and 唐书远 reviewed it. At 唐书远's request, the host organization's name went at the very top.",
+      "text": "宣传海报由 Mia 制作，唐书远审核；海报有中英文两个版本，主办单位名称放在最上方。",
       "status": "learned",
       "evidence": [
         {
@@ -253,7 +233,7 @@
     },
     {
       "id": "f7",
-      "text": "Mia writes to 唐书远 formally for committee business but casually for private matters. For example, she privately asked 唐书远 whether the poster colors were too bright.",
+      "text": "Mia 私下请唐书远帮忙看海报的颜色是不是太亮，说明她信任他的审美判断。",
       "status": "learned",
       "evidence": [
         {
@@ -264,7 +244,18 @@
     },
     {
       "id": "f8",
-      "text": "After the festival, Mia invited 唐书远 and 苏晴 to dinner at her home the following weekend (about early October 2026).",
+      "text": "苏晴（Mia 称她“苏晴姐”）做的桂花糕在文化节上被抢光了。",
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "syn-rel-tang-007-m1",
+          "quote": "苏晴姐的桂花糕被抢光了"
+        }
+      ]
+    },
+    {
+      "id": "f9",
+      "text": "文化节结束后，Mia 邀请唐书远和苏晴下周末来家里吃饭。",
       "status": "learned",
       "evidence": [
         {
@@ -277,12 +268,8 @@
   "edges": [
     {
       "to": "苏晴",
-      "type": "partner",
+      "type": "spouse",
       "evidence": [
-        {
-          "message_id": "syn-rel-tang-007-m1",
-          "quote": "苏晴姐的桂花糕被抢光了"
-        },
         {
           "message_id": "syn-rel-tang-007-m1",
           "quote": "给你们俩补补"
@@ -301,7 +288,7 @@
     },
     {
       "to": "朵朵",
-      "type": "child",
+      "type": "parent_of",
       "evidence": [
         {
           "message_id": "syn-rel-tang-003-m1",
@@ -310,30 +297,30 @@
       ]
     },
     {
-      "to": "林小雨",
-      "type": "introduced_by_mia",
+      "to": "华人文化节组委会",
+      "type": "member_of",
       "evidence": [
         {
-          "message_id": "syn-rel-tang-003-m1",
-          "quote": "我问了一下林小雨"
+          "message_id": "syn-rel-tang-004-m1",
+          "quote": "感谢您和组委会的信任"
         }
       ]
     }
   ],
   "core_connection": {
-    "text": "Mia and 唐书远 are close family friends who often visit each other's homes and share meals. 唐书远 was Victor's college bunkmate. In 2026, 唐书远 ran the 华人文化节 organizing committee, and Mia volunteered at the festival.",
+    "text": "唐书远（老唐）是 Mia 和 Victor 的亲近朋友，也是 Victor 的大学室友。两家常一起聚会；他还在华人文化节组委会工作，Mia 在文化节当志愿者，归组委会安排。",
     "evidence": [
       {
         "message_id": "syn-rel-tang-002-m1",
-        "quote": "你和 Victor 大学睡上下铺的照片"
-      },
-      {
-        "message_id": "syn-rel-tang-007-m1",
-        "quote": "下周末来我们家吃饭吧"
+        "quote": "你和 Victor 大学睡上下铺"
       },
       {
         "message_id": "syn-rel-tang-004-m1",
         "quote": "感谢您和组委会的信任"
+      },
+      {
+        "message_id": "syn-rel-tang-007-m1",
+        "quote": "下周末来我们家吃饭吧"
       }
     ]
   },
@@ -350,18 +337,19 @@
 
 # 唐书远
 
-Mia and 唐书远 are close family friends who often visit each other's homes and share meals. 唐书远 was Victor's college bunkmate. In 2026, 唐书远 ran the 华人文化节 organizing committee, and Mia volunteered at the festival.
+唐书远（老唐）是 Mia 和 Victor 的亲近朋友，也是 Victor 的大学室友。两家常一起聚会；他还在华人文化节组委会工作，Mia 在文化节当志愿者，归组委会安排。
 
-- Address (default): 老唐 (3/7 emails)
+- Address (private): 老唐 (3/7 emails)
 - Address (default): 书远 (2/7 emails)
 - Address (formal): 唐书远老师 (2/7 emails)
-- 唐书远 and Victor were bunkmates in college. Mia found an old photo of them and suggested showing it as a slideshow at a weekend party.
-- Mia calls 唐书远's partner 苏晴 '苏晴姐'. 苏晴 makes desserts, and her 桂花糕 sold out at the 2026 cultural festival.
-- In November 2024, 唐书远 hosted a Saturday BBQ. Mia brought marinated chicken wings and drinks, and Victor brought his new smoker.
-- 唐书远 was looking for a Chinese school for 朵朵. Mia asked 林小雨, whose older daughter spent two years at a school in Cupertino, and passed on 林小雨's contact details.
-- 唐书远 was on the organizing committee for the 华人文化节 held on September 26, 2026. Mia ran the check-in desk from 9:00 to 12:00, and Victor handled stage sound all day.
-- Mia designed the festival poster in Chinese and English versions, and 唐书远 reviewed it. At 唐书远's request, the host organization's name went at the very top.
-- Mia writes to 唐书远 formally for committee business but casually for private matters. For example, she privately asked 唐书远 whether the poster colors were too bright.
-- After the festival, Mia invited 唐书远 and 苏晴 to dinner at her home the following weekend (about early October 2026).
+- 唐书远和 Victor 是大学室友，当时睡上下铺；Mia 找到了那时的照片，提议在聚会上放 slideshow。
+- 唐书远想给孩子朵朵找一所中文学校；Mia 通过林小雨推荐了 Cupertino 的一家。
+- 2024 年 11 月，Mia 和 Victor 去唐家参加周六烧烤，带了腌好的鸡翅和饮料。
+- 唐书远在华人文化节组委会工作；文化节于 9 月 26 日举办。
+- 文化节上 Mia 负责签到台（上午 9:00 到 12:00），Victor 负责全天的舞台音响。
+- 宣传海报由 Mia 制作，唐书远审核；海报有中英文两个版本，主办单位名称放在最上方。
+- Mia 私下请唐书远帮忙看海报的颜色是不是太亮，说明她信任他的审美判断。
+- 苏晴（Mia 称她“苏晴姐”）做的桂花糕在文化节上被抢光了。
+- 文化节结束后，Mia 邀请唐书远和苏晴下周末来家里吃饭。
 
 _Extracted offline by pipeline/extract.py; every entry is backed by verified quotes._

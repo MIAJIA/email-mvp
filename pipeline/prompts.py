@@ -27,7 +27,10 @@ Rules:
 - For address_as / honorific / sign_off / language give one quote per email where the pattern appears
   (up to 8), so counts can be computed from them.
 - address_as: one entry per context in which the greeting differs. "formal" = official mail or others in copy,
-  "private" = intimate nickname, "default" = everyday. Most people have only "default".
+  "private" = an intimate nickname used only in casual personal mails (e.g. 老X, 小X, a pet name),
+  "default" = the plain name used in ordinary mails. If Mia uses both a nickname and a plain name, the nickname
+  is "private" and the plain name is "default"; never put two different names under the same context.
+  Most people have only "default".
 - honorific: "uses_nin" if Mia addresses them with 您, "no_nin" if Chinese without 您, "formal_only" if 您 only
   in formal mails, "n/a" for English-only. Quote the 您 sentence as evidence.
 - facts: up to 10, concrete and useful for writing future emails (dates, plans, shared history, preferences).
