@@ -1,5 +1,5 @@
 {
-  "draft_id": "6deb9b31b087",
+  "draft_id": "2116b17322f0",
   "to": "amy.wang@example.com",
   "scenario": "zh_en_casual",
   "subject": "Re: coffee",
@@ -9,7 +9,7 @@
       "highlight_id": "h1"
     },
     {
-      "text": "\n\n",
+      "text": "\n",
       "highlight_id": null
     },
     {
@@ -17,19 +17,19 @@
       "highlight_id": null
     },
     {
-      "text": " 周五下午可以 ",
-      "highlight_id": null
-    },
-    {
-      "text": "我们直接在 Red Rock 见面嘛",
-      "highlight_id": "h2"
-    },
-    {
       "text": " ",
       "highlight_id": null
     },
     {
-      "text": "你",
+      "text": "Friday afternoon 可以的 我们去 Red Rock 见面喝 coffee 嘛",
+      "highlight_id": "h2"
+    },
+    {
+      "text": "\n",
+      "highlight_id": null
+    },
+    {
+      "text": "好奇你",
       "highlight_id": "h3"
     },
     {
@@ -51,7 +51,7 @@
       },
       "strength": "weak",
       "label": "Greeting: \"Amy\"",
-      "rationale": "You addressed Amy Wang as \"Amy\" in 1 of 11 emails.",
+      "rationale": "You addressed Amy as \"Amy\" in 1 of 11 emails.",
       "count": 1,
       "total": 11,
       "evidence": [
@@ -94,31 +94,31 @@
     },
     {
       "id": "h3",
-      "layer": "person",
+      "layer": "scenario",
       "ref": {
-        "kind": "honorific",
-        "id": "honorific"
+        "kind": "habit",
+        "id": "ends_with_curious_question"
       },
       "strength": "strong",
-      "label": "Formal \"你\"",
-      "rationale": "You used \"你\" with Amy Wang in 8 of 11 emails.",
-      "count": 8,
-      "total": 11,
+      "label": "Often ends with a follow-up question about the other person, frequently starting with 好奇你.",
+      "rationale": "In your zh_en_casual emails, 10 of 30 do this.",
+      "count": 10,
+      "total": 30,
       "evidence": [
         {
-          "message_id": "syn-zh_en_casual-003-m1",
+          "message_id": "19cfa2a364325cd7",
           "external_id": null,
-          "quote": "你们能吃多辣?"
+          "quote": "好奇你的填表格用的是什么MCP呀？"
         },
         {
-          "message_id": "syn-zh_en_casual-003-m2",
+          "message_id": "syn-zh_en_casual-001-m3",
           "external_id": null,
-          "quote": "你离得近"
+          "quote": "好奇你平时是用 Unity 吗?"
         },
         {
-          "message_id": "syn-zh_en_casual-005-m1",
+          "message_id": "syn-zh_en_casual-009-m1",
           "external_id": null,
-          "quote": "你们有这套吗?"
+          "quote": "好奇你这个 local MCP 是自己写的还是用现成的？"
         }
       ]
     },
