@@ -1,0 +1,86 @@
+{
+  "_mock": true,
+  "_note": "全部是 mock 数据，由上下文数据线编写，不来自任何真实网站或社交媒体。人物和商家都是虚构的。",
+  "items": [
+    {
+      "id": "ext-ethan-1",
+      "person_id": "ethan_park",
+      "mock": true,
+      "date": "2026-10-18",
+      "source_label": "Ethan 的 X 动态（mock）",
+      "text": "Ethan 宣布从 11 月起每周六早上 9 点在 Las Palmas Park 开一个散步式 coaching 小组，边走边聊。"
+    },
+    {
+      "id": "ext-ethan-2",
+      "person_id": "ethan_park",
+      "mock": true,
+      "date": "2026-10-09",
+      "source_label": "Ethan 的 LinkedIn 动态（mock）",
+      "text": "Ethan 分享了一篇文章：远程工作的父母如何安排每周一次的线下复盘。"
+    },
+    {
+      "id": "ext-julien-1",
+      "person_id": "julien_moreau",
+      "mock": true,
+      "date": "2026-10-12",
+      "source_label": "Julien 的 Instagram（mock）",
+      "text": "Julien 晒了春川马拉松的完赛照片，说明年想挑战全马。"
+    },
+    {
+      "id": "ext-wang-1",
+      "person_id": "wang_jianhua",
+      "mock": true,
+      "date": "2026-10-15",
+      "source_label": "社区公众号（mock）",
+      "text": "王建华老师的书法作品《行书·兰亭序节临》入选社区老年书画展，10 月 20 日至 11 月 30 日在社区文化中心展出。"
+    },
+    {
+      "id": "ext-tang-1",
+      "person_id": "tang_shuyuan",
+      "mock": true,
+      "date": "2026-09-27",
+      "source_label": "唐书远的朋友圈（mock）",
+      "text": "唐书远发了华人文化节的大合影，感谢所有志愿者，说明年想加一个儿童书法角。"
+    },
+    {
+      "id": "ext-zhao-1",
+      "person_id": "zhao_liqun",
+      "mock": true,
+      "date": "2026-10-16",
+      "source_label": "公司 LinkedIn 主页（mock）",
+      "text": "赵立群的公司宣布 11 月 8 日在上海举办 AI 产品发布会，主题是“企业知识助手”。"
+    },
+    {
+      "id": "ext-xiaoyu-1",
+      "person_id": "lin_xiaoyu",
+      "mock": true,
+      "date": "2026-10-19",
+      "source_label": "林小雨的小红书（mock）",
+      "text": "林小雨发了女儿画的万圣节南瓜绘本，问大家有没有好用的 AI 绘本工具。"
+    },
+    {
+      "id": "ext-hoshinoya-1",
+      "person_id": "hoshinoya_kyoto",
+      "mock": true,
+      "date": "2026-10-01",
+      "source_label": "Hoshinoya Kyoto 官网活动页（mock）",
+      "text": "红叶季特别活动：11 月 10 日至 12 月 5 日，每晚 6:30 加开一班红叶夜游船，住客可在前台预约。"
+    },
+    {
+      "id": "ext-hoshinoya-2",
+      "person_id": "hoshinoya_kyoto",
+      "mock": true,
+      "date": "2026-10-05",
+      "source_label": "Hoshinoya Kyoto 官网活动页（mock）",
+      "text": "11 月每周六下午 3 点在书院举办红叶茶会，限 8 位住客。"
+    },
+    {
+      "id": "ext-bambu-1",
+      "person_id": "bambu_indah",
+      "mock": true,
+      "date": "2026-10-10",
+      "source_label": "Bambu Indah Instagram（mock）",
+      "text": "雨季前的稻田瑜伽周：11 月 1 日至 15 日每天早上 7 点在河边平台免费为住客开课。"
+    }
+  ]
+}

@@ -1,0 +1,1455 @@
+{
+  "_note": "标准答案，只供生成样例邮件和评估用。离线管线不能读 data/ground_truth/。",
+  "people": [
+    {
+      "id": "wang_jianhua",
+      "email": "wang.jianhua@example.com",
+      "display_name": "王建华",
+      "relationship": "读研时的导师（已退休）",
+      "language": "zh",
+      "core_connection": {
+        "text": "Mia 读研时的导师，毕业后每年春节问候、寄普洱；2026 年 11 月 18 日下午要和周航师兄去家里看望他和李阿姨。",
+        "evidence": [
+          {
+            "message_id": "syn-rel-wang-001-m1",
+            "quote": "一直很感谢您当年在实验室对我的指导"
+          },
+          {
+            "message_id": "syn-rel-wang-004-m2",
+            "quote": "那我们就定 11 月 18 号下午三点左右过来"
+          }
+        ]
+      },
+      "address_as": [
+        {
+          "context": "default",
+          "value": "王老师",
+          "honorific": true,
+          "evidence": [
+            {
+              "message_id": "syn-rel-wang-001-m1",
+              "quote": "王老师："
+            },
+            {
+              "message_id": "syn-rel-wang-004-m1",
+              "quote": "王老师："
+            }
+          ]
+        }
+      ],
+      "honorific": {
+        "uses_nin": true,
+        "evidence": [
+          {
+            "message_id": "syn-rel-wang-001-m1",
+            "quote": "您好！新年快要到了"
+          },
+          {
+            "message_id": "syn-rel-wang-004-m2",
+            "quote": "您不用特意准备"
+          }
+        ]
+      },
+      "sign_off": {
+        "value": "学生 Mia 敬上",
+        "evidence": [
+          {
+            "message_id": "syn-rel-wang-001-m1",
+            "quote": "学生 Mia 敬上"
+          },
+          {
+            "message_id": "syn-rel-wang-003-m1",
+            "quote": "学生 Mia 敬上"
+          }
+        ]
+      },
+      "facts": [
+        {
+          "id": "wang.f1",
+          "text": "王老师是 Mia 读研时在实验室的导师",
+          "evidence": [
+            {
+              "message_id": "syn-rel-wang-001-m1",
+              "quote": "一直很感谢您当年在实验室对我的指导"
+            }
+          ]
+        },
+        {
+          "id": "wang.f2",
+          "text": "王老师爱喝普洱，Mia 给他寄过云南老普洱",
+          "evidence": [
+            {
+              "message_id": "syn-rel-wang-001-m1",
+              "quote": "给您寄了一饼云南的老普洱，记得您以前在实验室最爱喝这个"
+            }
+          ]
+        },
+        {
+          "id": "wang.f3",
+          "text": "王老师的教导：先把问题定义清楚，再动手",
+          "evidence": [
+            {
+              "message_id": "syn-rel-wang-001-m1",
+              "quote": "先把问题定义清楚，再动手"
+            }
+          ]
+        },
+        {
+          "id": "wang.f4",
+          "text": "李阿姨（王老师夫人）当年常给学生包饺子",
+          "evidence": [
+            {
+              "message_id": "syn-rel-wang-001-m2",
+              "quote": "也请代我向李阿姨问好，谢谢她当年常给我们包饺子"
+            }
+          ]
+        },
+        {
+          "id": "wang.f5",
+          "text": "王老师退休后每天练书法，在老年大学开了小班",
+          "evidence": [
+            {
+              "message_id": "syn-rel-wang-002-m1",
+              "quote": "听周航师兄说您退休后每天都在练书法，还在老年大学开了一个小班"
+            }
+          ]
+        },
+        {
+          "id": "wang.f6",
+          "text": "王老师想了解现在的 AI 能做什么",
+          "evidence": [
+            {
+              "message_id": "syn-rel-wang-002-m1",
+              "quote": "您之前说想看看现在的 AI 能做什么"
+            }
+          ]
+        },
+        {
+          "id": "wang.f7",
+          "text": "王老师想把书法作品拍照整理成小册子",
+          "evidence": [
+            {
+              "message_id": "syn-rel-wang-003-m1",
+              "quote": "上次您提到想把书法作品拍照整理成一本小册子"
+            }
+          ]
+        },
+        {
+          "id": "wang.f8",
+          "text": "Mia 2026 年 11 月中旬回北京两周，要去家里看望",
+          "evidence": [
+            {
+              "message_id": "syn-rel-wang-004-m1",
+              "quote": "我十一月中旬会回北京待两周，想去家里看望您和李阿姨"
+            }
+          ]
+        },
+        {
+          "id": "wang.f9",
+          "text": "周航师兄也要一起去看望王老师",
+          "evidence": [
+            {
+              "message_id": "syn-rel-wang-004-m1",
+              "quote": "周航师兄说也想一起去"
+            }
+          ]
+        },
+        {
+          "id": "wang.f10",
+          "text": "已约定 11 月 18 日下午三点左右去王老师家",
+          "evidence": [
+            {
+              "message_id": "syn-rel-wang-004-m2",
+              "quote": "那我们就定 11 月 18 号下午三点左右过来"
+            }
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "to": "person:li_ayi",
+          "to_name": "李阿姨",
+          "type": "spouse",
+          "evidence": [
+            {
+              "message_id": "syn-rel-wang-001-m2",
+              "quote": "也请代我向李阿姨问好，谢谢她当年常给我们包饺子"
+            }
+          ]
+        },
+        {
+          "to": "hang.zhou@example.com",
+          "to_name": "周航",
+          "type": "former_student",
+          "evidence": [
+            {
+              "message_id": "syn-rel-wang-002-m1",
+              "quote": "听周航师兄说您退休后每天都在练书法，还在老年大学开了一个小班"
+            }
+          ]
+        },
+        {
+          "to": "mia",
+          "to_name": "Mia",
+          "type": "former_student",
+          "evidence": [
+            {
+              "message_id": "syn-rel-wang-001-m1",
+              "quote": "一直很感谢您当年在实验室对我的指导"
+            }
+          ]
+        }
+      ],
+      "external": [
+        "ext-wang-1"
+      ]
+    },
+    {
+      "id": "tang_shuyuan",
+      "email": "tang.shuyuan@example.com",
+      "display_name": "唐书远",
+      "relationship": "Victor 的大学室友，家庭朋友；华人文化节组委会负责人",
+      "language": "zh",
+      "core_connection": {
+        "text": "Victor 大学时睡上下铺的室友，两家常一起烧烤吃饭；Mia 在他负责的华人文化节（2026-09-26）做志愿者。",
+        "evidence": [
+          {
+            "message_id": "syn-rel-tang-002-m1",
+            "quote": "你和 Victor 大学睡上下铺的照片我找到了"
+          },
+          {
+            "message_id": "syn-rel-tang-004-m1",
+            "quote": "关于 9 月 26 日华人文化节的志愿者分工"
+          }
+        ]
+      },
+      "address_as": [
+        {
+          "context": "private",
+          "value": "老唐",
+          "honorific": false,
+          "evidence": [
+            {
+              "message_id": "syn-rel-tang-001-m1",
+              "quote": "老唐"
+            },
+            {
+              "message_id": "syn-rel-tang-002-m1",
+              "quote": "老唐"
+            },
+            {
+              "message_id": "syn-rel-tang-007-m1",
+              "quote": "老唐"
+            }
+          ]
+        },
+        {
+          "context": "default",
+          "value": "书远",
+          "honorific": false,
+          "evidence": [
+            {
+              "message_id": "syn-rel-tang-003-m1",
+              "quote": "书远，"
+            },
+            {
+              "message_id": "syn-rel-tang-006-m1",
+              "quote": "书远，"
+            }
+          ]
+        },
+        {
+          "context": "formal",
+          "value": "唐书远老师",
+          "honorific": true,
+          "evidence": [
+            {
+              "message_id": "syn-rel-tang-004-m1",
+              "quote": "唐书远老师："
+            },
+            {
+              "message_id": "syn-rel-tang-005-m1",
+              "quote": "唐书远老师："
+            }
+          ]
+        }
+      ],
+      "honorific": {
+        "uses_nin": "formal_only",
+        "evidence": [
+          {
+            "message_id": "syn-rel-tang-004-m1",
+            "quote": "感谢您和组委会的信任"
+          },
+          {
+            "message_id": "syn-rel-tang-005-m1",
+            "quote": "请您审阅"
+          }
+        ]
+      },
+      "sign_off": {
+        "value": null,
+        "by_context": {
+          "private": null,
+          "default": "Mia",
+          "formal": "Mia Song"
+        },
+        "evidence": [
+          {
+            "message_id": "syn-rel-tang-004-m1",
+            "quote": "此致\n敬礼\n\nMia Song"
+          },
+          {
+            "message_id": "syn-rel-tang-006-m1",
+            "quote": "拿不准。\n\nMia"
+          }
+        ]
+      },
+      "facts": [
+        {
+          "id": "tang.f1",
+          "text": "妻子苏晴，聚会时负责甜点",
+          "evidence": [
+            {
+              "message_id": "syn-rel-tang-001-m1",
+              "quote": "苏晴姐说不用带甜点"
+            }
+          ]
+        },
+        {
+          "id": "tang.f2",
+          "text": "和 Victor 大学睡上下铺",
+          "evidence": [
+            {
+              "message_id": "syn-rel-tang-002-m1",
+              "quote": "你和 Victor 大学睡上下铺的照片我找到了"
+            }
+          ]
+        },
+        {
+          "id": "tang.f3",
+          "text": "女儿朵朵，在找中文学校",
+          "evidence": [
+            {
+              "message_id": "syn-rel-tang-003-m1",
+              "quote": "上次你说想给朵朵找中文学校"
+            }
+          ]
+        },
+        {
+          "id": "tang.f4",
+          "text": "Mia 把林小雨介绍给他问中文学校",
+          "evidence": [
+            {
+              "message_id": "syn-rel-tang-003-m1",
+              "quote": "我问了一下林小雨，她家姐姐在 Cupertino 那家上了两年"
+            }
+          ]
+        },
+        {
+          "id": "tang.f5",
+          "text": "华人文化节组委会负责人",
+          "evidence": [
+            {
+              "message_id": "syn-rel-tang-004-m1",
+              "quote": "感谢您和组委会的信任"
+            }
+          ]
+        },
+        {
+          "id": "tang.f6",
+          "text": "华人文化节在 9 月 26 日",
+          "evidence": [
+            {
+              "message_id": "syn-rel-tang-004-m1",
+              "quote": "关于 9 月 26 日华人文化节的志愿者分工"
+            }
+          ]
+        },
+        {
+          "id": "tang.f7",
+          "text": "Mia 在文化节负责签到台，上午 9:00 到 12:00",
+          "evidence": [
+            {
+              "message_id": "syn-rel-tang-004-m1",
+              "quote": "我负责签到台，上午 9:00 到 12:00"
+            }
+          ]
+        },
+        {
+          "id": "tang.f8",
+          "text": "Mia 做了文化节宣传海报（中英双语）",
+          "evidence": [
+            {
+              "message_id": "syn-rel-tang-005-m1",
+              "quote": "宣传海报初稿已附上，中英文双语版本各一份"
+            }
+          ]
+        },
+        {
+          "id": "tang.f9",
+          "text": "私下会请他帮忙看海报颜色",
+          "evidence": [
+            {
+              "message_id": "syn-rel-tang-006-m1",
+              "quote": "你私下帮我看看颜色是不是太亮"
+            }
+          ]
+        },
+        {
+          "id": "tang.f10",
+          "text": "苏晴做的桂花糕在文化节被抢光",
+          "evidence": [
+            {
+              "message_id": "syn-rel-tang-007-m1",
+              "quote": "苏晴姐的桂花糕被抢光了"
+            }
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "to": "person:victor",
+          "to_name": "Victor",
+          "type": "college_roommate",
+          "evidence": [
+            {
+              "message_id": "syn-rel-tang-002-m1",
+              "quote": "你和 Victor 大学睡上下铺的照片我找到了"
+            }
+          ]
+        },
+        {
+          "to": "person:su_qing",
+          "to_name": "苏晴",
+          "type": "spouse",
+          "evidence": [
+            {
+              "message_id": "syn-rel-tang-001-m1",
+              "quote": "苏晴姐说不用带甜点"
+            }
+          ]
+        },
+        {
+          "to": "person:duoduo",
+          "to_name": "朵朵",
+          "type": "child",
+          "evidence": [
+            {
+              "message_id": "syn-rel-tang-003-m1",
+              "quote": "上次你说想给朵朵找中文学校"
+            }
+          ]
+        },
+        {
+          "to": "xiaoyu.lin@example.com",
+          "to_name": "林小雨",
+          "type": "introduced_by_mia",
+          "evidence": [
+            {
+              "message_id": "syn-rel-tang-003-m1",
+              "quote": "我问了一下林小雨，她家姐姐在 Cupertino 那家上了两年"
+            }
+          ]
+        }
+      ],
+      "external": [
+        "ext-tang-1"
+      ]
+    },
+    {
+      "id": "zhao_liqun",
+      "email": "zhao.liqun@example.com",
+      "display_name": "赵立群",
+      "relationship": "前老板（上海，公司创始人）",
+      "language": "zh",
+      "core_connection": {
+        "text": "Mia 在他团队工作过三年，做过第一版推荐系统；现在仍保持联系：2026 年夏天帮他女儿雨桐在湾区落脚，10 月 30 日给他公司做线上分享。",
+        "evidence": [
+          {
+            "message_id": "syn-rel-zhao-001-m1",
+            "quote": "在您团队的那三年是我成长最快的一段时间"
+          },
+          {
+            "message_id": "syn-rel-zhao-004-m1",
+            "quote": "10 月 30 日晚上的线上分享我可以参加"
+          }
+        ]
+      },
+      "address_as": [
+        {
+          "context": "default",
+          "value": "赵总",
+          "honorific": true,
+          "evidence": [
+            {
+              "message_id": "syn-rel-zhao-001-m1",
+              "quote": "赵总："
+            },
+            {
+              "message_id": "syn-rel-zhao-004-m1",
+              "quote": "赵总："
+            }
+          ]
+        }
+      ],
+      "honorific": {
+        "uses_nin": true,
+        "evidence": [
+          {
+            "message_id": "syn-rel-zhao-001-m1",
+            "quote": "给您和家人拜个早年"
+          },
+          {
+            "message_id": "syn-rel-zhao-003-m2",
+            "quote": "您放心"
+          }
+        ]
+      },
+      "sign_off": {
+        "value": "Mia",
+        "evidence": [
+          {
+            "message_id": "syn-rel-zhao-002-m1",
+            "quote": "我请您吃饭"
+          }
+        ]
+      },
+      "facts": [
+        {
+          "id": "zhao.f1",
+          "text": "Mia 在他团队工作过三年",
+          "evidence": [
+            {
+              "message_id": "syn-rel-zhao-001-m1",
+              "quote": "在您团队的那三年是我成长最快的一段时间"
+            }
+          ]
+        },
+        {
+          "id": "zhao.f2",
+          "text": "他带团队做过第一版推荐系统",
+          "evidence": [
+            {
+              "message_id": "syn-rel-zhao-001-m1",
+              "quote": "您带我们做第一版推荐系统的时候"
+            }
+          ]
+        },
+        {
+          "id": "zhao.f3",
+          "text": "以前在上海常去吃早茶，喜欢粤菜",
+          "evidence": [
+            {
+              "message_id": "syn-rel-zhao-002-m1",
+              "quote": "记得您以前在上海常去吃早茶"
+            }
+          ]
+        },
+        {
+          "id": "zhao.f4",
+          "text": "2025 年 9 月来湾区开会，和 Mia 吃过饭",
+          "evidence": [
+            {
+              "message_id": "syn-rel-zhao-002-m1",
+              "quote": "9 月 9 日到 12 日我都在"
+            }
+          ]
+        },
+        {
+          "id": "zhao.f5",
+          "text": "他的建议：小团队先把一个场景做透",
+          "evidence": [
+            {
+              "message_id": "syn-rel-zhao-002-m2",
+              "quote": "小团队先把一个场景做透"
+            }
+          ]
+        },
+        {
+          "id": "zhao.f6",
+          "text": "女儿雨桐 2026 年暑假来湾区参加夏令营",
+          "evidence": [
+            {
+              "message_id": "syn-rel-zhao-003-m1",
+              "quote": "您上次提到雨桐今年暑假想来湾区参加夏令营"
+            }
+          ]
+        },
+        {
+          "id": "zhao.f7",
+          "text": "Victor 去机场接的雨桐",
+          "evidence": [
+            {
+              "message_id": "syn-rel-zhao-003-m2",
+              "quote": "Victor 下午去机场接的她"
+            }
+          ]
+        },
+        {
+          "id": "zhao.f8",
+          "text": "Mia 10 月 30 日晚上给他公司做线上分享",
+          "evidence": [
+            {
+              "message_id": "syn-rel-zhao-004-m1",
+              "quote": "10 月 30 日晚上的线上分享我可以参加"
+            }
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "to": "person:zhao_yutong",
+          "to_name": "雨桐",
+          "type": "child",
+          "evidence": [
+            {
+              "message_id": "syn-rel-zhao-003-m1",
+              "quote": "您上次提到雨桐今年暑假想来湾区参加夏令营"
+            }
+          ]
+        },
+        {
+          "to": "mia",
+          "to_name": "Mia",
+          "type": "former_manager_of",
+          "evidence": [
+            {
+              "message_id": "syn-rel-zhao-001-m1",
+              "quote": "在您团队的那三年是我成长最快的一段时间"
+            }
+          ]
+        }
+      ],
+      "external": [
+        "ext-zhao-1"
+      ]
+    },
+    {
+      "id": "ethan_park",
+      "email": "ethan.park@example.com",
+      "display_name": "Ethan Park",
+      "relationship": "Mia 和 Victor 的教练（coaching sessions）",
+      "language": "en",
+      "core_connection": {
+        "text": "Mia 的教练，也给 Victor 上课；Mia 总想线下见，常约 Red Rock Coffee 或 Starbucks。",
+        "evidence": [
+          {
+            "message_id": "19ad08024b9953ee",
+            "quote": "coaching session?"
+          },
+          {
+            "message_id": "19877bc1b9e23b00",
+            "quote": "would you be open to meeting in person at Red Rock"
+          }
+        ]
+      },
+      "address_as": [
+        {
+          "context": "default",
+          "value": "Ethan",
+          "honorific": false,
+          "evidence": [
+            {
+              "message_id": "199e0f4032bd1990",
+              "quote": "Hey Ethan,"
+            },
+            {
+              "message_id": "19ad08024b9953ee",
+              "quote": "Hi Ethan,"
+            }
+          ]
+        }
+      ],
+      "honorific": {
+        "uses_nin": false,
+        "evidence": []
+      },
+      "sign_off": {
+        "value": "Mia",
+        "evidence": [
+          {
+            "message_id": "19a7f7dcc18e3131",
+            "quote": "See you soon\n\nMia"
+          }
+        ]
+      },
+      "facts": [
+        {
+          "id": "ethan.f1",
+          "text": "Ethan 是 Mia 的教练",
+          "evidence": [
+            {
+              "message_id": "19ad08024b9953ee",
+              "quote": "coaching session?"
+            }
+          ]
+        },
+        {
+          "id": "ethan.f2",
+          "text": "Ethan 也给 Victor 上课",
+          "evidence": [
+            {
+              "message_id": "198af30eb0ec850f",
+              "quote": "I noticed your meeting with Victor wraps up around 2pm."
+            },
+            {
+              "message_id": "199e38acd7fedecd",
+              "quote": "before or after Victor's session today"
+            }
+          ]
+        },
+        {
+          "id": "ethan.f3",
+          "text": "常在 Red Rock Coffee 见面",
+          "evidence": [
+            {
+              "message_id": "198ab7139243711d",
+              "quote": "see you tomorrow at Red Rock!"
+            },
+            {
+              "message_id": "19877bc1b9e23b00",
+              "quote": "would you be open to meeting in person at Red Rock"
+            }
+          ]
+        },
+        {
+          "id": "ethan.f4",
+          "text": "Maple Village 有一家 Starbucks 对双方都方便",
+          "evidence": [
+            {
+              "message_id": "19a46d93cabaa53e",
+              "quote": "Starbucks sounds great — there’s actually one at Maple Village"
+            }
+          ]
+        },
+        {
+          "id": "ethan.f5",
+          "text": "Mia 偏好线下见面",
+          "evidence": [
+            {
+              "message_id": "19de5186aaeb9ed5",
+              "quote": "Are you available to meet offline?"
+            }
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "to": "mia",
+          "to_name": "Mia",
+          "type": "coach_of",
+          "evidence": [
+            {
+              "message_id": "19ad08024b9953ee",
+              "quote": "coaching session?"
+            }
+          ]
+        },
+        {
+          "to": "person:victor",
+          "to_name": "Victor",
+          "type": "coach_of",
+          "evidence": [
+            {
+              "message_id": "198af30eb0ec850f",
+              "quote": "I noticed your meeting with Victor wraps up around 2pm."
+            }
+          ]
+        }
+      ],
+      "external": [
+        "ext-ethan-1",
+        "ext-ethan-2"
+      ]
+    },
+    {
+      "id": "julien_moreau",
+      "email": "julien.moreau@example.com",
+      "display_name": "Julien Moreau",
+      "relationship": "老朋友，在首尔工作的法国人，指导过 ShopPilot",
+      "language": "en",
+      "core_connection": {
+        "text": "一起去过里斯本的老朋友，曾指导 Mia 的 ShopPilot 项目；现在在首尔，跨时区约视频。",
+        "evidence": [
+          {
+            "message_id": "1978b9a014deb894",
+            "quote": "the ShopPilot project you helped mentor"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-001-m1",
+            "quote": "Lisbon trip last week and thought of you"
+          }
+        ]
+      },
+      "address_as": [
+        {
+          "context": "default",
+          "value": "Julien",
+          "honorific": false,
+          "evidence": [
+            {
+              "message_id": "1978b9a014deb894",
+              "quote": "Hi Julien,"
+            },
+            {
+              "message_id": "199649c298edd6b1",
+              "quote": "Hey Julien,"
+            }
+          ]
+        }
+      ],
+      "honorific": {
+        "uses_nin": false,
+        "evidence": []
+      },
+      "facts": [
+        {
+          "id": "julien.f1",
+          "text": "在韩国的新公司工作",
+          "evidence": [
+            {
+              "message_id": "1978b9a014deb894",
+              "quote": "how’s life in Korea and the new company treating you?"
+            }
+          ]
+        },
+        {
+          "id": "julien.f2",
+          "text": "指导过 ShopPilot 项目",
+          "evidence": [
+            {
+              "message_id": "1978b9a014deb894",
+              "quote": "the ShopPilot project you helped mentor"
+            }
+          ]
+        },
+        {
+          "id": "julien.f3",
+          "text": "跑过春川半马",
+          "evidence": [
+            {
+              "message_id": "syn-old_friend_catchup-008-m1",
+              "quote": "How did the half marathon in Chuncheon go?"
+            }
+          ]
+        },
+        {
+          "id": "julien.f4",
+          "text": "伴侣 Claire 上韩语课",
+          "evidence": [
+            {
+              "message_id": "syn-old_friend_catchup-015-m1",
+              "quote": "Is Claire still doing the"
+            }
+          ]
+        },
+        {
+          "id": "julien.f5",
+          "text": "和 Mia 一起去过里斯本",
+          "evidence": [
+            {
+              "message_id": "syn-old_friend_catchup-001-m1",
+              "quote": "Lisbon trip last week and thought of you"
+            }
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "to": "person:claire",
+          "to_name": "Claire",
+          "type": "partner",
+          "evidence": [
+            {
+              "message_id": "syn-old_friend_catchup-015-m1",
+              "quote": "Is Claire still doing the"
+            }
+          ]
+        }
+      ],
+      "external": [
+        "ext-julien-1"
+      ]
+    },
+    {
+      "id": "zhou_hang",
+      "email": "hang.zhou@example.com",
+      "display_name": "周航",
+      "relationship": "中文朋友，读研时的同门师兄，常聊 AI 工具",
+      "language": "zh_en_mixed",
+      "core_connection": {
+        "text": "王老师门下的师兄，现在常和 Mia 聊 Claude Code、MCP 和 prompt，一起爬 Mission Peak。",
+        "evidence": [
+          {
+            "message_id": "syn-rel-wang-002-m1",
+            "quote": "听周航师兄说您退休后每天都在练书法，还在老年大学开了一个小班"
+          },
+          {
+            "message_id": "syn-zh_en_casual-011-m1",
+            "quote": "现在基本都是 Claude Code 了"
+          }
+        ]
+      },
+      "address_as": [
+        {
+          "context": "default",
+          "value": "周航",
+          "honorific": false,
+          "evidence": [
+            {
+              "message_id": "syn-zh_en_casual-001-m1",
+              "quote": "周航"
+            }
+          ]
+        }
+      ],
+      "honorific": {
+        "uses_nin": false,
+        "evidence": []
+      },
+      "facts": [
+        {
+          "id": "zhou.f1",
+          "text": "一起爬 Mission Peak",
+          "evidence": [
+            {
+              "message_id": "syn-zh_en_casual-004-m1",
+              "quote": "走！几点停车场集合？"
+            }
+          ]
+        },
+        {
+          "id": "zhou.f2",
+          "text": "向 Mia 请教 Blender MCP",
+          "evidence": [
+            {
+              "message_id": "syn-zh_en_casual-001-m1",
+              "quote": "装一个 blender-mcp 的 plugin 然后 Claude 连上就行"
+            }
+          ]
+        },
+        {
+          "id": "zhou.f3",
+          "text": "讨论 Cursor 和 Claude Code",
+          "evidence": [
+            {
+              "message_id": "syn-zh_en_casual-011-m1",
+              "quote": "现在基本都是 Claude Code 了"
+            }
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "to": "wang.jianhua@example.com",
+          "to_name": "王建华",
+          "type": "student_of",
+          "evidence": [
+            {
+              "message_id": "syn-rel-wang-002-m1",
+              "quote": "听周航师兄说您退休后每天都在练书法，还在老年大学开了一个小班"
+            }
+          ]
+        }
+      ],
+      "external": []
+    },
+    {
+      "id": "lin_xiaoyu",
+      "email": "xiaoyu.lin@example.com",
+      "display_name": "林小雨",
+      "relationship": "中文朋友，都是妈妈，常交换旅行攻略",
+      "language": "zh_en_mixed",
+      "core_connection": {
+        "text": "常互相要旅行攻略（京都、Maui、墨西哥城）的妈妈朋友，女儿（姐姐）爱画画。",
+        "evidence": [
+          {
+            "message_id": "syn-zh_en_casual-017-m1",
+            "quote": "第一次去的话 Maui 吧"
+          },
+          {
+            "message_id": "syn-zh_en_casual-016-m1",
+            "quote": "感觉姐姐会喜欢"
+          }
+        ]
+      },
+      "address_as": [
+        {
+          "context": "default",
+          "value": "小雨",
+          "honorific": false,
+          "evidence": [
+            {
+              "message_id": "syn-zh_en_casual-017-m1",
+              "quote": "小雨"
+            }
+          ]
+        }
+      ],
+      "honorific": {
+        "uses_nin": false,
+        "evidence": []
+      },
+      "facts": [
+        {
+          "id": "xiaoyu.f1",
+          "text": "家里大女儿（姐姐）喜欢画画",
+          "evidence": [
+            {
+              "message_id": "syn-zh_en_casual-016-m1",
+              "quote": "感觉姐姐会喜欢"
+            }
+          ]
+        },
+        {
+          "id": "xiaoyu.f2",
+          "text": "问过 Maui 还是 Big Island",
+          "evidence": [
+            {
+              "message_id": "syn-zh_en_casual-017-m1",
+              "quote": "第一次去的话 Maui 吧"
+            }
+          ]
+        },
+        {
+          "id": "xiaoyu.f3",
+          "text": "Mia 给她讲过京都红叶季攻略",
+          "evidence": [
+            {
+              "message_id": "syn-zh_en_casual-007-m1",
+              "quote": "对 我们去的就是红叶季"
+            }
+          ]
+        },
+        {
+          "id": "xiaoyu.f4",
+          "text": "Mia 推荐墨西哥城住 Roma Norte",
+          "evidence": [
+            {
+              "message_id": "syn-zh_en_casual-019-m1",
+              "quote": "住的 Roma Norte"
+            }
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "to": "tang.shuyuan@example.com",
+          "to_name": "唐书远",
+          "type": "introduced_by_mia",
+          "evidence": [
+            {
+              "message_id": "syn-rel-tang-003-m1",
+              "quote": "我问了一下林小雨，她家姐姐在 Cupertino 那家上了两年"
+            }
+          ]
+        }
+      ],
+      "external": [
+        "ext-xiaoyu-1"
+      ]
+    },
+    {
+      "id": "hannah_kim",
+      "email": "hannah.kim@example.com",
+      "display_name": "Hannah Kim",
+      "relationship": "老朋友，在新加坡",
+      "language": "en",
+      "core_connection": {
+        "text": "新加坡的老朋友，Mia 每次去新加坡都约她；伴侣 Ben。",
+        "evidence": [
+          {
+            "message_id": "syn-old_friend_catchup-007-m1",
+            "quote": "Did you and Ben finally settle into the"
+          }
+        ]
+      },
+      "address_as": [
+        {
+          "context": "default",
+          "value": "Hannah",
+          "honorific": false,
+          "evidence": [
+            {
+              "message_id": "syn-old_friend_catchup-003-m1",
+              "quote": "Hey Hannah,"
+            }
+          ]
+        }
+      ],
+      "honorific": {
+        "uses_nin": false,
+        "evidence": []
+      },
+      "facts": [
+        {
+          "id": "hannah.f1",
+          "text": "早上在 East Coast Park 游泳",
+          "evidence": [
+            {
+              "message_id": "syn-old_friend_catchup-003-m1",
+              "quote": "morning swims at East Coast Park?"
+            }
+          ]
+        },
+        {
+          "id": "hannah.f2",
+          "text": "和 Ben 搬到 Bukit Timah 新家",
+          "evidence": [
+            {
+              "message_id": "syn-old_friend_catchup-007-m1",
+              "quote": "new place in Bukit Timah?"
+            }
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "to": "person:ben",
+          "to_name": "Ben",
+          "type": "partner",
+          "evidence": [
+            {
+              "message_id": "syn-old_friend_catchup-007-m1",
+              "quote": "Did you and Ben finally settle into the"
+            }
+          ]
+        }
+      ],
+      "external": []
+    },
+    {
+      "id": "kevin_chen",
+      "email": "kevin.chen@example.com",
+      "display_name": "Kevin Chen",
+      "relationship": "中文朋友，写 newsletter，常聊 MCP 和 eval",
+      "language": "zh_en_mixed",
+      "core_connection": {
+        "text": "常交流 MCP、本地模型和 LLM as judge 的技术朋友。",
+        "evidence": [
+          {
+            "message_id": "syn-zh_en_casual-009-m1",
+            "quote": "好奇你这个 local MCP 是自己写的还是用现成的？"
+          }
+        ]
+      },
+      "address_as": [
+        {
+          "context": "default",
+          "value": "Kevin",
+          "honorific": false,
+          "evidence": [
+            {
+              "message_id": "syn-zh_en_casual-014-m1",
+              "quote": "Kevin"
+            }
+          ]
+        }
+      ],
+      "honorific": {
+        "uses_nin": false,
+        "evidence": []
+      },
+      "facts": [
+        {
+          "id": "kevin.f1",
+          "text": "自己做了一个 local MCP",
+          "evidence": [
+            {
+              "message_id": "syn-zh_en_casual-009-m1",
+              "quote": "好奇你这个 local MCP 是自己写的还是用现成的？"
+            }
+          ]
+        },
+        {
+          "id": "kevin.f2",
+          "text": "在做 LLM as judge",
+          "evidence": [
+            {
+              "message_id": "syn-zh_en_casual-018-m1",
+              "quote": "我们当时是把打分改成 pass/fail"
+            }
+          ]
+        }
+      ],
+      "edges": [],
+      "external": []
+    },
+    {
+      "id": "amy_wang",
+      "email": "amy.wang@example.com",
+      "display_name": "Amy 王",
+      "relationship": "中文朋友，住得近，常聊吃的和带娃",
+      "language": "zh_en_mixed",
+      "core_connection": {
+        "text": "住得近的妈妈朋友，一起吃火锅、交换 TJ 好物和 daycare 经验。",
+        "evidence": [
+          {
+            "message_id": "syn-zh_en_casual-003-m1",
+            "quote": "Cupertino 那家小龙坎还不错，辣是真辣。"
+          }
+        ]
+      },
+      "address_as": [
+        {
+          "context": "default",
+          "value": "Amy",
+          "honorific": false,
+          "evidence": [
+            {
+              "message_id": "syn-zh_en_casual-012-m1",
+              "quote": "Amy"
+            }
+          ]
+        }
+      ],
+      "honorific": {
+        "uses_nin": false,
+        "evidence": []
+      },
+      "facts": [
+        {
+          "id": "amy.f1",
+          "text": "一起去 Cupertino 的小龙坎",
+          "evidence": [
+            {
+              "message_id": "syn-zh_en_casual-003-m1",
+              "quote": "Cupertino 那家小龙坎还不错，辣是真辣。"
+            }
+          ]
+        }
+      ],
+      "edges": [],
+      "external": []
+    },
+    {
+      "id": "priya_shah",
+      "email": "priya.shah@example.com",
+      "display_name": "Priya Shah",
+      "relationship": "前同事",
+      "language": "en",
+      "core_connection": {
+        "text": "前同事，偶尔约在 Red Rock 喝咖啡叙旧。",
+        "evidence": [
+          {
+            "message_id": "syn-friend_scheduling-001-m2",
+            "quote": "See you Thursday 10am at Red Rock"
+          }
+        ]
+      },
+      "address_as": [
+        {
+          "context": "default",
+          "value": "Priya",
+          "honorific": false,
+          "evidence": [
+            {
+              "message_id": "syn-friend_scheduling-001-m1",
+              "quote": "Hi Priya,"
+            }
+          ]
+        }
+      ],
+      "honorific": {
+        "uses_nin": false,
+        "evidence": []
+      },
+      "facts": [
+        {
+          "id": "priya.f1",
+          "text": "在 Red Rock 见过面",
+          "evidence": [
+            {
+              "message_id": "syn-friend_scheduling-001-m2",
+              "quote": "See you Thursday 10am at Red Rock"
+            }
+          ]
+        }
+      ],
+      "edges": [],
+      "external": []
+    },
+    {
+      "id": "bambu_indah",
+      "email": "reservations@bambuindah.example.com",
+      "display_name": "Bambu Indah Reservations",
+      "relationship": "商家：巴厘岛 Ubud 的酒店，联系人 Made",
+      "language": "en",
+      "core_connection": {
+        "text": "2024 年 9 月住过、2026 年 4 月回访的酒店，和联系人 Made 打交道。",
+        "evidence": [
+          {
+            "message_id": "syn-vendor_service-002-m1",
+            "quote": "We stayed with you in September 2024 and would love to come back."
+          }
+        ]
+      },
+      "address_as": [
+        {
+          "context": "default",
+          "value": "Made",
+          "honorific": false,
+          "evidence": [
+            {
+              "message_id": "syn-vendor_service-001-m1",
+              "quote": "Dear Made,"
+            },
+            {
+              "message_id": "syn-vendor_service-002-m2",
+              "quote": "Dear Made,"
+            }
+          ]
+        }
+      ],
+      "honorific": {
+        "uses_nin": false,
+        "evidence": []
+      },
+      "facts": [
+        {
+          "id": "bambu.f1",
+          "text": "2024 年 9 月住过，2026 年 4 月回访",
+          "evidence": [
+            {
+              "message_id": "syn-vendor_service-002-m1",
+              "quote": "We stayed with you in September 2024 and would love to come back."
+            }
+          ]
+        },
+        {
+          "id": "bambu.f2",
+          "text": "通常是 2 个大人：Mia 和 Victor",
+          "evidence": [
+            {
+              "message_id": "syn-vendor_service-001-m1",
+              "quote": "2 adults: Mia & Victor"
+            }
+          ]
+        },
+        {
+          "id": "bambu.f3",
+          "text": "2026 年住的是 Moon House",
+          "evidence": [
+            {
+              "message_id": "syn-vendor_service-002-m2",
+              "quote": "The Moon House sounds lovely."
+            }
+          ]
+        },
+        {
+          "id": "bambu.f4",
+          "text": "订过 Founders Tour",
+          "evidence": [
+            {
+              "message_id": "syn-vendor_service-019-m2",
+              "quote": "9:30 AM Founders Tour on April 16"
+            }
+          ]
+        }
+      ],
+      "edges": [],
+      "external": [
+        "ext-bambu-1"
+      ]
+    },
+    {
+      "id": "hoshinoya_kyoto",
+      "email": "reservations@hoshinoya-kyoto.example.com",
+      "display_name": "Hoshinoya Kyoto",
+      "relationship": "商家：京都岚山的酒店，联系人 Kenji",
+      "language": "en",
+      "core_connection": {
+        "text": "住过两次的京都酒店（2025-03-28 到 30、2026-04-06 到 08），联系人 Kenji 帮忙寄回过落下的围巾。",
+        "evidence": [
+          {
+            "message_id": "syn-vendor_service-004-m1",
+            "quote": "Thank you so much for a wonderful stay from March 28 to 30."
+          },
+          {
+            "message_id": "syn-vendor_service-018-m1",
+            "quote": "it is lovely to hear from you again"
+          }
+        ]
+      },
+      "address_as": [
+        {
+          "context": "default",
+          "value": "Kenji",
+          "honorific": false,
+          "evidence": [
+            {
+              "message_id": "syn-vendor_service-003-m1",
+              "quote": "Dear Kenji,"
+            },
+            {
+              "message_id": "syn-vendor_service-004-m1",
+              "quote": "Dear Kenji,"
+            }
+          ]
+        }
+      ],
+      "honorific": {
+        "uses_nin": false,
+        "evidence": []
+      },
+      "facts": [
+        {
+          "id": "hoshinoya.f1",
+          "text": "2025 年 3 月 28 到 30 日住过",
+          "evidence": [
+            {
+              "message_id": "syn-vendor_service-004-m1",
+              "quote": "Thank you so much for a wonderful stay from March 28 to 30."
+            }
+          ]
+        },
+        {
+          "id": "hoshinoya.f2",
+          "text": "落下过一条灰色羊毛围巾，酒店寄回",
+          "evidence": [
+            {
+              "message_id": "syn-vendor_service-004-m1",
+              "quote": "I believe I left a gray wool scarf in our room"
+            }
+          ]
+        },
+        {
+          "id": "hoshinoya.f3",
+          "text": "2026 年 4 月再次入住",
+          "evidence": [
+            {
+              "message_id": "syn-vendor_service-018-m1",
+              "quote": "it is lovely to hear from you again"
+            }
+          ]
+        },
+        {
+          "id": "hoshinoya.f4",
+          "text": "订过茶道体验",
+          "evidence": [
+            {
+              "message_id": "syn-vendor_service-018-m2",
+              "quote": "Please book the 3:00 PM tea ceremony on April 7 for both of us."
+            }
+          ]
+        },
+        {
+          "id": "hoshinoya.f5",
+          "text": "Victor 不吃生贝类",
+          "evidence": [
+            {
+              "message_id": "syn-vendor_service-003-m2",
+              "quote": "Victor prefers not to have raw shellfish"
+            }
+          ]
+        }
+      ],
+      "edges": [],
+      "external": [
+        "ext-hoshinoya-1",
+        "ext-hoshinoya-2"
+      ]
+    }
+  ]
+}
