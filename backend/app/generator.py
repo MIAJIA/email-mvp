@@ -109,6 +109,7 @@ If several greetings are listed for different settings, pick the one that fits w
 Rules:
 - Wherever your wording applies one of the notes above, wrap exactly those words in <hl ref="KEY">...</hl> using a KEY from the list. Wrap the greeting, honorific word, sign-off, and any sentence that uses a fact or recent context.
 - Use only KEYs from the list. Do not invent keys. Do not nest tags.
+- Plain text only: no Markdown (no **bold**, no headings).
 - Output format, nothing else: first line `Subject: ...`, then a blank line, then the email body.
 """
 
@@ -140,7 +141,7 @@ def parse(text: str, cat: dict[str, Entry]) -> tuple[str, list[Segment], list[Hi
         segments.append(Segment(text=text[pos:]))
     # Stray or unclosed tags never reach the user as markup.
     for s in segments:
-        s.text = re.sub(r"</?hl[^>]*>", "", s.text)
+        s.text = re.sub(r"</?hl[^>]*>", "", s.text).replace("**", "")
     return subject, segments, highlights, warnings
 
 

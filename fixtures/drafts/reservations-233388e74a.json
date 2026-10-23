@@ -1,60 +1,52 @@
 {
-  "draft_id": "7d18508f625d",
+  "draft_id": "c7d4471d2dbb",
   "to": "reservations@hoshinoya-kyoto.example.com",
   "scenario": "vendor_service",
-  "subject": "Late arrival on Nov 14, car from Kyoto Station, and baby crib",
+  "subject": "Return stay November 20–22 (2 adults): evening boat, tea gathering, and dinner note",
   "segments": [
     {
       "text": "Dear Kenji,",
       "highlight_id": "h1"
     },
     {
-      "text": "\n\nWe're looking forward to coming back to HOSHINOYA Kyoto. I'm following up on a few things before our stay:\n\n1. Late check-in: ",
+      "text": "\n\nMia and Victor would love to stay at HOSHINOYA Kyoto again this autumn. ",
       "highlight_id": null
     },
     {
-      "text": "We arrive on Saturday, November 14, at around 9:00 PM (2 adults and 1 baby).",
+      "text": "We are hoping to come Friday, November 20 to Sunday, November 22 (2 adults: Mia & Victor).",
       "highlight_id": "h2"
     },
     {
-      "text": " Is a late check-in okay?\n2. Car: We need a car from Kyoto Station that evening for 2 adults and 1 baby. ",
+      "text": "\n\nWe're following up on three things:\n\n1. Evening boat: ",
       "highlight_id": null
     },
     {
-      "text": "Last time you arranged a taxi for us from the Hachijo exit, and that worked well.",
+      "text": "We saw that a special 6:30 PM autumn leaves evening boat runs every night from November 10 to December 5. Could we reserve it for one of the evenings during our stay?",
       "highlight_id": "h3"
     },
     {
-      "text": " ",
+      "text": "\n2. Tea gathering: ",
       "highlight_id": null
     },
     {
-      "text": "Could you let us know if you can arrange the same, and the price?",
+      "text": "We'd also love to join the autumn leaves tea gathering in the Shoin on Saturday, November 21 at 3:00 PM, if there is still space for two of the 8 guests.",
       "highlight_id": "h4"
     },
     {
-      "text": "\n3. Baby crib: Is there room in our room for a baby crib? Please let us know if you can provide one.\n4. Special events: ",
+      "text": "\n3. Dinner: ",
       "highlight_id": null
     },
     {
-      "text": "I saw you are adding an autumn-leaves evening boat at 6:30 PM every night from November 10 to December 5.",
+      "text": "As before, Victor prefers not to have raw shellfish, so please keep that in mind for our dinners.",
       "highlight_id": "h5"
     },
     {
-      "text": " ",
+      "text": "\n\n",
       "highlight_id": null
     },
     {
-      "text": "I also saw the autumn-leaves tea gathering on Saturdays at 3:00 PM.",
+      "text": "Could you let us know room availability and rates for those dates, and whether the boat and tea gathering can be booked now?",
       "highlight_id": "h6"
-    },
-    {
-      "text": " ",
-      "highlight_id": null
-    },
-    {
-      "text": "Could you also let us know what else is happening at the hotel during our stay, and how to reserve?",
-      "highlight_id": "h7"
     },
     {
       "text": "\n\n",
@@ -62,7 +54,7 @@
     },
     {
       "text": "Thank you,\nMia",
-      "highlight_id": "h8"
+      "highlight_id": "h7"
     }
   ],
   "highlights": [
@@ -128,56 +120,6 @@
     },
     {
       "id": "h3",
-      "layer": "person",
-      "ref": {
-        "kind": "fact",
-        "id": "f6"
-      },
-      "strength": "weak",
-      "label": "What you know: Second stay, April 2026: Mia asked for a taxi from the Hachijo exit of Kyoto Station at 2:30 PM on April 6.",
-      "rationale": "From 1 of your emails with HOSHINOYA Kyoto (Kenji, Guest Relations).",
-      "count": 1,
-      "total": null,
-      "evidence": [
-        {
-          "message_id": "syn-vendor_service-018-m1",
-          "external_id": null,
-          "quote": "picking us up at the Hachijo exit at 2:30 PM"
-        }
-      ]
-    },
-    {
-      "id": "h4",
-      "layer": "scenario",
-      "ref": {
-        "kind": "habit",
-        "id": "polite_direct_asks"
-      },
-      "strength": "weak",
-      "label": "Makes requests with 'Could you (also) let us know...' or 'Please let us know / provide...', naming exactly what she needs (price, availability, next step).",
-      "rationale": "In your vendor_service emails, 9 of 30 do this.",
-      "count": 9,
-      "total": 30,
-      "evidence": [
-        {
-          "message_id": "19f7fff4a06bb74c",
-          "external_id": null,
-          "quote": "Please let us know"
-        },
-        {
-          "message_id": "syn-vendor_service-003-m1",
-          "external_id": null,
-          "quote": "Could you also let us know"
-        },
-        {
-          "message_id": "syn-vendor_service-004-m2",
-          "external_id": null,
-          "quote": "Could you send me the tracking number"
-        }
-      ]
-    },
-    {
-      "id": "h5",
       "layer": "external",
       "ref": {
         "kind": "external",
@@ -197,7 +139,7 @@
       ]
     },
     {
-      "id": "h6",
+      "id": "h4",
       "layer": "external",
       "ref": {
         "kind": "external",
@@ -217,7 +159,27 @@
       ]
     },
     {
-      "id": "h7",
+      "id": "h5",
+      "layer": "person",
+      "ref": {
+        "kind": "fact",
+        "id": "f3"
+      },
+      "strength": "weak",
+      "label": "What you know: Dietary note: Victor prefers not to have raw shellfish.",
+      "rationale": "From 1 of your emails with HOSHINOYA Kyoto (Kenji, Guest Relations).",
+      "count": 1,
+      "total": null,
+      "evidence": [
+        {
+          "message_id": "syn-vendor_service-003-m2",
+          "external_id": null,
+          "quote": "Victor prefers not to have raw shellfish"
+        }
+      ]
+    },
+    {
+      "id": "h6",
       "layer": "scenario",
       "ref": {
         "kind": "habit",
@@ -247,7 +209,7 @@
       ]
     },
     {
-      "id": "h8",
+      "id": "h7",
       "layer": "person",
       "ref": {
         "kind": "sign_off",

@@ -1,19 +1,19 @@
 {
-  "case_key": "5f63a70b60",
+  "case_key": "e76271bd9d",
   "endpoint": "POST /draft",
   "contract_revision": "0.3",
-  "recorded_at": "2026-10-23T21:44:15+00:00",
+  "recorded_at": "2026-10-23T21:48:15+00:00",
   "request": {
     "mode": "compose",
     "to": "ethan.park@example.com",
-    "brief": "Say yes to coffee, Friday afternoon works. Ask if we can meet in person at Red Rock or the boba place nearby.",
+    "brief": "约 Ethan 周五下午喝咖啡，问他能不能线下见，Red Rock 就行；顺便问一下他周六早上的散步小组还收人吗；恭喜他最近生宝宝了",
     "inject": null
   },
   "response": {
-    "draft_id": "9189967f0033",
+    "draft_id": "893ae1a88160",
     "to": "ethan.park@example.com",
     "scenario": "friend_scheduling",
-    "subject": "Coffee on Friday",
+    "subject": "Coffee Friday afternoon?",
     "segments": [
       {
         "text": "Hi",
@@ -32,23 +32,19 @@
         "highlight_id": null
       },
       {
-        "text": "Congrats on baby Lily! She's adorable, and I hope you're getting at least a little sleep:)",
+        "text": "Congratulations on baby Lily! The first photo is so sweet. I hope you're getting at least a little sleep",
         "highlight_id": "h3"
       },
       {
-        "text": "\n\nYes to coffee! ",
-        "highlight_id": null
-      },
-      {
-        "text": "Friday afternoon works for me.",
+        "text": ":)",
         "highlight_id": "h4"
       },
       {
-        "text": " ",
+        "text": "\n\nWould you be up for coffee this Friday afternoon? ",
         "highlight_id": null
       },
       {
-        "text": "Could we meet in person at Red Rock, or the boba place nearby?",
+        "text": "Could we meet in person instead of on Zoom? Red Rock works great for me.",
         "highlight_id": "h5"
       },
       {
@@ -56,7 +52,7 @@
         "highlight_id": null
       },
       {
-        "text": "I'd be happy with either one.",
+        "text": "I'm free any time after 2pm on Friday.",
         "highlight_id": "h6"
       },
       {
@@ -64,15 +60,15 @@
         "highlight_id": null
       },
       {
-        "text": "If Friday doesn't work with the new baby, no worries at all, we can find another time.",
+        "text": "No worries at all if this week is too much with the new baby. We can always find another time.",
         "highlight_id": "h7"
       },
       {
-        "text": "\n\n",
+        "text": "\n\nAlso, ",
         "highlight_id": null
       },
       {
-        "text": "Let me know what works best for you!",
+        "text": "I saw you're starting a Saturday morning walking group at Las Palmas Park. Are you still taking people? I'd love to join.",
         "highlight_id": "h8"
       },
       {
@@ -80,8 +76,16 @@
         "highlight_id": null
       },
       {
-        "text": "Best,\nMia",
+        "text": "Let me know what works for you!",
         "highlight_id": "h9"
+      },
+      {
+        "text": "\n\n",
+        "highlight_id": null
+      },
+      {
+        "text": "Best,\nMia",
+        "highlight_id": "h10"
       }
     ],
     "highlights": [
@@ -170,28 +174,28 @@
         "layer": "scenario",
         "ref": {
           "kind": "habit",
-          "id": "concrete_time_windows"
+          "id": "emoji_and_smileys"
         },
         "strength": "weak",
-        "label": "Gives specific days and open-ended windows ('after 3pm', 'this afternoon or Sunday') instead of asking the other person to suggest times.",
+        "label": "Adds a warm emoji or ':)' at the end of a sentence, often with no space before it.",
         "rationale": "In your friend_scheduling emails, 8 of 30 do this.",
         "count": 8,
         "total": 30,
         "evidence": [
           {
-            "message_id": "1993e33e3d00e94f",
+            "message_id": "19a37bff562f1c50",
             "external_id": null,
-            "quote": "Saturday 5pm or after works for me."
+            "quote": "🥹🥹"
           },
           {
-            "message_id": "19ad36893b253add",
+            "message_id": "19a3b184cc717026",
             "external_id": null,
-            "quote": "free after 3pm tomorrow"
+            "quote": "by EOD 😁"
           },
           {
-            "message_id": "19ba40a051210f63",
+            "message_id": "19a46d93cabaa53e",
             "external_id": null,
-            "quote": "meet this afternoon? or Sunday?"
+            "quote": "💛"
           }
         ]
       },
@@ -227,26 +231,31 @@
       },
       {
         "id": "h6",
-        "layer": "person",
+        "layer": "scenario",
         "ref": {
-          "kind": "fact",
-          "id": "f10"
+          "kind": "habit",
+          "id": "concrete_time_windows"
         },
-        "strength": "strong",
-        "label": "What you know: Mia likes meeting at a coffee or milk tea shop. In May 2026 she postponed a session to take the grandparents out for Mother's Day.",
-        "rationale": "From 2 of your emails with Ethan Park.",
-        "count": 2,
-        "total": null,
+        "strength": "weak",
+        "label": "Gives specific days and open-ended windows ('after 3pm', 'this afternoon or Sunday') instead of asking the other person to suggest times.",
+        "rationale": "In your friend_scheduling emails, 8 of 30 do this.",
+        "count": 8,
+        "total": 30,
         "evidence": [
           {
-            "message_id": "19de5186aaeb9ed5",
+            "message_id": "1993e33e3d00e94f",
             "external_id": null,
-            "quote": "coffee or milk tea shop"
+            "quote": "Saturday 5pm or after works for me."
           },
           {
-            "message_id": "19e1780b8fc298d6",
+            "message_id": "19ad36893b253add",
             "external_id": null,
-            "quote": "taking the grandparents out to celebrate Mother's Day"
+            "quote": "free after 3pm tomorrow"
+          },
+          {
+            "message_id": "19ba40a051210f63",
+            "external_id": null,
+            "quote": "meet this afternoon? or Sunday?"
           }
         ]
       },
@@ -282,6 +291,26 @@
       },
       {
         "id": "h8",
+        "layer": "external",
+        "ref": {
+          "kind": "external",
+          "id": "ext-ethan-1"
+        },
+        "strength": "strong",
+        "label": "Recent context: Ethan 的 X 动态（mock）",
+        "rationale": "Mock Ethan 的 X 动态（mock） item from 2026-10-18, not from your emails.",
+        "count": null,
+        "total": null,
+        "evidence": [
+          {
+            "message_id": null,
+            "external_id": "ext-ethan-1",
+            "quote": "Ethan 宣布从 11 月起每周六早上 9 点在 Las Palmas Park 开一个散步式 coaching 小组，边走边聊。"
+          }
+        ]
+      },
+      {
+        "id": "h9",
         "layer": "scenario",
         "ref": {
           "kind": "habit",
@@ -311,7 +340,7 @@
         ]
       },
       {
-        "id": "h9",
+        "id": "h10",
         "layer": "person",
         "ref": {
           "kind": "sign_off",

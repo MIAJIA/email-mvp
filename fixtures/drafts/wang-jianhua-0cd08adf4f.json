@@ -1,64 +1,64 @@
 {
-  "draft_id": "a219e91946ad",
+  "draft_id": "1c9e5164fd3a",
   "to": "wang.jianhua@example.com",
   "scenario": "zh_formal",
-  "subject": "下个月回北京，想当面谢谢您",
+  "subject": "确认 11 月 18 日拜访，顺便去看您的书法展",
   "segments": [
     {
-      "text": "王老师",
+      "text": "王老师：",
       "highlight_id": "h1"
     },
     {
-      "text": "：\n\n",
+      "text": "\n\n",
       "highlight_id": null
     },
     {
-      "text": "您",
+      "text": "您好！在社区公众号上看到您的《行书·兰亭序节临》入选了社区老年书画展，真为您高兴，恭喜王老师！",
       "highlight_id": "h2"
     },
     {
-      "text": "好！我下个月回北京，想约您见一面，当面谢谢您这些年的教导和关心！\n\n",
+      "text": "\n\n",
       "highlight_id": null
     },
     {
-      "text": "这些年做 AI 产品，遇到难题时我还常想起您那句“先把问题定义清楚，再动手”，一直很受用。",
+      "text": "想跟您确认一下下个月的拜访：还是 11 月 18 日下午 3 点左右，我和周航师兄一起去您家，我到之前会先给您打电话。",
       "highlight_id": "h3"
     },
     {
-      "text": "\n\n",
-      "highlight_id": null
-    },
-    {
-      "text": "前几天在社区公众号上看到，您的《行书·兰亭序节临》入选了社区老年书画展，展到 11 月 30 日，恭喜您！这次回去我也想去文化中心看看。",
+      "text": "展览 11 月 30 日才结束，那天如果方便，我们想顺便去社区文化中心看看您的作品。",
       "highlight_id": "h4"
     },
     {
-      "text": "\n\n",
+      "text": "要是您愿意，也可以带我们一起去，听您讲讲。\n\n",
       "highlight_id": null
     },
     {
-      "text": "我会再带一饼您爱喝的云南老普洱。",
+      "text": "这次我准备带一饼普洱，还有一本 Victor 帮我挑的字帖。",
       "highlight_id": "h5"
     },
     {
-      "text": "您看哪天方便？时间都听您的，您也不用特意准备什么。",
+      "text": "上次寄的云南老普洱您说好喝，这次还是选的老普洱。",
       "highlight_id": "h6"
     },
     {
-      "text": "\n\n",
-      "highlight_id": null
-    },
-    {
-      "text": "祝您身体健康，一切顺心！",
+      "text": "您",
       "highlight_id": "h7"
     },
     {
-      "text": "\n\n",
+      "text": "和李阿姨家里有没有需要我们带的东西？吃的用的都行，您直接告诉我就好。",
+      "highlight_id": null
+    },
+    {
+      "text": "另外，书法小册子的事您要是还想做，那天我可以当面教您用 Google Photos 排版。",
+      "highlight_id": "h8"
+    },
+    {
+      "text": "\n\n时间要是不合适，您随时跟我说，我们再调整。不着急回复，您也不用做什么准备。\n\n祝您身体健康，笔墨常新！\n\n",
       "highlight_id": null
     },
     {
       "text": "学生 Mia 敬上",
-      "highlight_id": "h8"
+      "highlight_id": "h9"
     }
   ],
   "highlights": [
@@ -94,6 +94,116 @@
     },
     {
       "id": "h2",
+      "layer": "external",
+      "ref": {
+        "kind": "external",
+        "id": "ext-wang-1"
+      },
+      "strength": "strong",
+      "label": "Recent context: 社区公众号（mock）",
+      "rationale": "Mock 社区公众号（mock） item from 2026-10-15, not from your emails.",
+      "count": null,
+      "total": null,
+      "evidence": [
+        {
+          "message_id": null,
+          "external_id": "ext-wang-1",
+          "quote": "王建华老师的书法作品《行书·兰亭序节临》入选社区老年书画展，10 月 20 日至 11 月 30 日在社区文化中心展出。"
+        }
+      ]
+    },
+    {
+      "id": "h3",
+      "layer": "person",
+      "ref": {
+        "kind": "fact",
+        "id": "f9"
+      },
+      "strength": "strong",
+      "label": "What you know: 已约定 2026 年 11 月 18 日下午三点左右，Mia 和周航师兄去王老师家拜访。Mia 到之前会先打电话。",
+      "rationale": "From 2 of your emails with 王建华.",
+      "count": 2,
+      "total": null,
+      "evidence": [
+        {
+          "message_id": "syn-rel-wang-004-m2",
+          "external_id": null,
+          "quote": "定 11 月 18 号下午三点左右过来"
+        },
+        {
+          "message_id": "syn-rel-wang-004-m1",
+          "external_id": null,
+          "quote": "周航师兄说也想一起去"
+        }
+      ]
+    },
+    {
+      "id": "h4",
+      "layer": "external",
+      "ref": {
+        "kind": "external",
+        "id": "ext-wang-1"
+      },
+      "strength": "strong",
+      "label": "Recent context: 社区公众号（mock）",
+      "rationale": "Mock 社区公众号（mock） item from 2026-10-15, not from your emails.",
+      "count": null,
+      "total": null,
+      "evidence": [
+        {
+          "message_id": null,
+          "external_id": "ext-wang-1",
+          "quote": "王建华老师的书法作品《行书·兰亭序节临》入选社区老年书画展，10 月 20 日至 11 月 30 日在社区文化中心展出。"
+        }
+      ]
+    },
+    {
+      "id": "h5",
+      "layer": "person",
+      "ref": {
+        "kind": "fact",
+        "id": "f10"
+      },
+      "strength": "weak",
+      "label": "What you know: 这次拜访，Mia 打算带普洱，还有一本 Victor 帮她挑的字帖。",
+      "rationale": "From 1 of your emails with 王建华.",
+      "count": 1,
+      "total": null,
+      "evidence": [
+        {
+          "message_id": "syn-rel-wang-004-m1",
+          "external_id": null,
+          "quote": "再给您带一本 Victor 帮我挑的字帖"
+        }
+      ]
+    },
+    {
+      "id": "h6",
+      "layer": "person",
+      "ref": {
+        "kind": "fact",
+        "id": "f3"
+      },
+      "strength": "strong",
+      "label": "What you know: 王老师最爱喝云南老普洱。Mia 在 2025 年春节前寄过一饼，他说好喝。",
+      "rationale": "From 2 of your emails with 王建华.",
+      "count": 2,
+      "total": null,
+      "evidence": [
+        {
+          "message_id": "syn-rel-wang-001-m1",
+          "external_id": null,
+          "quote": "您以前在实验室最爱喝这个"
+        },
+        {
+          "message_id": "syn-rel-wang-004-m1",
+          "external_id": null,
+          "quote": "带上次您说好喝的那款普洱"
+        }
+      ]
+    },
+    {
+      "id": "h7",
       "layer": "person",
       "ref": {
         "kind": "honorific",
@@ -123,132 +233,32 @@
       ]
     },
     {
-      "id": "h3",
+      "id": "h8",
       "layer": "person",
       "ref": {
         "kind": "fact",
-        "id": "f1"
+        "id": "f7"
       },
       "strength": "weak",
-      "label": "What you know: Mia 曾在王老师的实验室学习，至今记得他那句“先把问题定义清楚，再动手”。",
+      "label": "What you know: 王老师想把书法作品拍照，整理成一本小册子。Mia 建议用 Google Photos 排版，并愿意视频演示。",
       "rationale": "From 1 of your emails with 王建华.",
       "count": 1,
       "total": null,
       "evidence": [
         {
-          "message_id": "syn-rel-wang-001-m1",
+          "message_id": "syn-rel-wang-003-m1",
           "external_id": null,
-          "quote": "先把问题定义清楚，再动手"
-        }
-      ]
-    },
-    {
-      "id": "h4",
-      "layer": "external",
-      "ref": {
-        "kind": "external",
-        "id": "ext-wang-1"
-      },
-      "strength": "strong",
-      "label": "Recent context: 社区公众号（mock）",
-      "rationale": "Mock 社区公众号（mock） item from 2026-10-15, not from your emails.",
-      "count": null,
-      "total": null,
-      "evidence": [
-        {
-          "message_id": null,
-          "external_id": "ext-wang-1",
-          "quote": "王建华老师的书法作品《行书·兰亭序节临》入选社区老年书画展，10 月 20 日至 11 月 30 日在社区文化中心展出。"
-        }
-      ]
-    },
-    {
-      "id": "h5",
-      "layer": "person",
-      "ref": {
-        "kind": "fact",
-        "id": "f3"
-      },
-      "strength": "strong",
-      "label": "What you know: 王老师最爱喝云南老普洱。Mia 在 2025 年春节前寄过一饼，他说好喝。",
-      "rationale": "From 2 of your emails with 王建华.",
-      "count": 2,
-      "total": null,
-      "evidence": [
-        {
-          "message_id": "syn-rel-wang-001-m1",
-          "external_id": null,
-          "quote": "您以前在实验室最爱喝这个"
-        },
-        {
-          "message_id": "syn-rel-wang-004-m1",
-          "external_id": null,
-          "quote": "带上次您说好喝的那款普洱"
-        }
-      ]
-    },
-    {
-      "id": "h6",
-      "layer": "scenario",
-      "ref": {
-        "kind": "habit",
-        "id": "low_pressure_offer_of_help"
-      },
-      "strength": "strong",
-      "label": "Ends the body with a considerate, low-pressure line: lets the recipient pick a time, offers further help 'anytime', or says they need not reply or prepare anything.",
-      "rationale": "In your zh_formal emails, 8 of 14 do this.",
-      "count": 8,
-      "total": 14,
-      "evidence": [
-        {
-          "message_id": "syn-rel-wang-002-m1",
-          "external_id": null,
-          "quote": "您有空的时候翻翻就好，不用回复"
+          "quote": "想把书法作品拍照整理成一本小册子"
         },
         {
           "message_id": "syn-rel-wang-003-m1",
           "external_id": null,
-          "quote": "您随时告诉我，我视频给您演示"
-        },
-        {
-          "message_id": "syn-rel-wang-004-m1",
-          "external_id": null,
-          "quote": "不知道您哪天方便？"
+          "quote": "我视频给您演示"
         }
       ]
     },
     {
-      "id": "h7",
-      "layer": "scenario",
-      "ref": {
-        "kind": "habit",
-        "id": "zhu_nin_wish_closing"
-      },
-      "strength": "weak",
-      "label": "Greeting and farewell emails close with a standalone '祝您……' wish line before the sign-off.",
-      "rationale": "In your zh_formal emails, 4 of 14 do this.",
-      "count": 4,
-      "total": 14,
-      "evidence": [
-        {
-          "message_id": "syn-rel-wang-001-m1",
-          "external_id": null,
-          "quote": "祝您身体健康，新春愉快！"
-        },
-        {
-          "message_id": "syn-rel-wang-002-m1",
-          "external_id": null,
-          "quote": "祝您秋安！"
-        },
-        {
-          "message_id": "syn-rel-zhao-001-m1",
-          "external_id": null,
-          "quote": "祝您新春快乐，阖家幸福！"
-        }
-      ]
-    },
-    {
-      "id": "h8",
+      "id": "h9",
       "layer": "person",
       "ref": {
         "kind": "sign_off",
