@@ -1,0 +1,252 @@
+{
+  "draft_id": "23a5597c37eb",
+  "to": "reservations@hoshinoya-kyoto.example.com",
+  "scenario": "vendor_service",
+  "subject": "Late arrival on November 14 and a few requests",
+  "segments": [
+    {
+      "text": "Dear Kenji,",
+      "highlight_id": "h1"
+    },
+    {
+      "text": "\n\n",
+      "highlight_id": null
+    },
+    {
+      "text": "Thank you as always for taking such good care of us.",
+      "highlight_id": "h2"
+    },
+    {
+      "text": " ",
+      "highlight_id": null
+    },
+    {
+      "text": "We have loved our earlier stays at HOSHINOYA Kyoto",
+      "highlight_id": "h3"
+    },
+    {
+      "text": ", and we are excited to come back. ",
+      "highlight_id": null
+    },
+    {
+      "text": "Victor and I",
+      "highlight_id": "h4"
+    },
+    {
+      "text": " will be traveling with our baby this time, so I have a few questions before we arrive:\n\n",
+      "highlight_id": null
+    },
+    {
+      "text": "1. We expect to arrive on November 14 around 9:00 PM. Is a late check-in okay?\n2. Could you arrange a car from Kyoto Station for 2 adults and 1 baby?\n3. Is there room in our room for a baby crib, and could you provide one?\n4. Is anything special happening at the hotel during our stay?",
+      "highlight_id": "h5"
+    },
+    {
+      "text": " ",
+      "highlight_id": null
+    },
+    {
+      "text": "I saw that the autumn foliage night boat cruises on the Oi River run nightly from November 10 to November 30. We would love to hear whether these would work for us with a baby, and how to reserve.",
+      "highlight_id": "h6"
+    },
+    {
+      "text": "\n\nI look forward to hearing from you.\n\n",
+      "highlight_id": null
+    },
+    {
+      "text": "Thank you,",
+      "highlight_id": "h7"
+    },
+    {
+      "text": "\nMia",
+      "highlight_id": null
+    }
+  ],
+  "highlights": [
+    {
+      "id": "h1",
+      "layer": "person",
+      "ref": {
+        "kind": "address_as",
+        "id": "address_as"
+      },
+      "strength": "strong",
+      "label": "Greeting: \"Dear Kenji\"",
+      "rationale": "You addressed Kenji (HOSHINOYA Kyoto) as \"Dear Kenji\" in 6 of 8 emails.",
+      "count": 6,
+      "total": 8,
+      "evidence": [
+        {
+          "message_id": "syn-vendor_service-003-m1",
+          "external_id": null,
+          "quote": "Dear Kenji,"
+        },
+        {
+          "message_id": "syn-vendor_service-018-m1",
+          "external_id": null,
+          "quote": "Dear Kenji,"
+        }
+      ]
+    },
+    {
+      "id": "h2",
+      "layer": "scenario",
+      "ref": {
+        "kind": "habit",
+        "id": "thank_first"
+      },
+      "strength": "weak",
+      "label": "Thanks them in the first line",
+      "rationale": "In your vendor_service emails, 14 of 65 do this.",
+      "count": 14,
+      "total": 65,
+      "evidence": [
+        {
+          "message_id": "19f8002baa79472f",
+          "external_id": null,
+          "quote": "Dear Made,"
+        },
+        {
+          "message_id": "syn-vendor_service-001-m1",
+          "external_id": null,
+          "quote": "Dear Made,"
+        },
+        {
+          "message_id": "syn-vendor_service-001-m2",
+          "external_id": null,
+          "quote": "Dear Made,"
+        }
+      ]
+    },
+    {
+      "id": "h3",
+      "layer": "person",
+      "ref": {
+        "kind": "fact",
+        "id": "repeat_guest"
+      },
+      "strength": "strong",
+      "label": "What you know: Mia stayed at HOSHINOYA Kyoto March 28–30, 2025, and booked a return stay for April 6–8, 2026",
+      "rationale": "From 2 of your emails with Kenji (HOSHINOYA Kyoto).",
+      "count": 2,
+      "total": null,
+      "evidence": [
+        {
+          "message_id": "syn-vendor_service-004-m1",
+          "external_id": null,
+          "quote": "Thank you so much for a wonderful stay from March 28 to 30."
+        },
+        {
+          "message_id": "syn-vendor_service-018-m1",
+          "external_id": null,
+          "quote": "it is lovely to hear from you again"
+        }
+      ]
+    },
+    {
+      "id": "h4",
+      "layer": "person",
+      "ref": {
+        "kind": "fact",
+        "id": "travels_with_victor"
+      },
+      "strength": "strong",
+      "label": "What you know: Mia books for two adults, herself and Victor",
+      "rationale": "From 2 of your emails with Kenji (HOSHINOYA Kyoto).",
+      "count": 2,
+      "total": null,
+      "evidence": [
+        {
+          "message_id": "syn-vendor_service-003-m1",
+          "external_id": null,
+          "quote": "(2 adults: Mia & Victor)"
+        },
+        {
+          "message_id": "syn-vendor_service-018-m1",
+          "external_id": null,
+          "quote": "space for 2 adults (Mia & Victor)"
+        }
+      ]
+    },
+    {
+      "id": "h5",
+      "layer": "scenario",
+      "ref": {
+        "kind": "habit",
+        "id": "numbered_followups"
+      },
+      "strength": "strong",
+      "label": "Lists requests as a numbered list",
+      "rationale": "In your vendor_service emails, 21 of 65 do this.",
+      "count": 21,
+      "total": 65,
+      "evidence": [
+        {
+          "message_id": "19f8002baa79472f",
+          "external_id": null,
+          "quote": "Thank you again — following up on two more things:"
+        },
+        {
+          "message_id": "syn-vendor_service-001-m2",
+          "external_id": null,
+          "quote": "Thank you again — following up on two more things:"
+        },
+        {
+          "message_id": "syn-vendor_service-002-m2",
+          "external_id": null,
+          "quote": "Thank you so much! The Moon House sounds lovely. Following up on two things:"
+        }
+      ]
+    },
+    {
+      "id": "h6",
+      "layer": "external",
+      "ref": {
+        "kind": "external",
+        "id": "ext-hoshinoya-001"
+      },
+      "strength": "strong",
+      "label": "Recent context: Hotel news (mock)",
+      "rationale": "Mock Hotel news (mock) item from 2026-10-15, not from your emails.",
+      "count": null,
+      "total": null,
+      "evidence": [
+        {
+          "message_id": null,
+          "external_id": "ext-hoshinoya-001",
+          "quote": "Autumn foliage night boat cruises on the Oi River run nightly from November 10 to November 30."
+        }
+      ]
+    },
+    {
+      "id": "h7",
+      "layer": "person",
+      "ref": {
+        "kind": "sign_off",
+        "id": "sign_off"
+      },
+      "strength": "strong",
+      "label": "Sign-off: \"Thank you,\"",
+      "rationale": "You signed off with \"Thank you,\" in 3 of 8 emails to Kenji (HOSHINOYA Kyoto).",
+      "count": 3,
+      "total": 8,
+      "evidence": [
+        {
+          "message_id": "syn-vendor_service-003-m2",
+          "external_id": null,
+          "quote": "Thank you,"
+        },
+        {
+          "message_id": "syn-vendor_service-004-m1",
+          "external_id": null,
+          "quote": "Thank you,"
+        },
+        {
+          "message_id": "syn-vendor_service-018-m1",
+          "external_id": null,
+          "quote": "Thank you,"
+        }
+      ]
+    }
+  ],
+  "warnings": []
+}
