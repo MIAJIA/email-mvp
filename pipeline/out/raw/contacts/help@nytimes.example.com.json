@@ -1,0 +1,167 @@
+{
+  "email": "help@nytimes.example.com",
+  "to_name": "NYTimes Customer Care",
+  "message_ids": [
+    "syn-refund_complaint-008-m1",
+    "syn-refund_complaint-008-m2",
+    "syn-refund_complaint-019-m1",
+    "syn-refund_complaint-019-m2"
+  ],
+  "extraction": {
+    "display_name": "NYTimes Customer Care",
+    "relationship": "customer service",
+    "core_connection": {
+      "text": "Customer support for Mia's New York Times All Access subscription. Mia contacts them to cancel after an introductory rate ends and to ask for refunds of charges at the full rate.",
+      "evidence": [
+        {
+          "message_id": "syn-refund_complaint-008-m1",
+          "quote": "Please cancel my All Access subscription"
+        },
+        {
+          "message_id": "syn-refund_complaint-019-m1",
+          "quote": "Please cancel my subscription, effective immediately."
+        }
+      ]
+    },
+    "address_as": [
+      {
+        "context": "default",
+        "value": "NYTimes Customer Care",
+        "evidence": [
+          {
+            "message_id": "syn-refund_complaint-008-m1",
+            "quote": "Hello NYTimes Customer Care,"
+          },
+          {
+            "message_id": "syn-refund_complaint-019-m1",
+            "quote": "Hello NYTimes Customer Care,"
+          }
+        ]
+      }
+    ],
+    "honorific": {
+      "value": "n/a",
+      "evidence": []
+    },
+    "sign_off": {
+      "value": "Thank you, Mia",
+      "evidence": [
+        {
+          "message_id": "syn-refund_complaint-008-m1",
+          "quote": "Thank you,\nMia"
+        },
+        {
+          "message_id": "syn-refund_complaint-019-m1",
+          "quote": "Thank you,\nMia"
+        },
+        {
+          "message_id": "syn-refund_complaint-019-m2",
+          "quote": "Thank you,\nMia"
+        }
+      ]
+    },
+    "language": {
+      "value": "en",
+      "evidence": [
+        {
+          "message_id": "syn-refund_complaint-008-m1",
+          "quote": "Please cancel my All Access subscription"
+        },
+        {
+          "message_id": "syn-refund_complaint-019-m1",
+          "quote": "Please cancel my subscription"
+        },
+        {
+          "message_id": "syn-refund_complaint-019-m2",
+          "quote": "Thanks for cancelling the subscription"
+        }
+      ]
+    },
+    "facts": [
+      {
+        "text": "In May 2025 Mia's introductory rate ended and she was charged $25.00 on May 3, 2025. She asked for the subscription to be cancelled and for that charge to be refunded as a one-time exception.",
+        "evidence": [
+          {
+            "message_id": "syn-refund_complaint-008-m1",
+            "quote": "I was charged $25.00 on May 3, 2025"
+          },
+          {
+            "message_id": "syn-refund_complaint-008-m1",
+            "quote": "refund the May 3 charge of $25.00 as a one-time exception"
+          }
+        ]
+      },
+      {
+        "text": "Mia said she had not used the articles, Games or Cooking apps since early April 2025.",
+        "evidence": [
+          {
+            "message_id": "syn-refund_complaint-008-m1",
+            "quote": "I have not read any articles or used the Games or Cooking apps"
+          }
+        ]
+      },
+      {
+        "text": "Mia finished the May 2025 cancellation herself and replied only with 'done'.",
+        "evidence": [
+          {
+            "message_id": "syn-refund_complaint-008-m2",
+            "quote": "done"
+          }
+        ]
+      },
+      {
+        "text": "Mia subscribed again in November 2025 at the $1 per week introductory rate.",
+        "evidence": [
+          {
+            "message_id": "syn-refund_complaint-019-m1",
+            "quote": "I subscribed at the $1 per week introductory rate in November 2025"
+          }
+        ]
+      },
+      {
+        "text": "In 2026 she was charged $25.00 on January 10, February 7, March 7 and April 4, a total of $100.00. She had not logged in since December 2025.",
+        "evidence": [
+          {
+            "message_id": "syn-refund_complaint-019-m1",
+            "quote": "for a total of $100.00"
+          },
+          {
+            "message_id": "syn-refund_complaint-019-m1",
+            "quote": "I have not logged in since December 2025."
+          }
+        ]
+      },
+      {
+        "text": "Mia wants refunds to go to the original payment method, not account credits. She asks for escalation if the first support level cannot approve a refund.",
+        "evidence": [
+          {
+            "message_id": "syn-refund_complaint-019-m1",
+            "quote": "to the original payment method rather than account credits"
+          },
+          {
+            "message_id": "syn-refund_complaint-019-m1",
+            "quote": "please escalate the request"
+          }
+        ]
+      },
+      {
+        "text": "In April 2026 the subscription was cancelled and the April 4 payment refunded. Mia is still disputing the other three payments ($75.00) because she cannot find the December email about the rate change.",
+        "evidence": [
+          {
+            "message_id": "syn-refund_complaint-019-m2",
+            "quote": "Thanks for cancelling the subscription and refunding the April 4 payment."
+          },
+          {
+            "message_id": "syn-refund_complaint-019-m2",
+            "quote": "which total $75.00"
+          },
+          {
+            "message_id": "syn-refund_complaint-019-m2",
+            "quote": "cannot find the December email about the rate change"
+          }
+        ]
+      }
+    ],
+    "edges": []
+  }
+}

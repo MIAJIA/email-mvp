@@ -1,0 +1,267 @@
+---
+{
+  "email": "kevin.chen@example.com",
+  "display_name": "Kevin Chen",
+  "relationship": "friend",
+  "address_as": {
+    "value": "Kevin",
+    "count": 1,
+    "total": 19,
+    "status": "learned",
+    "evidence": [
+      {
+        "message_id": "syn-zh_en_casual-014-m1",
+        "quote": "Kevin"
+      }
+    ]
+  },
+  "address_as_by_context": [
+    {
+      "context": "default",
+      "value": "Kevin",
+      "count": 1,
+      "total": 19,
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "syn-zh_en_casual-014-m1",
+          "quote": "Kevin"
+        }
+      ]
+    }
+  ],
+  "honorific": {
+    "value": "你",
+    "count": 5,
+    "total": 19,
+    "status": "learned",
+    "evidence": [
+      {
+        "message_id": "syn-zh_en_casual-006-m2",
+        "quote": "你想拿它做什么?"
+      },
+      {
+        "message_id": "syn-zh_en_casual-013-m1",
+        "quote": "好奇你开五个是让它们同时做一个 task 吗"
+      },
+      {
+        "message_id": "19cfa2a364325cd7",
+        "quote": "你不担心隐私问题吗？"
+      },
+      {
+        "message_id": "syn-zh_en_casual-020-m2",
+        "quote": "好奇你是要转会议还是 podcast?"
+      },
+      {
+        "message_id": "syn-zh_en_casual-014-m1",
+        "quote": "今年 Costco 的月饼你们买了吗?"
+      }
+    ]
+  },
+  "sign_off": {
+    "value": "Mia",
+    "count": 2,
+    "total": 19,
+    "status": "learned",
+    "evidence": [
+      {
+        "message_id": "syn-zh_en_casual-006-m1",
+        "quote": "Mia"
+      },
+      {
+        "message_id": "syn-zh_en_casual-018-m1",
+        "quote": "Mia"
+      }
+    ]
+  },
+  "language": {
+    "value": "mixed",
+    "count": 8,
+    "total": 19,
+    "status": "learned",
+    "evidence": [
+      {
+        "message_id": "syn-zh_en_casual-006-m1",
+        "quote": "跑过 我的 Mac 32GB 内存跑 8B 很流畅"
+      },
+      {
+        "message_id": "syn-zh_en_casual-006-m2",
+        "quote": "比如把我随手存的 link 自动打 tag。"
+      },
+      {
+        "message_id": "syn-zh_en_casual-009-m2",
+        "quote": "read-only 好主意！我也去加一个"
+      },
+      {
+        "message_id": "syn-zh_en_casual-013-m2",
+        "quote": "写在 CLAUDE.md 里，每次说太累了。"
+      },
+      {
+        "message_id": "syn-zh_en_casual-018-m1",
+        "quote": "我们当时是把打分改成 pass/fail"
+      },
+      {
+        "message_id": "syn-zh_en_casual-020-m1",
+        "quote": "先用 Whisper 转 再让 Claude 按说话人分段"
+      },
+      {
+        "message_id": "syn-zh_en_casual-009-m3",
+        "quote": "搞 vector DB 纯属给自己找事嘛😂"
+      },
+      {
+        "message_id": "19cfa37efd3a794e",
+        "quote": "因为你的信息都被明文给model了😂"
+      }
+    ]
+  },
+  "facts": [
+    {
+      "id": "f1",
+      "text": "In Feb 2025 Kevin wanted to run local models. Mia told him she runs Qwen 7B on her 32GB Mac to tag links and offered him her prompt.",
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "syn-zh_en_casual-006-m1",
+          "quote": "我的 Mac 32GB 内存跑 8B 很流畅"
+        },
+        {
+          "message_id": "syn-zh_en_casual-006-m3",
+          "quote": "这是我的 prompt 你直接拿去改嘛"
+        }
+      ]
+    },
+    {
+      "id": "f2",
+      "text": "Kevin connected his Obsidian notes to Claude through a local MCP server. Mia also wanted to do this but worried it would change her notes, and she liked his read-only idea.",
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "syn-zh_en_casual-009-m1",
+          "quote": "我之前也想接 Obsidian 但是怕它乱改我的笔记"
+        },
+        {
+          "message_id": "syn-zh_en_casual-009-m2",
+          "quote": "read-only 好主意！我也去加一个"
+        }
+      ]
+    },
+    {
+      "id": "f3",
+      "text": "Kevin uses Claude Code subagents. Mia suggested giving each agent its own directory, written in CLAUDE.md and enforced by a hook, and sent him a repo with example hooks.",
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "syn-zh_en_casual-013-m2",
+          "quote": "然后再加一个 hook，改了别人的目录就直接 block 掉。"
+        },
+        {
+          "message_id": "syn-zh_en_casual-013-m3",
+          "quote": "这个 repo 里有好几个 改改就能用嘛"
+        }
+      ]
+    },
+    {
+      "id": "f4",
+      "text": "Mia wished Kevin a happy Mid-Autumn Festival in Oct 2025 and recommended the Maxim's (美心) custard mooncakes from Costco, in the red box. 你们 suggests he lives with family.",
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "syn-zh_en_casual-014-m1",
+          "quote": "中秋快乐！"
+        },
+        {
+          "message_id": "syn-zh_en_casual-014-m2",
+          "quote": "美心的 红色盒子那个"
+        }
+      ]
+    },
+    {
+      "id": "f5",
+      "text": "Kevin's team does LLM-as-judge and was using the same model as both judge and the model being tested. Mia's advice: score pass/fail, ask about each criterion separately, use a different judge model, and hand-check 100 samples.",
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "syn-zh_en_casual-018-m1",
+          "quote": "我们当时是把打分改成 pass/fail"
+        },
+        {
+          "message_id": "syn-zh_en_casual-018-m3",
+          "quote": "换一个 model 当 judge 再抽一百条人工对一下"
+        }
+      ]
+    },
+    {
+      "id": "f6",
+      "text": "Kevin uses an MCP to fill in forms, including tax forms. Mia raised privacy concerns.",
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "19cfa2a364325cd7",
+          "quote": "尤其是税务的话，你不担心隐私问题吗？"
+        }
+      ]
+    },
+    {
+      "id": "f7",
+      "text": "Kevin records his own podcast and wants to publish transcripts. Mia shared her Whisper + Claude pipeline: put a glossary at the top of the prompt and tell the model not to polish the text.",
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "syn-zh_en_casual-020-m2",
+          "quote": "对！放在 prompt 最前面 几十个词"
+        },
+        {
+          "message_id": "syn-zh_en_casual-020-m3",
+          "quote": "不过记得在 prompt 里让它别润色。"
+        }
+      ]
+    },
+    {
+      "id": "f8",
+      "text": "Mia's tone with Kevin is relaxed and peer-to-peer. She often opens questions with 好奇 and uses 😂.",
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "syn-zh_en_casual-009-m2",
+          "quote": "好奇它搜索是用 embedding 还是直接 grep?"
+        },
+        {
+          "message_id": "syn-zh_en_casual-013-m1",
+          "quote": "不然最后 merge 的时候很崩溃😂"
+        }
+      ]
+    }
+  ],
+  "edges": [],
+  "core_connection": {
+    "text": "Mia and Kevin are casual tech friends. They swap practical tips on AI tools: local models, MCP, Claude Code, LLM-as-judge and transcription. Mia often replies to Kevin's newsletter, \"Notes from Kevin\".",
+    "evidence": [
+      {
+        "message_id": "syn-zh_en_casual-009-m1",
+        "quote": "好奇你这个 local MCP 是自己写的还是用现成的？"
+      },
+      {
+        "message_id": "syn-zh_en_casual-013-m1",
+        "quote": "我现在都让每个 agent 只管自己的目录"
+      }
+    ]
+  },
+  "external": []
+}
+---
+
+# Kevin Chen
+
+Mia and Kevin are casual tech friends. They swap practical tips on AI tools: local models, MCP, Claude Code, LLM-as-judge and transcription. Mia often replies to Kevin's newsletter, "Notes from Kevin".
+
+- Address (default): Kevin (1/19 emails)
+- In Feb 2025 Kevin wanted to run local models. Mia told him she runs Qwen 7B on her 32GB Mac to tag links and offered him her prompt.
+- Kevin connected his Obsidian notes to Claude through a local MCP server. Mia also wanted to do this but worried it would change her notes, and she liked his read-only idea.
+- Kevin uses Claude Code subagents. Mia suggested giving each agent its own directory, written in CLAUDE.md and enforced by a hook, and sent him a repo with example hooks.
+- Mia wished Kevin a happy Mid-Autumn Festival in Oct 2025 and recommended the Maxim's (美心) custard mooncakes from Costco, in the red box. 你们 suggests he lives with family.
+- Kevin's team does LLM-as-judge and was using the same model as both judge and the model being tested. Mia's advice: score pass/fail, ask about each criterion separately, use a different judge model, and hand-check 100 samples.
+- Kevin uses an MCP to fill in forms, including tax forms. Mia raised privacy concerns.
+- Kevin records his own podcast and wants to publish transcripts. Mia shared her Whisper + Claude pipeline: put a glossary at the top of the prompt and tell the model not to polish the text.
+- Mia's tone with Kevin is relaxed and peer-to-peer. She often opens questions with 好奇 and uses 😂.
+
+_Extracted offline by pipeline/extract.py; every entry is backed by verified quotes._

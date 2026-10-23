@@ -1,0 +1,171 @@
+{
+  "email": "support@spotify.example.com",
+  "to_name": "Spotify Support",
+  "message_ids": [
+    "syn-refund_complaint-007-m1",
+    "syn-refund_complaint-007-m2",
+    "syn-refund_complaint-018-m1",
+    "syn-refund_complaint-018-m2"
+  ],
+  "extraction": {
+    "display_name": "Spotify Support",
+    "relationship": "customer support",
+    "core_connection": {
+      "text": "Mia is a Spotify Premium subscriber who writes to Spotify Support to dispute billing charges and ask for refunds.",
+      "evidence": [
+        {
+          "message_id": "syn-refund_complaint-007-m1",
+          "quote": "Could you please refund the $5.00 difference"
+        },
+        {
+          "message_id": "syn-refund_complaint-018-m1",
+          "quote": "refund the March 8 charge"
+        }
+      ]
+    },
+    "address_as": [
+      {
+        "context": "default",
+        "value": "Spotify Support",
+        "evidence": [
+          {
+            "message_id": "syn-refund_complaint-007-m1",
+            "quote": "Hello Spotify Support,"
+          },
+          {
+            "message_id": "syn-refund_complaint-018-m1",
+            "quote": "Hello Spotify Support,"
+          }
+        ]
+      }
+    ],
+    "honorific": {
+      "value": "n/a",
+      "evidence": []
+    },
+    "sign_off": {
+      "value": "Thank you, Mia",
+      "evidence": [
+        {
+          "message_id": "syn-refund_complaint-007-m1",
+          "quote": "Thank you,"
+        },
+        {
+          "message_id": "syn-refund_complaint-007-m2",
+          "quote": "Thank you,"
+        },
+        {
+          "message_id": "syn-refund_complaint-018-m1",
+          "quote": "Thank you,"
+        },
+        {
+          "message_id": "syn-refund_complaint-018-m2",
+          "quote": "Thank you,"
+        }
+      ]
+    },
+    "language": {
+      "value": "en",
+      "evidence": [
+        {
+          "message_id": "syn-refund_complaint-007-m1",
+          "quote": "Hello Spotify Support,"
+        },
+        {
+          "message_id": "syn-refund_complaint-007-m2",
+          "quote": "Thanks for checking."
+        },
+        {
+          "message_id": "syn-refund_complaint-018-m1",
+          "quote": "Hello Spotify Support,"
+        },
+        {
+          "message_id": "syn-refund_complaint-018-m2",
+          "quote": "Thanks for looking into this."
+        }
+      ]
+    },
+    "facts": [
+      {
+        "text": "On March 30, 2025, Mia changed her plan from Premium Family to Premium Individual.",
+        "evidence": [
+          {
+            "message_id": "syn-refund_complaint-007-m1",
+            "quote": "I changed my plan to Premium Individual on March 30, 2025"
+          }
+        ]
+      },
+      {
+        "text": "On April 8, 2025, Mia was still charged the Family price of $16.99.",
+        "evidence": [
+          {
+            "message_id": "syn-refund_complaint-007-m1",
+            "quote": "I was charged $16.99 for Premium Family on April 8, 2025"
+          }
+        ]
+      },
+      {
+        "text": "Mia asked for the $5.00 difference to be refunded as a one-time exception. She argued the April 8 charge should have been at the Individual price.",
+        "evidence": [
+          {
+            "message_id": "syn-refund_complaint-007-m2",
+            "quote": "The April 8 charge should therefore have been at the Individual price."
+          },
+          {
+            "message_id": "syn-refund_complaint-007-m2",
+            "quote": "as a one-time exception"
+          }
+        ]
+      },
+      {
+        "text": "Mia cancelled her Premium Individual plan on February 20, 2026. Her account page showed Premium would end on March 7, 2026.",
+        "evidence": [
+          {
+            "message_id": "syn-refund_complaint-018-m1",
+            "quote": "I cancelled my Premium Individual plan on February 20, 2026"
+          }
+        ]
+      },
+      {
+        "text": "Mia was still charged $11.99 on March 8, 2026, and Premium showed as active again on her account.",
+        "evidence": [
+          {
+            "message_id": "syn-refund_complaint-018-m1",
+            "quote": "On March 8, 2026 I was still charged $11.99"
+          }
+        ]
+      },
+      {
+        "text": "Mia says she did not restart Premium herself and has not played anything on the account since March 7, 2026. She asked which device restarted it.",
+        "evidence": [
+          {
+            "message_id": "syn-refund_complaint-018-m2",
+            "quote": "I did not restart Premium on March 8, 2026"
+          },
+          {
+            "message_id": "syn-refund_complaint-018-m2",
+            "quote": "I have not played anything on the account since March 7"
+          },
+          {
+            "message_id": "syn-refund_complaint-018-m2",
+            "quote": "check which device restarted the subscription"
+          }
+        ]
+      },
+      {
+        "text": "When first-level support turns down a request, Mia asks for it to be escalated to the billing team.",
+        "evidence": [
+          {
+            "message_id": "syn-refund_complaint-007-m2",
+            "quote": "please escalate the request to the billing team"
+          },
+          {
+            "message_id": "syn-refund_complaint-018-m2",
+            "quote": "please escalate the request to the billing team"
+          }
+        ]
+      }
+    ],
+    "edges": []
+  }
+}

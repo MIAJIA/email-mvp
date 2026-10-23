@@ -1,0 +1,250 @@
+{
+  "email": "reservations@bambuindah.example.com",
+  "to_name": "Bambu Indah Reservations",
+  "message_ids": [
+    "syn-vendor_service-001-m1",
+    "syn-vendor_service-001-m2",
+    "syn-vendor_service-001-m3",
+    "syn-vendor_service-002-m1",
+    "syn-vendor_service-002-m2",
+    "syn-vendor_service-002-m3",
+    "syn-vendor_service-019-m1",
+    "syn-vendor_service-019-m2"
+  ],
+  "extraction": {
+    "display_name": "Bambu Indah Reservations (Made)",
+    "relationship": "hotel",
+    "core_connection": {
+      "text": "Bambu Indah is a hotel where Mia stayed with Victor in September 2024. She booked a return stay for April 2026 and arranged it by email with Made, the reservations contact.",
+      "evidence": [
+        {
+          "message_id": "syn-vendor_service-002-m1",
+          "quote": "We stayed with you in September 2024"
+        },
+        {
+          "message_id": "syn-vendor_service-002-m1",
+          "quote": "would love to come back"
+        }
+      ]
+    },
+    "address_as": [
+      {
+        "context": "default",
+        "value": "Made",
+        "evidence": [
+          {
+            "message_id": "syn-vendor_service-001-m1",
+            "quote": "Dear Made,"
+          },
+          {
+            "message_id": "syn-vendor_service-001-m2",
+            "quote": "Dear Made,"
+          },
+          {
+            "message_id": "syn-vendor_service-002-m2",
+            "quote": "Dear Made,"
+          },
+          {
+            "message_id": "syn-vendor_service-002-m3",
+            "quote": "Dear Made,"
+          },
+          {
+            "message_id": "syn-vendor_service-019-m1",
+            "quote": "Dear Made,"
+          },
+          {
+            "message_id": "syn-vendor_service-019-m2",
+            "quote": "Dear Made,"
+          }
+        ]
+      }
+    ],
+    "honorific": {
+      "value": "n/a",
+      "evidence": []
+    },
+    "sign_off": {
+      "value": "Thank you,\nMia",
+      "evidence": [
+        {
+          "message_id": "syn-vendor_service-001-m2",
+          "quote": "Thank you,\nMia"
+        },
+        {
+          "message_id": "syn-vendor_service-002-m1",
+          "quote": "Thank you,\nMia"
+        },
+        {
+          "message_id": "syn-vendor_service-002-m3",
+          "quote": "Thank you,\nMia"
+        },
+        {
+          "message_id": "syn-vendor_service-019-m1",
+          "quote": "Thank you,\nMia"
+        }
+      ]
+    },
+    "language": {
+      "value": "en",
+      "evidence": [
+        {
+          "message_id": "syn-vendor_service-001-m1",
+          "quote": "Thank you so much for the warm welcome!"
+        },
+        {
+          "message_id": "syn-vendor_service-001-m3",
+          "quote": "coming down to the lobby now"
+        },
+        {
+          "message_id": "syn-vendor_service-002-m1",
+          "quote": "Hi Bambu Indah Team,"
+        },
+        {
+          "message_id": "syn-vendor_service-002-m2",
+          "quote": "The Moon House sounds lovely."
+        }
+      ]
+    },
+    "facts": [
+      {
+        "text": "First stay was in September 2024 in the Mahogany Tent, for 2 adults: Mia and Victor. Mia asked for a one-way transfer from Alaya Resort in Ubud.",
+        "evidence": [
+          {
+            "message_id": "syn-vendor_service-001-m1",
+            "quote": "2 adults: Mia & Victor"
+          },
+          {
+            "message_id": "syn-vendor_service-001-m1",
+            "quote": "one-way transfer from Alaya Resort in Ubud"
+          }
+        ]
+      },
+      {
+        "text": "During the 2024 stay Mia booked two Balinese massages and a dinner at the River Warung on September 19, and asked whether a vegetarian tasting option was available.",
+        "evidence": [
+          {
+            "message_id": "syn-vendor_service-001-m2",
+            "quote": "two 60-minute Balinese massages"
+          },
+          {
+            "message_id": "syn-vendor_service-001-m2",
+            "quote": "vegetarian tasting option"
+          }
+        ]
+      },
+      {
+        "text": "Mia prefers the Mahogany Tent or a similar room with a river view.",
+        "evidence": [
+          {
+            "message_id": "syn-vendor_service-002-m1",
+            "quote": "ideally in the Mahogany Tent"
+          },
+          {
+            "message_id": "syn-vendor_service-002-m1",
+            "quote": "similar river-view room"
+          }
+        ]
+      },
+      {
+        "text": "Return stay booked for April 14–19, 2026 in the Moon House at a 10% long-stay rate.",
+        "evidence": [
+          {
+            "message_id": "syn-vendor_service-002-m2",
+            "quote": "book April 14 to April 19"
+          },
+          {
+            "message_id": "syn-vendor_service-002-m2",
+            "quote": "with the 10% long-stay rate"
+          }
+        ]
+      },
+      {
+        "text": "Mia asked for a 2:00 PM late check-out on April 19 because their flight leaves Denpasar at 7:40 PM.",
+        "evidence": [
+          {
+            "message_id": "syn-vendor_service-002-m2",
+            "quote": "check out at 2:00 PM on April 19"
+          },
+          {
+            "message_id": "syn-vendor_service-002-m2",
+            "quote": "leaves at 7:40 PM"
+          }
+        ]
+      },
+      {
+        "text": "Arrival flight is SQ 938, landing at Denpasar on April 14, 2026 at 11:50 AM. Mia asked for an airport transfer to meet them at arrivals.",
+        "evidence": [
+          {
+            "message_id": "syn-vendor_service-002-m3",
+            "quote": "SQ 938, landing at Denpasar"
+          },
+          {
+            "message_id": "syn-vendor_service-019-m1",
+            "quote": "a car from Denpasar Airport"
+          }
+        ]
+      },
+      {
+        "text": "Founders Tour booked for April 16 at 9:30 AM for 2 adults. They planned to meet at the lobby by 9:15 AM.",
+        "evidence": [
+          {
+            "message_id": "syn-vendor_service-019-m2",
+            "quote": "9:30 AM Founders Tour on April 16"
+          },
+          {
+            "message_id": "syn-vendor_service-019-m2",
+            "quote": "meet at the lobby by 9:15 AM"
+          }
+        ]
+      },
+      {
+        "text": "Victor planned to work remotely for part of the 2026 stay, so a stable Wi-Fi connection mattered.",
+        "evidence": [
+          {
+            "message_id": "syn-vendor_service-019-m1",
+            "quote": "Victor will be working remotely"
+          },
+          {
+            "message_id": "syn-vendor_service-019-m1",
+            "quote": "stable connection"
+          }
+        ]
+      },
+      {
+        "text": "When Mia wrote to the hotel without replying to a message from Made, she greeted the whole team instead.",
+        "evidence": [
+          {
+            "message_id": "syn-vendor_service-002-m1",
+            "quote": "Hi Bambu Indah Team,"
+          }
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "to": "Victor",
+        "type": "travel_companion_of_mia",
+        "evidence": [
+          {
+            "message_id": "syn-vendor_service-001-m2",
+            "quote": "2 adults (Mia & Victor)"
+          },
+          {
+            "message_id": "syn-vendor_service-002-m1",
+            "quote": "2 adults: Mia & Victor"
+          }
+        ]
+      },
+      {
+        "to": "Made",
+        "type": "reservations_contact",
+        "evidence": [
+          {
+            "message_id": "syn-vendor_service-001-m1",
+            "quote": "Dear Made,"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,313 @@
+{
+  "scenario": "zh_en_casual",
+  "message_ids": [
+    "19cfa2a364325cd7",
+    "syn-zh_en_casual-001-m1",
+    "syn-zh_en_casual-001-m3",
+    "syn-zh_en_casual-002-m2",
+    "syn-zh_en_casual-003-m2",
+    "syn-zh_en_casual-004-m2",
+    "syn-zh_en_casual-006-m1",
+    "syn-zh_en_casual-006-m3",
+    "syn-zh_en_casual-007-m2",
+    "syn-zh_en_casual-008-m1",
+    "syn-zh_en_casual-009-m1",
+    "syn-zh_en_casual-009-m3",
+    "syn-zh_en_casual-010-m3",
+    "syn-zh_en_casual-011-m2",
+    "syn-zh_en_casual-012-m1",
+    "syn-zh_en_casual-013-m1",
+    "syn-zh_en_casual-013-m3",
+    "syn-zh_en_casual-014-m2",
+    "syn-zh_en_casual-015-m3",
+    "syn-zh_en_casual-016-m2",
+    "syn-zh_en_casual-017-m2",
+    "syn-zh_en_casual-018-m1",
+    "syn-zh_en_casual-018-m3",
+    "syn-zh_en_casual-019-m2",
+    "syn-zh_en_casual-020-m2",
+    "syn-zh_en_casual-021-m1",
+    "syn-zh_en_casual-021-m3",
+    "syn-zh_en_casual-022-m2",
+    "syn-rel-tang-001-m1",
+    "syn-rel-tang-003-m1"
+  ],
+  "extraction": {
+    "habits": [
+      {
+        "id": "short_reply_no_framing",
+        "description": "Writes very short replies of one to three lines. There is usually no greeting or sign-off. When there is one, it is just the recipient's name alone on the first line or 'Mia' alone on the last line.",
+        "evidence": [
+          {
+            "message_id": "syn-zh_en_casual-012-m1",
+            "quote": "Amy"
+          },
+          {
+            "message_id": "syn-rel-tang-003-m1",
+            "quote": "书远，"
+          },
+          {
+            "message_id": "syn-zh_en_casual-006-m1",
+            "quote": "Mia"
+          },
+          {
+            "message_id": "syn-zh_en_casual-018-m1",
+            "quote": "Mia"
+          }
+        ]
+      },
+      {
+        "id": "opens_with_direct_answer",
+        "description": "Starts with the answer itself, often a quick confirmation or exclamation such as 有！/对！/好呀/确实, with no preamble.",
+        "evidence": [
+          {
+            "message_id": "syn-zh_en_casual-013-m1",
+            "quote": "有！我现在都让每个 agent 只管自己的目录"
+          },
+          {
+            "message_id": "syn-zh_en_casual-020-m2",
+            "quote": "对！放在 prompt 最前面"
+          },
+          {
+            "message_id": "syn-zh_en_casual-001-m3",
+            "quote": "Three.js！单文件 index.html 就跑起来了"
+          },
+          {
+            "message_id": "syn-rel-tang-001-m1",
+            "quote": "周六可以！"
+          },
+          {
+            "message_id": "syn-zh_en_casual-003-m2",
+            "quote": "好呀 周四可以 我七点左右到"
+          },
+          {
+            "message_id": "syn-zh_en_casual-009-m3",
+            "quote": "确实 几千条 grep 秒出"
+          },
+          {
+            "message_id": "syn-zh_en_casual-006-m1",
+            "quote": "跑过 我的 Mac 32GB 内存跑 8B 很流畅"
+          },
+          {
+            "message_id": "syn-zh_en_casual-004-m2",
+            "quote": "七点半可以 我带点水果"
+          }
+        ]
+      },
+      {
+        "id": "spaces_instead_of_commas",
+        "description": "Separates clauses with spaces instead of Chinese commas or periods, like quick chat messages.",
+        "evidence": [
+          {
+            "message_id": "syn-zh_en_casual-007-m2",
+            "quote": "我们住的四条 吃饭方便很多"
+          },
+          {
+            "message_id": "syn-zh_en_casual-011-m2",
+            "quote": "不会每行看 我看 diff 和测试"
+          },
+          {
+            "message_id": "syn-zh_en_casual-014-m2",
+            "quote": "美心的 红色盒子那个"
+          },
+          {
+            "message_id": "syn-zh_en_casual-015-m3",
+            "quote": "不客气 玩得开心呀"
+          },
+          {
+            "message_id": "syn-zh_en_casual-018-m3",
+            "quote": "那就难怪了 自己给自己打分总是偏高"
+          },
+          {
+            "message_id": "syn-zh_en_casual-010-m3",
+            "quote": "不然它只会死记那一条 遇到没写到的就乱来啦"
+          },
+          {
+            "message_id": "syn-zh_en_casual-016-m2",
+            "quote": "中文也可以的 不过英文出来的画风稳定一点"
+          },
+          {
+            "message_id": "syn-zh_en_casual-022-m2",
+            "quote": "有一点 那你可以先听 Hard Fork 那个 podcast"
+          }
+        ]
+      },
+      {
+        "id": "soft_sentence_particles",
+        "description": "Ends sentences with soft particles such as 啦, 嘛 and 呀 to keep the tone light and friendly.",
+        "evidence": [
+          {
+            "message_id": "syn-zh_en_casual-004-m2",
+            "quote": "这次慢慢走啦"
+          },
+          {
+            "message_id": "syn-zh_en_casual-006-m3",
+            "quote": "你直接拿去改嘛"
+          },
+          {
+            "message_id": "syn-zh_en_casual-011-m2",
+            "quote": "不然一天啥也干不了啦"
+          },
+          {
+            "message_id": "syn-zh_en_casual-014-m2",
+            "quote": "要买得赶紧去啦"
+          },
+          {
+            "message_id": "syn-zh_en_casual-013-m3",
+            "quote": "改改就能用嘛"
+          },
+          {
+            "message_id": "syn-zh_en_casual-016-m2",
+            "quote": "再让 ChatGPT 帮你翻一下嘛"
+          },
+          {
+            "message_id": "syn-zh_en_casual-021-m3",
+            "quote": "不用一开始全塞进 context 嘛"
+          },
+          {
+            "message_id": "syn-zh_en_casual-002-m2",
+            "quote": "早点去呀"
+          },
+          {
+            "message_id": "syn-zh_en_casual-001-m3",
+            "quote": "不想再多学一个编辑器啦"
+          },
+          {
+            "message_id": "syn-zh_en_casual-018-m3",
+            "quote": "心里就有数啦"
+          }
+        ]
+      },
+      {
+        "id": "haha_and_laughing_emoji",
+        "description": "Adds 哈哈 or the 😂 emoji at the end of a line to sound playful or poke fun at herself.",
+        "evidence": [
+          {
+            "message_id": "syn-zh_en_casual-001-m1",
+            "quote": "我在做一个海盗小游戏练手哈哈"
+          },
+          {
+            "message_id": "syn-zh_en_casual-008-m1",
+            "quote": "大家都推荐不是没道理的哈哈"
+          },
+          {
+            "message_id": "syn-zh_en_casual-006-m1",
+            "quote": "再大就开始卡了😂"
+          },
+          {
+            "message_id": "syn-zh_en_casual-009-m3",
+            "quote": "纯属给自己找事嘛😂"
+          },
+          {
+            "message_id": "syn-zh_en_casual-013-m1",
+            "quote": "merge 的时候很崩溃😂"
+          },
+          {
+            "message_id": "syn-zh_en_casual-015-m3",
+            "quote": "拍了雪景记得发我看看哈哈"
+          },
+          {
+            "message_id": "syn-zh_en_casual-019-m2",
+            "quote": "我们一天吃了三顿哈哈"
+          },
+          {
+            "message_id": "syn-rel-tang-001-m1",
+            "quote": "smoker 搬过来 哈哈"
+          },
+          {
+            "message_id": "syn-zh_en_casual-003-m2",
+            "quote": "先在 Yelp 上帮我们排个号嘛😂"
+          },
+          {
+            "message_id": "syn-zh_en_casual-012-m1",
+            "quote": "别太担心呀哈哈"
+          }
+        ]
+      },
+      {
+        "id": "english_terms_in_chinese",
+        "description": "Writes mainly in Chinese but drops in English words for tech terms, brands and everyday nouns or verbs, with a space on each side.",
+        "evidence": [
+          {
+            "message_id": "syn-zh_en_casual-001-m1",
+            "quote": "装一个 blender-mcp 的 plugin"
+          },
+          {
+            "message_id": "syn-zh_en_casual-002-m2",
+            "quote": "我们是在 app 上买的"
+          },
+          {
+            "message_id": "syn-zh_en_casual-019-m2",
+            "quote": "要提前 book"
+          },
+          {
+            "message_id": "syn-zh_en_casual-018-m1",
+            "quote": "把打分改成 pass/fail"
+          },
+          {
+            "message_id": "syn-zh_en_casual-018-m3",
+            "quote": "换一个 model 当 judge"
+          },
+          {
+            "message_id": "syn-zh_en_casual-020-m2",
+            "quote": "放在 prompt 最前面"
+          },
+          {
+            "message_id": "syn-zh_en_casual-013-m1",
+            "quote": "同时做一个 task 吗"
+          },
+          {
+            "message_id": "syn-zh_en_casual-021-m1",
+            "quote": "description 写得太抽象"
+          }
+        ]
+      },
+      {
+        "id": "ends_with_curious_question",
+        "description": "Often ends with a follow-up question about the other person, frequently starting with 好奇你.",
+        "evidence": [
+          {
+            "message_id": "19cfa2a364325cd7",
+            "quote": "好奇你的填表格用的是什么MCP呀？"
+          },
+          {
+            "message_id": "syn-zh_en_casual-001-m3",
+            "quote": "好奇你平时是用 Unity 吗?"
+          },
+          {
+            "message_id": "syn-zh_en_casual-009-m1",
+            "quote": "好奇你这个 local MCP 是自己写的还是用现成的？"
+          },
+          {
+            "message_id": "syn-zh_en_casual-013-m1",
+            "quote": "好奇你开五个是让它们同时做一个 task 吗"
+          },
+          {
+            "message_id": "syn-zh_en_casual-020-m2",
+            "quote": "好奇你是要转会议还是 podcast?"
+          },
+          {
+            "message_id": "syn-zh_en_casual-021-m1",
+            "quote": "好奇你 description 现在怎么写的"
+          },
+          {
+            "message_id": "syn-zh_en_casual-022-m2",
+            "quote": "好奇你通勤多久?"
+          },
+          {
+            "message_id": "syn-zh_en_casual-002-m2",
+            "quote": "你们打算上午去吗?"
+          },
+          {
+            "message_id": "syn-zh_en_casual-017-m2",
+            "quote": "你们租好车了吗?"
+          },
+          {
+            "message_id": "syn-zh_en_casual-021-m3",
+            "quote": "你的 skill 现在多长?"
+          }
+        ]
+      }
+    ]
+  }
+}

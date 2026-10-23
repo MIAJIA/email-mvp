@@ -52,6 +52,11 @@ def check_evidence(evidence, by_id, allowed_ids, stats: Stats) -> list[dict]:
     return kept
 
 
+def dicts(items) -> list[dict]:
+    """Model replies sometimes put a bare string where an object belongs; skip those."""
+    return [x for x in items if isinstance(x, dict)] if isinstance(items, list) else []
+
+
 def note_field(value, evidence, total) -> dict:
     return {"value": value, "count": len({e["message_id"] for e in evidence}), "total": total,
             "status": "learned", "evidence": evidence}
@@ -75,7 +80,7 @@ def build_contact(raw: dict, by_id: dict, external: dict, stats: Stats) -> dict 
         return note_field(value, ev, total)
 
     by_context = []
-    for item in data.get("address_as") or []:
+    for item in dicts(data.get("address_as")):
         f = field("address_as", item.get("value"), item.get("evidence"))
         if f:
             by_context.append({"context": item.get("context") or "default", **f})
@@ -86,7 +91,7 @@ def build_contact(raw: dict, by_id: dict, external: dict, stats: Stats) -> dict 
         fm["address_as_by_context"] = by_context
 
     for key in ("honorific", "sign_off", "language"):
-        item = data.get(key) or {}
+        item = data.get(key) if isinstance(data.get(key), dict) else {}
         value = item.get("value")
         if key == "honorific":
             value = HONORIFIC_VALUES.get(value)
@@ -95,7 +100,7 @@ def build_contact(raw: dict, by_id: dict, external: dict, stats: Stats) -> dict 
             fm[key] = f
 
     facts = []
-    for item in data.get("facts") or []:
+    for item in dicts(data.get("facts")):
         stats.add("facts_total")
         ev = check_evidence(item.get("evidence"), by_id, allowed, stats)
         if not ev or not item.get("text"):
@@ -105,7 +110,7 @@ def build_contact(raw: dict, by_id: dict, external: dict, stats: Stats) -> dict 
     fm["facts"] = facts
 
     edges = []
-    for item in data.get("edges") or []:
+    for item in dicts(data.get("edges")):
         stats.add("edges_total")
         ev = check_evidence(item.get("evidence"), by_id, allowed, stats)
         if not ev or not item.get("to") or not item.get("type"):
@@ -114,7 +119,7 @@ def build_contact(raw: dict, by_id: dict, external: dict, stats: Stats) -> dict 
         edges.append({"to": item["to"], "type": item["type"], "evidence": ev})
     fm["edges"] = edges
 
-    cc = data.get("core_connection") or {}
+    cc = data.get("core_connection") if isinstance(data.get("core_connection"), dict) else {}
     stats.add("fields_total")
     cc_ev = check_evidence(cc.get("evidence"), by_id, allowed, stats)
     if cc.get("text") and cc_ev:
@@ -148,7 +153,7 @@ def build_style(raw: dict, by_id: dict, stats: Stats) -> dict:
     allowed = set(raw["message_ids"])
     total = len(allowed)
     habits = []
-    for item in (raw.get("extraction") or {}).get("habits") or []:
+    for item in dicts((raw.get("extraction") or {}).get("habits")):
         stats.add("habits_total")
         ev = check_evidence(item.get("evidence"), by_id, allowed, stats)
         if not ev or not item.get("description"):

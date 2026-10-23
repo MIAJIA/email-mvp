@@ -1,0 +1,176 @@
+{
+  "email": "billing@vercel.example.com",
+  "to_name": "Vercel Billing",
+  "message_ids": [
+    "syn-refund_complaint-002-m1",
+    "syn-refund_complaint-002-m2",
+    "syn-refund_complaint-013-m1",
+    "syn-refund_complaint-013-m2"
+  ],
+  "extraction": {
+    "display_name": "Vercel Billing",
+    "relationship": "vendor billing",
+    "core_connection": {
+      "text": "Vercel's billing support team. Mia writes to them to dispute charges on her Vercel account and ask for refunds.",
+      "evidence": [
+        {
+          "message_id": "syn-refund_complaint-002-m1",
+          "quote": "Please refund the duplicate $20.00 charge"
+        },
+        {
+          "message_id": "syn-refund_complaint-013-m1",
+          "quote": "refund the October 13 charge as a one-time exception"
+        }
+      ]
+    },
+    "address_as": [
+      {
+        "context": "default",
+        "value": "Vercel Billing Team",
+        "evidence": [
+          {
+            "message_id": "syn-refund_complaint-002-m1",
+            "quote": "Hello Vercel Billing Team,"
+          },
+          {
+            "message_id": "syn-refund_complaint-013-m1",
+            "quote": "Hello Vercel Billing Team,"
+          }
+        ]
+      }
+    ],
+    "honorific": {
+      "value": "n/a",
+      "evidence": []
+    },
+    "sign_off": {
+      "value": "Thank you,\nMia",
+      "evidence": [
+        {
+          "message_id": "syn-refund_complaint-002-m1",
+          "quote": "Thank you,"
+        },
+        {
+          "message_id": "syn-refund_complaint-013-m1",
+          "quote": "Thank you,"
+        }
+      ]
+    },
+    "language": {
+      "value": "en",
+      "evidence": [
+        {
+          "message_id": "syn-refund_complaint-002-m1",
+          "quote": "I was charged twice for the same Pro plan"
+        },
+        {
+          "message_id": "syn-refund_complaint-002-m2",
+          "quote": "Yes, please refund it to the card on file."
+        },
+        {
+          "message_id": "syn-refund_complaint-013-m1",
+          "quote": "I downgraded my team to the Hobby plan"
+        },
+        {
+          "message_id": "syn-refund_complaint-013-m2",
+          "quote": "Yes, the original payment method is fine."
+        }
+      ]
+    },
+    "facts": [
+      {
+        "text": "In October 2024 Mia was charged twice ($20.00 each, posted October 7, 2024) for the same Pro plan period, October 7 to November 6, 2024.",
+        "evidence": [
+          {
+            "message_id": "syn-refund_complaint-002-m1",
+            "quote": "I was charged twice for the same Pro plan billing period"
+          },
+          {
+            "message_id": "syn-refund_complaint-002-m1",
+            "quote": "both cover October 7 to November 6, 2024"
+          }
+        ]
+      },
+      {
+        "text": "Mia's Vercel account had only one team and one seat.",
+        "evidence": [
+          {
+            "message_id": "syn-refund_complaint-002-m1",
+            "quote": "My account has only one team and one seat"
+          }
+        ]
+      },
+      {
+        "text": "Mia asked for the duplicate 2024 charge to go back to the card on file.",
+        "evidence": [
+          {
+            "message_id": "syn-refund_complaint-002-m2",
+            "quote": "Yes, please refund it to the card on file."
+          }
+        ]
+      },
+      {
+        "text": "Mia downgraded her team to the Hobby plan on September 20, 2025.",
+        "evidence": [
+          {
+            "message_id": "syn-refund_complaint-013-m1",
+            "quote": "I downgraded my team to the Hobby plan on September 20, 2025"
+          }
+        ]
+      },
+      {
+        "text": "On October 13, 2025 Mia was still charged $20.00 for the Web Analytics Plus and Speed Insights add-ons after the downgrade. She has not deployed any project since the downgrade.",
+        "evidence": [
+          {
+            "message_id": "syn-refund_complaint-013-m1",
+            "quote": "Web Analytics Plus and Speed Insights"
+          },
+          {
+            "message_id": "syn-refund_complaint-013-m1",
+            "quote": "I have not deployed any project since the downgrade"
+          }
+        ]
+      },
+      {
+        "text": "Mia asked for both add-ons to be removed and for the October 2025 charge to be refunded as a one-time exception, back to the original payment method.",
+        "evidence": [
+          {
+            "message_id": "syn-refund_complaint-013-m1",
+            "quote": "Please remove both add-ons"
+          },
+          {
+            "message_id": "syn-refund_complaint-013-m2",
+            "quote": "Yes, the original payment method is fine."
+          }
+        ]
+      },
+      {
+        "text": "Mia's complaint emails always end by asking for written confirmation of the refund amount and that no further or duplicate charges will be made.",
+        "evidence": [
+          {
+            "message_id": "syn-refund_complaint-002-m1",
+            "quote": "Please confirm the amount being refunded"
+          },
+          {
+            "message_id": "syn-refund_complaint-013-m1",
+            "quote": "that no further charges will be made"
+          }
+        ]
+      },
+      {
+        "text": "When billing asks a confirmation question, Mia replies in one short sentence with no greeting or sign-off.",
+        "evidence": [
+          {
+            "message_id": "syn-refund_complaint-002-m2",
+            "quote": "Yes, please refund it to the card on file."
+          },
+          {
+            "message_id": "syn-refund_complaint-013-m2",
+            "quote": "Yes, the original payment method is fine."
+          }
+        ]
+      }
+    ],
+    "edges": []
+  }
+}

@@ -1,0 +1,357 @@
+{
+  "scenario": "refund_complaint",
+  "habits": [
+    {
+      "id": "opens_thanking_partial_resolution",
+      "description": "In follow-ups she opens with a one-line thanks for what support already did, such as a partial refund, a cancellation or a downgrade, before raising what is still open.",
+      "count": 10,
+      "total": 30,
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "1a01584ece3e04e2",
+          "quote": "Thanks for refunding the most recent"
+        },
+        {
+          "message_id": "syn-refund_complaint-001-m2",
+          "quote": "Thanks for refunding the most recent"
+        },
+        {
+          "message_id": "syn-refund_complaint-003-m2",
+          "quote": "Thank you for processing the $48.00"
+        },
+        {
+          "message_id": "syn-refund_complaint-005-m2",
+          "quote": "Thanks for cancelling the membership"
+        },
+        {
+          "message_id": "syn-refund_complaint-006-m2",
+          "quote": "Thank you for refunding the March"
+        },
+        {
+          "message_id": "syn-refund_complaint-009-m2",
+          "quote": "Thank you for turning off the"
+        },
+        {
+          "message_id": "syn-refund_complaint-011-m2",
+          "quote": "Thank you for cancelling the plan."
+        },
+        {
+          "message_id": "syn-refund_complaint-014-m2",
+          "quote": "Thank you for refunding the October"
+        },
+        {
+          "message_id": "syn-refund_complaint-016-m2",
+          "quote": "Thanks for cancelling the membership"
+        },
+        {
+          "message_id": "syn-refund_complaint-022-m2",
+          "quote": "Thanks for refunding the $8.00 difference"
+        }
+      ]
+    },
+    {
+      "id": "asks_review_of_remaining_with_dates_and_total",
+      "description": "The second paragraph uses the set phrase \"I'm asking for a review of the remaining ...\" and gives the number of charges, the date range and the exact total, then a short factual reason why the service was not used.",
+      "count": 10,
+      "total": 30,
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "1a01584ece3e04e2",
+          "quote": "asking for a review of the remaining"
+        },
+        {
+          "message_id": "syn-refund_complaint-001-m2",
+          "quote": "asking for a review of the remaining"
+        },
+        {
+          "message_id": "syn-refund_complaint-003-m2",
+          "quote": "asking for a review of the remaining"
+        },
+        {
+          "message_id": "syn-refund_complaint-005-m2",
+          "quote": "asking for a review of the remaining three"
+        },
+        {
+          "message_id": "syn-refund_complaint-006-m2",
+          "quote": "asking for a review of the four remaining"
+        },
+        {
+          "message_id": "syn-refund_complaint-014-m2",
+          "quote": "asking for a review of the remaining five"
+        },
+        {
+          "message_id": "syn-refund_complaint-016-m2",
+          "quote": "asking for a review of the December 2"
+        },
+        {
+          "message_id": "syn-refund_complaint-019-m2",
+          "quote": "asking for a review of the remaining three"
+        },
+        {
+          "message_id": "syn-refund_complaint-022-m2",
+          "quote": "asking for a review of the remaining four"
+        },
+        {
+          "message_id": "syn-refund_complaint-025-m2",
+          "quote": "asking for a review of the remaining $9.92"
+        }
+      ]
+    },
+    {
+      "id": "conditional_escalation_request",
+      "description": "She asks for escalation ahead of time with a conditional line like \"If this cannot be approved at the first support level, please escalate the request and refund the maximum amount permitted.\"",
+      "count": 10,
+      "total": 30,
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "1a01240117d22fa5",
+          "quote": "approved at the first support level"
+        },
+        {
+          "message_id": "1a01584ece3e04e2",
+          "quote": "escalate this to the billing team"
+        },
+        {
+          "message_id": "syn-refund_complaint-001-m2",
+          "quote": "escalate this to the billing team"
+        },
+        {
+          "message_id": "syn-refund_complaint-005-m2",
+          "quote": "please escalate the request and refund"
+        },
+        {
+          "message_id": "syn-refund_complaint-007-m2",
+          "quote": "approved at the first support level"
+        },
+        {
+          "message_id": "syn-refund_complaint-009-m2",
+          "quote": "approved at the first support level"
+        },
+        {
+          "message_id": "syn-refund_complaint-014-m2",
+          "quote": "approved at the first support level"
+        },
+        {
+          "message_id": "syn-refund_complaint-015-m2",
+          "quote": "escalate the request to a supervisor"
+        },
+        {
+          "message_id": "syn-refund_complaint-018-m2",
+          "quote": "approved at the first support level"
+        },
+        {
+          "message_id": "syn-refund_complaint-025-m2",
+          "quote": "cannot be approved at your level"
+        }
+      ]
+    },
+    {
+      "id": "frames_as_one_time_exception",
+      "description": "She frames the refund as a \"one-time exception\" so the agent can grant it without changing policy.",
+      "count": 9,
+      "total": 30,
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "1a01240117d22fa5",
+          "quote": "one-time billing exception"
+        },
+        {
+          "message_id": "1a01584ece3e04e2",
+          "quote": "as a one-time"
+        },
+        {
+          "message_id": "syn-refund_complaint-001-m2",
+          "quote": "as a one-time exception"
+        },
+        {
+          "message_id": "syn-refund_complaint-003-m2",
+          "quote": "as a one-time exception"
+        },
+        {
+          "message_id": "syn-refund_complaint-004-m1",
+          "quote": "as a one-time exception"
+        },
+        {
+          "message_id": "syn-refund_complaint-007-m2",
+          "quote": "as a one-time exception"
+        },
+        {
+          "message_id": "syn-refund_complaint-016-m2",
+          "quote": "as a one-time exception"
+        },
+        {
+          "message_id": "syn-refund_complaint-018-m2",
+          "quote": "as a one-time exception"
+        },
+        {
+          "message_id": "syn-refund_complaint-025-m2",
+          "quote": "as a one-time exception"
+        }
+      ]
+    },
+    {
+      "id": "original_payment_method_not_credits",
+      "description": "She names where the money should go, the original payment method, and often adds \"rather than account credits\".",
+      "count": 9,
+      "total": 30,
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "1a01240117d22fa5",
+          "quote": "original payment method rather than"
+        },
+        {
+          "message_id": "syn-refund_complaint-001-m2",
+          "quote": "to my original payment method"
+        },
+        {
+          "message_id": "syn-refund_complaint-003-m2",
+          "quote": "to the same payment method"
+        },
+        {
+          "message_id": "syn-refund_complaint-005-m2",
+          "quote": "to my original payment method"
+        },
+        {
+          "message_id": "syn-refund_complaint-006-m2",
+          "quote": "original payment method rather than"
+        },
+        {
+          "message_id": "syn-refund_complaint-009-m2",
+          "quote": "to my original payment method"
+        },
+        {
+          "message_id": "syn-refund_complaint-011-m2",
+          "quote": "to the original payment method"
+        },
+        {
+          "message_id": "syn-refund_complaint-020-m2",
+          "quote": "to the original payment method"
+        },
+        {
+          "message_id": "syn-refund_complaint-022-m2",
+          "quote": "original payment method rather than"
+        }
+      ]
+    },
+    {
+      "id": "requests_closure_confirmation",
+      "description": "Near the end she asks for written confirmation that the account is closed, that no further charges will be made, and of the exact amount refunded.",
+      "count": 6,
+      "total": 30,
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "1a01240117d22fa5",
+          "quote": "Please confirm the cancellation"
+        },
+        {
+          "message_id": "syn-refund_complaint-004-m1",
+          "quote": "Please confirm the cancellation"
+        },
+        {
+          "message_id": "syn-refund_complaint-004-m3",
+          "quote": "no further charges or termination fees"
+        },
+        {
+          "message_id": "syn-refund_complaint-012-m1",
+          "quote": "confirm that the team workspace has no"
+        },
+        {
+          "message_id": "syn-refund_complaint-012-m3",
+          "quote": "Please confirm when the refund has been"
+        },
+        {
+          "message_id": "syn-refund_complaint-015-m2",
+          "quote": "that no further charges will be made"
+        }
+      ]
+    },
+    {
+      "id": "thank_you_mia_signoff",
+      "description": "Full emails often start with \"Hello [Company] Support,\" and almost all end with \"Thank you,\" then \"Mia\" on its own line, often followed by \"account email: [EMAIL]\".",
+      "count": 10,
+      "total": 30,
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "syn-refund_complaint-003-m2",
+          "quote": "Thank you,"
+        },
+        {
+          "message_id": "syn-refund_complaint-004-m1",
+          "quote": "Thank you,"
+        },
+        {
+          "message_id": "syn-refund_complaint-004-m3",
+          "quote": "Thank you,"
+        },
+        {
+          "message_id": "syn-refund_complaint-005-m2",
+          "quote": "Thank you,"
+        },
+        {
+          "message_id": "syn-refund_complaint-006-m2",
+          "quote": "Thank you,"
+        },
+        {
+          "message_id": "syn-refund_complaint-007-m2",
+          "quote": "Thank you,"
+        },
+        {
+          "message_id": "syn-refund_complaint-009-m2",
+          "quote": "Thank you,"
+        },
+        {
+          "message_id": "syn-refund_complaint-010-m2",
+          "quote": "Thank you,"
+        },
+        {
+          "message_id": "syn-refund_complaint-011-m2",
+          "quote": "Thank you,"
+        },
+        {
+          "message_id": "syn-refund_complaint-012-m1",
+          "quote": "Thank you,"
+        }
+      ]
+    },
+    {
+      "id": "one_line_confirmations",
+      "description": "When support only needs a yes or a detail confirmed, she replies with a single short line and no greeting or sign-off, such as \"done\" or \"Yes, ...\".",
+      "count": 6,
+      "total": 30,
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "1a0fce34b0279f65",
+          "quote": "done"
+        },
+        {
+          "message_id": "syn-refund_complaint-002-m2",
+          "quote": "Yes, please refund it to the card"
+        },
+        {
+          "message_id": "syn-refund_complaint-008-m2",
+          "quote": "done"
+        },
+        {
+          "message_id": "syn-refund_complaint-013-m2",
+          "quote": "Yes, the original payment method"
+        },
+        {
+          "message_id": "syn-refund_complaint-017-m2",
+          "quote": "Yes, please go ahead with the refund."
+        },
+        {
+          "message_id": "syn-refund_complaint-021-m2",
+          "quote": "Yes, that is the correct order."
+        }
+      ]
+    }
+  ]
+}

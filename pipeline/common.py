@@ -36,7 +36,9 @@ def load_external() -> dict[str, list[dict]]:
     path = DATA / "external.json"
     if not path.exists():
         return {}
-    return json.loads(path.read_text(encoding="utf-8"))
+    data = json.loads(path.read_text(encoding="utf-8"))
+    # skip metadata keys such as "_mock" / "_note"; only per-email lists are context items
+    return {k: v for k, v in data.items() if not k.startswith("_") and isinstance(v, list)}
 
 
 def norm_email(addr: str | None) -> str:
