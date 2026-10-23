@@ -30,7 +30,7 @@ DRAFTS: dict[str, Draft] = {}
 
 
 def case_key(req: DraftRequest) -> str:
-    canon = json.dumps({"mode": req.mode, "to": req.to, "thread_id": req.thread_id, "brief": req.brief.strip()},
+    canon = json.dumps({"mode": req.mode, "to": req.to, "thread_id": req.thread_id, "brief": req.brief.strip(), **({"inject": req.inject} if req.inject else {})},
                        sort_keys=True, ensure_ascii=False)
     return hashlib.sha1(canon.encode()).hexdigest()[:10]
 
@@ -90,7 +90,10 @@ async def draft(request: Request):
             raise HTTPException(404, f"no recording for case {key}")
         return Draft(**rec["response"])
     note = contacts.get(req.to)
-    style = styles.get((note.scenario if note and note.scenario else None) or DEFAULT_SCENARIO)
+    scenario = (note.scenario if note and note.scenario else None) or emails.scenario_for(req.to) or DEFAULT_SCENARIO
+    if note and not note.scenario:
+        note.scenario = scenario
+    style = styles.get(scenario)
     try:
         d = generate(req, note, style, external.get(req.to), llm.complete)
     except llm.LLMError as e:
@@ -114,15 +117,7 @@ def feedback(fb: FeedbackRequest):
         raise HTTPException(404, "unknown draft or highlight")
     status = "confirmed" if fb.action == "accept" else "rejected"
     if REPLAY or h.layer != "person":
-        # Replay never writes notes; scenario/external entries are not per-contact (not persisted in the skeleton).
+        # Replay never writes; scenario/external entries are not per-contact (not persisted).
         return FeedbackResponse(email=d.to, ref=h.ref, status=status)
-    note = contacts.get(d.to)
-    if note:
-        if h.ref.kind == "fact":
-            for f in note.facts:
-                if f.id == h.ref.id:
-                    f.status = status
-        else:
-            getattr(note, h.ref.kind).status = status
-        contacts.save(note)
+    contacts.set_status(d.to, f"{h.ref.kind}:{h.ref.id}", status)
     return FeedbackResponse(email=d.to, ref=h.ref, status=status)

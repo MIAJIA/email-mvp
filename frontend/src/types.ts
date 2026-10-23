@@ -69,6 +69,8 @@ export interface DraftRequest {
   to: string;
   thread_id?: string | null;
   brief: string;
+  // Demo-only: rewrites one model tag to a ref that does not exist.
+  inject?: "unknown_ref" | null;
 }
 
 export interface FeedbackRequest {

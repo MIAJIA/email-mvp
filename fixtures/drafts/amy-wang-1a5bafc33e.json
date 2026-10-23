@@ -1,0 +1,197 @@
+{
+  "draft_id": "3faad1f1dbdb",
+  "to": "amy.wang@example.com",
+  "scenario": "zh_en_casual",
+  "subject": "Re: coffee",
+  "segments": [
+    {
+      "text": "Amy",
+      "highlight_id": "h1"
+    },
+    {
+      "text": "\n",
+      "highlight_id": null
+    },
+    {
+      "text": "好呀！",
+      "highlight_id": null
+    },
+    {
+      "text": " ",
+      "highlight_id": null
+    },
+    {
+      "text": "Friday afternoon",
+      "highlight_id": "h2"
+    },
+    {
+      "text": " 可以",
+      "highlight_id": null
+    },
+    {
+      "text": "的呀",
+      "highlight_id": "h3"
+    },
+    {
+      "text": "\n我们能不能直接在 Red Rock 见面 ",
+      "highlight_id": null
+    },
+    {
+      "text": "你",
+      "highlight_id": "h4"
+    },
+    {
+      "text": "几点方便",
+      "highlight_id": null
+    },
+    {
+      "text": "呀",
+      "highlight_id": "h5"
+    }
+  ],
+  "highlights": [
+    {
+      "id": "h1",
+      "layer": "person",
+      "ref": {
+        "kind": "address_as",
+        "id": "address_as"
+      },
+      "strength": "weak",
+      "label": "Greeting: \"Amy\"",
+      "rationale": "You addressed Amy as \"Amy\" in 1 of 11 emails.",
+      "count": 1,
+      "total": 11,
+      "evidence": [
+        {
+          "message_id": "syn-zh_en_casual-012-m1",
+          "external_id": null,
+          "quote": "Amy"
+        }
+      ]
+    },
+    {
+      "id": "h2",
+      "layer": "scenario",
+      "ref": {
+        "kind": "habit",
+        "id": "english_terms_in_chinese"
+      },
+      "strength": "weak",
+      "label": "Writes mainly in Chinese but drops in English words for tech terms, brands and everyday nouns or verbs, with a space on each side.",
+      "rationale": "In your zh_en_casual emails, 8 of 30 do this.",
+      "count": 8,
+      "total": 30,
+      "evidence": [
+        {
+          "message_id": "syn-zh_en_casual-001-m1",
+          "external_id": null,
+          "quote": "装一个 blender-mcp 的 plugin"
+        },
+        {
+          "message_id": "syn-zh_en_casual-002-m2",
+          "external_id": null,
+          "quote": "我们是在 app 上买的"
+        },
+        {
+          "message_id": "syn-zh_en_casual-019-m2",
+          "external_id": null,
+          "quote": "要提前 book"
+        }
+      ]
+    },
+    {
+      "id": "h3",
+      "layer": "scenario",
+      "ref": {
+        "kind": "habit",
+        "id": "soft_sentence_particles"
+      },
+      "strength": "strong",
+      "label": "Ends sentences with soft particles such as 啦, 嘛 and 呀 to keep the tone light and friendly.",
+      "rationale": "In your zh_en_casual emails, 10 of 30 do this.",
+      "count": 10,
+      "total": 30,
+      "evidence": [
+        {
+          "message_id": "syn-zh_en_casual-004-m2",
+          "external_id": null,
+          "quote": "这次慢慢走啦"
+        },
+        {
+          "message_id": "syn-zh_en_casual-006-m3",
+          "external_id": null,
+          "quote": "你直接拿去改嘛"
+        },
+        {
+          "message_id": "syn-zh_en_casual-011-m2",
+          "external_id": null,
+          "quote": "不然一天啥也干不了啦"
+        }
+      ]
+    },
+    {
+      "id": "h4",
+      "layer": "person",
+      "ref": {
+        "kind": "honorific",
+        "id": "honorific"
+      },
+      "strength": "weak",
+      "label": "Formal \"你\"",
+      "rationale": "You used \"你\" with Amy in 3 of 11 emails.",
+      "count": 3,
+      "total": 11,
+      "evidence": [
+        {
+          "message_id": "syn-zh_en_casual-003-m2",
+          "external_id": null,
+          "quote": "你离得近"
+        },
+        {
+          "message_id": "syn-zh_en_casual-008-m2",
+          "external_id": null,
+          "quote": "你不喜欢就拿来给我呀"
+        },
+        {
+          "message_id": "syn-zh_en_casual-015-m2",
+          "external_id": null,
+          "quote": "你们哪天出发?"
+        }
+      ]
+    },
+    {
+      "id": "h5",
+      "layer": "scenario",
+      "ref": {
+        "kind": "habit",
+        "id": "soft_sentence_particles"
+      },
+      "strength": "strong",
+      "label": "Ends sentences with soft particles such as 啦, 嘛 and 呀 to keep the tone light and friendly.",
+      "rationale": "In your zh_en_casual emails, 10 of 30 do this.",
+      "count": 10,
+      "total": 30,
+      "evidence": [
+        {
+          "message_id": "syn-zh_en_casual-004-m2",
+          "external_id": null,
+          "quote": "这次慢慢走啦"
+        },
+        {
+          "message_id": "syn-zh_en_casual-006-m3",
+          "external_id": null,
+          "quote": "你直接拿去改嘛"
+        },
+        {
+          "message_id": "syn-zh_en_casual-011-m2",
+          "external_id": null,
+          "quote": "不然一天啥也干不了啦"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    "The model cited a note that does not exist (\"fact:injected_unknown\"); that text is shown without a highlight."
+  ]
+}
