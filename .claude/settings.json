@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "permissions": {
+    "deny": [
+      "Bash(kill *)",
+      "Bash(pkill *)",
+      "Bash(killall *)",
+      "Bash(git push --force*)",
+      "Bash(git push -f *)",
+      "Bash(git reset --hard*)",
+      "Bash(git clean *)",
+      "Edit(/.claude/**)",
+      "Edit(/scripts/guard.sh)",
+      "Edit(/scripts/check.sh)",
+      "Edit(/scripts/decision-reminder.sh)",
+      "Edit(/.githooks/**)",
+      "Write(/.claude/**)",
+      "Write(/scripts/guard.sh)",
+      "Write(/scripts/check.sh)",
+      "Write(/scripts/decision-reminder.sh)",
+      "Write(/.githooks/**)",
+      "Read(/.env)",
+      "Read(/.env.*)"
+    ],
+    "disableBypassPermissionsMode": "disable"
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"${CLAUDE_PROJECT_DIR}/scripts/guard.sh\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"${CLAUDE_PROJECT_DIR}/scripts/decision-reminder.sh\"",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
+}

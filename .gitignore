@@ -1,0 +1,26 @@
+# Copy to .gitignore at CP0 and commit it before the first worktree is cut.
+
+# Coordination files: one physical copy in the main checkout, never on a branch.
+# Worktrees get only tracked files, so these files physically do not exist in any worktree;
+# every session reads and appends them in $MAIN by absolute path.
+# The Lead exports snapshots to docs/coordination/ at each checkpoint for the history.
+/COORDINATION.md
+/DECISIONS.md
+/STATUS.md
+/GLOSSARY.md
+/CONTRACT.md
+
+# Worktrees, if they are placed inside the repository.
+/.worktrees/
+
+# Secrets.
+.env
+.env.*
+!.env.example
+
+# Line ledgers (each line's progress file) and local scratch.
+/.ledger/
+/scratch/
+
+# Raw recordings that are too large or private to commit; committed recordings live elsewhere.
+# /runs/

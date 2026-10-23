@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+# .githooks/pre-commit — the gate that does not depend on Claude Code.
+#
+# On the integration branches (main, staging) every commit must pass scripts/check.sh. On any other branch
+# the hook passes, so line owners commit freely on their lines. Enable once per clone:
+#   git config core.hooksPath .githooks
+# and commit this file as executable. Order at CP0, before any worktree is cut: the Lead creates
+# $MAIN/GLOSSARY.md first (the glossary check needs it), commits the scaffold, and only after the scaffold
+# commit runs `git config core.hooksPath .githooks`.
+#
+# To skip in an emergency, the user (not an agent) runs: git commit --no-verify, and logs why in DECISIONS.md.
+
+set -euo pipefail
+
+# symbolic-ref works on an unborn branch too (the very first commit), where rev-parse --abbrev-ref fails.
+branch=$(git symbolic-ref --short -q HEAD 2>/dev/null || echo "")
+case "$branch" in
+  main|staging) ;;
+  *) exit 0 ;;
+esac
+
+root=$(git rev-parse --show-toplevel)
+if [[ ! -x "$root/scripts/check.sh" ]]; then
+  echo "pre-commit: scripts/check.sh missing or not executable on $branch; refusing to commit." >&2
+  exit 1
+fi
+
+echo "pre-commit: on $branch, running scripts/check.sh"
+"$root/scripts/check.sh"
