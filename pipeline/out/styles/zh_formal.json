@@ -1,0 +1,309 @@
+{
+  "scenario": "zh_formal",
+  "habits": [
+    {
+      "id": "title_colon_salutation",
+      "description": "Opens with the recipient's respectful title (王老师 / 赵总 / full name + 老师) followed by a full-width colon on its own line, with no '尊敬的' or '亲爱的'.",
+      "count": 10,
+      "total": 14,
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "syn-rel-wang-001-m1",
+          "quote": "王老师："
+        },
+        {
+          "message_id": "syn-rel-wang-001-m2",
+          "quote": "王老师："
+        },
+        {
+          "message_id": "syn-rel-wang-002-m1",
+          "quote": "王老师："
+        },
+        {
+          "message_id": "syn-rel-wang-003-m1",
+          "quote": "王老师："
+        },
+        {
+          "message_id": "syn-rel-wang-004-m1",
+          "quote": "王老师："
+        },
+        {
+          "message_id": "syn-rel-tang-004-m1",
+          "quote": "唐书远老师："
+        },
+        {
+          "message_id": "syn-rel-tang-005-m1",
+          "quote": "唐书远老师："
+        },
+        {
+          "message_id": "syn-rel-zhao-001-m1",
+          "quote": "赵总："
+        },
+        {
+          "message_id": "syn-rel-zhao-002-m1",
+          "quote": "赵总："
+        },
+        {
+          "message_id": "syn-rel-zhao-003-m1",
+          "quote": "赵总："
+        }
+      ]
+    },
+    {
+      "id": "ninhao_then_straight_to_point",
+      "description": "New threads start with '您好！' and go straight on in the same line to the greeting reason or the main point; replies usually skip '您好' and start with the substance.",
+      "count": 7,
+      "total": 14,
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "syn-rel-wang-001-m1",
+          "quote": "您好！新年快要到了"
+        },
+        {
+          "message_id": "syn-rel-wang-003-m1",
+          "quote": "您好！最近北京应该暖和起来了吧"
+        },
+        {
+          "message_id": "syn-rel-wang-004-m1",
+          "quote": "您好！我十一月中旬会回北京"
+        },
+        {
+          "message_id": "syn-rel-tang-004-m1",
+          "quote": "您好！感谢您和组委会的信任"
+        },
+        {
+          "message_id": "syn-rel-tang-005-m1",
+          "quote": "您好！宣传海报初稿已附上"
+        },
+        {
+          "message_id": "syn-rel-zhao-001-m1",
+          "quote": "您好！春节将至"
+        },
+        {
+          "message_id": "syn-rel-zhao-003-m1",
+          "quote": "您好！您上次提到雨桐"
+        }
+      ]
+    },
+    {
+      "id": "signoff_by_relationship",
+      "description": "The sign-off depends on the relationship: '学生 Mia 敬上' or '学生 Mia' to a former teacher, 'Mia Song' (sometimes after '此致 敬礼' or '谢谢！') for organizational contacts, and just 'Mia' to a former boss.",
+      "count": 10,
+      "total": 14,
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "syn-rel-wang-001-m1",
+          "quote": "学生 Mia 敬上"
+        },
+        {
+          "message_id": "syn-rel-wang-001-m2",
+          "quote": "Mia 敬上"
+        },
+        {
+          "message_id": "syn-rel-wang-002-m1",
+          "quote": "学生 Mia"
+        },
+        {
+          "message_id": "syn-rel-wang-003-m1",
+          "quote": "学生 Mia 敬上"
+        },
+        {
+          "message_id": "syn-rel-wang-004-m1",
+          "quote": "学生 Mia 敬上"
+        },
+        {
+          "message_id": "syn-rel-wang-004-m2",
+          "quote": "学生 Mia"
+        },
+        {
+          "message_id": "syn-rel-tang-004-m1",
+          "quote": "Mia Song"
+        },
+        {
+          "message_id": "syn-rel-tang-005-m1",
+          "quote": "Mia Song"
+        },
+        {
+          "message_id": "syn-rel-zhao-001-m1",
+          "quote": "Mia"
+        },
+        {
+          "message_id": "syn-rel-zhao-003-m2",
+          "quote": "Mia"
+        }
+      ]
+    },
+    {
+      "id": "explicit_thanks",
+      "description": "Thanks the recipient early and specifically (for their care, trust, time or invitation), often as the first sentence, ending in an exclamation mark.",
+      "count": 7,
+      "total": 14,
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "syn-rel-wang-001-m1",
+          "quote": "一直很感谢您当年在实验室对我的指导"
+        },
+        {
+          "message_id": "syn-rel-wang-001-m2",
+          "quote": "谢谢她当年常给我们包饺子"
+        },
+        {
+          "message_id": "syn-rel-wang-002-m1",
+          "quote": "谢谢您的关心！"
+        },
+        {
+          "message_id": "syn-rel-tang-004-m1",
+          "quote": "感谢您和组委会的信任"
+        },
+        {
+          "message_id": "syn-rel-tang-005-m1",
+          "quote": "谢谢！"
+        },
+        {
+          "message_id": "syn-rel-zhao-002-m2",
+          "quote": "谢谢您昨天抽时间见面！"
+        },
+        {
+          "message_id": "syn-rel-zhao-004-m1",
+          "quote": "谢谢您的邀请！"
+        }
+      ]
+    },
+    {
+      "id": "remembers_their_words_and_tastes",
+      "description": "Mentions something the recipient said or liked before (a saying, a favorite tea or food, an earlier request) to make the message personal.",
+      "count": 7,
+      "total": 14,
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "syn-rel-wang-001-m1",
+          "quote": "记得您以前在实验室最爱喝这个"
+        },
+        {
+          "message_id": "syn-rel-wang-003-m1",
+          "quote": "上次您提到想把书法作品拍照整理成一本小册子"
+        },
+        {
+          "message_id": "syn-rel-wang-004-m1",
+          "quote": "上次您说好喝的那款普洱"
+        },
+        {
+          "message_id": "syn-rel-tang-005-m1",
+          "quote": "按您上次的意见"
+        },
+        {
+          "message_id": "syn-rel-zhao-002-m1",
+          "quote": "记得您以前在上海常去吃早茶"
+        },
+        {
+          "message_id": "syn-rel-zhao-002-m2",
+          "quote": "我记下了，回来又想了很久"
+        },
+        {
+          "message_id": "syn-rel-zhao-003-m1",
+          "quote": "您上次提到雨桐今年暑假想来湾区"
+        }
+      ]
+    },
+    {
+      "id": "low_pressure_offer_of_help",
+      "description": "Ends the body with a considerate, low-pressure line: lets the recipient pick a time, offers further help 'anytime', or says they need not reply or prepare anything.",
+      "count": 8,
+      "total": 14,
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "syn-rel-wang-002-m1",
+          "quote": "您有空的时候翻翻就好，不用回复"
+        },
+        {
+          "message_id": "syn-rel-wang-003-m1",
+          "quote": "您随时告诉我，我视频给您演示"
+        },
+        {
+          "message_id": "syn-rel-wang-004-m1",
+          "quote": "不知道您哪天方便？"
+        },
+        {
+          "message_id": "syn-rel-wang-004-m2",
+          "quote": "您不用特意准备，我们坐一会儿就好"
+        },
+        {
+          "message_id": "syn-rel-tang-004-m1",
+          "quote": "如有调整，请您随时告知。"
+        },
+        {
+          "message_id": "syn-rel-tang-005-m1",
+          "quote": "如需修改我今天之内可以调整"
+        },
+        {
+          "message_id": "syn-rel-zhao-002-m1",
+          "quote": "您看哪天晚上方便，我请您吃饭"
+        },
+        {
+          "message_id": "syn-rel-zhao-003-m1",
+          "quote": "您随时跟我说"
+        }
+      ]
+    },
+    {
+      "id": "zhu_nin_wish_closing",
+      "description": "Greeting and farewell emails close with a standalone '祝您……' wish line before the sign-off.",
+      "count": 4,
+      "total": 14,
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "syn-rel-wang-001-m1",
+          "quote": "祝您身体健康，新春愉快！"
+        },
+        {
+          "message_id": "syn-rel-wang-002-m1",
+          "quote": "祝您秋安！"
+        },
+        {
+          "message_id": "syn-rel-zhao-001-m1",
+          "quote": "祝您新春快乐，阖家幸福！"
+        },
+        {
+          "message_id": "syn-rel-zhao-002-m2",
+          "quote": "祝您回程顺利。"
+        }
+      ]
+    },
+    {
+      "id": "concrete_dates_with_spaced_numerals",
+      "description": "Logistics are short and concrete, giving exact dates and times in Arabic numerals with a space on each side (e.g. '9 月 26 日').",
+      "count": 5,
+      "total": 14,
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "syn-rel-wang-004-m2",
+          "quote": "11 月 18 号下午三点左右过来"
+        },
+        {
+          "message_id": "syn-rel-tang-004-m1",
+          "quote": "9 月 26 日华人文化节"
+        },
+        {
+          "message_id": "syn-rel-zhao-002-m1",
+          "quote": "9 月 9 日到 12 日我都在"
+        },
+        {
+          "message_id": "syn-rel-zhao-003-m1",
+          "quote": "报名一般 3 月底截止"
+        },
+        {
+          "message_id": "syn-rel-zhao-004-m1",
+          "quote": "10 月 30 日晚上的线上分享我可以参加"
+        }
+      ]
+    }
+  ]
+}

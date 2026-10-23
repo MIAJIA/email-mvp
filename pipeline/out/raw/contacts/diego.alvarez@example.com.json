@@ -1,0 +1,306 @@
+{
+  "email": "diego.alvarez@example.com",
+  "to_name": "Diego Alvarez",
+  "message_ids": [
+    "syn-old_friend_catchup-004-m1",
+    "syn-old_friend_catchup-004-m2",
+    "syn-old_friend_catchup-004-m3",
+    "syn-old_friend_catchup-006-m1",
+    "syn-old_friend_catchup-006-m2",
+    "syn-old_friend_catchup-006-m3",
+    "syn-old_friend_catchup-009-m1",
+    "syn-old_friend_catchup-009-m2",
+    "syn-old_friend_catchup-011-m1",
+    "syn-old_friend_catchup-011-m2",
+    "syn-old_friend_catchup-011-m3",
+    "syn-old_friend_catchup-011-m4",
+    "syn-old_friend_catchup-014-m1",
+    "syn-old_friend_catchup-014-m2",
+    "syn-old_friend_catchup-014-m3"
+  ],
+  "extraction": {
+    "display_name": "Diego Alvarez",
+    "relationship": "friend",
+    "core_connection": {
+      "text": "Diego is an old friend in New York. Mia keeps in touch with him through holiday updates and scheduled catch-up calls, and they met for brunch in Brooklyn in April 2026.",
+      "evidence": [
+        {
+          "message_id": "syn-old_friend_catchup-004-m1",
+          "quote": "Would love to catch up on a call soon"
+        },
+        {
+          "message_id": "syn-old_friend_catchup-011-m4",
+          "quote": "Thank you so much for brunch"
+        }
+      ]
+    },
+    "address_as": [
+      {
+        "context": "default",
+        "value": "Diego",
+        "evidence": [
+          {
+            "message_id": "syn-old_friend_catchup-004-m1",
+            "quote": "Hi Diego,"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-004-m2",
+            "quote": "Hey Diego,"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-006-m1",
+            "quote": "Hey Diego,"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-006-m2",
+            "quote": "Hi Diego,"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-009-m1",
+            "quote": "Hey Diego,"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-009-m2",
+            "quote": "Hi Diego,"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-011-m1",
+            "quote": "Hi Diego,"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-014-m1",
+            "quote": "Hey Diego,"
+          }
+        ]
+      }
+    ],
+    "honorific": {
+      "value": "n/a",
+      "evidence": []
+    },
+    "sign_off": {
+      "value": "Mia",
+      "evidence": [
+        {
+          "message_id": "syn-old_friend_catchup-004-m3",
+          "quote": "Mia"
+        },
+        {
+          "message_id": "syn-old_friend_catchup-006-m1",
+          "quote": "Mia"
+        },
+        {
+          "message_id": "syn-old_friend_catchup-006-m2",
+          "quote": "Mia"
+        },
+        {
+          "message_id": "syn-old_friend_catchup-006-m3",
+          "quote": "Mia"
+        },
+        {
+          "message_id": "syn-old_friend_catchup-009-m1",
+          "quote": "Mia"
+        },
+        {
+          "message_id": "syn-old_friend_catchup-011-m2",
+          "quote": "Mia"
+        },
+        {
+          "message_id": "syn-old_friend_catchup-014-m1",
+          "quote": "Mia"
+        },
+        {
+          "message_id": "syn-old_friend_catchup-014-m3",
+          "quote": "Mia"
+        }
+      ]
+    },
+    "language": {
+      "value": "en",
+      "evidence": [
+        {
+          "message_id": "syn-old_friend_catchup-004-m1",
+          "quote": "Happy New Year!"
+        },
+        {
+          "message_id": "syn-old_friend_catchup-004-m2",
+          "quote": "Here’s the famous bowl haha."
+        },
+        {
+          "message_id": "syn-old_friend_catchup-006-m1",
+          "quote": "So good to hear from you!"
+        },
+        {
+          "message_id": "syn-old_friend_catchup-009-m1",
+          "quote": "Happy holidays!"
+        },
+        {
+          "message_id": "syn-old_friend_catchup-009-m2",
+          "quote": "January sounds great!"
+        },
+        {
+          "message_id": "syn-old_friend_catchup-011-m1",
+          "quote": "Hope you’ve been well!"
+        },
+        {
+          "message_id": "syn-old_friend_catchup-011-m4",
+          "quote": "Let’s do this again soon!"
+        },
+        {
+          "message_id": "syn-old_friend_catchup-014-m1",
+          "quote": "No way!! That’s amazing"
+        }
+      ]
+    },
+    "facts": [
+      {
+        "text": "Diego lives in New York. Mia lives in California, and she gives call times in both ET and PT.",
+        "evidence": [
+          {
+            "message_id": "syn-old_friend_catchup-004-m2",
+            "quote": "Tuesday 7pm ET (4pm PT)"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-014-m1",
+            "quote": "tracking you on the app from California"
+          }
+        ]
+      },
+      {
+        "text": "Diego moved to a new apartment in Brooklyn by early 2026, and its radiator was noisy.",
+        "evidence": [
+          {
+            "message_id": "syn-old_friend_catchup-011-m1",
+            "quote": "how’s the new apartment in Brooklyn?"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-011-m1",
+            "quote": "Did the radiator finally stop making"
+          }
+        ]
+      },
+      {
+        "text": "Diego usually spends Christmas at his sister's in Philadelphia.",
+        "evidence": [
+          {
+            "message_id": "syn-old_friend_catchup-009-m1",
+            "quote": "are you heading to your sister’s in Philly again"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-009-m2",
+            "quote": "Have a wonderful Christmas in Philly!"
+          }
+        ]
+      },
+      {
+        "text": "Diego went to Oaxaca in July 2025. Mia started making tortillas from scratch because of him.",
+        "evidence": [
+          {
+            "message_id": "syn-old_friend_catchup-006-m1",
+            "quote": "Oaxaca sounds amazing"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-006-m1",
+            "quote": "(inspired by you, honestly)"
+          }
+        ]
+      },
+      {
+        "text": "Mia told Diego in July 2025 that she had a baby that spring.",
+        "evidence": [
+          {
+            "message_id": "syn-old_friend_catchup-006-m1",
+            "quote": "we had a baby this spring"
+          }
+        ]
+      },
+      {
+        "text": "Diego is running the NYC marathon in November 2026, and Mia plans to follow his progress on the app.",
+        "evidence": [
+          {
+            "message_id": "syn-old_friend_catchup-014-m1",
+            "quote": "I’ll be tracking you on the app"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-014-m1",
+            "quote": "How’s the training going so far?"
+          }
+        ]
+      },
+      {
+        "text": "Mia, Victor and Diego had brunch in Park Slope on Saturday, April 11, 2026, during Mia's April 9–14 trip to New York. Mia and Victor arrived 20 minutes late, and Victor loved a bakery on 7th Ave.",
+        "evidence": [
+          {
+            "message_id": "syn-old_friend_catchup-011-m2",
+            "quote": "Saturday the 11th sounds perfect"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-011-m4",
+            "quote": "sorry we were twenty minutes late"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-011-m4",
+            "quote": "that bakery on 7th Ave"
+          }
+        ]
+      },
+      {
+        "text": "Their catch-up calls are scheduled in ET, either on weekday evenings or weekend mornings. Diego called on WhatsApp in July 2025.",
+        "evidence": [
+          {
+            "message_id": "syn-old_friend_catchup-014-m2",
+            "quote": "Wednesday 7:30pm ET (4:30 PT)"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-006-m2",
+            "quote": "Saturday 10am ET (7am PT)"
+          }
+        ]
+      },
+      {
+        "text": "Mia's emails to Diego often share a 'big update' with a self-deprecating joke, such as her pottery bowl, her trip to Kyoto or her tomatoes.",
+        "evidence": [
+          {
+            "message_id": "syn-old_friend_catchup-004-m1",
+            "quote": "Big update on my end"
+          },
+          {
+            "message_id": "syn-old_friend_catchup-014-m1",
+            "quote": "the tomatoes finally survives this year!"
+          }
+        ]
+      },
+      {
+        "text": "Mia went quiet after their July 2025 call and apologized in December. They planned a call for January 2026.",
+        "evidence": [
+          {
+            "message_id": "syn-old_friend_catchup-009-m1",
+            "quote": "I’m so sorry I went quiet after our call in July"
+          }
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "to": "Diego's sister (Philadelphia)",
+        "type": "sibling",
+        "evidence": [
+          {
+            "message_id": "syn-old_friend_catchup-009-m1",
+            "quote": "your sister’s in Philly"
+          }
+        ]
+      },
+      {
+        "to": "Victor",
+        "type": "friend_of",
+        "evidence": [
+          {
+            "message_id": "syn-old_friend_catchup-011-m4",
+            "quote": "Victor is still talking about that bakery"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,339 @@
+{
+  "scenario": "friend_scheduling",
+  "message_ids": [
+    "198767ddad0b2351",
+    "198783a1f53b6708",
+    "198ab7139243711d",
+    "198d32d707abfa41",
+    "1993e33e3d00e94f",
+    "199e38acd7fedecd",
+    "19a37bff562f1c50",
+    "19a3b184cc717026",
+    "19a42551a63d1540",
+    "19a46d93cabaa53e",
+    "19a7f9b541476f30",
+    "19aa88c72929755b",
+    "19aa8a96f03ef3ea",
+    "19ad36893b253add",
+    "19ba40a051210f63",
+    "19bae0bbfeb40186",
+    "19bae11068a9bb6b",
+    "19bae374223b0950",
+    "19beba779a9ba256",
+    "19de5186aaeb9ed5",
+    "19e1780b8fc298d6",
+    "syn-friend_scheduling-001-m2",
+    "syn-friend_scheduling-002-m2",
+    "syn-friend_scheduling-003-m2",
+    "syn-friend_scheduling-004-m2",
+    "syn-friend_scheduling-005-m1",
+    "syn-friend_scheduling-006-m1",
+    "syn-friend_scheduling-008-m1",
+    "syn-friend_scheduling-009-m1",
+    "syn-friend_scheduling-010-m1"
+  ],
+  "extraction": {
+    "habits": [
+      {
+        "id": "short_confirmation_reply",
+        "description": "When confirming a plan, replies with one short line built on 'Sounds good/great' or 'Perfect/Yes, see you then/there!', often with no greeting or sign-off.",
+        "evidence": [
+          {
+            "message_id": "198783a1f53b6708",
+            "quote": "Sounds great! See you then!"
+          },
+          {
+            "message_id": "19a3b184cc717026",
+            "quote": "Sunday sounds great!"
+          },
+          {
+            "message_id": "19a7f9b541476f30",
+            "quote": "Sounds good, see you there soon!"
+          },
+          {
+            "message_id": "19aa8a96f03ef3ea",
+            "quote": "Yes, see you then!"
+          },
+          {
+            "message_id": "19bae374223b0950",
+            "quote": "Sounds good, let me know."
+          },
+          {
+            "message_id": "syn-friend_scheduling-001-m2",
+            "quote": "Sounds great! See you Thursday 10am"
+          },
+          {
+            "message_id": "syn-friend_scheduling-002-m2",
+            "quote": "Perfect, see you there!"
+          },
+          {
+            "message_id": "syn-friend_scheduling-003-m2",
+            "quote": "Sounds good, see you Sunday :)"
+          },
+          {
+            "message_id": "198767ddad0b2351",
+            "quote": "see you soon!"
+          },
+          {
+            "message_id": "198ab7139243711d",
+            "quote": "see you tomorrow at Red Rock!"
+          }
+        ]
+      },
+      {
+        "id": "casual_first_name_greeting",
+        "description": "Longer emails open with 'Hey <Name>' or 'Hi <Name>,' on its own line, sometimes with no comma or a space before it.",
+        "evidence": [
+          {
+            "message_id": "19a7f9b541476f30",
+            "quote": "Hey Ethan"
+          },
+          {
+            "message_id": "19ad36893b253add",
+            "quote": "Hey Ethan"
+          },
+          {
+            "message_id": "19e1780b8fc298d6",
+            "quote": "Hey Ethan ,"
+          },
+          {
+            "message_id": "syn-friend_scheduling-005-m1",
+            "quote": "Hey Priya,"
+          },
+          {
+            "message_id": "syn-friend_scheduling-006-m1",
+            "quote": "Hey Marco ,"
+          },
+          {
+            "message_id": "syn-friend_scheduling-009-m1",
+            "quote": "Hey Ethan,"
+          },
+          {
+            "message_id": "1993e33e3d00e94f",
+            "quote": "Hi Ethan,"
+          },
+          {
+            "message_id": "19beba779a9ba256",
+            "quote": "Hi Ethan,"
+          },
+          {
+            "message_id": "syn-friend_scheduling-010-m1",
+            "quote": "Hi Marco,"
+          }
+        ]
+      },
+      {
+        "id": "concrete_time_windows",
+        "description": "Gives specific days and open-ended windows ('after 3pm', 'this afternoon or Sunday') instead of asking the other person to suggest times.",
+        "evidence": [
+          {
+            "message_id": "1993e33e3d00e94f",
+            "quote": "Saturday 5pm or after works for me."
+          },
+          {
+            "message_id": "19ad36893b253add",
+            "quote": "free after 3pm tomorrow"
+          },
+          {
+            "message_id": "19ba40a051210f63",
+            "quote": "meet this afternoon? or Sunday?"
+          },
+          {
+            "message_id": "19bae11068a9bb6b",
+            "quote": "open for 11:00am-12:00pm"
+          },
+          {
+            "message_id": "19beba779a9ba256",
+            "quote": "Do you have time later this afternoon"
+          },
+          {
+            "message_id": "19e1780b8fc298d6",
+            "quote": "tomorrow after 4:00 PM"
+          },
+          {
+            "message_id": "syn-friend_scheduling-009-m1",
+            "quote": "Thursday after 4 PM or Saturday morning"
+          },
+          {
+            "message_id": "syn-friend_scheduling-008-m1",
+            "quote": "next Tue or Wed?"
+          }
+        ]
+      },
+      {
+        "id": "prefers_in_person_suggests_place",
+        "description": "Pushes to meet offline or in person and names a specific coffee or tea spot as a question.",
+        "evidence": [
+          {
+            "message_id": "19a42551a63d1540",
+            "quote": "Any way we could meet offline?"
+          },
+          {
+            "message_id": "19de5186aaeb9ed5",
+            "quote": "Are you available to meet offline?"
+          },
+          {
+            "message_id": "syn-friend_scheduling-009-m1",
+            "quote": "Are you available to meet offline"
+          },
+          {
+            "message_id": "syn-friend_scheduling-008-m1",
+            "quote": "Can we meet in person"
+          },
+          {
+            "message_id": "syn-friend_scheduling-010-m1",
+            "quote": "Could we just do it in person"
+          },
+          {
+            "message_id": "19d32d707abfa41",
+            "quote": "will red rock work for you"
+          },
+          {
+            "message_id": "19aa88c72929755b",
+            "quote": "happy to meet at the starbucks"
+          }
+        ]
+      },
+      {
+        "id": "let_me_know_handoff",
+        "description": "Hands the final choice back with a 'let me know' line near the end.",
+        "evidence": [
+          {
+            "message_id": "1993e33e3d00e94f",
+            "quote": "Let me know what time on Saturday"
+          },
+          {
+            "message_id": "19aa88c72929755b",
+            "quote": "Let me know what you think"
+          },
+          {
+            "message_id": "19ad36893b253add",
+            "quote": "let me know what time works for you"
+          },
+          {
+            "message_id": "19bae374223b0950",
+            "quote": "let me know."
+          }
+        ]
+      },
+      {
+        "id": "gives_easy_out",
+        "description": "Softens requests by saying it is fine if the other person can't, or apologizes plainly and offers an alternative (later time, Zoom) when she is late.",
+        "evidence": [
+          {
+            "message_id": "199e38acd7fedecd",
+            "quote": "no worries if it's not available"
+          },
+          {
+            "message_id": "19a46d93cabaa53e",
+            "quote": "totally fine too"
+          },
+          {
+            "message_id": "19bae0bbfeb40186",
+            "quote": "I completely understand if that"
+          },
+          {
+            "message_id": "19bae0bbfeb40186",
+            "quote": "jump on a phone call or Zoom"
+          },
+          {
+            "message_id": "syn-friend_scheduling-008-m1",
+            "quote": "Totally fine!"
+          },
+          {
+            "message_id": "syn-friend_scheduling-006-m1",
+            "quote": "So sorry"
+          },
+          {
+            "message_id": "19e1780b8fc298d6",
+            "quote": "for a Zoom call?"
+          }
+        ]
+      },
+      {
+        "id": "emoji_and_smileys",
+        "description": "Adds a warm emoji or ':)' at the end of a sentence, often with no space before it.",
+        "evidence": [
+          {
+            "message_id": "19a37bff562f1c50",
+            "quote": "🥹🥹"
+          },
+          {
+            "message_id": "19a3b184cc717026",
+            "quote": "by EOD 😁"
+          },
+          {
+            "message_id": "19a46d93cabaa53e",
+            "quote": "💛"
+          },
+          {
+            "message_id": "19de5186aaeb9ed5",
+            "quote": "shop.😉"
+          },
+          {
+            "message_id": "19e1780b8fc298d6",
+            "quote": "Day😊"
+          },
+          {
+            "message_id": "199e38acd7fedecd",
+            "quote": "together :)"
+          },
+          {
+            "message_id": "syn-friend_scheduling-001-m2",
+            "quote": "Red Rock 😊"
+          },
+          {
+            "message_id": "syn-friend_scheduling-003-m2",
+            "quote": "Sunday :)"
+          }
+        ]
+      },
+      {
+        "id": "signoff_best_or_thanks_then_mia",
+        "description": "Longer emails close with 'Best,' or 'Thanks,' above 'Mia'; quick replies end with just 'Mia' or no sign-off.",
+        "evidence": [
+          {
+            "message_id": "199e38acd7fedecd",
+            "quote": "Best,"
+          },
+          {
+            "message_id": "19a46d93cabaa53e",
+            "quote": "Best,"
+          },
+          {
+            "message_id": "19ba40a051210f63",
+            "quote": "Best,"
+          },
+          {
+            "message_id": "19bae0bbfeb40186",
+            "quote": "Best,"
+          },
+          {
+            "message_id": "19beba779a9ba256",
+            "quote": "Best,"
+          },
+          {
+            "message_id": "1993e33e3d00e94f",
+            "quote": "Thanks,"
+          },
+          {
+            "message_id": "19a37bff562f1c50",
+            "quote": "Thanks,"
+          },
+          {
+            "message_id": "syn-friend_scheduling-010-m1",
+            "quote": "Thanks,"
+          },
+          {
+            "message_id": "syn-friend_scheduling-002-m2",
+            "quote": "Mia"
+          },
+          {
+            "message_id": "19a7f9b541476f30",
+            "quote": "Mia"
+          }
+        ]
+      }
+    ]
+  }
+}

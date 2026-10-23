@@ -1,0 +1,351 @@
+{
+  "scenario": "vendor_service",
+  "message_ids": [
+    "19ef5a4d3b57364f",
+    "19f4f74040ef99ce",
+    "19f7fff4a06bb74c",
+    "19fbce7e172d8559",
+    "syn-vendor_service-001-m2",
+    "syn-vendor_service-002-m1",
+    "syn-vendor_service-003-m1",
+    "syn-vendor_service-003-m3",
+    "syn-vendor_service-004-m2",
+    "syn-vendor_service-005-m2",
+    "syn-vendor_service-006-m1",
+    "syn-vendor_service-007-m1",
+    "syn-vendor_service-008-m1",
+    "syn-vendor_service-009-m1",
+    "syn-vendor_service-010-m1",
+    "syn-vendor_service-010-m3",
+    "syn-vendor_service-011-m2",
+    "syn-vendor_service-012-m2",
+    "syn-vendor_service-013-m2",
+    "syn-vendor_service-014-m2",
+    "syn-vendor_service-015-m1",
+    "syn-vendor_service-016-m1",
+    "syn-vendor_service-016-m3",
+    "syn-vendor_service-017-m2",
+    "syn-vendor_service-018-m3",
+    "syn-vendor_service-019-m2",
+    "syn-vendor_service-020-m2",
+    "syn-vendor_service-021-m1",
+    "syn-vendor_service-022-m1",
+    "syn-vendor_service-023-m1"
+  ],
+  "extraction": {
+    "habits": [
+      {
+        "id": "greets_team_or_first_name",
+        "description": "Opens with 'Hi <Business> Team,' or 'Hi <Business>,' for a company, or 'Dear <First name>,' for a named contact, on its own line.",
+        "evidence": [
+          {
+            "message_id": "19ef5a4d3b57364f",
+            "quote": "Hi Oura Team,"
+          },
+          {
+            "message_id": "19f4f74040ef99ce",
+            "quote": "Hi Hill Landscaping,"
+          },
+          {
+            "message_id": "syn-vendor_service-001-m2",
+            "quote": "Dear Made,"
+          },
+          {
+            "message_id": "syn-vendor_service-002-m1",
+            "quote": "Hi Bambu Indah Team,"
+          },
+          {
+            "message_id": "syn-vendor_service-003-m1",
+            "quote": "Dear Kenji,"
+          },
+          {
+            "message_id": "syn-vendor_service-005-m2",
+            "quote": "Dear Lucia,"
+          },
+          {
+            "message_id": "syn-vendor_service-010-m1",
+            "quote": "Hi Bay Window Cleaning,"
+          },
+          {
+            "message_id": "syn-vendor_service-012-m2",
+            "quote": "Hi Oak & Co,"
+          },
+          {
+            "message_id": "syn-vendor_service-013-m2",
+            "quote": "Dear Dana,"
+          },
+          {
+            "message_id": "syn-vendor_service-016-m1",
+            "quote": "Hi Nopa Team,"
+          }
+        ]
+      },
+      {
+        "id": "opens_reply_with_warm_thanks",
+        "description": "When replying, the first sentence thanks the vendor, usually 'Thank you so much...' or 'Thank you again...', then goes straight to the point.",
+        "evidence": [
+          {
+            "message_id": "19f7fff4a06bb74c",
+            "quote": "Dear Made, thank you so much!"
+          },
+          {
+            "message_id": "syn-vendor_service-003-m1",
+            "quote": "Thank you so much for the detailed"
+          },
+          {
+            "message_id": "syn-vendor_service-004-m2",
+            "quote": "Thank you so much for finding it!"
+          },
+          {
+            "message_id": "syn-vendor_service-005-m2",
+            "quote": "Thank you again"
+          },
+          {
+            "message_id": "syn-vendor_service-008-m1",
+            "quote": "Thank you again for the great work"
+          },
+          {
+            "message_id": "syn-vendor_service-009-m1",
+            "quote": "Thank you so much for the updated"
+          },
+          {
+            "message_id": "syn-vendor_service-013-m2",
+            "quote": "Thank you so much! Following up"
+          },
+          {
+            "message_id": "syn-vendor_service-014-m2",
+            "quote": "Thank you so much for the quick"
+          },
+          {
+            "message_id": "syn-vendor_service-016-m3",
+            "quote": "Thank you again. Following up"
+          },
+          {
+            "message_id": "syn-vendor_service-017-m2",
+            "quote": "Thank you so much for the details."
+          }
+        ]
+      },
+      {
+        "id": "numbered_labeled_points",
+        "description": "Puts several requests in a numbered list where each item starts with a short bold-style label and colon ('1. Scope:', '2. Timing:'), often introduced by 'following up on two things'.",
+        "evidence": [
+          {
+            "message_id": "syn-vendor_service-001-m2",
+            "quote": "1. Spa:"
+          },
+          {
+            "message_id": "syn-vendor_service-005-m2",
+            "quote": "1. Airport pickup:"
+          },
+          {
+            "message_id": "syn-vendor_service-008-m1",
+            "quote": "1. Scope:"
+          },
+          {
+            "message_id": "syn-vendor_service-009-m1",
+            "quote": "1. Start date:"
+          },
+          {
+            "message_id": "syn-vendor_service-010-m1",
+            "quote": "1. Scope:"
+          },
+          {
+            "message_id": "syn-vendor_service-013-m2",
+            "quote": "1. Delivery window:"
+          },
+          {
+            "message_id": "syn-vendor_service-016-m3",
+            "quote": "1. Party size:"
+          },
+          {
+            "message_id": "syn-vendor_service-021-m1",
+            "quote": "1. Skylights:"
+          },
+          {
+            "message_id": "syn-vendor_service-022-m1",
+            "quote": "1. Sizing:"
+          }
+        ]
+      },
+      {
+        "id": "signs_off_thank_you_or_best_mia",
+        "description": "Closes longer emails with 'Thank you,' or 'Best,' on one line and 'Mia' (sometimes 'Mia Song') on the next.",
+        "evidence": [
+          {
+            "message_id": "19f4f74040ef99ce",
+            "quote": "Thank you,"
+          },
+          {
+            "message_id": "syn-vendor_service-001-m2",
+            "quote": "Thank you,"
+          },
+          {
+            "message_id": "syn-vendor_service-002-m1",
+            "quote": "Thank you,"
+          },
+          {
+            "message_id": "syn-vendor_service-004-m2",
+            "quote": "Best,"
+          },
+          {
+            "message_id": "syn-vendor_service-005-m2",
+            "quote": "Thank you,"
+          },
+          {
+            "message_id": "syn-vendor_service-006-m1",
+            "quote": "Best,"
+          },
+          {
+            "message_id": "syn-vendor_service-007-m1",
+            "quote": "Thank you,"
+          },
+          {
+            "message_id": "syn-vendor_service-008-m1",
+            "quote": "Best,"
+          },
+          {
+            "message_id": "syn-vendor_service-009-m1",
+            "quote": "Thank you,"
+          },
+          {
+            "message_id": "syn-vendor_service-014-m2",
+            "quote": "Best,"
+          }
+        ]
+      },
+      {
+        "id": "precise_party_and_time_details",
+        "description": "Gives exact logistics in one line: weekday, date, time and party size, often in parentheses like '(2 adults: Mia & Victor)'.",
+        "evidence": [
+          {
+            "message_id": "19f7fff4a06bb74c",
+            "quote": "(2 adults: Mia Song"
+          },
+          {
+            "message_id": "syn-vendor_service-001-m2",
+            "quote": "for 2 adults (Mia & Victor)"
+          },
+          {
+            "message_id": "syn-vendor_service-002-m1",
+            "quote": "2 adults: Mia & Victor"
+          },
+          {
+            "message_id": "syn-vendor_service-003-m1",
+            "quote": "(2 adults: Mia & Victor)"
+          },
+          {
+            "message_id": "syn-vendor_service-006-m1",
+            "quote": "2 adults: Mia & Victor"
+          },
+          {
+            "message_id": "syn-vendor_service-019-m2",
+            "quote": "for 2 adults (Mia & Victor)"
+          },
+          {
+            "message_id": "syn-vendor_service-016-m1",
+            "quote": "a table for 4 adults on Saturday"
+          },
+          {
+            "message_id": "syn-vendor_service-023-m1",
+            "quote": "a table for 6 adults on Friday"
+          },
+          {
+            "message_id": "syn-vendor_service-017-m2",
+            "quote": "Party size: 8 adults"
+          }
+        ]
+      },
+      {
+        "id": "info_requested_block",
+        "description": "Answers a vendor's request for details with 'Here is the information requested:' followed by 'Label: value' lines (Full name, Address, Phone number).",
+        "evidence": [
+          {
+            "message_id": "19f4f74040ef99ce",
+            "quote": "Here is the information requested:"
+          },
+          {
+            "message_id": "syn-vendor_service-012-m2",
+            "quote": "Here is the information requested:"
+          },
+          {
+            "message_id": "syn-vendor_service-017-m2",
+            "quote": "Here is the information requested:"
+          },
+          {
+            "message_id": "syn-vendor_service-014-m2",
+            "quote": "Full name: Mia Song"
+          }
+        ]
+      },
+      {
+        "id": "polite_direct_asks",
+        "description": "Makes requests with 'Could you (also) let us know...' or 'Please let us know / provide...', naming exactly what she needs (price, availability, next step).",
+        "evidence": [
+          {
+            "message_id": "19f4f74040ef99ce",
+            "quote": "Please provide a flat-price estimate"
+          },
+          {
+            "message_id": "19f7fff4a06bb74c",
+            "quote": "Please let us know"
+          },
+          {
+            "message_id": "syn-vendor_service-003-m1",
+            "quote": "Could you also let us know"
+          },
+          {
+            "message_id": "syn-vendor_service-004-m2",
+            "quote": "Could you send me the tracking number"
+          },
+          {
+            "message_id": "syn-vendor_service-007-m1",
+            "quote": "Please let us know a flat-price estimate"
+          },
+          {
+            "message_id": "syn-vendor_service-008-m1",
+            "quote": "Could you send a monthly price"
+          },
+          {
+            "message_id": "syn-vendor_service-009-m1",
+            "quote": "Please let us know if you need anything"
+          },
+          {
+            "message_id": "syn-vendor_service-010-m1",
+            "quote": "Could you let us know the price"
+          },
+          {
+            "message_id": "syn-vendor_service-015-m1",
+            "quote": "Could you let us know the next step"
+          },
+          {
+            "message_id": "syn-vendor_service-021-m1",
+            "quote": "Could your team take a look"
+          }
+        ]
+      },
+      {
+        "id": "terse_lowercase_status_replies",
+        "description": "For quick status updates during a booking (arrived, confirmed, done), writes one short lowercase line with no greeting or sign-off.",
+        "evidence": [
+          {
+            "message_id": "19fbce7e172d8559",
+            "quote": "hi we arrived"
+          },
+          {
+            "message_id": "syn-vendor_service-003-m3",
+            "quote": "hi we just arrived at the lounge"
+          },
+          {
+            "message_id": "syn-vendor_service-010-m3",
+            "quote": "confirmed, see you tomorrow"
+          },
+          {
+            "message_id": "syn-vendor_service-018-m3",
+            "quote": "done"
+          }
+        ]
+      }
+    ]
+  }
+}
