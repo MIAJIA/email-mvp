@@ -142,7 +142,7 @@ P.append({
         edge("mia", "Mia", "coach_of", ev("19ad08024b9953ee", "coaching session?")),
         edge("person:victor", "Victor", "coach_of", ev("198af30eb0ec850f", "I noticed your meeting with Victor wraps up around 2pm.")),
     ],
-    "external": ["ext-ethan-1", "ext-ethan-2"],
+    "external": ["ext-ethan-1", "ext-ethan-2", "ext-ethan-3"],
 })
 
 P.append({
@@ -287,6 +287,9 @@ EXTERNAL = {
         {"id": "ext-ethan-1", "person_id": "ethan_park", "mock": True, "date": "2026-10-18",
          "source_label": "Ethan 的 X 动态（mock）",
          "text": "Ethan 宣布从 11 月起每周六早上 9 点在 Las Palmas Park 开一个散步式 coaching 小组，边走边聊。"},
+        {"id": "ext-ethan-3", "person_id": "ethan_park", "mock": True, "date": "2026-10-19",
+         "source_label": "Ethan 的 Instagram（mock）",
+         "text": "Ethan 分享了刚出生的女儿 Lily 的第一张照片，写着“睡不够但超级幸福”，说接下来几周的 coaching 时间会更灵活。"},
         {"id": "ext-ethan-2", "person_id": "ethan_park", "mock": True, "date": "2026-10-09",
          "source_label": "Ethan 的 LinkedIn 动态（mock）",
          "text": "Ethan 分享了一篇文章：远程工作的父母如何安排每周一次的线下复盘。"},
