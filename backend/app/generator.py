@@ -16,13 +16,12 @@ HL_RE = re.compile(r'<hl ref="([^"]*)">(.*?)</hl>', re.S)
 
 
 def strength_of(count: Optional[int], total: Optional[int], status: str) -> str:
+    """Contract rule: strong only if count >= 3 and count/total > 0.3, or the user confirmed it."""
     if status == "confirmed":
         return "strong"
-    if count is None:
-        return "weak"
-    if total:  # counted against all emails: at least 3 and more than 30%
-        return "strong" if count >= 3 and count / total > 0.3 else "weak"
-    return "strong" if count >= 2 else "weak"
+    if not count or not total:
+        return "weak"  # no count (external context) or nothing to compare against
+    return "strong" if count >= 3 and count / total > 0.3 else "weak"
 
 
 @dataclass
@@ -46,7 +45,9 @@ class Entry:
         )
 
 
-def build_catalog(note: Optional[ContactNote], style: Optional[ScenarioStyle], external: list[ExternalItem]) -> dict[str, Entry]:
+def build_catalog(note: Optional[ContactNote], style: Optional[ScenarioStyle], external: list[ExternalItem],
+                  n_emails: Optional[int] = None) -> dict[str, Entry]:
+    """n_emails: emails you sent this contact; the denominator for facts."""
     cat: dict[str, Entry] = {}
     name = note.display_name if note else "this contact"
     if note:
@@ -79,7 +80,7 @@ def build_catalog(note: Optional[ContactNote], style: Optional[ScenarioStyle], e
             cat[f"fact:{fact.id}"] = Entry(
                 f"fact:{fact.id}", Ref(kind="fact", id=fact.id), "person", f"Known fact you may use: {fact.text}",
                 f"What you know: {fact.text}", f"From {n_ev} of your emails with {name}.",
-                n_ev, None, fact.status, fact.evidence)
+                n_ev, n_emails, fact.status, fact.evidence)
     if style:
         for h in style.habits:
             if h.status == "rejected":
@@ -92,7 +93,7 @@ def build_catalog(note: Optional[ContactNote], style: Optional[ScenarioStyle], e
         cat[f"external:{x.id}"] = Entry(
             f"external:{x.id}", Ref(kind="external", id=x.id), "external", f"Recent context ({x.source_label}, {x.date}): {x.text}",
             f"Recent context: {x.source_label}", f"Mock {x.source_label} item from {x.date}, not from your emails.",
-            None, None, "confirmed", [Evidence(external_id=x.id, quote=x.text)])
+            None, None, "learned", [Evidence(external_id=x.id, quote=x.text)])
     return cat
 
 
@@ -155,9 +156,9 @@ def inject_unknown_ref(raw: str) -> str:
 
 
 def generate(req: DraftRequest, note: Optional[ContactNote], style: Optional[ScenarioStyle],
-             external: list[ExternalItem], complete: Callable[[str], str]) -> Draft:
+             external: list[ExternalItem], complete: Callable[[str], str], n_emails: Optional[int] = None) -> Draft:
     scenario = (note.scenario if note and note.scenario else None) or (style.scenario if style else DEFAULT_SCENARIO)
-    cat = build_catalog(note, style, external)
+    cat = build_catalog(note, style, external, n_emails)
     raw = complete(build_prompt(req, note, scenario, cat))
     if req.inject == "unknown_ref":
         raw = inject_unknown_ref(raw)

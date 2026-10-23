@@ -95,7 +95,7 @@ async def draft(request: Request):
         note.scenario = scenario
     style = styles.get(scenario)
     try:
-        d = generate(req, note, style, external.get(req.to), llm.complete)
+        d = generate(req, note, style, external.get(req.to), llm.complete, n_emails=len(emails.to(req.to)))
     except llm.LLMError as e:
         raise HTTPException(502, f"model call failed: {e}")
     DRAFTS[d.draft_id] = d
