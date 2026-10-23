@@ -30,7 +30,7 @@ DRAFTS: dict[str, Draft] = {}
 
 
 def case_key(req: DraftRequest) -> str:
-    canon = json.dumps({"mode": req.mode, "to": req.to, "thread_id": req.thread_id, "brief": req.brief.strip()},
+    canon = json.dumps({"mode": req.mode, "to": req.to, "thread_id": req.thread_id, "brief": req.brief.strip(), **({"inject": req.inject} if req.inject else {})},
                        sort_keys=True, ensure_ascii=False)
     return hashlib.sha1(canon.encode()).hexdigest()[:10]
 

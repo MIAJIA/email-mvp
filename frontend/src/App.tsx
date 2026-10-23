@@ -5,6 +5,9 @@ import HoverCard from "./components/HoverCard";
 import SourcePanel from "./components/SourcePanel";
 import type { ContactSummary, Draft } from "./types";
 
+// Demo-only trigger for the unknown-ref fallback: open the page with ?inject=unknown_ref
+const DEMO_INJECT = new URLSearchParams(window.location.search).get("inject") === "unknown_ref" ? "unknown_ref" as const : null;
+
 interface Hover { id: string; top: number; left: number }
 
 export default function App() {
@@ -49,7 +52,7 @@ export default function App() {
     setHover(null);
     setSourceId(null);
     try {
-      setDraft(await createDraft({ mode: "compose", to, brief }));
+      setDraft(await createDraft({ mode: "compose", to, brief, inject: DEMO_INJECT }));
     } catch (e) {
       setError(errorText(e));
     } finally {

@@ -134,11 +134,22 @@ def parse(text: str, cat: dict[str, Entry]) -> tuple[str, list[Segment], list[Hi
     return subject, segments, highlights, warnings
 
 
+def inject_unknown_ref(raw: str) -> str:
+    """Rename the second <hl> tag (the first if there is only one) to a ref no note has."""
+    tags = list(HL_RE.finditer(raw))
+    if not tags:
+        return raw
+    m = tags[1] if len(tags) > 1 else tags[0]
+    return raw[:m.start(1)] + "fact:injected_unknown" + raw[m.end(1):]
+
+
 def generate(req: DraftRequest, note: Optional[ContactNote], style: Optional[ScenarioStyle],
              external: list[ExternalItem], complete: Callable[[str], str]) -> Draft:
     scenario = (note.scenario if note and note.scenario else None) or (style.scenario if style else DEFAULT_SCENARIO)
     cat = build_catalog(note, style, external)
     raw = complete(build_prompt(req, note, scenario, cat))
+    if req.inject == "unknown_ref":
+        raw = inject_unknown_ref(raw)
     subject, segments, highlights, warnings = parse(raw, cat)
     if note is None:
         warnings.append("No contact note for this address; used your scenario style only.")

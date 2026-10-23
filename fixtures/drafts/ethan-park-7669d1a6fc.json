@@ -1,0 +1,120 @@
+{
+  "draft_id": "671ba4c305a4",
+  "to": "ethan.park@example.com",
+  "scenario": "friend_scheduling",
+  "subject": "Coffee Friday afternoon",
+  "segments": [
+    {
+      "text": "Hey Ethan",
+      "highlight_id": "h1"
+    },
+    {
+      "text": ",\n\nYes to coffee! Friday afternoon works for me. ",
+      "highlight_id": null
+    },
+    {
+      "text": "Could we meet in person this time?",
+      "highlight_id": null
+    },
+    {
+      "text": " ",
+      "highlight_id": null
+    },
+    {
+      "text": "How about Red Rock, our usual spot?",
+      "highlight_id": "h2"
+    },
+    {
+      "text": " Just let me know what time suits you.\n\n",
+      "highlight_id": null
+    },
+    {
+      "text": "Best,",
+      "highlight_id": "h3"
+    },
+    {
+      "text": "\nMia",
+      "highlight_id": null
+    }
+  ],
+  "highlights": [
+    {
+      "id": "h1",
+      "layer": "person",
+      "ref": {
+        "kind": "address_as",
+        "id": "address_as"
+      },
+      "strength": "strong",
+      "label": "Greeting: \"Hey Ethan\"",
+      "rationale": "You addressed Ethan Park as \"Hey Ethan\" in 15 of 46 emails.",
+      "count": 15,
+      "total": 46,
+      "evidence": [
+        {
+          "message_id": "19e04c387de092e7",
+          "external_id": null,
+          "quote": "Hey Ethan,"
+        },
+        {
+          "message_id": "199e0f4032bd1990",
+          "external_id": null,
+          "quote": "Hey Ethan,"
+        }
+      ]
+    },
+    {
+      "id": "h2",
+      "layer": "person",
+      "ref": {
+        "kind": "fact",
+        "id": "usual_spot_red_rock"
+      },
+      "strength": "strong",
+      "label": "What you know: They often meet at Red Rock coffee, with Starbucks as the alternative.",
+      "rationale": "From 2 of your emails with Ethan Park.",
+      "count": 2,
+      "total": null,
+      "evidence": [
+        {
+          "message_id": "198ab7139243711d",
+          "external_id": null,
+          "quote": "see you tomorrow at Red Rock!"
+        },
+        {
+          "message_id": "19aa39943f651cad",
+          "external_id": null,
+          "quote": "Starbuck/redrock coffee ?"
+        }
+      ]
+    },
+    {
+      "id": "h3",
+      "layer": "person",
+      "ref": {
+        "kind": "sign_off",
+        "id": "sign_off"
+      },
+      "strength": "weak",
+      "label": "Sign-off: \"Best,\"",
+      "rationale": "You signed off with \"Best,\" in 13 of 46 emails to Ethan Park.",
+      "count": 13,
+      "total": 46,
+      "evidence": [
+        {
+          "message_id": "19ddf5cc113d2012",
+          "external_id": null,
+          "quote": "Best,"
+        },
+        {
+          "message_id": "19ba40a051210f63",
+          "external_id": null,
+          "quote": "Best,"
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    "The model cited a note that does not exist (\"fact:injected_unknown\"); that text is shown without a highlight."
+  ]
+}

@@ -134,6 +134,8 @@ class DraftRequest(BaseModel):
     to: str
     thread_id: Optional[str] = None
     brief: str
+    # Demo-only: "unknown_ref" rewrites one model tag to a ref that does not exist, to show the fallback.
+    inject: Optional[Literal["unknown_ref"]] = None
 
 
 class FeedbackRequest(BaseModel):

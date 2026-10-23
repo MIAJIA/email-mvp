@@ -51,3 +51,11 @@ def test_generate_with_fake_model():
     d = generate(DraftRequest(to="w@example.com", brief="thanks"), note(), None, [],
                  lambda p: 'Subject: s\n\n<hl ref="address_as">王老师您好</hl>')
     assert d.scenario == "zh_formal" and len(d.highlights) == 1
+
+
+def test_inject_unknown_ref_degrades_second_tag():
+    d = generate(DraftRequest(to="w@example.com", brief="x", inject="unknown_ref"), note(), None, [],
+                 lambda p: 'Subject: s\n\n<hl ref="address_as">王老师您好</hl>，谢谢<hl ref="honorific">您</hl>')
+    assert [h.ref.kind for h in d.highlights] == ["address_as"]
+    assert any("fact:injected_unknown" in w for w in d.warnings)
+    assert "".join(s.text for s in d.segments) == "王老师您好，谢谢您"
