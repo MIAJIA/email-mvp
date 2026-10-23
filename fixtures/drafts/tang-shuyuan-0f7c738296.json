@@ -1,0 +1,276 @@
+{
+  "draft_id": "83ff49b027bc",
+  "to": "tang.shuyuan@example.com",
+  "scenario": "zh_en_casual",
+  "subject": "诚邀您在 12 月 6 日校友年会上致辞",
+  "segments": [
+    {
+      "text": "唐书远老师",
+      "highlight_id": "h1"
+    },
+    {
+      "text": "：\n\n您好！谨代表校友会组委会，诚挚邀请",
+      "highlight_id": null
+    },
+    {
+      "text": "您",
+      "highlight_id": "h2"
+    },
+    {
+      "text": "在 12 月 6 日的校友年会上做一段约 10 分钟的致辞。\n\n",
+      "highlight_id": null
+    },
+    {
+      "text": "今年 9 月 26 日的华人文化节，您作为组委会成员付出了很多心力",
+      "highlight_id": "h3"
+    },
+    {
+      "text": "，",
+      "highlight_id": null
+    },
+    {
+      "text": "您之后在朋友圈里感谢志愿者，还提到明年想加一个儿童书法角",
+      "highlight_id": "h4"
+    },
+    {
+      "text": "，大家都很受鼓舞。组委会一致希望由",
+      "highlight_id": null
+    },
+    {
+      "text": "您",
+      "highlight_id": "h5"
+    },
+    {
+      "text": "来和校友们分享一些想法，内容和主题都可以由",
+      "highlight_id": null
+    },
+    {
+      "text": "您",
+      "highlight_id": "h6"
+    },
+    {
+      "text": "来定。\n\n麻烦",
+      "highlight_id": null
+    },
+    {
+      "text": "您",
+      "highlight_id": "h7"
+    },
+    {
+      "text": "在下周五（10 月 30 日）前回复是否方便。如有需要，我们可以提前沟通流程和时间安排。\n\n",
+      "highlight_id": null
+    },
+    {
+      "text": "此致\n敬礼\n\nMia Song",
+      "highlight_id": "h8"
+    }
+  ],
+  "highlights": [
+    {
+      "id": "h1",
+      "layer": "person",
+      "ref": {
+        "kind": "address_as",
+        "id": "formal"
+      },
+      "strength": "weak",
+      "label": "Greeting (formal): \"唐书远老师\"",
+      "rationale": "In formal emails you called 唐书远 \"唐书远老师\" (2 of 7 emails).",
+      "count": 2,
+      "total": 7,
+      "evidence": [
+        {
+          "message_id": "syn-rel-tang-004-m1",
+          "external_id": null,
+          "quote": "唐书远老师："
+        },
+        {
+          "message_id": "syn-rel-tang-005-m1",
+          "external_id": null,
+          "quote": "唐书远老师："
+        }
+      ]
+    },
+    {
+      "id": "h2",
+      "layer": "person",
+      "ref": {
+        "kind": "honorific",
+        "id": "honorific"
+      },
+      "strength": "weak",
+      "label": "Formal \"您 (formal only)\"",
+      "rationale": "You used \"您 (formal only)\" with 唐书远 in 2 of 7 emails.",
+      "count": 2,
+      "total": 7,
+      "evidence": [
+        {
+          "message_id": "syn-rel-tang-004-m1",
+          "external_id": null,
+          "quote": "感谢您和组委会的信任"
+        },
+        {
+          "message_id": "syn-rel-tang-005-m1",
+          "external_id": null,
+          "quote": "请您审阅"
+        }
+      ]
+    },
+    {
+      "id": "h3",
+      "layer": "person",
+      "ref": {
+        "kind": "fact",
+        "id": "f5"
+      },
+      "strength": "weak",
+      "label": "What you know: 唐书远 was on the organizing committee for the 华人文化节 held on September 26, 2026. Mia ran the check-in desk from 9:00 to 12:00, and Victor handled stage sound all day.",
+      "rationale": "From 1 of your emails with 唐书远.",
+      "count": 1,
+      "total": null,
+      "evidence": [
+        {
+          "message_id": "syn-rel-tang-004-m1",
+          "external_id": null,
+          "quote": "9 月 26 日华人文化节"
+        },
+        {
+          "message_id": "syn-rel-tang-004-m1",
+          "external_id": null,
+          "quote": "我负责签到台，上午 9:00 到 12:00"
+        },
+        {
+          "message_id": "syn-rel-tang-004-m1",
+          "external_id": null,
+          "quote": "Victor 负责舞台音响，全天"
+        }
+      ]
+    },
+    {
+      "id": "h4",
+      "layer": "external",
+      "ref": {
+        "kind": "external",
+        "id": "ext-tang-1"
+      },
+      "strength": "strong",
+      "label": "Recent context: 唐书远的朋友圈（mock）",
+      "rationale": "Mock 唐书远的朋友圈（mock） item from 2026-09-27, not from your emails.",
+      "count": null,
+      "total": null,
+      "evidence": [
+        {
+          "message_id": null,
+          "external_id": "ext-tang-1",
+          "quote": "唐书远发了华人文化节的大合影，感谢所有志愿者，说明年想加一个儿童书法角。"
+        }
+      ]
+    },
+    {
+      "id": "h5",
+      "layer": "person",
+      "ref": {
+        "kind": "honorific",
+        "id": "honorific"
+      },
+      "strength": "weak",
+      "label": "Formal \"您 (formal only)\"",
+      "rationale": "You used \"您 (formal only)\" with 唐书远 in 2 of 7 emails.",
+      "count": 2,
+      "total": 7,
+      "evidence": [
+        {
+          "message_id": "syn-rel-tang-004-m1",
+          "external_id": null,
+          "quote": "感谢您和组委会的信任"
+        },
+        {
+          "message_id": "syn-rel-tang-005-m1",
+          "external_id": null,
+          "quote": "请您审阅"
+        }
+      ]
+    },
+    {
+      "id": "h6",
+      "layer": "person",
+      "ref": {
+        "kind": "honorific",
+        "id": "honorific"
+      },
+      "strength": "weak",
+      "label": "Formal \"您 (formal only)\"",
+      "rationale": "You used \"您 (formal only)\" with 唐书远 in 2 of 7 emails.",
+      "count": 2,
+      "total": 7,
+      "evidence": [
+        {
+          "message_id": "syn-rel-tang-004-m1",
+          "external_id": null,
+          "quote": "感谢您和组委会的信任"
+        },
+        {
+          "message_id": "syn-rel-tang-005-m1",
+          "external_id": null,
+          "quote": "请您审阅"
+        }
+      ]
+    },
+    {
+      "id": "h7",
+      "layer": "person",
+      "ref": {
+        "kind": "honorific",
+        "id": "honorific"
+      },
+      "strength": "weak",
+      "label": "Formal \"您 (formal only)\"",
+      "rationale": "You used \"您 (formal only)\" with 唐书远 in 2 of 7 emails.",
+      "count": 2,
+      "total": 7,
+      "evidence": [
+        {
+          "message_id": "syn-rel-tang-004-m1",
+          "external_id": null,
+          "quote": "感谢您和组委会的信任"
+        },
+        {
+          "message_id": "syn-rel-tang-005-m1",
+          "external_id": null,
+          "quote": "请您审阅"
+        }
+      ]
+    },
+    {
+      "id": "h8",
+      "layer": "person",
+      "ref": {
+        "kind": "sign_off",
+        "id": "sign_off"
+      },
+      "strength": "strong",
+      "label": "Sign-off: \"Mia (casual) / 此致 敬礼 Mia Song (formal)\"",
+      "rationale": "You signed off with \"Mia (casual) / 此致 敬礼 Mia Song (formal)\" in 4 of 7 emails to 唐书远.",
+      "count": 4,
+      "total": 7,
+      "evidence": [
+        {
+          "message_id": "syn-rel-tang-003-m1",
+          "external_id": null,
+          "quote": "Mia"
+        },
+        {
+          "message_id": "syn-rel-tang-006-m1",
+          "external_id": null,
+          "quote": "Mia"
+        },
+        {
+          "message_id": "syn-rel-tang-004-m1",
+          "external_id": null,
+          "quote": "Mia Song"
+        }
+      ]
+    }
+  ],
+  "warnings": []
+}

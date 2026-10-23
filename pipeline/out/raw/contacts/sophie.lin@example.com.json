@@ -8,10 +8,10 @@
     "syn-friend_scheduling-011-m1"
   ],
   "extraction": {
-    "display_name": "Sophie",
+    "display_name": "Sophie Lin",
     "relationship": "friend",
     "core_connection": {
-      "text": "Sophie is a casual friend who seems to live nearby. She and Mia meet up for milk tea, tea at home and walks, and Sophie usually suggests the plans.",
+      "text": "Sophie is a casual, friendly local friend. She and Mia make simple plans together, like trying a milk tea place, having tea at Mia's home and taking walks.",
       "evidence": [
         {
           "message_id": "syn-friend_scheduling-003-m1",
@@ -19,11 +19,7 @@
         },
         {
           "message_id": "syn-friend_scheduling-007-m1",
-          "quote": "come by for tea anytime"
-        },
-        {
-          "message_id": "syn-friend_scheduling-011-m1",
-          "quote": "we can go next week too"
+          "quote": "come by for tea anytime in those windows"
         }
       ]
     },
@@ -77,7 +73,7 @@
       "evidence": [
         {
           "message_id": "syn-friend_scheduling-003-m1",
-          "quote": "Yes let's go!"
+          "quote": "Any chance you are free this Sunday afternoon?"
         },
         {
           "message_id": "syn-friend_scheduling-003-m2",
@@ -95,16 +91,17 @@
     },
     "facts": [
       {
-        "text": "In November 2024 Mia agreed to go to a milk tea place with Sophie and suggested Sunday afternoon or Monday evening after 6. They settled on Sunday.",
+        "text": "Sophie is a casual personal friend of Mia's. Their emails are all about making social plans.",
         "evidence": [
           {
             "message_id": "syn-friend_scheduling-003-m1",
-            "quote": "free this Sunday afternoon?"
-          },
-          {
-            "message_id": "syn-friend_scheduling-003-m1",
-            "quote": "Monday evening"
-          },
+            "quote": "Yes let's go!"
+          }
+        ]
+      },
+      {
+        "text": "In November 2024 they planned to try a milk tea place together and agreed to meet on a Sunday.",
+        "evidence": [
           {
             "message_id": "syn-friend_scheduling-003-m2",
             "quote": "see you Sunday :)"
@@ -112,38 +109,53 @@
         ]
       },
       {
-        "text": "In June 2025 Sophie offered to drop by. Mia invited her over for tea on Saturday after 2pm or Sunday before 11.",
+        "text": "When planning the milk tea outing, Mia offered Sunday afternoon or Monday evening after 6.",
         "evidence": [
           {
-            "message_id": "syn-friend_scheduling-007-m1",
-            "quote": "Saturday after 2pm or Sunday morning before 11"
-          },
-          {
-            "message_id": "syn-friend_scheduling-007-m1",
-            "quote": "come by for tea anytime"
+            "message_id": "syn-friend_scheduling-003-m1",
+            "quote": "Monday evening\nafter 6 works too"
           }
         ]
       },
       {
-        "text": "Mia writes 'we' about being home, so she probably lives with someone. Sophie visits her at home.",
+        "text": "In June 2025 Sophie offered to bring something over to Mia's home, and Mia called it sweet and invited her for tea.",
         "evidence": [
           {
             "message_id": "syn-friend_scheduling-007-m1",
-            "quote": "We're home"
+            "quote": "come by for tea anytime in those windows"
           }
         ]
       },
       {
-        "text": "In April 2026 Sophie suggested a walk. Mia couldn't make the morning and offered any time after 3pm, or the next week.",
+        "text": "Mia lives with at least one other person (she writes 'We're home'). She gave Sophie Saturday after 2pm or Sunday before 11 as times to drop by.",
+        "evidence": [
+          {
+            "message_id": "syn-friend_scheduling-007-m1",
+            "quote": "We're home Saturday after 2pm or Sunday morning before 11"
+          }
+        ]
+      },
+      {
+        "text": "Sophie visits Mia at home for tea, so they likely live near each other.",
+        "evidence": [
+          {
+            "message_id": "syn-friend_scheduling-007-m1",
+            "quote": "come by for tea"
+          }
+        ]
+      },
+      {
+        "text": "In April 2026 Sophie suggested a morning walk. Mia couldn't do the morning and offered the afternoon after 3 instead.",
         "evidence": [
           {
             "message_id": "syn-friend_scheduling-011-m1",
-            "quote": "Tomorrow morning is a bit tight for me"
-          },
-          {
-            "message_id": "syn-friend_scheduling-011-m1",
-            "quote": "Anytime after 3 is"
-          },
+            "quote": "Anytime after 3 is\ngood"
+          }
+        ]
+      },
+      {
+        "text": "Mia keeps plans flexible with Sophie and is happy to move them to another week.",
+        "evidence": [
           {
             "message_id": "syn-friend_scheduling-011-m1",
             "quote": "we can go next week too"
@@ -151,11 +163,11 @@
         ]
       },
       {
-        "text": "Mia's emails to Sophie are short and warm. She offers specific time windows and adds an easy way out, such as 'no worries'.",
+        "text": "Mia's tone with Sophie is warm and informal. Her emails are short and sometimes use emoticons.",
         "evidence": [
           {
-            "message_id": "syn-friend_scheduling-011-m1",
-            "quote": "No worries if it's not available"
+            "message_id": "syn-friend_scheduling-003-m2",
+            "quote": "see you Sunday :)"
           }
         ]
       }

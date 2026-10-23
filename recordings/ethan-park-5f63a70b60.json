@@ -1,75 +1,117 @@
 {
   "case_key": "5f63a70b60",
   "endpoint": "POST /draft",
-  "contract_revision": "0.2",
-  "recorded_at": "2026-10-23T21:25:05+00:00",
+  "contract_revision": "0.3",
+  "recorded_at": "2026-10-23T21:44:15+00:00",
   "request": {
     "mode": "compose",
     "to": "ethan.park@example.com",
-    "brief": "Say yes to coffee, Friday afternoon works. Ask if we can meet in person at Red Rock or the boba place nearby."
+    "brief": "Say yes to coffee, Friday afternoon works. Ask if we can meet in person at Red Rock or the boba place nearby.",
+    "inject": null
   },
   "response": {
-    "draft_id": "ffb02d202123",
+    "draft_id": "9189967f0033",
     "to": "ethan.park@example.com",
     "scenario": "friend_scheduling",
-    "subject": "Coffee Friday afternoon",
+    "subject": "Coffee on Friday",
     "segments": [
       {
-        "text": "Hey Ethan,",
+        "text": "Hi",
         "highlight_id": "h1"
-      },
-      {
-        "text": "\n\nYes to coffee! Friday afternoon works for me.\n\n",
-        "highlight_id": null
-      },
-      {
-        "text": "Could we meet in person this time?",
-        "highlight_id": "h2"
       },
       {
         "text": " ",
         "highlight_id": null
       },
       {
-        "text": "Red Rock would be great",
+        "text": "Ethan",
+        "highlight_id": "h2"
+      },
+      {
+        "text": ",\n\n",
+        "highlight_id": null
+      },
+      {
+        "text": "Congrats on baby Lily! She's adorable, and I hope you're getting at least a little sleep:)",
         "highlight_id": "h3"
       },
       {
-        "text": ", or the boba place nearby if you'd like a change. Just let me know what time suits you.\n\n",
+        "text": "\n\nYes to coffee! ",
         "highlight_id": null
       },
       {
-        "text": "Best,",
+        "text": "Friday afternoon works for me.",
         "highlight_id": "h4"
       },
       {
-        "text": "\nMia",
+        "text": " ",
         "highlight_id": null
+      },
+      {
+        "text": "Could we meet in person at Red Rock, or the boba place nearby?",
+        "highlight_id": "h5"
+      },
+      {
+        "text": " ",
+        "highlight_id": null
+      },
+      {
+        "text": "I'd be happy with either one.",
+        "highlight_id": "h6"
+      },
+      {
+        "text": " ",
+        "highlight_id": null
+      },
+      {
+        "text": "If Friday doesn't work with the new baby, no worries at all, we can find another time.",
+        "highlight_id": "h7"
+      },
+      {
+        "text": "\n\n",
+        "highlight_id": null
+      },
+      {
+        "text": "Let me know what works best for you!",
+        "highlight_id": "h8"
+      },
+      {
+        "text": "\n\n",
+        "highlight_id": null
+      },
+      {
+        "text": "Best,\nMia",
+        "highlight_id": "h9"
       }
     ],
     "highlights": [
       {
         "id": "h1",
-        "layer": "person",
+        "layer": "scenario",
         "ref": {
-          "kind": "address_as",
-          "id": "address_as"
+          "kind": "habit",
+          "id": "casual_first_name_greeting"
         },
-        "strength": "strong",
-        "label": "Greeting: \"Hey Ethan\"",
-        "rationale": "You addressed Ethan Park as \"Hey Ethan\" in 15 of 46 emails.",
-        "count": 15,
-        "total": 46,
+        "strength": "weak",
+        "label": "Longer emails open with 'Hey <Name>' or 'Hi <Name>,' on its own line, sometimes with no comma or a space before it.",
+        "rationale": "In your friend_scheduling emails, 9 of 30 do this.",
+        "count": 9,
+        "total": 30,
         "evidence": [
           {
-            "message_id": "19e04c387de092e7",
+            "message_id": "19a7f9b541476f30",
             "external_id": null,
-            "quote": "Hey Ethan,"
+            "quote": "Hey Ethan"
           },
           {
-            "message_id": "199e0f4032bd1990",
+            "message_id": "19ad36893b253add",
             "external_id": null,
-            "quote": "Hey Ethan,"
+            "quote": "Hey Ethan"
+          },
+          {
+            "message_id": "19e1780b8fc298d6",
+            "external_id": null,
+            "quote": "Hey Ethan ,"
           }
         ]
       },
@@ -77,67 +119,222 @@
         "id": "h2",
         "layer": "person",
         "ref": {
-          "kind": "fact",
-          "id": "prefers_offline"
+          "kind": "address_as",
+          "id": "address_as"
         },
         "strength": "weak",
-        "label": "What you know: Mia prefers meeting in person over Zoom when she can.",
-        "rationale": "From 1 of your emails with Ethan Park.",
-        "count": 1,
-        "total": null,
+        "label": "Greeting: \"Ethan\"",
+        "rationale": "You addressed Ethan Park as \"Ethan\" in 8 of 40 emails.",
+        "count": 8,
+        "total": 40,
         "evidence": [
           {
-            "message_id": "19de5186aaeb9ed5",
+            "message_id": "198af30eb0ec850f",
             "external_id": null,
-            "quote": "Are you available to meet offline?"
+            "quote": "Hi Ethan,"
+          },
+          {
+            "message_id": "1993c3d03213c65c",
+            "external_id": null,
+            "quote": "Hi Ethan,"
+          },
+          {
+            "message_id": "syn-friend_scheduling-009-m1",
+            "external_id": null,
+            "quote": "Hey Ethan,"
           }
         ]
       },
       {
         "id": "h3",
-        "layer": "person",
+        "layer": "external",
         "ref": {
-          "kind": "fact",
-          "id": "usual_spot_red_rock"
+          "kind": "external",
+          "id": "ext-ethan-3"
         },
         "strength": "strong",
-        "label": "What you know: They often meet at Red Rock coffee, with Starbucks as the alternative.",
-        "rationale": "From 2 of your emails with Ethan Park.",
-        "count": 2,
+        "label": "Recent context: Ethan 的 Instagram（mock）",
+        "rationale": "Mock Ethan 的 Instagram（mock） item from 2026-10-19, not from your emails.",
+        "count": null,
         "total": null,
         "evidence": [
           {
-            "message_id": "198ab7139243711d",
-            "external_id": null,
-            "quote": "see you tomorrow at Red Rock!"
-          },
-          {
-            "message_id": "19aa39943f651cad",
-            "external_id": null,
-            "quote": "Starbuck/redrock coffee ?"
+            "message_id": null,
+            "external_id": "ext-ethan-3",
+            "quote": "Ethan 分享了刚出生的女儿 Lily 的第一张照片，写着“睡不够但超级幸福”，说接下来几周的 coaching 时间会更灵活。"
           }
         ]
       },
       {
         "id": "h4",
+        "layer": "scenario",
+        "ref": {
+          "kind": "habit",
+          "id": "concrete_time_windows"
+        },
+        "strength": "weak",
+        "label": "Gives specific days and open-ended windows ('after 3pm', 'this afternoon or Sunday') instead of asking the other person to suggest times.",
+        "rationale": "In your friend_scheduling emails, 8 of 30 do this.",
+        "count": 8,
+        "total": 30,
+        "evidence": [
+          {
+            "message_id": "1993e33e3d00e94f",
+            "external_id": null,
+            "quote": "Saturday 5pm or after works for me."
+          },
+          {
+            "message_id": "19ad36893b253add",
+            "external_id": null,
+            "quote": "free after 3pm tomorrow"
+          },
+          {
+            "message_id": "19ba40a051210f63",
+            "external_id": null,
+            "quote": "meet this afternoon? or Sunday?"
+          }
+        ]
+      },
+      {
+        "id": "h5",
+        "layer": "scenario",
+        "ref": {
+          "kind": "habit",
+          "id": "prefers_in_person_suggests_place"
+        },
+        "strength": "weak",
+        "label": "Pushes to meet offline or in person and names a specific coffee or tea spot as a question.",
+        "rationale": "In your friend_scheduling emails, 6 of 30 do this.",
+        "count": 6,
+        "total": 30,
+        "evidence": [
+          {
+            "message_id": "19a42551a63d1540",
+            "external_id": null,
+            "quote": "Any way we could meet offline?"
+          },
+          {
+            "message_id": "19de5186aaeb9ed5",
+            "external_id": null,
+            "quote": "Are you available to meet offline?"
+          },
+          {
+            "message_id": "syn-friend_scheduling-009-m1",
+            "external_id": null,
+            "quote": "Are you available to meet offline"
+          }
+        ]
+      },
+      {
+        "id": "h6",
+        "layer": "person",
+        "ref": {
+          "kind": "fact",
+          "id": "f10"
+        },
+        "strength": "strong",
+        "label": "What you know: Mia likes meeting at a coffee or milk tea shop. In May 2026 she postponed a session to take the grandparents out for Mother's Day.",
+        "rationale": "From 2 of your emails with Ethan Park.",
+        "count": 2,
+        "total": null,
+        "evidence": [
+          {
+            "message_id": "19de5186aaeb9ed5",
+            "external_id": null,
+            "quote": "coffee or milk tea shop"
+          },
+          {
+            "message_id": "19e1780b8fc298d6",
+            "external_id": null,
+            "quote": "taking the grandparents out to celebrate Mother's Day"
+          }
+        ]
+      },
+      {
+        "id": "h7",
+        "layer": "scenario",
+        "ref": {
+          "kind": "habit",
+          "id": "gives_easy_out"
+        },
+        "strength": "weak",
+        "label": "Softens requests by saying it is fine if the other person can't, or apologizes plainly and offers an alternative (later time, Zoom) when she is late.",
+        "rationale": "In your friend_scheduling emails, 6 of 30 do this.",
+        "count": 6,
+        "total": 30,
+        "evidence": [
+          {
+            "message_id": "199e38acd7fedecd",
+            "external_id": null,
+            "quote": "no worries if it's not available"
+          },
+          {
+            "message_id": "19a46d93cabaa53e",
+            "external_id": null,
+            "quote": "totally fine too"
+          },
+          {
+            "message_id": "19bae0bbfeb40186",
+            "external_id": null,
+            "quote": "I completely understand if that"
+          }
+        ]
+      },
+      {
+        "id": "h8",
+        "layer": "scenario",
+        "ref": {
+          "kind": "habit",
+          "id": "let_me_know_handoff"
+        },
+        "strength": "weak",
+        "label": "Hands the final choice back with a 'let me know' line near the end.",
+        "rationale": "In your friend_scheduling emails, 4 of 30 do this.",
+        "count": 4,
+        "total": 30,
+        "evidence": [
+          {
+            "message_id": "1993e33e3d00e94f",
+            "external_id": null,
+            "quote": "Let me know what time on Saturday"
+          },
+          {
+            "message_id": "19aa88c72929755b",
+            "external_id": null,
+            "quote": "Let me know what you think"
+          },
+          {
+            "message_id": "19ad36893b253add",
+            "external_id": null,
+            "quote": "let me know what time works for you"
+          }
+        ]
+      },
+      {
+        "id": "h9",
         "layer": "person",
         "ref": {
           "kind": "sign_off",
           "id": "sign_off"
         },
         "strength": "weak",
-        "label": "Sign-off: \"Best,\"",
-        "rationale": "You signed off with \"Best,\" in 13 of 46 emails to Ethan Park.",
-        "count": 13,
-        "total": 46,
+        "label": "Sign-off: \"Best, Mia\"",
+        "rationale": "You signed off with \"Best, Mia\" in 8 of 40 emails to Ethan Park.",
+        "count": 8,
+        "total": 40,
         "evidence": [
           {
-            "message_id": "19ddf5cc113d2012",
+            "message_id": "199e0f4032bd1990",
             "external_id": null,
             "quote": "Best,"
           },
           {
-            "message_id": "19ba40a051210f63",
+            "message_id": "199e38acd7fedecd",
+            "external_id": null,
+            "quote": "Best,"
+          },
+          {
+            "message_id": "19a468aadf88db07",
             "external_id": null,
             "quote": "Best,"
           }

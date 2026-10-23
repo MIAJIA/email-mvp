@@ -93,14 +93,6 @@
     "status": "learned",
     "evidence": [
       {
-        "message_id": "syn-old_friend_catchup-003-m1",
-        "quote": "Mia"
-      },
-      {
-        "message_id": "syn-old_friend_catchup-003-m2",
-        "quote": "Mia"
-      },
-      {
         "message_id": "syn-old_friend_catchup-003-m4",
         "quote": "Mia"
       },
@@ -113,16 +105,24 @@
         "quote": "Mia"
       },
       {
-        "message_id": "syn-old_friend_catchup-005-m4",
-        "quote": "Mia"
-      },
-      {
         "message_id": "syn-old_friend_catchup-007-m1",
         "quote": "Mia"
       },
       {
-        "message_id": "syn-old_friend_catchup-007-m2",
+        "message_id": "syn-old_friend_catchup-010-m1",
         "quote": "Mia"
+      },
+      {
+        "message_id": "syn-old_friend_catchup-010-m3",
+        "quote": "Mia"
+      },
+      {
+        "message_id": "syn-old_friend_catchup-013-m1",
+        "quote": "Mia"
+      },
+      {
+        "message_id": "syn-old_friend_catchup-003-m1",
+        "quote": "Best,"
       }
     ]
   },
@@ -134,15 +134,15 @@
     "evidence": [
       {
         "message_id": "syn-old_friend_catchup-003-m1",
-        "quote": "Coffee, kaya toast, a"
+        "quote": "How have you been?"
       },
       {
-        "message_id": "syn-old_friend_catchup-003-m2",
-        "quote": "staying near Tiong Bahru"
+        "message_id": "syn-old_friend_catchup-003-m3",
+        "quote": "see you there"
       },
       {
         "message_id": "syn-old_friend_catchup-005-m1",
-        "quote": "we had a baby boy in March"
+        "quote": "Hope you’ve been doing well!"
       },
       {
         "message_id": "syn-old_friend_catchup-005-m3",
@@ -150,15 +150,15 @@
       },
       {
         "message_id": "syn-old_friend_catchup-007-m3",
-        "quote": "next time is on us"
+        "quote": "Yes for sure!"
       },
       {
-        "message_id": "syn-old_friend_catchup-010-m1",
-        "quote": "Yes yes yes!!"
+        "message_id": "syn-old_friend_catchup-010-m2",
+        "quote": "Perfect, March 14 it is"
       },
       {
-        "message_id": "syn-old_friend_catchup-013-m1",
-        "quote": "Happy birthday!!"
+        "message_id": "syn-old_friend_catchup-013-m2",
+        "quote": "Would 9am SGT on Sunday"
       },
       {
         "message_id": "syn-old_friend_catchup-013-m3",
@@ -169,20 +169,73 @@
   "facts": [
     {
       "id": "f1",
-      "text": "Hannah lives in Singapore and has gone for early-morning swims at East Coast Park.",
+      "text": "Hannah is an old friend of Mia's who lives in Singapore. Mia is in the Bay Area (PT), so calls are scheduled in SGT and PT.",
       "status": "learned",
       "evidence": [
         {
-          "message_id": "syn-old_friend_catchup-003-m1",
-          "quote": "swims at East Coast Park"
+          "message_id": "syn-old_friend_catchup-005-m1",
+          "quote": "how’s everything in Singapore?"
+        },
+        {
+          "message_id": "syn-old_friend_catchup-005-m2",
+          "quote": "Wednesday 8pm SGT (5am PT)"
         }
       ]
     },
     {
       "id": "f2",
-      "text": "They met for breakfast at a kopitiam at Tiong Bahru Market on Saturday, Dec 14, 2024 at 9:30.",
+      "text": "Hannah's partner is Ben. Around September 2025 they were settling into a new place in Bukit Timah.",
       "status": "learned",
       "evidence": [
+        {
+          "message_id": "syn-old_friend_catchup-007-m1",
+          "quote": "Did you and Ben finally settle into the"
+        },
+        {
+          "message_id": "syn-old_friend_catchup-007-m1",
+          "quote": "new place in Bukit Timah"
+        }
+      ]
+    },
+    {
+      "id": "f3",
+      "text": "Mia's partner Victor knows Hannah and joins the meetups. He wants to go for chilli crab with her.",
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "syn-old_friend_catchup-003-m1",
+          "quote": "Victor and I are coming to Singapore"
+        },
+        {
+          "message_id": "syn-old_friend_catchup-003-m4",
+          "quote": "Victor is already asking when we go for"
+        }
+      ]
+    },
+    {
+      "id": "f4",
+      "text": "Hannah has done early morning swims at East Coast Park.",
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "syn-old_friend_catchup-003-m1",
+          "quote": "morning swims at East Coast Park"
+        }
+      ]
+    },
+    {
+      "id": "f5",
+      "text": "Mia and Victor were in Singapore Dec 8–21, 2024, staying near Tiong Bahru. Mia and Hannah met for breakfast at a kopitiam on Saturday Dec 14 at 9:30.",
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "syn-old_friend_catchup-003-m1",
+          "quote": "Dec 8 to 21"
+        },
+        {
+          "message_id": "syn-old_friend_catchup-003-m2",
+          "quote": "staying near Tiong Bahru"
+        },
         {
           "message_id": "syn-old_friend_catchup-003-m3",
           "quote": "Saturday 9:30 works for me"
@@ -194,8 +247,8 @@
       ]
     },
     {
-      "id": "f3",
-      "text": "Hannah recommended Haji Lane, and Mia and Victor loved it.",
+      "id": "f6",
+      "text": "Hannah recommended Haji Lane, and Mia loved it.",
       "status": "learned",
       "evidence": [
         {
@@ -205,8 +258,34 @@
       ]
     },
     {
-      "id": "f4",
-      "text": "Hannah sent Mia a sambal recipe after their call in May 2025.",
+      "id": "f7",
+      "text": "Hannah was planning a Bintan weekend in late 2024 or early 2025.",
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "syn-old_friend_catchup-005-m1",
+          "quote": "Bintan weekend you were planning"
+        }
+      ]
+    },
+    {
+      "id": "f8",
+      "text": "Mia had a baby boy in March 2025 and told Hannah in May 2025. They then had a video call on a Wednesday at 8pm SGT.",
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "syn-old_friend_catchup-005-m1",
+          "quote": "we had a baby boy in March"
+        },
+        {
+          "message_id": "syn-old_friend_catchup-005-m3",
+          "quote": "Talk to you Wednesday!"
+        }
+      ]
+    },
+    {
+      "id": "f9",
+      "text": "Hannah sent Mia a sambal recipe, and Victor planned to try it.",
       "status": "learned",
       "evidence": [
         {
@@ -216,32 +295,14 @@
       ]
     },
     {
-      "id": "f5",
-      "text": "Mia told Hannah about her baby boy, born in March 2025.",
-      "status": "learned",
-      "evidence": [
-        {
-          "message_id": "syn-old_friend_catchup-005-m1",
-          "quote": "we had a baby boy in March"
-        }
-      ]
-    },
-    {
-      "id": "f6",
-      "text": "Hannah and Ben moved to a new place in Bukit Timah around 2025.",
+      "id": "f10",
+      "text": "In September 2025 Mia worked remotely from Singapore until the end of the month. Mia and Hannah had Sunday brunch (Novena or Tiong Bahru preferred), and Mia promised the next meal was on her and Victor.",
       "status": "learned",
       "evidence": [
         {
           "message_id": "syn-old_friend_catchup-007-m1",
-          "quote": "new place in Bukit Timah"
-        }
-      ]
-    },
-    {
-      "id": "f7",
-      "text": "They had Sunday brunch in Singapore in September 2025, and Mia said the next one is on her and Victor.",
-      "status": "learned",
-      "evidence": [
+          "quote": "until the end\nof September"
+        },
         {
           "message_id": "syn-old_friend_catchup-007-m2",
           "quote": "This Sunday brunch would be perfect!"
@@ -253,47 +314,81 @@
       ]
     },
     {
-      "id": "f8",
-      "text": "Hannah and Ben visited the Bay Area in March 2026. They had lunch with Mia on March 14 and saw her pottery studio. Ben wants a mug.",
+      "id": "f11",
+      "text": "Mia became a morning runner and ran along the Kallang river during the September 2025 stay.",
       "status": "learned",
       "evidence": [
+        {
+          "message_id": "syn-old_friend_catchup-007-m1",
+          "quote": "along the Kallang river at 6:30"
+        }
+      ]
+    },
+    {
+      "id": "f12",
+      "text": "Hannah and Ben did a West Coast road trip in March 2026 and met Mia for lunch in the Bay Area on March 14, which included a tour of Mia's pottery studio.",
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "syn-old_friend_catchup-010-m1",
+          "quote": "would love to see you\nboth"
+        },
         {
           "message_id": "syn-old_friend_catchup-010-m2",
           "quote": "Perfect, March 14 it is"
         },
         {
           "message_id": "syn-old_friend_catchup-010-m3",
-          "quote": "a mug for Ben is already on my list!"
+          "quote": "So happy we finaly got to see you"
         }
       ]
     },
     {
-      "id": "f9",
-      "text": "Hannah's birthday is around June 27, and Ben takes her to an omakase place to celebrate. Mia is saving her best bowl as a gift for Hannah.",
+      "id": "f13",
+      "text": "Mia does pottery in a studio she made from her garage. She plans to make a mug for Ben and is saving her best bowl for Hannah.",
       "status": "learned",
       "evidence": [
         {
-          "message_id": "syn-old_friend_catchup-013-m1",
-          "quote": "that omakase place again this year"
+          "message_id": "syn-old_friend_catchup-010-m1",
+          "quote": "turning the garage\ninto a little studio"
+        },
+        {
+          "message_id": "syn-old_friend_catchup-010-m3",
+          "quote": "a mug for Ben is already on my list!"
         },
         {
           "message_id": "syn-old_friend_catchup-013-m1",
-          "quote": "I’m saving the best one for you"
+          "quote": "saving the best one for you"
         }
       ]
     },
     {
-      "id": "f10",
-      "text": "They usually catch up by video call across time zones, set in SGT and PT. The most recent was a Sunday 9am SGT call in early July 2026.",
+      "id": "f14",
+      "text": "Hannah's birthday is around June 27, and Ben takes her to an omakase place.",
       "status": "learned",
       "evidence": [
+        {
+          "message_id": "syn-old_friend_catchup-013-m1",
+          "quote": "Happy birthday!!"
+        },
+        {
+          "message_id": "syn-old_friend_catchup-013-m1",
+          "quote": "is Ben taking you to"
+        }
+      ]
+    },
+    {
+      "id": "f15",
+      "text": "Calls are hard to schedule across time zones: Mia offered 5am PT in 2025, and in June 2026 they set a Sunday 9am SGT call because Hannah's Saturday evening is too early for Mia.",
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "syn-old_friend_catchup-005-m2",
+          "quote": "I’m usually\nup early anyway haha"
+        },
         {
           "message_id": "syn-old_friend_catchup-013-m2",
-          "quote": "Would 9am SGT on Sunday"
-        },
-        {
-          "message_id": "syn-old_friend_catchup-013-m3",
-          "quote": "see you Sunday morning"
+          "quote": "Saturday\nevening your time is a bit early for me"
         }
       ]
     }
@@ -308,14 +403,28 @@
           "quote": "Did you and Ben finally settle into the"
         }
       ]
+    },
+    {
+      "to": "Victor",
+      "type": "friend_of_partner",
+      "evidence": [
+        {
+          "message_id": "syn-old_friend_catchup-003-m4",
+          "quote": "Victor is already asking when we go for"
+        }
+      ]
     }
   ],
   "core_connection": {
-    "text": "Hannah is an old friend who lives in Singapore. Mia keeps in touch with catch-up emails and calls, and they meet in person whenever one of them visits the other's city.",
+    "text": "Hannah is an old friend who lives in Singapore. She and Mia meet in person whenever Mia is in Singapore or Hannah is in the Bay Area, and they keep in touch through long catch-up emails and calls across time zones.",
     "evidence": [
       {
         "message_id": "syn-old_friend_catchup-003-m1",
         "quote": "It’s been way too long!"
+      },
+      {
+        "message_id": "syn-old_friend_catchup-005-m1",
+        "quote": "I miss our\nchats!"
       },
       {
         "message_id": "syn-old_friend_catchup-013-m1",
@@ -329,18 +438,23 @@
 
 # Hannah Kim
 
-Hannah is an old friend who lives in Singapore. Mia keeps in touch with catch-up emails and calls, and they meet in person whenever one of them visits the other's city.
+Hannah is an old friend who lives in Singapore. She and Mia meet in person whenever Mia is in Singapore or Hannah is in the Bay Area, and they keep in touch through long catch-up emails and calls across time zones.
 
 - Address (default): Hannah (8/17 emails)
-- Hannah lives in Singapore and has gone for early-morning swims at East Coast Park.
-- They met for breakfast at a kopitiam at Tiong Bahru Market on Saturday, Dec 14, 2024 at 9:30.
-- Hannah recommended Haji Lane, and Mia and Victor loved it.
-- Hannah sent Mia a sambal recipe after their call in May 2025.
-- Mia told Hannah about her baby boy, born in March 2025.
-- Hannah and Ben moved to a new place in Bukit Timah around 2025.
-- They had Sunday brunch in Singapore in September 2025, and Mia said the next one is on her and Victor.
-- Hannah and Ben visited the Bay Area in March 2026. They had lunch with Mia on March 14 and saw her pottery studio. Ben wants a mug.
-- Hannah's birthday is around June 27, and Ben takes her to an omakase place to celebrate. Mia is saving her best bowl as a gift for Hannah.
-- They usually catch up by video call across time zones, set in SGT and PT. The most recent was a Sunday 9am SGT call in early July 2026.
+- Hannah is an old friend of Mia's who lives in Singapore. Mia is in the Bay Area (PT), so calls are scheduled in SGT and PT.
+- Hannah's partner is Ben. Around September 2025 they were settling into a new place in Bukit Timah.
+- Mia's partner Victor knows Hannah and joins the meetups. He wants to go for chilli crab with her.
+- Hannah has done early morning swims at East Coast Park.
+- Mia and Victor were in Singapore Dec 8–21, 2024, staying near Tiong Bahru. Mia and Hannah met for breakfast at a kopitiam on Saturday Dec 14 at 9:30.
+- Hannah recommended Haji Lane, and Mia loved it.
+- Hannah was planning a Bintan weekend in late 2024 or early 2025.
+- Mia had a baby boy in March 2025 and told Hannah in May 2025. They then had a video call on a Wednesday at 8pm SGT.
+- Hannah sent Mia a sambal recipe, and Victor planned to try it.
+- In September 2025 Mia worked remotely from Singapore until the end of the month. Mia and Hannah had Sunday brunch (Novena or Tiong Bahru preferred), and Mia promised the next meal was on her and Victor.
+- Mia became a morning runner and ran along the Kallang river during the September 2025 stay.
+- Hannah and Ben did a West Coast road trip in March 2026 and met Mia for lunch in the Bay Area on March 14, which included a tour of Mia's pottery studio.
+- Mia does pottery in a studio she made from her garage. She plans to make a mug for Ben and is saving her best bowl for Hannah.
+- Hannah's birthday is around June 27, and Ben takes her to an omakase place.
+- Calls are hard to schedule across time zones: Mia offered 5am PT in 2025, and in June 2026 they set a Sunday 9am SGT call because Hannah's Saturday evening is too early for Mia.
 
 _Extracted offline by pipeline/extract.py; every entry is backed by verified quotes._

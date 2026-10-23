@@ -63,6 +63,15 @@ def build_catalog(note: Optional[ContactNote], style: Optional[ScenarioStyle], e
             fmt = dict(v=f.value, n=name, c=f.count, t=f.total)
             cat[k] = Entry(k, Ref(kind=k, id=k), "person", ins.format(**fmt), lab.format(**fmt), rat.format(**fmt),
                            f.count, f.total, f.status, f.evidence)
+        for a in note.address_as_by_context:
+            if a.status == "rejected":
+                continue
+            cat[f"address_as:{a.context}"] = Entry(
+                f"address_as:{a.context}", Ref(kind="address_as", id=a.context), "person",
+                f"In a {a.context} setting, address them as \"{a.value}\"",
+                f"Greeting ({a.context}): \"{a.value}\"",
+                f"In {a.context} emails you called {name} \"{a.value}\" ({a.count} of {a.total} emails).",
+                a.count, a.total, a.status, a.evidence)
         for fact in note.facts:
             if fact.status == "rejected":
                 continue
@@ -94,6 +103,7 @@ def build_prompt(req: DraftRequest, note: Optional[ContactNote], scenario: str, 
 What Mia wants to say: {req.brief}
 
 Notes about Mia's relationship with this person and her style. Person notes override scenario habits.
+If several greetings are listed for different settings, pick the one that fits what Mia wants to say.
 {lines}
 
 Rules:
@@ -134,11 +144,22 @@ def parse(text: str, cat: dict[str, Entry]) -> tuple[str, list[Segment], list[Hi
     return subject, segments, highlights, warnings
 
 
+def inject_unknown_ref(raw: str) -> str:
+    """Rename the second <hl> tag (the first if there is only one) to a ref no note has."""
+    tags = list(HL_RE.finditer(raw))
+    if not tags:
+        return raw
+    m = tags[1] if len(tags) > 1 else tags[0]
+    return raw[:m.start(1)] + "fact:injected_unknown" + raw[m.end(1):]
+
+
 def generate(req: DraftRequest, note: Optional[ContactNote], style: Optional[ScenarioStyle],
              external: list[ExternalItem], complete: Callable[[str], str]) -> Draft:
     scenario = (note.scenario if note and note.scenario else None) or (style.scenario if style else DEFAULT_SCENARIO)
     cat = build_catalog(note, style, external)
     raw = complete(build_prompt(req, note, scenario, cat))
+    if req.inject == "unknown_ref":
+        raw = inject_unknown_ref(raw)
     subject, segments, highlights, warnings = parse(raw, cat)
     if note is None:
         warnings.append("No contact note for this address; used your scenario style only.")
