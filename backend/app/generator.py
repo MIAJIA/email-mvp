@@ -16,13 +16,15 @@ HL_RE = re.compile(r'<hl ref="([^"]*)">(.*?)</hl>', re.S)
 
 
 def strength_of(count: Optional[int], total: Optional[int], status: str) -> str:
+    """Contract rule: strong if the user confirmed it, or count >= 3 and count/total > 0.3.
+    Entries with no total (facts) need count >= 3; entries with no count (external context) are weak."""
     if status == "confirmed":
         return "strong"
-    if count is None:
+    if not count:
         return "weak"
-    if total:  # counted against all emails: at least 3 and more than 30%
-        return "strong" if count >= 3 and count / total > 0.3 else "weak"
-    return "strong" if count >= 2 else "weak"
+    if total is None:
+        return "strong" if count >= 3 else "weak"
+    return "strong" if count >= 3 and count / total > 0.3 else "weak"
 
 
 @dataclass
@@ -92,7 +94,7 @@ def build_catalog(note: Optional[ContactNote], style: Optional[ScenarioStyle], e
         cat[f"external:{x.id}"] = Entry(
             f"external:{x.id}", Ref(kind="external", id=x.id), "external", f"Recent context ({x.source_label}, {x.date}): {x.text}",
             f"Recent context: {x.source_label}", f"Mock {x.source_label} item from {x.date}, not from your emails.",
-            None, None, "confirmed", [Evidence(external_id=x.id, quote=x.text)])
+            None, None, "learned", [Evidence(external_id=x.id, quote=x.text)])
     return cat
 
 
@@ -109,6 +111,7 @@ If several greetings are listed for different settings, pick the one that fits w
 Rules:
 - Wherever your wording applies one of the notes above, wrap exactly those words in <hl ref="KEY">...</hl> using a KEY from the list. Wrap the greeting, honorific word, sign-off, and any sentence that uses a fact or recent context.
 - Use only KEYs from the list. Do not invent keys. Do not nest tags.
+- Plain text only: no Markdown (no **bold**, no headings).
 - Output format, nothing else: first line `Subject: ...`, then a blank line, then the email body.
 """
 
@@ -140,7 +143,7 @@ def parse(text: str, cat: dict[str, Entry]) -> tuple[str, list[Segment], list[Hi
         segments.append(Segment(text=text[pos:]))
     # Stray or unclosed tags never reach the user as markup.
     for s in segments:
-        s.text = re.sub(r"</?hl[^>]*>", "", s.text)
+        s.text = re.sub(r"</?hl[^>]*>", "", s.text).replace("**", "")
     return subject, segments, highlights, warnings
 
 

@@ -1,5 +1,5 @@
 {
-  "draft_id": "3faad1f1dbdb",
+  "draft_id": "2116b17322f0",
   "to": "amy.wang@example.com",
   "scenario": "zh_en_casual",
   "subject": "Re: coffee",
@@ -21,32 +21,24 @@
       "highlight_id": null
     },
     {
-      "text": "Friday afternoon",
+      "text": "Friday afternoon 可以的 我们去 Red Rock 见面喝 coffee 嘛",
       "highlight_id": "h2"
     },
     {
-      "text": " 可以",
+      "text": "\n",
       "highlight_id": null
     },
     {
-      "text": "的呀",
+      "text": "好奇你",
       "highlight_id": "h3"
     },
     {
-      "text": "\n我们能不能直接在 Red Rock 见面 ",
+      "text": "几点方便呀 ",
       "highlight_id": null
     },
     {
-      "text": "你",
+      "text": "哈哈",
       "highlight_id": "h4"
-    },
-    {
-      "text": "几点方便",
-      "highlight_id": null
-    },
-    {
-      "text": "呀",
-      "highlight_id": "h5"
     }
   ],
   "highlights": [
@@ -75,28 +67,28 @@
       "layer": "scenario",
       "ref": {
         "kind": "habit",
-        "id": "english_terms_in_chinese"
+        "id": "spaces_instead_of_commas"
       },
       "strength": "weak",
-      "label": "Writes mainly in Chinese but drops in English words for tech terms, brands and everyday nouns or verbs, with a space on each side.",
+      "label": "Separates clauses with spaces instead of Chinese commas or periods, like quick chat messages.",
       "rationale": "In your zh_en_casual emails, 8 of 30 do this.",
       "count": 8,
       "total": 30,
       "evidence": [
         {
-          "message_id": "syn-zh_en_casual-001-m1",
+          "message_id": "syn-zh_en_casual-007-m2",
           "external_id": null,
-          "quote": "装一个 blender-mcp 的 plugin"
+          "quote": "我们住的四条 吃饭方便很多"
         },
         {
-          "message_id": "syn-zh_en_casual-002-m2",
+          "message_id": "syn-zh_en_casual-011-m2",
           "external_id": null,
-          "quote": "我们是在 app 上买的"
+          "quote": "不会每行看 我看 diff 和测试"
         },
         {
-          "message_id": "syn-zh_en_casual-019-m2",
+          "message_id": "syn-zh_en_casual-014-m2",
           "external_id": null,
-          "quote": "要提前 book"
+          "quote": "美心的 红色盒子那个"
         }
       ]
     },
@@ -105,88 +97,58 @@
       "layer": "scenario",
       "ref": {
         "kind": "habit",
-        "id": "soft_sentence_particles"
+        "id": "ends_with_curious_question"
       },
       "strength": "strong",
-      "label": "Ends sentences with soft particles such as 啦, 嘛 and 呀 to keep the tone light and friendly.",
+      "label": "Often ends with a follow-up question about the other person, frequently starting with 好奇你.",
       "rationale": "In your zh_en_casual emails, 10 of 30 do this.",
       "count": 10,
       "total": 30,
       "evidence": [
         {
-          "message_id": "syn-zh_en_casual-004-m2",
+          "message_id": "19cfa2a364325cd7",
           "external_id": null,
-          "quote": "这次慢慢走啦"
+          "quote": "好奇你的填表格用的是什么MCP呀？"
         },
         {
-          "message_id": "syn-zh_en_casual-006-m3",
+          "message_id": "syn-zh_en_casual-001-m3",
           "external_id": null,
-          "quote": "你直接拿去改嘛"
+          "quote": "好奇你平时是用 Unity 吗?"
         },
         {
-          "message_id": "syn-zh_en_casual-011-m2",
+          "message_id": "syn-zh_en_casual-009-m1",
           "external_id": null,
-          "quote": "不然一天啥也干不了啦"
+          "quote": "好奇你这个 local MCP 是自己写的还是用现成的？"
         }
       ]
     },
     {
       "id": "h4",
-      "layer": "person",
-      "ref": {
-        "kind": "honorific",
-        "id": "honorific"
-      },
-      "strength": "weak",
-      "label": "Formal \"你\"",
-      "rationale": "You used \"你\" with Amy in 3 of 11 emails.",
-      "count": 3,
-      "total": 11,
-      "evidence": [
-        {
-          "message_id": "syn-zh_en_casual-003-m2",
-          "external_id": null,
-          "quote": "你离得近"
-        },
-        {
-          "message_id": "syn-zh_en_casual-008-m2",
-          "external_id": null,
-          "quote": "你不喜欢就拿来给我呀"
-        },
-        {
-          "message_id": "syn-zh_en_casual-015-m2",
-          "external_id": null,
-          "quote": "你们哪天出发?"
-        }
-      ]
-    },
-    {
-      "id": "h5",
       "layer": "scenario",
       "ref": {
         "kind": "habit",
-        "id": "soft_sentence_particles"
+        "id": "haha_and_laughing_emoji"
       },
       "strength": "strong",
-      "label": "Ends sentences with soft particles such as 啦, 嘛 and 呀 to keep the tone light and friendly.",
+      "label": "Adds 哈哈 or the 😂 emoji at the end of a line to sound playful or poke fun at herself.",
       "rationale": "In your zh_en_casual emails, 10 of 30 do this.",
       "count": 10,
       "total": 30,
       "evidence": [
         {
-          "message_id": "syn-zh_en_casual-004-m2",
+          "message_id": "syn-zh_en_casual-001-m1",
           "external_id": null,
-          "quote": "这次慢慢走啦"
+          "quote": "我在做一个海盗小游戏练手哈哈"
         },
         {
-          "message_id": "syn-zh_en_casual-006-m3",
+          "message_id": "syn-zh_en_casual-008-m1",
           "external_id": null,
-          "quote": "你直接拿去改嘛"
+          "quote": "大家都推荐不是没道理的哈哈"
         },
         {
-          "message_id": "syn-zh_en_casual-011-m2",
+          "message_id": "syn-zh_en_casual-006-m1",
           "external_id": null,
-          "quote": "不然一天啥也干不了啦"
+          "quote": "再大就开始卡了😂"
         }
       ]
     }
