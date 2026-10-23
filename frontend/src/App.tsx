@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { createDraft, errorText, getContacts, sendFeedback } from "./api";
 import DraftBody, { type Mark } from "./components/DraftBody";
+import ContactsPage from "./components/ContactsPage";
 import HighlightCard from "./components/HighlightCard";
 import { DEMO_CONTACTS, DEMO_INJECT, DEMO_ORDER, EXAMPLE_BRIEFS, INJECT_BRIEFS } from "./examples";
 import type { ContactSummary, Draft } from "./types";
@@ -21,6 +22,7 @@ export default function App() {
   const [busy, setBusy] = useState(false);
   const [cardError, setCardError] = useState<string | null>(null);
   const [toast, setToast] = useState<string | null>(null);
+  const [page, setPage] = useState<"compose" | "contacts">("compose");
   const closeTimer = useRef<number | undefined>(undefined);
   const toastTimer = useRef<number | undefined>(undefined);
 
@@ -129,7 +131,15 @@ export default function App() {
 
   return (
     <main className="wrap">
-      <section className="surface" aria-label="Compose">
+      <nav className="pages" aria-label="Pages">
+        {(["compose", "contacts"] as const).map((p) => (
+          <button key={p} type="button" aria-current={page === p ? "page" : undefined} onClick={() => { setPage(p); setActive(null); }}>
+            {p === "compose" ? "Compose" : "Contacts"}
+          </button>
+        ))}
+      </nav>
+      {page === "contacts" && contacts.length > 0 && <ContactsPage contacts={contacts} />}
+      <section className="surface" aria-label="Compose" hidden={page !== "compose"}>
         <div className="row">
           <span className="k">To</span>
           <select id="to" value={to} onChange={(e) => pick(e.target.value)}>

@@ -30,7 +30,7 @@ function sourceLine(h: Highlight, contactName: string, scenario: string): string
   }
 }
 
-function Quote({ ev }: { ev: Evidence }) {
+export function Quote({ ev }: { ev: Evidence }) {
   const [email, setEmail] = useState<Email | null>(null);
   const [err, setErr] = useState<string | null>(null);
   const [shown, setShown] = useState(false);
