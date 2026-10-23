@@ -1,13 +1,12 @@
 import type { ContactSummary } from "./types";
 
-// Example briefs, one per demo contact. They match the briefs in recordings/ word for word
-// (skeleton 428aee7), so the replay service (8042) can answer them without calling the model.
+// Example briefs, one per demo contact: the three demo cases use the briefs in
+// email-mvp-notes/demo/demo-script.md word for word (Lead decision 14:42); recordings are re-made
+// against them, and the replay service (8042) matches on to + brief exactly.
 export const EXAMPLE_BRIEFS: Record<string, string> = {
-  "wang.jianhua@example.com": "告诉王老师我下个月回北京，想约他见面当面道谢，问他哪天方便",
-  "ethan.park@example.com":
-    "Say yes to coffee, Friday afternoon works. Ask if we can meet in person at Red Rock or the boba place nearby.",
-  "reservations@hoshinoya-kyoto.example.com":
-    "We arrive Nov 14 around 9pm, ask if late check-in is ok; need a car from Kyoto Station for 2 adults and 1 baby; ask if the room can fit a baby crib. Also ask about anything special happening at the hotel during our stay.",
+  "wang.jianhua@example.com": "跟王老师确认下个月去家里看他的时间，问他需不需要我们带什么；看到他的书法入选展览了，想顺便去看看",
+  "ethan.park@example.com": "约 Ethan 周五下午喝咖啡，问他能不能线下见，Red Rock 就行；顺便问一下他周六早上的散步小组还收人吗；恭喜他最近生宝宝了",
+  "reservations@hoshinoya-kyoto.example.com": "11 月 20 号到 22 号想再住一次，两个大人；问能不能约红叶夜游船和周六下午的红叶茶会；晚餐还是提醒 Victor 不吃生贝类",
   "tang.shuyuan@example.com": "以校友会组委会的名义正式邀请他在 12 月 6 日的校友年会上做 10 分钟致辞，请他在下周五前回复是否方便",
 };
 
