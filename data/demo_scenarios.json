@@ -1,5 +1,5 @@
 {
-  "_note": "Demo scenarios; not training data. Each lists the expected highlights: layer (person / scenario / external / inferred), ref (an entry in ground_truth/people.json, external.json, or a scenario habit id from style_spec.md) and strength. Strength: strong if backed by at least 2 emails, otherwise weak; external context has a single source and is always weak. inferred means no evidence in history and ref is null. text_hint is the rough text expected in the draft, for rehearsal; it need not match verbatim. brief and text_hint are product data and stay in the user's language.",
+  "_note": "Demo scenarios; not training data. Each lists the expected highlights: layer (person / scenario / external / inferred), ref (an entry in ground_truth/people.json, external.json, or a scenario habit id from style_spec.md) and strength. Strength follows CONTRACT 0.2: strong when count >= 3 and count/total > 0.3 (count = emails to this recipient, or in this scenario, that show the pattern), otherwise weak; a fact backed by one or two emails and external context (single source) are weak. inferred means no evidence in history and ref is null. text_hint is the rough text expected in the draft, for rehearsal; it need not match verbatim. brief and text_hint are product data and stay in the user's language.",
   "scenarios": [
     {
       "id": "D1_reply_coach_ethan",
@@ -35,9 +35,9 @@
             "kind": "fact",
             "id": "ethan.f3"
           },
-          "strength": "strong",
+          "strength": "weak",
           "text_hint": "at Red Rock",
-          "why": "They usually meet at Red Rock Coffee"
+          "why": "They usually meet at Red Rock Coffee (5 of 46 emails)"
         },
         {
           "layer": "person",
