@@ -1,0 +1,298 @@
+{
+  "draft_id": "71837826f620",
+  "to": "wang.laoshi@example.com",
+  "scenario": "zh_formal",
+  "subject": "下个月回北京，想当面感谢您",
+  "segments": [
+    {
+      "text": "王老师您好",
+      "highlight_id": "h1"
+    },
+    {
+      "text": "：\n\n最近一切都好吗？我下个月会回北京一趟，想借这个机会去看望",
+      "highlight_id": null
+    },
+    {
+      "text": "您",
+      "highlight_id": "h2"
+    },
+    {
+      "text": "。\n\n",
+      "highlight_id": null
+    },
+    {
+      "text": "非常感谢您之前为我的博士申请写推荐信",
+      "highlight_id": "h3"
+    },
+    {
+      "text": "，",
+      "highlight_id": null
+    },
+    {
+      "text": "也正是有了您的支持，我才顺利拿到了博士项目的录取",
+      "highlight_id": "h4"
+    },
+    {
+      "text": "。",
+      "highlight_id": null
+    },
+    {
+      "text": "这几年一直承蒙您的指导，之前也答应过回学校时要去办公室看您",
+      "highlight_id": "h5"
+    },
+    {
+      "text": "，所以这次很想当面向",
+      "highlight_id": null
+    },
+    {
+      "text": "您",
+      "highlight_id": "h6"
+    },
+    {
+      "text": "道谢。\n\n不知道",
+      "highlight_id": null
+    },
+    {
+      "text": "您",
+      "highlight_id": "h7"
+    },
+    {
+      "text": "下个月哪天比较方便？我的时间比较灵活，可以配合",
+      "highlight_id": null
+    },
+    {
+      "text": "您",
+      "highlight_id": "h8"
+    },
+    {
+      "text": "的安排，去办公室或者约在学校附近都可以。\n\n",
+      "highlight_id": null
+    },
+    {
+      "text": "祝好，",
+      "highlight_id": "h9"
+    },
+    {
+      "text": "\nMia",
+      "highlight_id": null
+    }
+  ],
+  "highlights": [
+    {
+      "id": "h1",
+      "layer": "person",
+      "ref": {
+        "kind": "address_as",
+        "id": "address_as"
+      },
+      "strength": "strong",
+      "label": "Greeting: \"王老师您好\"",
+      "rationale": "You addressed 王老师 as \"王老师您好\" in 3 of 3 emails.",
+      "count": 3,
+      "total": 3,
+      "evidence": [
+        {
+          "message_id": "hw-wang-001",
+          "external_id": null,
+          "quote": "王老师您好，"
+        },
+        {
+          "message_id": "hw-wang-003",
+          "external_id": null,
+          "quote": "王老师您好，"
+        }
+      ]
+    },
+    {
+      "id": "h2",
+      "layer": "person",
+      "ref": {
+        "kind": "honorific",
+        "id": "honorific"
+      },
+      "strength": "strong",
+      "label": "Formal \"您\"",
+      "rationale": "You used \"您\" with 王老师 in 3 of 3 emails.",
+      "count": 3,
+      "total": 3,
+      "evidence": [
+        {
+          "message_id": "hw-wang-001",
+          "external_id": null,
+          "quote": "冒昧打扰您。"
+        },
+        {
+          "message_id": "hw-wang-002",
+          "external_id": null,
+          "quote": "麻烦您有空时看一下。"
+        }
+      ]
+    },
+    {
+      "id": "h3",
+      "layer": "person",
+      "ref": {
+        "kind": "fact",
+        "id": "wrote_recommendation_letter"
+      },
+      "strength": "weak",
+      "label": "What you know: 王老师答应为 Mia 的博士申请写推荐信",
+      "rationale": "From 1 of your emails with 王老师.",
+      "count": 1,
+      "total": null,
+      "evidence": [
+        {
+          "message_id": "hw-wang-002",
+          "external_id": null,
+          "quote": "谢谢您答应帮我写推荐信！"
+        }
+      ]
+    },
+    {
+      "id": "h4",
+      "layer": "person",
+      "ref": {
+        "kind": "fact",
+        "id": "mia_admitted_phd"
+      },
+      "strength": "weak",
+      "label": "What you know: Mia 收到了博士项目录取通知，并已告知王老师",
+      "rationale": "From 1 of your emails with 王老师.",
+      "count": 1,
+      "total": null,
+      "evidence": [
+        {
+          "message_id": "hw-wang-003",
+          "external_id": null,
+          "quote": "我收到了录取通知！"
+        }
+      ]
+    },
+    {
+      "id": "h5",
+      "layer": "person",
+      "ref": {
+        "kind": "fact",
+        "id": "long_term_mentor"
+      },
+      "strength": "weak",
+      "label": "What you know: 王老师指导了 Mia 好几年，Mia 承诺回学校时去办公室看望",
+      "rationale": "From 1 of your emails with 王老师.",
+      "count": 1,
+      "total": null,
+      "evidence": [
+        {
+          "message_id": "hw-wang-003",
+          "external_id": null,
+          "quote": "真的非常感谢您的推荐信和这几年的指导。"
+        },
+        {
+          "message_id": "hw-wang-003",
+          "external_id": null,
+          "quote": "下次回学校一定去办公室看您。"
+        }
+      ]
+    },
+    {
+      "id": "h6",
+      "layer": "person",
+      "ref": {
+        "kind": "honorific",
+        "id": "honorific"
+      },
+      "strength": "strong",
+      "label": "Formal \"您\"",
+      "rationale": "You used \"您\" with 王老师 in 3 of 3 emails.",
+      "count": 3,
+      "total": 3,
+      "evidence": [
+        {
+          "message_id": "hw-wang-001",
+          "external_id": null,
+          "quote": "冒昧打扰您。"
+        },
+        {
+          "message_id": "hw-wang-002",
+          "external_id": null,
+          "quote": "麻烦您有空时看一下。"
+        }
+      ]
+    },
+    {
+      "id": "h7",
+      "layer": "person",
+      "ref": {
+        "kind": "honorific",
+        "id": "honorific"
+      },
+      "strength": "strong",
+      "label": "Formal \"您\"",
+      "rationale": "You used \"您\" with 王老师 in 3 of 3 emails.",
+      "count": 3,
+      "total": 3,
+      "evidence": [
+        {
+          "message_id": "hw-wang-001",
+          "external_id": null,
+          "quote": "冒昧打扰您。"
+        },
+        {
+          "message_id": "hw-wang-002",
+          "external_id": null,
+          "quote": "麻烦您有空时看一下。"
+        }
+      ]
+    },
+    {
+      "id": "h8",
+      "layer": "person",
+      "ref": {
+        "kind": "honorific",
+        "id": "honorific"
+      },
+      "strength": "strong",
+      "label": "Formal \"您\"",
+      "rationale": "You used \"您\" with 王老师 in 3 of 3 emails.",
+      "count": 3,
+      "total": 3,
+      "evidence": [
+        {
+          "message_id": "hw-wang-001",
+          "external_id": null,
+          "quote": "冒昧打扰您。"
+        },
+        {
+          "message_id": "hw-wang-002",
+          "external_id": null,
+          "quote": "麻烦您有空时看一下。"
+        }
+      ]
+    },
+    {
+      "id": "h9",
+      "layer": "person",
+      "ref": {
+        "kind": "sign_off",
+        "id": "sign_off"
+      },
+      "strength": "weak",
+      "label": "Sign-off: \"祝好，\"",
+      "rationale": "You signed off with \"祝好，\" in 2 of 3 emails to 王老师.",
+      "count": 2,
+      "total": 3,
+      "evidence": [
+        {
+          "message_id": "hw-wang-001",
+          "external_id": null,
+          "quote": "祝好，"
+        },
+        {
+          "message_id": "hw-wang-002",
+          "external_id": null,
+          "quote": "祝好，"
+        }
+      ]
+    }
+  ],
+  "warnings": []
+}

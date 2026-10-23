@@ -1,0 +1,235 @@
+{
+  "case_key": "782e71270f",
+  "endpoint": "POST /draft",
+  "contract_revision": "0.2",
+  "recorded_at": "2026-10-23T21:25:29+00:00",
+  "request": {
+    "mode": "compose",
+    "to": "reservations@hoshinoya-kyoto.example.com",
+    "brief": "We arrive Nov 14 around 9pm, ask if late check-in is ok; need a car from Kyoto Station for 2 adults and 1 baby; ask if the room can fit a baby crib."
+  },
+  "response": {
+    "draft_id": "14e40c1cd1a2",
+    "to": "reservations@hoshinoya-kyoto.example.com",
+    "scenario": "vendor_service",
+    "subject": "Late arrival on Nov 14, car from Kyoto Station, and a baby crib",
+    "segments": [
+      {
+        "text": "Dear Kenji",
+        "highlight_id": "h1"
+      },
+      {
+        "text": ",\n\n",
+        "highlight_id": null
+      },
+      {
+        "text": "Thank you",
+        "highlight_id": "h2"
+      },
+      {
+        "text": " ",
+        "highlight_id": null
+      },
+      {
+        "text": "for looking after us so well during our stays in March 2025 and this past April",
+        "highlight_id": "h3"
+      },
+      {
+        "text": ". We are looking forward to coming back.\n\nThis time, ",
+        "highlight_id": null
+      },
+      {
+        "text": "Victor and I",
+        "highlight_id": "h4"
+      },
+      {
+        "text": " will be traveling with our baby. Could you help with a few things?\n\n",
+        "highlight_id": null
+      },
+      {
+        "text": "1. We expect to arrive on November 14 around 9:00 PM. Is a late check-in okay?\n2. Could you arrange a car to pick us up at Kyoto Station? We will be 2 adults and 1 baby.\n3. Is there enough room in our room for a baby crib?",
+        "highlight_id": "h5"
+      },
+      {
+        "text": "\n\nPlease let me know if you need any other details from me.\n\n",
+        "highlight_id": null
+      },
+      {
+        "text": "Thank you,",
+        "highlight_id": "h6"
+      },
+      {
+        "text": "\nMia",
+        "highlight_id": null
+      }
+    ],
+    "highlights": [
+      {
+        "id": "h1",
+        "layer": "person",
+        "ref": {
+          "kind": "address_as",
+          "id": "address_as"
+        },
+        "strength": "strong",
+        "label": "Greeting: \"Dear Kenji\"",
+        "rationale": "You addressed Kenji (HOSHINOYA Kyoto) as \"Dear Kenji\" in 6 of 8 emails.",
+        "count": 6,
+        "total": 8,
+        "evidence": [
+          {
+            "message_id": "syn-vendor_service-003-m1",
+            "external_id": null,
+            "quote": "Dear Kenji,"
+          },
+          {
+            "message_id": "syn-vendor_service-018-m1",
+            "external_id": null,
+            "quote": "Dear Kenji,"
+          }
+        ]
+      },
+      {
+        "id": "h2",
+        "layer": "scenario",
+        "ref": {
+          "kind": "habit",
+          "id": "thank_first"
+        },
+        "strength": "weak",
+        "label": "Thanks them in the first line",
+        "rationale": "In your vendor_service emails, 14 of 65 do this.",
+        "count": 14,
+        "total": 65,
+        "evidence": [
+          {
+            "message_id": "19f8002baa79472f",
+            "external_id": null,
+            "quote": "Dear Made,"
+          },
+          {
+            "message_id": "syn-vendor_service-001-m1",
+            "external_id": null,
+            "quote": "Dear Made,"
+          },
+          {
+            "message_id": "syn-vendor_service-001-m2",
+            "external_id": null,
+            "quote": "Dear Made,"
+          }
+        ]
+      },
+      {
+        "id": "h3",
+        "layer": "person",
+        "ref": {
+          "kind": "fact",
+          "id": "repeat_guest"
+        },
+        "strength": "strong",
+        "label": "What you know: Mia stayed at HOSHINOYA Kyoto March 28–30, 2025, and booked a return stay for April 6–8, 2026",
+        "rationale": "From 2 of your emails with Kenji (HOSHINOYA Kyoto).",
+        "count": 2,
+        "total": null,
+        "evidence": [
+          {
+            "message_id": "syn-vendor_service-004-m1",
+            "external_id": null,
+            "quote": "Thank you so much for a wonderful stay from March 28 to 30."
+          },
+          {
+            "message_id": "syn-vendor_service-018-m1",
+            "external_id": null,
+            "quote": "it is lovely to hear from you again"
+          }
+        ]
+      },
+      {
+        "id": "h4",
+        "layer": "person",
+        "ref": {
+          "kind": "fact",
+          "id": "travels_with_victor"
+        },
+        "strength": "strong",
+        "label": "What you know: Mia books for two adults, herself and Victor",
+        "rationale": "From 2 of your emails with Kenji (HOSHINOYA Kyoto).",
+        "count": 2,
+        "total": null,
+        "evidence": [
+          {
+            "message_id": "syn-vendor_service-003-m1",
+            "external_id": null,
+            "quote": "(2 adults: Mia & Victor)"
+          },
+          {
+            "message_id": "syn-vendor_service-018-m1",
+            "external_id": null,
+            "quote": "space for 2 adults (Mia & Victor)"
+          }
+        ]
+      },
+      {
+        "id": "h5",
+        "layer": "scenario",
+        "ref": {
+          "kind": "habit",
+          "id": "numbered_followups"
+        },
+        "strength": "strong",
+        "label": "Lists requests as a numbered list",
+        "rationale": "In your vendor_service emails, 21 of 65 do this.",
+        "count": 21,
+        "total": 65,
+        "evidence": [
+          {
+            "message_id": "19f8002baa79472f",
+            "external_id": null,
+            "quote": "Thank you again — following up on two more things:"
+          },
+          {
+            "message_id": "syn-vendor_service-001-m2",
+            "external_id": null,
+            "quote": "Thank you again — following up on two more things:"
+          },
+          {
+            "message_id": "syn-vendor_service-002-m2",
+            "external_id": null,
+            "quote": "Thank you so much! The Moon House sounds lovely. Following up on two things:"
+          }
+        ]
+      },
+      {
+        "id": "h6",
+        "layer": "person",
+        "ref": {
+          "kind": "sign_off",
+          "id": "sign_off"
+        },
+        "strength": "strong",
+        "label": "Sign-off: \"Thank you,\"",
+        "rationale": "You signed off with \"Thank you,\" in 3 of 8 emails to Kenji (HOSHINOYA Kyoto).",
+        "count": 3,
+        "total": 8,
+        "evidence": [
+          {
+            "message_id": "syn-vendor_service-003-m2",
+            "external_id": null,
+            "quote": "Thank you,"
+          },
+          {
+            "message_id": "syn-vendor_service-004-m1",
+            "external_id": null,
+            "quote": "Thank you,"
+          },
+          {
+            "message_id": "syn-vendor_service-018-m1",
+            "external_id": null,
+            "quote": "Thank you,"
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  }
+}

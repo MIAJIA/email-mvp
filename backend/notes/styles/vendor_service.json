@@ -1,0 +1,89 @@
+{
+  "scenario": "vendor_service",
+  "habits": [
+    {
+      "id": "open_dear",
+      "description": "Opens with \"Dear <name>,\"",
+      "count": 22,
+      "total": 65,
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "19f7fff4a06bb74c",
+          "quote": "Dear Made, thank you so much! We’d like to join the Founders Tour"
+        },
+        {
+          "message_id": "19f8002baa79472f",
+          "quote": "Dear Made,"
+        },
+        {
+          "message_id": "syn-vendor_service-001-m1",
+          "quote": "Dear Made,"
+        }
+      ]
+    },
+    {
+      "id": "thank_first",
+      "description": "Thanks them in the first line",
+      "count": 14,
+      "total": 65,
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "19f8002baa79472f",
+          "quote": "Dear Made,"
+        },
+        {
+          "message_id": "syn-vendor_service-001-m1",
+          "quote": "Dear Made,"
+        },
+        {
+          "message_id": "syn-vendor_service-001-m2",
+          "quote": "Dear Made,"
+        }
+      ]
+    },
+    {
+      "id": "numbered_followups",
+      "description": "Lists requests as a numbered list",
+      "count": 21,
+      "total": 65,
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "19f8002baa79472f",
+          "quote": "Thank you again — following up on two more things:"
+        },
+        {
+          "message_id": "syn-vendor_service-001-m2",
+          "quote": "Thank you again — following up on two more things:"
+        },
+        {
+          "message_id": "syn-vendor_service-002-m2",
+          "quote": "Thank you so much! The Moon House sounds lovely. Following up on two things:"
+        }
+      ]
+    },
+    {
+      "id": "sign_best",
+      "description": "Signs off with \"Best,\"",
+      "count": 10,
+      "total": 65,
+      "status": "learned",
+      "evidence": [
+        {
+          "message_id": "syn-vendor_service-004-m2",
+          "quote": "Best,\nMia"
+        },
+        {
+          "message_id": "syn-vendor_service-006-m1",
+          "quote": "Best,\nMia"
+        },
+        {
+          "message_id": "syn-vendor_service-008-m1",
+          "quote": "Best,\nMia"
+        }
+      ]
+    }
+  ]
+}
