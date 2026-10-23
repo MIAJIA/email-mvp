@@ -2,7 +2,7 @@
   "case_key": "1a5bafc33e",
   "endpoint": "POST /draft",
   "contract_revision": "0.3",
-  "recorded_at": "2026-10-23T21:55:06+00:00",
+  "recorded_at": "2026-10-23T21:56:18+00:00",
   "request": {
     "mode": "compose",
     "to": "amy.wang@example.com",
@@ -10,7 +10,7 @@
     "inject": "unknown_ref"
   },
   "response": {
-    "draft_id": "2116b17322f0",
+    "draft_id": "6deb9b31b087",
     "to": "amy.wang@example.com",
     "scenario": "zh_en_casual",
     "subject": "Re: coffee",
@@ -20,7 +20,7 @@
         "highlight_id": "h1"
       },
       {
-        "text": "\n",
+        "text": "\n\n",
         "highlight_id": null
       },
       {
@@ -28,19 +28,19 @@
         "highlight_id": null
       },
       {
+        "text": " 周五下午可以 ",
+        "highlight_id": null
+      },
+      {
+        "text": "我们直接在 Red Rock 见面嘛",
+        "highlight_id": "h2"
+      },
+      {
         "text": " ",
         "highlight_id": null
       },
       {
-        "text": "Friday afternoon 可以的 我们去 Red Rock 见面喝 coffee 嘛",
-        "highlight_id": "h2"
-      },
-      {
-        "text": "\n",
-        "highlight_id": null
-      },
-      {
-        "text": "好奇你",
+        "text": "你",
         "highlight_id": "h3"
       },
       {
@@ -62,7 +62,7 @@
         },
         "strength": "weak",
         "label": "Greeting: \"Amy\"",
-        "rationale": "You addressed Amy as \"Amy\" in 1 of 11 emails.",
+        "rationale": "You addressed Amy Wang as \"Amy\" in 1 of 11 emails.",
         "count": 1,
         "total": 11,
         "evidence": [
@@ -105,31 +105,31 @@
       },
       {
         "id": "h3",
-        "layer": "scenario",
+        "layer": "person",
         "ref": {
-          "kind": "habit",
-          "id": "ends_with_curious_question"
+          "kind": "honorific",
+          "id": "honorific"
         },
         "strength": "strong",
-        "label": "Often ends with a follow-up question about the other person, frequently starting with 好奇你.",
-        "rationale": "In your zh_en_casual emails, 10 of 30 do this.",
-        "count": 10,
-        "total": 30,
+        "label": "Formal \"你\"",
+        "rationale": "You used \"你\" with Amy Wang in 8 of 11 emails.",
+        "count": 8,
+        "total": 11,
         "evidence": [
           {
-            "message_id": "19cfa2a364325cd7",
+            "message_id": "syn-zh_en_casual-003-m1",
             "external_id": null,
-            "quote": "好奇你的填表格用的是什么MCP呀？"
+            "quote": "你们能吃多辣?"
           },
           {
-            "message_id": "syn-zh_en_casual-001-m3",
+            "message_id": "syn-zh_en_casual-003-m2",
             "external_id": null,
-            "quote": "好奇你平时是用 Unity 吗?"
+            "quote": "你离得近"
           },
           {
-            "message_id": "syn-zh_en_casual-009-m1",
+            "message_id": "syn-zh_en_casual-005-m1",
             "external_id": null,
-            "quote": "好奇你这个 local MCP 是自己写的还是用现成的？"
+            "quote": "你们有这套吗?"
           }
         ]
       },

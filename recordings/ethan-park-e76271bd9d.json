@@ -2,7 +2,7 @@
   "case_key": "e76271bd9d",
   "endpoint": "POST /draft",
   "contract_revision": "0.3",
-  "recorded_at": "2026-10-23T21:55:18+00:00",
+  "recorded_at": "2026-10-23T21:57:02+00:00",
   "request": {
     "mode": "compose",
     "to": "ethan.park@example.com",
@@ -10,33 +10,33 @@
     "inject": null
   },
   "response": {
-    "draft_id": "d187e6d98e38",
+    "draft_id": "e78c6da6f51d",
     "to": "ethan.park@example.com",
     "scenario": "friend_scheduling",
-    "subject": "Coffee Friday afternoon? + congrats on Lily!",
+    "subject": "Coffee Friday afternoon?",
     "segments": [
       {
-        "text": "Hi Ethan,",
+        "text": "Hi Ethan",
         "highlight_id": "h1"
+      },
+      {
+        "text": ",\n\nFirst of all, ",
+        "highlight_id": null
+      },
+      {
+        "text": "congratulations on baby Lily! The first photo is so sweet, and I hope you're getting at least a little sleep :)",
+        "highlight_id": "h2"
       },
       {
         "text": "\n\n",
         "highlight_id": null
       },
       {
-        "text": "Congratulations on baby Lily! I saw her first photo and she's adorable. I hope you're getting at least a little sleep",
-        "highlight_id": "h2"
-      },
-      {
-        "text": " :)\n\nWould you be up for a coffee this Friday afternoon? ",
-        "highlight_id": null
-      },
-      {
-        "text": "I'd love to meet in person if you can. Red Rock works for me, how about there?",
+        "text": "Would you be up for coffee in person this Friday afternoon? Red Rock works for me",
         "highlight_id": "h3"
       },
       {
-        "text": " ",
+        "text": ", as usual. ",
         "highlight_id": null
       },
       {
@@ -48,7 +48,7 @@
         "highlight_id": null
       },
       {
-        "text": "Totally fine if this week is too much with the new baby, we can always do another day.",
+        "text": "If things are too hectic with the baby, no worries at all, we can find another time.",
         "highlight_id": "h5"
       },
       {
@@ -56,11 +56,11 @@
         "highlight_id": null
       },
       {
-        "text": "I saw you're starting a Saturday morning walking group at Las Palmas Park. Are you still taking new people? I'd love to join",
+        "text": "I saw you're starting a Saturday morning walking group at Las Palmas Park. Is it still open to new people?",
         "highlight_id": "h6"
       },
       {
-        "text": ":)\n\n",
+        "text": " I'd love to join if there's room.\n\n",
         "highlight_id": null
       },
       {
@@ -276,22 +276,22 @@
         },
         "strength": "weak",
         "label": "Sign-off: \"Best, Mia\"",
-        "rationale": "You signed off with \"Best, Mia\" in 8 of 40 emails to Ethan Park.",
+        "rationale": "You signed off with \"Best, Mia\" in 8 of 46 emails to Ethan Park.",
         "count": 8,
-        "total": 40,
+        "total": 46,
         "evidence": [
           {
+            "message_id": "syn-friend_scheduling-004-m1",
+            "external_id": null,
+            "quote": "Best,"
+          },
+          {
+            "message_id": "19877bc1b9e23b00",
+            "external_id": null,
+            "quote": "Best,"
+          },
+          {
             "message_id": "199e0f4032bd1990",
-            "external_id": null,
-            "quote": "Best,"
-          },
-          {
-            "message_id": "199e38acd7fedecd",
-            "external_id": null,
-            "quote": "Best,"
-          },
-          {
-            "message_id": "19a468aadf88db07",
             "external_id": null,
             "quote": "Best,"
           }

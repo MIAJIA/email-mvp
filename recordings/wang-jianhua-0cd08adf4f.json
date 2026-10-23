@@ -2,7 +2,7 @@
   "case_key": "0cd08adf4f",
   "endpoint": "POST /draft",
   "contract_revision": "0.3",
-  "recorded_at": "2026-10-23T21:54:45+00:00",
+  "recorded_at": "2026-10-23T21:57:16+00:00",
   "request": {
     "mode": "compose",
     "to": "wang.jianhua@example.com",
@@ -10,29 +10,25 @@
     "inject": null
   },
   "response": {
-    "draft_id": "212e64230803",
+    "draft_id": "b6b5c9eea1bf",
     "to": "wang.jianhua@example.com",
     "scenario": "zh_formal",
-    "subject": "确认 11 月 18 日拜访时间",
+    "subject": "11 月 18 日拜访时间确认，顺便想去看您的书法展",
     "segments": [
       {
         "text": "王老师",
         "highlight_id": "h1"
       },
       {
-        "text": "：\n\n您好！谢谢",
+        "text": "：\n",
         "highlight_id": null
       },
       {
-        "text": "您",
+        "text": "您好！下个月回北京前，想跟您再确认一下拜访的时间。",
         "highlight_id": "h2"
       },
       {
-        "text": "一直挂念我们！想跟您确认一下下个月去家里看您的时间：",
-        "highlight_id": null
-      },
-      {
-        "text": "还是按之前说好的，11 月 18 日下午三点左右，我和周航师兄一起过去，到之前我会先给您打电话。",
+        "text": "谢谢您愿意抽出时间见我们！",
         "highlight_id": "h3"
       },
       {
@@ -40,36 +36,64 @@
         "highlight_id": null
       },
       {
-        "text": "这次想给您带一饼普洱，还有一本 Victor 帮我挑的字帖。",
+        "text": "我 11 月中旬回北京，待两周。",
         "highlight_id": "h4"
       },
       {
-        "text": "记得您最爱喝云南老普洱，上次春节前寄的那饼您说好喝，这次就还挑这个。",
+        "text": "按之前说好的，我和周航师兄 11 月 18 日下午三点左右到您家，到之前我会先给您打电话。",
         "highlight_id": "h5"
       },
       {
-        "text": "您看家里还缺什么，或者想让我们顺便带点什么，告诉我就好。\n\n",
-        "highlight_id": null
-      },
-      {
-        "text": "前几天看到您的《行书·兰亭序节临》入选了社区老年书画展，在社区文化中心展到 11 月 30 日。",
+        "text": "您",
         "highlight_id": "h6"
       },
       {
-        "text": "真为您高兴！我们想那天顺路去看看，如果您方便，也很想听您讲讲这幅字。\n\n",
+        "text": "看这个时间是否还合适？如果有变动，随时告诉我就好。\n\n",
         "highlight_id": null
       },
       {
-        "text": "书法小册子的事，那天也可以当面给您演示一下用 Google Photos 排版。",
+        "text": "我准备带上您说好喝的那款普洱，再加一本朋友帮我挑的字帖。",
         "highlight_id": "h7"
       },
       {
-        "text": "时间上如果 18 日不太合适，您随时告诉我，我们按您的安排来，不用特意准备什么。\n\n祝您身体健康，万事顺意！\n\n",
+        "text": "不知道",
+        "highlight_id": null
+      },
+      {
+        "text": "您",
+        "highlight_id": "h8"
+      },
+      {
+        "text": "和李阿姨家里还缺什么，或者有什么想让我们顺便带过去的，请尽管说。\n\n另外，",
+        "highlight_id": null
+      },
+      {
+        "text": "在社区公众号上看到您的《行书·兰亭序节临》入选了社区老年书画展，在社区文化中心展到 11 月 30 日。",
+        "highlight_id": "h9"
+      },
+      {
+        "text": "真为您高兴！我们想趁这次回去顺便去看看，到时候也想听您讲讲这幅字。\n\n",
+        "highlight_id": null
+      },
+      {
+        "text": "您不用特意准备什么，回复也不急，方便时告诉我一声就好。",
+        "highlight_id": "h10"
+      },
+      {
+        "text": "\n\n",
+        "highlight_id": null
+      },
+      {
+        "text": "祝您和李阿姨身体健康，一切顺心！",
+        "highlight_id": "h11"
+      },
+      {
+        "text": "\n\n",
         "highlight_id": null
       },
       {
         "text": "学生 Mia 敬上",
-        "highlight_id": "h8"
+        "highlight_id": "h12"
       }
     ],
     "highlights": [
@@ -105,6 +129,116 @@
       },
       {
         "id": "h2",
+        "layer": "scenario",
+        "ref": {
+          "kind": "habit",
+          "id": "ninhao_then_straight_to_point"
+        },
+        "strength": "strong",
+        "label": "New threads start with '您好！' and go straight on in the same line to the greeting reason or the main point; replies usually skip '您好' and start with the substance.",
+        "rationale": "In your zh_formal emails, 7 of 14 do this.",
+        "count": 7,
+        "total": 14,
+        "evidence": [
+          {
+            "message_id": "syn-rel-wang-001-m1",
+            "external_id": null,
+            "quote": "您好！新年快要到了"
+          },
+          {
+            "message_id": "syn-rel-wang-003-m1",
+            "external_id": null,
+            "quote": "您好！最近北京应该暖和起来了吧"
+          },
+          {
+            "message_id": "syn-rel-wang-004-m1",
+            "external_id": null,
+            "quote": "您好！我十一月中旬会回北京"
+          }
+        ]
+      },
+      {
+        "id": "h3",
+        "layer": "scenario",
+        "ref": {
+          "kind": "habit",
+          "id": "explicit_thanks"
+        },
+        "strength": "strong",
+        "label": "Thanks the recipient early and specifically (for their care, trust, time or invitation), often as the first sentence, ending in an exclamation mark.",
+        "rationale": "In your zh_formal emails, 7 of 14 do this.",
+        "count": 7,
+        "total": 14,
+        "evidence": [
+          {
+            "message_id": "syn-rel-wang-001-m1",
+            "external_id": null,
+            "quote": "一直很感谢您当年在实验室对我的指导"
+          },
+          {
+            "message_id": "syn-rel-wang-001-m2",
+            "external_id": null,
+            "quote": "谢谢她当年常给我们包饺子"
+          },
+          {
+            "message_id": "syn-rel-wang-002-m1",
+            "external_id": null,
+            "quote": "谢谢您的关心！"
+          }
+        ]
+      },
+      {
+        "id": "h4",
+        "layer": "person",
+        "ref": {
+          "kind": "fact",
+          "id": "f11"
+        },
+        "strength": "weak",
+        "label": "What you know: Mia 2026 年 11 月中旬回北京待两周。",
+        "rationale": "From 1 of your emails with 王建华.",
+        "count": 1,
+        "total": null,
+        "evidence": [
+          {
+            "message_id": "syn-rel-wang-004-m1",
+            "external_id": null,
+            "quote": "我十一月中旬会回北京待两周"
+          }
+        ]
+      },
+      {
+        "id": "h5",
+        "layer": "person",
+        "ref": {
+          "kind": "fact",
+          "id": "f12"
+        },
+        "strength": "weak",
+        "label": "What you know: 已约好 2026 年 11 月 18 日下午三点左右，Mia 和周航师兄去王老师家拜访。到之前 Mia 会先打电话。",
+        "rationale": "From 2 of your emails with 王建华.",
+        "count": 2,
+        "total": null,
+        "evidence": [
+          {
+            "message_id": "syn-rel-wang-004-m2",
+            "external_id": null,
+            "quote": "定 11 月 18 号下午三点左右过来"
+          },
+          {
+            "message_id": "syn-rel-wang-004-m1",
+            "external_id": null,
+            "quote": "周航师兄说也想一起去"
+          },
+          {
+            "message_id": "syn-rel-wang-004-m2",
+            "external_id": null,
+            "quote": "到之前我先给您打电话"
+          }
+        ]
+      },
+      {
+        "id": "h6",
         "layer": "person",
         "ref": {
           "kind": "honorific",
@@ -134,39 +268,14 @@
         ]
       },
       {
-        "id": "h3",
+        "id": "h7",
         "layer": "person",
         "ref": {
           "kind": "fact",
-          "id": "f9"
+          "id": "f13"
         },
         "strength": "weak",
-        "label": "What you know: 已约定 2026 年 11 月 18 日下午三点左右，Mia 和周航师兄去王老师家拜访。Mia 到之前会先打电话。",
-        "rationale": "From 2 of your emails with 王建华.",
-        "count": 2,
-        "total": null,
-        "evidence": [
-          {
-            "message_id": "syn-rel-wang-004-m2",
-            "external_id": null,
-            "quote": "定 11 月 18 号下午三点左右过来"
-          },
-          {
-            "message_id": "syn-rel-wang-004-m1",
-            "external_id": null,
-            "quote": "周航师兄说也想一起去"
-          }
-        ]
-      },
-      {
-        "id": "h4",
-        "layer": "person",
-        "ref": {
-          "kind": "fact",
-          "id": "f10"
-        },
-        "strength": "weak",
-        "label": "What you know: 这次拜访，Mia 打算带普洱，还有一本 Victor 帮她挑的字帖。",
+        "label": "What you know: 这次拜访 Mia 准备带王老师说好喝的那款普洱，再加一本 Victor 帮她挑的字帖。",
         "rationale": "From 1 of your emails with 王建华.",
         "count": 1,
         "total": null,
@@ -174,37 +283,47 @@
           {
             "message_id": "syn-rel-wang-004-m1",
             "external_id": null,
-            "quote": "再给您带一本 Victor 帮我挑的字帖"
-          }
-        ]
-      },
-      {
-        "id": "h5",
-        "layer": "person",
-        "ref": {
-          "kind": "fact",
-          "id": "f3"
-        },
-        "strength": "weak",
-        "label": "What you know: 王老师最爱喝云南老普洱。Mia 在 2025 年春节前寄过一饼，他说好喝。",
-        "rationale": "From 2 of your emails with 王建华.",
-        "count": 2,
-        "total": null,
-        "evidence": [
-          {
-            "message_id": "syn-rel-wang-001-m1",
-            "external_id": null,
-            "quote": "您以前在实验室最爱喝这个"
+            "quote": "带上次您说好喝的那款普洱"
           },
           {
             "message_id": "syn-rel-wang-004-m1",
             "external_id": null,
-            "quote": "带上次您说好喝的那款普洱"
+            "quote": "Victor 帮我挑的字帖"
           }
         ]
       },
       {
-        "id": "h6",
+        "id": "h8",
+        "layer": "person",
+        "ref": {
+          "kind": "honorific",
+          "id": "honorific"
+        },
+        "strength": "strong",
+        "label": "Formal \"您\"",
+        "rationale": "You used \"您\" with 王建华 in 6 of 6 emails.",
+        "count": 6,
+        "total": 6,
+        "evidence": [
+          {
+            "message_id": "syn-rel-wang-001-m1",
+            "external_id": null,
+            "quote": "提前给您和李阿姨拜个早年"
+          },
+          {
+            "message_id": "syn-rel-wang-001-m2",
+            "external_id": null,
+            "quote": "您收到就好！"
+          },
+          {
+            "message_id": "syn-rel-wang-002-m1",
+            "external_id": null,
+            "quote": "谢谢您的关心！"
+          }
+        ]
+      },
+      {
+        "id": "h9",
         "layer": "external",
         "ref": {
           "kind": "external",
@@ -224,32 +343,67 @@
         ]
       },
       {
-        "id": "h7",
-        "layer": "person",
+        "id": "h10",
+        "layer": "scenario",
         "ref": {
-          "kind": "fact",
-          "id": "f7"
+          "kind": "habit",
+          "id": "low_pressure_offer_of_help"
         },
-        "strength": "weak",
-        "label": "What you know: 王老师想把书法作品拍照，整理成一本小册子。Mia 建议用 Google Photos 排版，并愿意视频演示。",
-        "rationale": "From 1 of your emails with 王建华.",
-        "count": 1,
-        "total": null,
+        "strength": "strong",
+        "label": "Ends the body with a considerate, low-pressure line: lets the recipient pick a time, offers further help 'anytime', or says they need not reply or prepare anything.",
+        "rationale": "In your zh_formal emails, 8 of 14 do this.",
+        "count": 8,
+        "total": 14,
         "evidence": [
           {
-            "message_id": "syn-rel-wang-003-m1",
+            "message_id": "syn-rel-wang-002-m1",
             "external_id": null,
-            "quote": "想把书法作品拍照整理成一本小册子"
+            "quote": "您有空的时候翻翻就好，不用回复"
           },
           {
             "message_id": "syn-rel-wang-003-m1",
             "external_id": null,
-            "quote": "我视频给您演示"
+            "quote": "您随时告诉我，我视频给您演示"
+          },
+          {
+            "message_id": "syn-rel-wang-004-m1",
+            "external_id": null,
+            "quote": "不知道您哪天方便？"
           }
         ]
       },
       {
-        "id": "h8",
+        "id": "h11",
+        "layer": "scenario",
+        "ref": {
+          "kind": "habit",
+          "id": "zhu_nin_wish_closing"
+        },
+        "strength": "weak",
+        "label": "Greeting and farewell emails close with a standalone '祝您……' wish line before the sign-off.",
+        "rationale": "In your zh_formal emails, 4 of 14 do this.",
+        "count": 4,
+        "total": 14,
+        "evidence": [
+          {
+            "message_id": "syn-rel-wang-001-m1",
+            "external_id": null,
+            "quote": "祝您身体健康，新春愉快！"
+          },
+          {
+            "message_id": "syn-rel-wang-002-m1",
+            "external_id": null,
+            "quote": "祝您秋安！"
+          },
+          {
+            "message_id": "syn-rel-zhao-001-m1",
+            "external_id": null,
+            "quote": "祝您新春快乐，阖家幸福！"
+          }
+        ]
+      },
+      {
+        "id": "h12",
         "layer": "person",
         "ref": {
           "kind": "sign_off",
@@ -267,14 +421,14 @@
             "quote": "学生 Mia 敬上"
           },
           {
-            "message_id": "syn-rel-wang-003-m1",
+            "message_id": "syn-rel-wang-001-m2",
             "external_id": null,
-            "quote": "学生 Mia 敬上"
+            "quote": "Mia 敬上"
           },
           {
-            "message_id": "syn-rel-wang-004-m1",
+            "message_id": "syn-rel-wang-002-m1",
             "external_id": null,
-            "quote": "学生 Mia 敬上"
+            "quote": "学生 Mia"
           }
         ]
       }
