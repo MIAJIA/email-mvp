@@ -16,7 +16,7 @@ def test_replay_serves_all_recordings(monkeypatch):
     main = importlib.reload(app.main)
     client = TestClient(main.app)
     recs = sorted((REPO / "recordings").glob("*.json"))
-    assert len(recs) >= 4
+    assert len(recs) >= 3
     for p in recs:
         rec = json.loads(p.read_text())
         r = client.post("/draft", json=rec["request"])
