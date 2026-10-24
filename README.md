@@ -166,3 +166,22 @@ Drafting calls the local `claude` command line. `RECORD=0` stops the backend fro
 pairs to `recordings/`; `REPLAY=1` serves those recordings without calling the model. Data locations can be
 changed with `EMAILS_DIR`, `CONTACTS_DIR`, `STYLES_DIR`, `EXTERNAL_FILE` and `STATUS_FILE`. To rebuild the
 profile files, see `pipeline/README.md`. To run every check: `scripts/check.sh`.
+
+## Next steps
+
+**Richer context.** Link the relationship edges into a graph across contacts, so a note to one person can draw
+on who they know; add the previous email of a thread to replies; and bring in real external context, such as
+calendar events and social updates, only with the user's consent.
+
+**Output preferences.** Learn how detailed, casual or elaborate you like each kind of email and each recipient to
+be (short and casual for a coach, longer and warmer for an old friend), store it as a per-contact entry with
+evidence like everything else, and let you adjust it before drafting.
+
+**Learning from feedback.** Today Keep and Reject update one entry. Next, treat each edit you make to a draft as
+a signal: separate style edits from content edits, write the style ones back into the profile, and re-extract
+incrementally, so the agent keeps improving its own notes from your corrections (a small self-improving loop).
+
+**Evaluation.** Turn real use into an eval set: every draft with your Keep, Reject and edits becomes a labeled
+example, alongside a held-out slice of the answer key the prompts were never tuned on. Track acceptance rate per
+layer, how much you edit each draft, and whether solid highlights really get kept more than dashed ones, and rerun
+it on every prompt or extraction change so we catch drift in your preferences early.
