@@ -5,6 +5,23 @@ Explainable personalized email drafting. Drafts are written for the relationship
 scenario as a fallback. Every phrase that draws on a contact note, a scenario style or external context is
 highlighted; hovering shows why, and opening it shows the original sentence from your past emails.
 
+## System design
+
+![email-mvp system design](docs/system-design.png)
+
+**Draft path (1 to 6).** The browser UI sends your request to FastAPI (1, 2). `build_catalog` looks up this
+recipient's contact note and the scenario style by email, drops rejected entries and gives each remaining entry a
+key (3). `llm.complete` calls the local `claude` command line (4). `parse()` turns the `<hl ref=KEY>` tags into
+segments and highlights, and fills in each highlight's label, counts and quotes from the files (5). The draft goes
+back to the UI (6).
+
+**Feedback (7 to 8).** Keep and Reject go to `POST /feedback` (7), which writes the entry's status to
+`backend/state/status.json` (8). The contact notes themselves stay read-only; the next draft reads the overlay.
+
+**Offline.** `extract.py` and `verify.py` run once and their outputs in `pipeline/out/` are committed, so drafting
+never re-extracts. `evaluate.py` scores those outputs against an answer key the pipeline never reads.
+`scripts/check.sh` runs on every commit to `main`, and `REPLAY=1` serves recorded cases without calling the model.
+
 ## How the context is built
 
 When you ask for a draft, the model gets four things: what you want to say, what you know about this person,
