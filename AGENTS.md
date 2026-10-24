@@ -43,9 +43,8 @@ The backend only reads files; nothing is copied. Data locations can be changed w
 - **Start the backend with `RECORD=0`.** The default (`RECORD=1`) writes every live draft into `recordings/`,
   which changes tracked files.
 - **Stop only processes you started**, by the PID or background task you own. Never use `pkill`, `killall` or
-  `kill` by name or by port: other servers may be running on this machine. In Claude Code, this repository's
-  `.claude/settings.json` denies `kill`, `pkill`, `killall` and `git clean` outright, so start servers as
-  background tasks and stop them with the tool that stops a background task.
+  `kill` by name or by port: other servers may be running on this machine. Start servers as background tasks
+  and stop them with the tool that stops a background task.
 - **Do not push**, and do not commit unless the user asks you to.
 - Do not rerun `pipeline/extract.py --force` unless asked: it makes about 40 model calls and rewrites
   `pipeline/out/`, which the recordings and fixtures depend on.
@@ -66,9 +65,7 @@ Live drafting runs `claude -p --output-format json --tools ""` as a subprocess, 
 echo "Reply with the word ok" | claude -p
 ```
 
-Expected: `ok` (or similar) within a few seconds. Run inside this repository, it may first print a few
-`Permission deny rule (.claude/settings.json): Write(...) is not matched ...` lines on stderr; they come from the
-repository's agent settings and are harmless. If it asks you to log in, run `claude` once interactively and
+Expected: `ok` (or similar) within a few seconds. If it asks you to log in, run `claude` once interactively and
 log in, or skip live drafting and use [replay mode](#no-claude-replay-mode).
 
 ## Install
