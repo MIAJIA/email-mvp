@@ -5,6 +5,9 @@ Explainable personalized email drafting. Drafts are written for the relationship
 scenario as a fallback. Every phrase that draws on a contact note, a scenario style or external context is
 highlighted; hovering shows why, and opening it shows the original sentence from your past emails.
 
+To set it up and run the demo with a coding agent (Claude Code, Codex, Cursor), point it at
+[AGENTS.md](AGENTS.md): prerequisites, install, run, a walkthrough of the three demo emails, and troubleshooting.
+
 ## System design
 
 ![email-mvp system design](docs/system-design.png)
@@ -150,7 +153,8 @@ against this same answer key, so the fact-recall number has not been validated o
 
 ## Run it
 
-From the repository root, in separate terminals:
+Requires Python 3.10 or newer, Node.js 18 or newer, and a logged-in `claude` command line. From the repository
+root, in separate terminals:
 
 ```bash
 cd backend && python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
