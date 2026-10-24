@@ -39,6 +39,14 @@ export function Quote({ ev }: { ev: Evidence }) {
     if (ev.message_id) getEmail(ev.message_id).then(setEmail, (e) => setErr(errorText(e)));
   }, [ev.message_id]);
   const toggle = () => setShown((s) => !s);
+  const fullRef = useRef<HTMLDivElement>(null);
+  // Bring the opened email (and its marked quote) into view inside the card, so the click visibly does something.
+  useEffect(() => {
+    if (!shown || !fullRef.current) return;
+    const target = fullRef.current.querySelector("mark") ?? fullRef.current;
+    fullRef.current.scrollIntoView({ block: "nearest", behavior: "smooth" });
+    target.scrollIntoView({ block: "nearest", behavior: "smooth" });
+  }, [shown, email]);
   const body = email?.body ?? "";
   const i = body.indexOf(ev.quote);
   return (
@@ -49,7 +57,7 @@ export function Quote({ ev }: { ev: Evidence }) {
         <button type="button" className="link" onClick={toggle}>{shown ? "Hide email" : "Show email"}</button>
       )}
       {shown && (
-        <div className="full">
+        <div className="full" ref={fullRef}>
           {err ? `Could not load the email: ${err}` : !email ? "Loading the email…" : i < 0 ? body : (
             <>{body.slice(0, i)}<mark>{ev.quote}</mark>{body.slice(i + ev.quote.length)}</>
           )}

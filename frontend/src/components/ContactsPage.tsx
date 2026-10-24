@@ -43,8 +43,12 @@ export default function ContactsPage({ contacts }: { contacts: ContactSummary[] 
   const rows = (n: ContactNote): Row[] => {
     const out: Row[] = [];
     if (n.address_as_by_context?.length) {
-      for (const a of n.address_as_by_context) if (a.value)
-        out.push({ key: `addr-${a.context}`, title: `How you address them · ${CONTEXT[a.context] ?? a.context}`, value: a.value, sub: `${a.count} / ${a.total}`, status: a.status, evidence: a.evidence });
+      for (const a of n.address_as_by_context) if (a.value) {
+        // Keep / Reject on a greeting writes address_as.status only; show it on the matching by-context entry.
+        const same = a.context === "default" || a.value === n.address_as.value;
+        const status = same && n.address_as.status !== "learned" ? n.address_as.status : a.status;
+        out.push({ key: `addr-${a.context}`, title: `How you address them · ${CONTEXT[a.context] ?? a.context}`, value: a.value, sub: `${a.count} / ${a.total}`, status, evidence: a.evidence });
+      }
     } else if (n.address_as.value) {
       out.push({ key: "address_as", title: "How you address them", value: n.address_as.value, sub: `${n.address_as.count} / ${n.address_as.total}`, status: n.address_as.status, evidence: n.address_as.evidence });
     }
